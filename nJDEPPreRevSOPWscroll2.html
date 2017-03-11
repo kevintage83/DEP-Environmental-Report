@@ -1,0 +1,2328 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>NJDEP DLUR Pre-Review SOP</title>
+
+
+    <script type='text/javascript' src='https://code.jquery.com/jquery-1.5.js'></script>
+
+    <style type='text/css'>
+      fieldset {
+        margin: 10px 0;
+      }
+      
+      .hide {
+        display: none;
+      }
+      
+      #header-wrap {
+        position: fixed;
+        height: auto;
+        width: 100%;
+        z-index: 100;
+        text-size: 16px;
+        background-color: white;
+        padding: 1px;
+      }
+      
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+      }
+      
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: relative;
+        background-color: black;
+        color: #fff;
+        text-align: left;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -60px;
+      }
+      
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+      }
+      
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+      
+      .tab {
+        margin-left: 40px;
+      }
+
+    </style>
+
+    <script type='text/javascript'>
+
+    </script>
+
+
+
+
+
+
+
+
+    <script type='text/javascript'>
+      //<![CDATA[
+
+      var base = {
+        productFilterSetup: function() {
+          $('.productFilter').each(
+            function() {
+              var tmp = new base.filterGroup(this);
+              tmp.setup();
+            });
+        },
+        filterGroup: function(filter_group) {
+          var me = this;
+          me.target_element = filter_group;
+          me.active_element_index = 0;
+          me.setup = function() {
+            $(filter_group).find('input[type=radio]').bind('click', function() {
+              me.update(this);
+            });
+          };
+          me.update = function(target_radio) {
+            var fieldsets = $(me.target_element).find('fieldset'),
+              len = fieldsets.length,
+              i = 0,
+              j = 0,
+              radios,
+              radios_len,
+              options = [],
+              options_buffer = '',
+              num_of_steps = 0;
+
+            for (i = 1; i <= num_of_steps + 1; i += 1) {
+              if ($('fieldset.step' + i).length > 0) {
+                num_of_steps += 1;
+              }
+            }
+
+            for (i = 0; i < num_of_steps; i += 1) {
+              if ($(target_radio).parents('fieldset.step' + (i + 1)).length > 0) {
+                for (j = i; j < num_of_steps; j += 1) {
+                  $('fieldset.step' + (j + 2) + ' input[type=radio]').attr('checked', false);
+                }
+              }
+            }
+
+            for (i = 0; i < len; i += 1) {
+              radios = $(fieldsets[i]).find('input[type=radio]');
+              radios_len = radios.length;
+              for (j = 0; j < radios_len; j += 1) {
+                if ($(radios[j]).is(':checked')) {
+                  options.push(j + 1);
+                }
+              }
+            }
+            fieldsets.addClass('hide');
+            $('fieldset.option0').removeClass('hide');
+            for (i = 0; i < options.length; i += 1) {
+              options_buffer += options[i];
+              $('fieldset.option' + options_buffer).removeClass('hide');
+            }
+          };
+        }
+      };
+
+      $(
+        function() {
+          base.productFilterSetup();
+        });
+      //]]>
+
+    </script>
+
+
+    <script type='text/javascript'>
+      function scrollSmoothToBottom(id) {
+        var div = document.getElementById(id);
+        $('body').animate({
+          scrollTop: document.body.scrollHeight
+        }, 500);
+      }
+
+
+      function scrollSmoothToTop(id) {
+        $('body').animate({
+          scrollTop: 0
+        }, 500);
+      }
+
+    </script>
+
+
+  </head>
+
+  <body>
+    <h4 id="header-wrap">Application Pre-Review  <button onClick="scrollSmoothToBottom()">Scroll to Bottom</button></h4>
+    <form action="#" id="unique_id" class="productFilter">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <fieldset class="step1 option0">
+        <legend><b>STEP 1.</b>
+          <br/> You have received a file! Does <b>NJEMS,</b> and the <b>"Permit Database & Transmittal" Form</b> show that you are the <b>Project Manager</b> for this application?</legend>
+        <p>
+          <input id="question_1" name="group_1" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_2" name="group_1" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_2">No.</label>
+        </p>
+      </fieldset>
+
+
+      <fieldset class="hide step2 option1">
+        <legend><b>STEP 2.</b>
+          <br/>Do you have <b>original, sealed copies</b> of the <b>engineering plans</b>?</legend>
+        <p>
+          <input id="question_1_1" name="group_2" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_2" name="group_2" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_2">No.</label>
+        </p>
+      </fieldset>
+
+
+      <fieldset class="hide step2 option2">
+        <legend>Notify your Supervisor via email, and await further instruction.</legend>
+        <p>
+          <input id="question_2_1" name="group_2" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_2_1">Print a hard copy of your email to your Supervisor</label>
+        </p>
+        <p>
+          <input id="question_2_2" name="group_2" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_2_2">Place the printed email inside the file folder</label>
+        </p>
+      </fieldset>
+
+
+      <fieldset class="hide step3 option11">
+        <legend><b>STEP 3.</b>
+          <br/>Do the site plans have the following attributes?:
+          <br/>
+          <br /> 1. Are <b>signed</b> and <b>sealed</b> by a licensed land <b>surveyor</b> or <b>engineer</b>;
+          <br /> 2. Submitted at an appropriate <b>scale</b> with a <b>"North" arrow</b>;
+          <br /> 3. Have a <b>"Title Block"</b> with the name of the preparer of the plans and the <b>date</b>;
+          <br /> 4. Show all <b>existing structures</b> on the <b>site</b> and on all immediate <b>adjacent lots</b>;
+          <br /> 5. Show all <b>proposed structures, disturbances, and activities</b>;
+          <br /> 6. Show the limits of <b>regulated areas</b> such as: wetlands, transition areas, riparian zones, the mean high water line (MHWL), dunes, etc.
+          <br /> 7. All <b>metes</b> and <b>bounds</b> on the site. </legend>
+        <p>
+          <input id="question_1_1_1" name="group_3" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_2" name="group_3" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_2">No.</label>
+        </p>
+      </fieldset>
+
+
+      <fieldset class="hide step3 option12">
+        <legend>Does your <b>Supervisor</b> have the original, sealed copies of the engineering plans?</legend>
+        <p>
+          <input id="question_1_2_1" name="group_3" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_2_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_2_2" name="group_3" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_2_2">No.</label>
+        </p>
+      </fieldset>
+
+
+      <fieldset class="hide step3 option121">
+        <legend>Make a copy of the original plans. Retain the original plans. Give the copy to your Supervisor. Continue to GIS Verification.</legend>
+        <p>
+          <input id="question_1_2_1_1" name="group_3" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_2_1_1">I have the original, sealed copies of the engineering plans.</label>
+        </p>
+        <p>
+          <input id="question_1_2_1_2" name="group_3" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_2_1_2">Click the "Yes!" option under <b>STEP 2</b>.</label>
+        </p>
+      </fieldset>
+
+
+      <fieldset class="hide step4 option112">
+        <legend>Notify the applicant, via email (cc your Supervisor), that they are missing original, sealed copies of the engineering plans.
+          </br>
+          </br>Request the sealed originals from the Applicant. Include the following boilerplate language:
+          </br>Dear (<em>Agent Name</em>),
+
+          </br>The Department is in the process of reviewing (<em>DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>). In order for the Department to return a positive response for
+          this application, please submit five (5) hard copies of the (original and/or revised) site plans that:
+          </br>
+          </br> 1. Are signed and sealed by a licensed land surveyor or engineer;
+          </br> 2. Submitted at an appropriate scale with a "North" arrow;
+          </br> 3. Have a "Title Block" with the name of the preparer of the plans and the date;
+          </br> 4. Show all existing structures on the site and on all immediate adjacent lots;
+          </br> 5. Show all proposed structures, disturbances, and activities;
+          </br> 6. Show the limits of regulated areas such as: wetlands, transition areas, riparian zones, the mean high water line (MHWL), dunes, etc.
+          </br> 7. All metes and bounds on the site.
+          </br>
+          </br>If you choose to (submit/revise) site plans, please do so by (a date 2 to 3 weeks from the date of this message) or a decision will be made on the application as it currently exists.
+          </br>
+          </br>If you have any questions, you can reach me here, or at (<em>Permit Writer's desk phone number</em>).
+          </br>
+          </br>Thank you,
+          </br>(<em>Permit Writer's Signature</em>)</legend>
+        <p>
+          <input id="question_1_1_2_1" name="group_4" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_2_1">Applicant has been notified.</label>
+        </p>
+        <p>
+          <input id="question_1_1_2_2" name="group_4" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_2_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+
+      <fieldset class="hide step3 option122">
+        <legend>Does the <b>assigned Engineer</b> have the original, sealed copies of the engineering plans?</legend>
+        <p>
+          <input id="question_1_2_2_1" name="group_4" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_2_2_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_2_2_2" name="group_4" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_2_2_2">No.</label>
+        </p>
+      </fieldset>
+
+
+      <fieldset class="hide step3 option1221">
+        <legend>Take one set of the original plans from the assigned Engineer.</legend>
+        <p>
+          <input id="question_1_2_2_1_1" name="group_3" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_2_1_1">I have the copies of the engineering plans.</label>
+        </p>
+        <p>
+          <input id="question_1_2_2_1_2" name="group_3" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_2_2_1_2">Click the "Yes!" option under <b>STEP 2</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+      <fieldset class="hide step3 option1222">
+        <legend>Notify the Applicant, via email (cc your Supervisor), that they are missing original, sealed copies of the engineering plans.
+          </br>
+          </br>Request the sealed originals from the Applicant. Include the following boilerplate language:
+          </br>Dear (Agent Name),
+
+          </br>The Department is in the process of reviewing (DLUR File #), an application for (Application Type/s) for Re: (Applicant's Name and project location). In order for the Department to return a positive response for this application, please
+          submit five (5) hard copies of the (original and/or revised) site plans that:
+          </br>
+          </br> 1. Are signed and sealed by a licensed land surveyor or engineer;
+          </br> 2. Submitted at an appropriate scale with a "North" arrow;
+          </br> 3. Have a "Title Block" with the name of the preparer of the plans and the date;
+          </br> 4. Show all existing structures on the site and on all immediate adjacent lots;
+          </br> 5. Show all proposed structures, disturbances, and activities;
+          </br> 6. Show the limits of regulated areas such as: wetlands, transition areas, riparian zones, the mean high water line (MHWL), dunes, etc.
+          </br> 7. All metes and bounds on the site.
+          </br>
+          </br>If you choose to (submit/revise) site plans, please do so by (a date 2 to 3 weeks from the date of this message) or a decision will be made on the application as it currently exists.
+          </br>
+          </br>If you have any questions, you can reach me here, or at (Permit Writer's desk phone number).
+          </br>
+          </br>Thank you,
+          </br>(Permit Writer's Signature)</legend>
+        <p>
+          <input id="question_1_2_2_2_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_2_2_2_1">Applicant has been notified.</label>
+        </p>
+        <p>
+          <input id="question_1_2_2_2_2_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_2_2_2_2_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+
+      <fieldset class="hide step4 option111">
+        <legend><b>STEP 4.</b>
+          <br/>Do the sealed, original engineering plans match what is noted in the "<b>Project Description</b>" section of the associated application?</legend>
+        <p>
+          <input id="question_1_1_1_1" name="group_4" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_2" name="group_4" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_2">No.</label>
+        </p>
+      </fieldset>
+
+
+      <fieldset class="hide step4 option1112">
+        <legend>Determine which items are incorrect, <b>notify</b> Vickie, by email, at <b>Vickie.Spera@dep.nj.gov</b> to make changes as necessary in <b>NJEMS</b> (<em>cc Supervisors of Database, ASU, and Manager of Tech Services</em>)</legend>
+        <p>
+          <input id="question_1_1_1_2_1" name="group_6" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_2_1">I have notified Vickie, Supervisors of Database, ASU, and Manager of Tech Services.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_2_2" name="group_6" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_2_2">Annotate these changes to the application under <b>Activity Tracking</b> in <b>NJEMS</b></label>
+          <p>
+      </fieldset>
+
+
+      <fieldset class="hide step5 option1111">
+        <legend><b>STEP 5.</b>
+          <br/>Are all required signatures completed?</legend>
+        <p>
+          <input id="question_1_1_1_1_1" name="group_5" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_2" name="group_5" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_2">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step5 option11112">
+        <legend>Does your <b>Supervisor</b> have the documents that have the <b>signatures</b>?</legend>
+        <p>
+          <input id="question_1_1_1_1_2_1" name="group_6" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_2_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_2_2" name="group_6" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_2_2">No.</label>
+          <p>
+      </fieldset>
+
+
+      <fieldset class="hide step5 option111121">
+        <legend>Make a <b>copy</b> of the original, signed documents. Retain the <b>originals</b>. Give the <b>copy</b> to your Supervisor. Continue to <b>STEP 5</b>.</legend>
+        <p>
+          <input id="question_1_1_1_1_2_1_1" name="group_6" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_2_1_1">I have the original, signed documents.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_2_1_2" name="group_6" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_2_1_2">Click the "Yes!" option under <b>STEP 5</b>.</label>
+        </p>
+      </fieldset>
+
+
+      <fieldset class="hide step5 option111122">
+        <legend>Does the assigned <b>Engineer</b> have the documents that have the <b>signatures</b>?</legend>
+        <p>
+          <input id="question_1_1_1_1_2_2_1" name="group_7" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_2_2_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_2_2_2" name="group_7" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_2_2_2">No.</label>
+          <p>
+      </fieldset>
+
+
+      <fieldset class="hide step5 option1111221">
+        <legend>Make a <b>copy</b> of the original, signed documents. Retain the <b>copies</b>. Return the <b>originals</b> back to the assigned Engineer. Continue to <b>STEP 5</b>.</legend>
+        <p>
+          <input id="question_1_1_1_1_2_2_1_1" name="group_6" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_2_2_1_1">I have copies of the original, signed documents.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_2_2_1_2" name="group_6" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_2_2_1_2">Click the "Yes!" option under <b>STEP 5</b>.</label>
+        </p>
+      </fieldset>
+
+
+      <fieldset class="hide step5 option1111222">
+        <legend>Notify the Applicant, via email (<em>cc your Supervisor</em>), that they are missing documentation with the signatures. <b>Request the originals</b> from the Applicant.</legend>
+        <p>
+          <input id="question_1_1_1_1_2_2_2_1" name="group_6" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_2_2_2_1">Request for the originals has been sent to the Applicant.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_2_2_2_2" name="group_6" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_2_2_2_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+
+      <fieldset class="hide step6 option11111">
+        <legend><b>STEP 6. <br/>GIS Verification:</b>
+          <br/>Does GIS show that <em>any part</em> of the project is within the <b>Pinelands</b>, <b>Highlands</b>, or <b>Meadowlands</b>?</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1" name="group_6" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2" name="group_6" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2">No.</label>
+        </p>
+      </fieldset>
+
+
+      <fieldset class="hide step6 option111111">
+        <legend>Does DLUR handle this particular type of application? (I need to find/add a determination checklist for this section)</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1" name="group_7" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_2" name="group_7" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_2">No.</label>
+        </p>
+      </fieldset>
+
+
+      <fieldset class="hide step6 option1111112">
+        <legend>Return the application accordingly with a <b>top sheet</b> directing the Applicant where the application should be submitted. Include a <b>refund request form</b>.</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_2_1" name="group_7" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_2_1">I have returned the application with a <b>refund request form</b>, and a <b>top sheet</b> directing the applicant where the application should be submitted.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_2_2" name="group_7" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_2_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+
+
+      <fieldset class="hide step9 option111112">
+        <legend><b>STEP 7.</b>
+          <br/>Does the <b>total fee</b> received <b>match</b> the total fees for the permits/authorizations that have been marked on the <b>application form</b>?</legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1" name="group_8" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_2" name="group_8" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_2">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step9 option1111111">
+        <legend><b>STEP 7.</b>
+          <br/>Does the <b>total fee</b> received <b>match</b> the total fees for the permits/authorizations that have been marked on the <b>application form</b>?</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1" name="group_8" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_2" name="group_8" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_2">No.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+
+      <fieldset class="hide step9 option1111122">
+        <legend>Notify <b>ASU</b>, your <b>Supervisor</b>, and the <b>Applicant</b>.</legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_2_1" name="group_8" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_2_1">I have notified ASU, my Supervisor, and the Applicant.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_2_2" name="group_8" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_2_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step9 option11111112">
+        <legend>Notify <b>ASU</b>, your <b>Supervisor</b>, and the <b>Applicant</b>.</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_2_1" name="group_8" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_2_1">I have notified ASU, my Supervisor, and the Applicant.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_2_2" name="group_8" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_2_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+
+      <fieldset class="hide step8 option1111121">
+        <legend class="tooltip"><b>STEP 8.</b>
+          <br/>Is the fee breakdown that is shown on the "<b>Fee Calculation Sheet</b>" accurate?<span class="tooltiptext">The maximum application fee (cap) for either an Upland or In-Water Waterfront Development Application is $30,000 per permit type. For example: if you are applying for both an upland and an in-water Waterfront Development, the maximum fee is applied to each permit for a maximum total of $60,000, plus any applicable stormwater review fee. There is no "cap" for a Coastal Wetlands permit. NJDEP and Port Authority NJ/NY do not pay fees for these types of applications (<em>Memo dated 5/12/1982</em>). Other fee agreements can be found at <em>V:\lum\LUR\asu pre review\sop's</em></span>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1" name="group_9" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_2" name="group_9" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_2">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step8 option11111111">
+        <legend class="tooltip"><b>STEP 8.</b>
+          <br/>Is the fee breakdown that is shown on the "<b>Fee Calculation Sheet</b>" accurate?<span class="tooltiptext">The maximum application fee (cap) for either an Upland or In-Water Waterfront Development Application is $30,000 per permit type. For example: if you are applying for both an upland and an in-water Waterfront Development, the maximum fee is applied to each permit for a maximum total of $60,000, plus any applicable stormwater review fee. There is no "cap" for a Coastal Wetlands permit. NJDEP and Port Authority NJ/NY do not pay fees for these types of applications (<em>Memo dated 5/12/1982</em>). Other fee agreements can be found at <em>V:\lum\LUR\asu pre review\sop's</em></span>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1" name="group_9" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_2" name="group_9" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_2">No.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+
+      <fieldset class="hide step8 option11111212">
+        <legend>Notify ASU, your supervisor, and the Applicant.</legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_2_1" name="group_9" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_2_1">I have notified ASU, my supervisor, and the Applicant.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_2_2" name="group_9" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_2_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step8 option111111112">
+        <legend>Notify ASU, your Supervisor, and the Applicant.</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_2_1" name="group_9" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_2_1">I have notified ASU, my Supervisor, and the Applicant.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_2_2" name="group_9" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_2_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+
+      <fieldset class="hide step9 option11111211">
+        <legend><b>STEP 9.</b>
+          <br/>Do you have a copy of the most up-to-date <b>Checklist/s</b> for the type of Permit/s requested?</legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1" name="group_10" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_2" name="group_10" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_2">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step9 option111111111">
+        <legend><b>STEP 9.</b>
+          <br/>Do you have a copy of the most up-to-date <b>Checklist/s</b> for the type of Permit/s requested?</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1" name="group_10" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_2" name="group_10" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_2">No.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+
+      <fieldset class="hide step8 option111112112">
+        <legend>Get the missing materials from your Supervisor.</legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_2_1" name="group_9" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_2_1">I have received the missing materials from my Supervisor.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_2_2" name="group_9" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_2_2">Click the "Yes!" option under <b>STEP 9</b>.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step8 option1111111112">
+        <legend>Get the missing materials from your Supervisor.</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_2_1" name="group_9" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_2_1">I have received the missing materials from my Supervisor.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_2_2" name="group_9" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_2_2">Click the "Yes!" option under <b>STEP 9</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+
+
+      <fieldset class="hide step10 option111112111">
+        <legend><b>STEP 10.</b>
+          <br/>Does the application have a USGS quad map, street map, and a letter-sized (<em>8.5 x 11"</em>) with the project site CLEARLY outlined, to scale, on each map?</legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1" name="group_11" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_2" name="group_11" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_2">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step10 option1111111111">
+        <legend><b>STEP 10.</b>
+          <br/>Does the application have a USGS quad map, street map, and a letter-sized (<em>8.5 x 11"</em>) with the project site CLEARLY outlined, to scale, on each map?</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1" name="group_11" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_2" name="group_11" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_2">No.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+
+      <fieldset class="hide step10 option1111121112">
+        <legend>Does Engineering, your Supervisor, or ASU have the missing materials?</legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_2_1" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_2_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_2_2" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_2_2">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step10 option11111111112">
+        <legend>Does Engineering, your Supervisor, or ASU have the missing materials?</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_2_1" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_2_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_2_2" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_2_2">No.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+      <fieldset class="hide step10 option11111211121">
+        <legend>Get the missing materials from Engineering, your Supervisor, or ASU</legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_2_1_1" name="group_11" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_2_1_1">I have received the missing materials from Engineering, my Supervisor, or ASU.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_2_1_2" name="group_11" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_2_1_2">Click the "Yes!" option under <b>STEP 10</b>.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step10 option111111111121">
+        <legend>Get the missing materials from Engineering, your Supervisor, or ASU</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_2_2_1" name="group_11" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_2_2_1">I have received the missing materials from Engineering, my Supervisor, or ASU.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_2_2_2" name="group_11" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_2_2_2">Click the "Yes!" option under <b>STEP 10</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+      <fieldset class="hide step10 option11111211122">
+        <legend>Notify the Applicant that they need to submit the missing materials.</legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_2_2_1" name="group_11" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_2_2_1">I have notified the Applicant that they must submit the missing materials.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_2_2_2" name="group_11" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_2_2_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step10 option111111111122">
+        <legend>Notify the Applicant that they need to submit the missing materials.</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_2_2_1" name="group_11" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_2_2_1">I have notified the Applicant that they must submit the missing materials.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_2_2_2" name="group_11" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_2_2_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+
+      <fieldset class="hide step11 option1111121111">
+        <legend><b>STEP 11.</b>
+          <br/>Does the application have at least <b>four (4)</b> unique, <b>color</b> photos that show all variety of conditions on the site?</legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_2" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_2">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step11 option11111111111">
+        <legend><b>STEP 11.</b>
+          <br/>Does the application have at least <b>four (4)</b> unique, <b>color</b> photos that show all variety of conditions on the site?</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_2" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_2">No.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+      <fieldset class="hide step11 option11111211112">
+        <legend>Notify the Applicant that they need to submit the missing materials.</legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_2_1" name="group_12" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_2_1">I have notified the Applicant that they must submit the missing materials.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_2_2" name="group_12" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_2_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>. Once you receive the missing materials, click the "Yes!" option under <b>STEP 11</b>.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step11 option111111111112">
+        <legend>Notify the Applicant that they need to submit the missing materials.</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_12" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_2_1">I have notified the Applicant that they must submit the missing materials.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_2_2" name="group_12" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_2_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>. Once you receive the missing materials, click the "Yes!" option under <b>STEP 11</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+
+      <fieldset class="hide step12 option11111211111">
+        <legend><b>STEP 12.</b>
+          <br/>Does the application have proof of <b>Public Notice</b> to the following entities?
+          <br/>
+          <br/>1. Municipal Clerk (<em>must receive a copy of the ENTIRE application</em>);
+          <br/>2. Municipal Planning Board;
+          <br/>3. Municipal Construction Official;
+          <br/>4. Municipal Environmental Commission (<em>if any</em>);
+          <br/>5. County Planning Board, and;
+          <br/>6. All adjacent neighbors within 200 feet of the project site (<em>this requires validation via a certified list obtained from the municipal tax assessor's office</em>)</legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1" name="group_13" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_2" name="group_13" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_2">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step12 option111111111111">
+        <legend><b>STEP 12.</b>
+          <br/>Does the application have proof of <b>Public Notice</b> to the following entities?
+          <br/>
+          <br/>1. Municipal Clerk (<em>must receive a copy of the ENTIRE application</em>);
+          <br/>2. Municipal Planning Board;
+          <br/>3. Municipal Construction Official;
+          <br/>4. Municipal Environmental Commission (<em>if any</em>);
+          <br/>5. County Planning Board, and;
+          <br/>6. All adjacent neighbors within 200 feet of the project site (<em>this requires validation via a certified list obtained from the municipal tax assessor's office</em>)</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1" name="group_13" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_2" name="group_13" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_2">No.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+
+      <fieldset class="hide step12 option111112111112">
+        <legend>Notify the Applicant that they need to submit the missing materials.</legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_2_1" name="group_12" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_2_1">I have notified the Applicant that they must submit the missing materials.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_2_2" name="group_12" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_2_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>. Once you receive the missing materials, click the "Yes!" option under <b>STEP 12</b>.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step12 option1111111111112">
+        <legend>Notify the Applicant that they need to submit the missing materials.</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_12" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_2_1">I have notified the Applicant that they must submit the missing materials.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_2_2" name="group_12" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_2_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>. Once you receive the missing materials, click the "Yes!" option under <b>STEP 12</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+
+      <fieldset class="hide step13 option111112111111">
+        <legend><b>STEP 13.</b>
+          <br/>Does the application have a <b>Compliance Statement</b>, which demonstrates that the proposed project meets all applicable criteria for the specific permit/s for which applied?</legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1" name="group_14" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_2" name="group_14" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_2">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step13 option1111111111111">
+        <legend><b>STEP 13.</b>
+          <br/>Does the application have a <b>Compliance Statement</b>, which demonstrates that the proposed project meets all applicable criteria for the specific permit/s for which applied?</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1" name="group_14" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_2" name="group_14" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_2">No.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+
+      <fieldset class="hide step13 option1111121111112">
+        <legend>Notify the Applicant that they need to submit the missing materials.</legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_2_1" name="group_14" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_2_1">I have notified the Applicant that they must submit the missing materials.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_2_2" name="group_14" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_2_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>. Once you receive the missing materials, click the "Yes!" option under <b>STEP 13</b>.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step13 option11111111111112">
+        <legend>Notify the Applicant that they need to submit the missing materials.</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_14" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">I have notified the Applicant that they must submit the missing materials.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_2_2" name="group_14" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_2_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>. Once you receive the missing materials, click the "Yes!" option under <b>STEP 13</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+      <fieldset class="hide step14 option1111121111111">
+        <legend><b>STEP 14.</b>
+          <br/>What is the type of application?</legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_1" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_1">Flood Hazard Area Permitting</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_2" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_2">Waterfront Development & Coastal Wetlands Individual Permit Application</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_3" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_3">CAFRA Individual Permit Application</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_4" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_4">Coastal General Permit Application</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_5" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_5">Freshwater Wetlands General Permit and Transition Area Waivers</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_6" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_6">Freshwater Wetlands Individual Permit Application</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_7" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_7">Highlands Exemption Application (HAD)</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_8" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_8">E-LOI Application</label>
+        </p>
+      </fieldset>
+
+
+      <fieldset class="hide step14 option11111111111111">
+        <legend><b>STEP 14.</b>
+          <br/>What is the type of application?</legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1">Flood Hazard Area Permitting</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2">Waterfront Development & Coastal Wetlands Individual Permit Application</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_3" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_3">CAFRA Individual Permit Application</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_4" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_4">Coastal General Permit Application</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_5" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_5">Freshwater Wetlands General Permit and Transition Area Waivers</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_6" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_6">Freshwater Wetlands Individual Permit Application</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_7" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_7">Highlands Exemption Application (HAD)</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_8" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_8">E-LOI Application</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+
+
+
+
+      <fieldset class="hide step15 option11111211111111">
+        <legend><b>FHA: STEP 1. </b>
+          <br/>Does the application have the following?:
+          </br>
+          </br> 1. A copy of the <b>"Permit & Database Transmittal"</b> with their name highlighted;
+          </br> 2. A copy of the <b>application form</b>;
+          </br> 3. <b>Two (2)</b> copies of the submitted <b>project plans</b>;
+          </br> 4. A copy of the <b>environmental report</b>;
+          </br> 5. A copy of the <b>application report</b>;
+          </br> 6. The <b>NJ Heritage Letter</b>
+          </br>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_1_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_1_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_1_2">No.</label>
+        </p>
+        <p>
+      </fieldset>
+
+      <fieldset class="hide step15 option111111111111111">
+        <legend><b>FHA: STEP 1. </b>
+          <br/>Does the application have the following?:
+          </br>
+          </br> 1. A copy of the <b>"Permit & Database Transmittal"</b> with their name highlighted;
+          </br> 2. A copy of the <b>application form</b>;
+          </br> 3. <b>Two (2)</b> copies of the submitted <b>project plans</b>;
+          </br> 4. A copy of the <b>environmental report</b>;
+          </br> 5. A copy of the <b>application report</b>;
+          </br> 6. The <b>NJ Heritage Letter</b>
+          </br>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2">No.</label>
+        </p>
+        <p>
+      </fieldset>
+
+
+
+
+      <fieldset class="hide step16 option111112111111112">
+        <legend><b>FHA: STEP 2. </b>
+          <br/>Does your Supervisor, or the assigned Engineer have the missing information?:
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_1_1_2_1_1" name="group_17" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_1_1_2_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_1_1_2_2_2" name="group_17" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_1_1_2_2_2">No.</label>
+        </p>
+        <p>
+      </fieldset>
+
+      <fieldset class="hide step16 option1111111111111112">
+        <legend><b>FHA: STEP 2. </b>
+          <br/>Does your Supervisor, or the assigned Engineer have the missing information?:
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1" name="group_17" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2" name="group_17" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2">No.</label>
+        </p>
+        <p>
+      </fieldset>
+
+
+
+
+
+
+
+      <fieldset class="hide step16 option1111121111111122">
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+          </br>
+          </br>Dear (<em>Agent Name</em>),
+          </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
+          </br>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
+          </br>
+          </br> 1. A copy of the Compliance Statement;
+          </br> 2. A copy of the application report;
+          </br> 3. Project plans, which include proposed and existing topography where necessary, </br>to demonstrate that the development meets the requirements of the Coastal Zone Management Rules, </br>and the upper and lower limits of all special
+          areas, as described at N.J.A.C. 7:7-9;
+          </br> 4. The NJ Heritage Letter
+          </br>
+          </br>If you choose to (<em>submit/revise</em>) the additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
+          </br>
+          </br>If you have any questions, you can reach me here, or at (<em>Permit Writer's desk phone number</em>).
+          </br>
+          </br>Thank you,
+          </br>(<em>Permit Writer's Signature</em>)</legend>
+        <p>
+          <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_1">Applicant has been notified.</label>
+        </p>
+        <p>
+          <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option11111111111111122">
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+          </br>
+          </br>Dear (<em>Agent Name</em>),
+          </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
+          </br>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
+          </br>
+          </br> 1. A copy of the Compliance Statement;
+          </br> 2. A copy of the application report;
+          </br> 3. Project plans, which include proposed and existing topography where necessary, </br>to demonstrate that the development meets the requirements of the Coastal Zone Management Rules, </br>and the upper and lower limits of all special
+          areas, as described at N.J.A.C. 7:7-9;
+          </br> 4. The NJ Heritage Letter
+          </br>
+          </br>If you choose to (<em>submit/revise</em>) the additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
+          </br>
+          </br>If you have any questions, you can reach me here, or at (<em>Permit Writer's desk phone number</em>).
+          </br>
+          </br>Thank you,
+          </br>(<em>Permit Writer's Signature</em>)</legend>
+        <p>
+          <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_1">Applicant has been notified.</label>
+        </p>
+        <p>
+          <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+      <fieldset class="hide step16 option1111121111111121">
+        <legend>Retrieve the materials from your Supervisor, or the assigned Engineer.
+          <p>
+            <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+            <label for="question_3_1_1">I have the materials.</label>
+          </p>
+          <p>
+            <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+            <label for="question_3_1_2">Click the "Yes!" option under <b>FHA: STEP 1</b>.</label>
+          </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option11111111111111121">
+        <legend>Retrieve the materials from your Supervisor, or the assigned Engineer.
+          <p>
+            <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+            <label for="question_3_1_1">I have the materials.</label>
+          </p>
+          <p>
+            <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+            <label for="question_3_1_2">Click the "Yes!" option under <b>FHA: STEP 1</b>.</label>
+          </p>
+      </fieldset>
+
+
+
+
+      <fieldset class="hide step18 option111112111111111">
+        <legend><b>Congratulations!</b> </br>The FHA portion of the application is administratively complete! </br>Click the following link to review any applicable code and regulations. </br>
+          <input type="button" onclick="openFHA()" name="fHARulesBtn" value="Flood Hazard Area Rules 7:13" class="li">
+          <br/>
+      </fieldset>
+
+      <fieldset class="hide step18 option1111111111111111">
+        <legend><b>Congratulations!</b> </br>The FHA portion of the application is administratively complete! </br>Click the following link to review any applicable code and regulations. </br>
+          <input type="button" onclick="openFHA()" name="fHARulesBtn" value="Flood Hazard Area Rules 7:13" class="li">
+          <br/>
+      </fieldset>
+
+
+
+
+
+
+      <fieldset class="hide step15 option11111211111112">
+        <legend><b>WFD & Coastal Wetlands IP: STEP 1. </b>
+          <br/>Does the application have the following?:
+          </br>
+          <ol>
+            <li>Send the "clearances" (transmittals) of application to all required agencies and insert/complete the appropriate tasks in NJEMS - Activity Tracking;</li>
+            <li>A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);</li>
+            <li><b>Project plans</b>, which includes;</li>
+            <ul>
+              <li>The <b>Mean High Water Line (MHWL)</b>, the <b>Mean Low Water Line (MLWL)</b>, the <b>Upper Wetlands Boundary Line (UWB)</b>, and limits of any existing/proposed Tidelands Instruments;
+                <li>Proposed and existing <b>mooring areas</b>;</li>
+                <li>Water depths at Mean Low Water, especially in the <b>mooring areas</b> and the location of <b> navigation channels</b>; and</li>
+                <li>Public Access - both <b>existing</b> and <b>proposed</b></li>
+            </ul>
+          </ol>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_2_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_2_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_2_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_2_2">No.</label>
+        </p>
+        <p>
+      </fieldset>
+
+      <fieldset class="hide step15 option111111111111112">
+        <legend><b>WFD & Coastal Wetlands IP: STEP 1. </b>
+          <br/>Does the application have the following?:
+          </br>
+          <ol>
+            <li>Send the "clearances" (transmittals) of application to all required agencies and insert/complete the appropriate tasks in NJEMS - Activity Tracking;</li>
+            <li>A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);</li>
+            <li><b>Project plans</b>, which includes;</li>
+            <ul>
+              <li>The <b>Mean High Water Line (MHWL)</b>, the <b>Mean Low Water Line (MLWL)</b>, the <b>Upper Wetlands Boundary Line (UWB)</b>, and limits of any existing/proposed Tidelands Instruments;
+                <li>Proposed and existing <b>mooring areas</b>;</li>
+                <li>Water depths at Mean Low Water, especially in the <b>mooring areas</b> and the location of <b> navigation channels</b>; and</li>
+                <li>Public Access - both <b>existing</b> and <b>proposed</b></li>
+            </ul>
+          </ol>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_2_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_2_2">No.</label>
+        </p>
+        <p>
+      </fieldset>
+
+
+
+
+
+
+      <fieldset class="hide step16 option111112111111122">
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+          </br>
+          </br>Dear (<em>Agent Name</em>),
+          </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
+          </br>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
+          <ol>
+            <li>A copy of the Compliance Statement, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);</li>
+            <li>Project plans, which includes;</li>
+            <ul>
+              <li>The Mean High Water Line (MHWL), the Mean Low Water Line (MLWL), the Upper Wetlands Boundary Line (UWB), and limits of any existing/proposed Tidelands Instruments;
+                <li>Proposed and existing mooring areas;</li>
+                <li>Water depths at Mean Low Water, especially in the mooring areas and the location of navigation channels; and</li>
+                <li>Public Access - both existing and proposed</li>
+            </ul>
+          </ol>
+          </br>If you choose to (<em>submit/revise</em>) the additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
+          </br>
+          </br>If you have any questions, you can reach me here, or at (<em>Permit Writer's desk phone number</em>).
+          </br>
+          </br>Thank you,
+          </br>(<em>Permit Writer's Signature</em>)</legend>
+        <p>
+          <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_1">Applicant has been notified.</label>
+        </p>
+        <p>
+          <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option1111111111111122">
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+          </br>
+          </br>Dear (<em>Agent Name</em>),
+          </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
+          </br>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
+          <ol>
+            <li>A copy of the Compliance Statement, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);</li>
+            <li>Project plans, which includes;</li>
+            <ul>
+              <li>The Mean High Water Line (MHWL), the Mean Low Water Line (MLWL), the Upper Wetlands Boundary Line (UWB), and limits of any existing/proposed Tidelands Instruments;
+                <li>Proposed and existing mooring areas;</li>
+                <li>Water depths at Mean Low Water, especially in the mooring areas and the location of navigation channels; and</li>
+                <li>Public Access - both existing and proposed</li>
+            </ul>
+          </ol>
+          </br>If you choose to (<em>submit/revise</em>) the additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
+          </br>
+          </br>If you have any questions, you can reach me here, or at (<em>Permit Writer's desk phone number</em>).
+          </br>
+          </br>Thank you,
+          </br>(<em>Permit Writer's Signature</em>)</legend>
+        <p>
+          <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_1">Applicant has been notified.</label>
+        </p>
+        <p>
+          <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+      <fieldset class="hide step15 option11111211111113">
+        <legend><b>CAFRA Individual Permit Application: STEP 1. </b>
+          <br/>Does the application have the following?:
+          <br/>
+          <ol class="tooltip">
+            <li> A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);</li>
+            <li> The <b>Compliance Statement</b>, must include a "Section 10 Analysis";<span class="tooltiptext">The "Section 10 Analysis" demonstrates that the findings set forth in CAFRA at <b>N.J.S.A. 13:19-10</b>, and at <b>N.J.A.C. 7:7-1.4</b>, can be made for the proposed development;</span></li>
+            <li> <b>Project plans</b>, which includes (in addition to <b>Step 3</b> above);</li>
+            <ul class="tooltip">
+              <li> Proposed and existing <b>topography</b> where necessary to demonstrate that the proposed development meets the requirements of the Coastal Zone Management Rules;<span class="tooltiptext">All topography shall reference the National Geodetic Vertical Datum of 1929 (NGVD), or include the appropriate conversion factor to NGVD.</span></li>
+              <li> The upper and lower limits of all special areas, as described at N.J.A.C. 7:7-9;</li>
+            </ul>
+            <li> Notices;<span class="tooltiptext">Individual notice to owners of propoerty, including easements, located within 200 feet of the property boundary of the site IS NOT REQUIRED at the time the application is submitted to the Department. This notice is provided to the Project Manager at the time of the public comment period or public hearing.</span></li>
+            <ul class="tooltip">
+              <li> The Applicant shall submit documentation specifying the date and newspaper in which the notice was published and shall include a copy of the newspaper notice.<span class="tooltiptext">The Applicant is required to publish the notice, in a newspaper of general circulation (in the municipality in which the site is located), no more than 10 days after the permit application was submitted to the Department.</span></li>
+          </ol>
+          </ul>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_3_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_3_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_3_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_3_2">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step15 option111111111111113">
+        <legend><b>CAFRA Individual Permit Application: STEP 1. </b>
+          <br/>Does the application have the following?:
+          <br/>
+          <ol class="tooltip">
+            <li> A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);</li>
+            <li> The <b>Compliance Statement</b>, must include a "Section 10 Analysis";<span class="tooltiptext">The "Section 10 Analysis" demonstrates that the findings set forth in CAFRA at <b>N.J.S.A. 13:19-10</b>, and at <b>N.J.A.C. 7:7-1.4</b>, can be made for the proposed development;</span></li>
+            <li> <b>Project plans</b>, which includes (in addition to <b>Step 3</b> above);</li>
+            <ul class="tooltip">
+              <li> Proposed and existing <b>topography</b> where necessary to demonstrate that the proposed development meets the requirements of the Coastal Zone Management Rules;<span class="tooltiptext">All topography shall reference the National Geodetic Vertical Datum of 1929 (NGVD), or include the appropriate conversion factor to NGVD.</span></li>
+              <li> The upper and lower limits of all special areas, as described at N.J.A.C. 7:7-9;</li>
+            </ul>
+            <li> Notices;<span class="tooltiptext">Individual notice to owners of propoerty, including easements, located within 200 feet of the property boundary of the site IS NOT REQUIRED at the time the application is submitted to the Department. This notice is provided to the Project Manager at the time of the public comment period or public hearing.</span></li>
+            <ul class="tooltip">
+              <li> The Applicant shall submit documentation specifying the date and newspaper in which the notice was published and shall include a copy of the newspaper notice.<span class="tooltiptext">The Applicant is required to publish the notice, in a newspaper of general circulation (in the municipality in which the site is located), no more than 10 days after the permit application was submitted to the Department.</span></li>
+          </ol>
+          </ul>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_3_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_3_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_3_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_3_2">No.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+      <fieldset class="hide step16 option111112111111132">
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+          </br>
+          </br>Dear (<em>Agent Name</em>),
+          </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
+          </br>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
+          </br>
+          </br> 1. A copy of the Compliance Statement, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);
+          </br> 2. A "Section 10 Analysis" within your Compliance Statement;
+          </br> 3. Project plans, which include proposed and existing topography where necessary, </br>to demonstrate that the development meets the requirements of the Coastal Zone Management Rules, </br>and the upper and lower limits of all special
+          areas, as described at N.J.A.C. 7:7-9;
+          </br> 4. Documentation specifying the date and newspaper in which the public notice was published, including a copy of the newspaper notice.</br>The Applicant is required to publish the notice, in a newspaper of general circulation (in the municipality
+          in which the site is located), no more than 10 days after the permit application was submitted to the Department.
+          </br>
+          </br>If you choose to (<em>submit/revise</em>) the additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
+          </br>
+          </br>If you have any questions, you can reach me here, or at (<em>Permit Writer's desk phone number</em>).
+          </br>
+          </br>Thank you,
+          </br>(<em>Permit Writer's Signature</em>)</legend>
+        <p>
+          <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_1">Applicant has been notified.</label>
+        </p>
+        <p>
+          <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option1111111111111132">
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+          </br>
+          </br>Dear (<em>Agent Name</em>),
+          </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
+          </br>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
+          </br>
+          </br> 1. A copy of the Compliance Statement, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);
+          </br> 2. A "Section 10 Analysis" within your Compliance Statement;
+          </br> 3. Project plans, which include proposed and existing topography where necessary, </br>to demonstrate that the development meets the requirements of the Coastal Zone Management Rules, </br>and the upper and lower limits of all special
+          areas, as described at N.J.A.C. 7:7-9;
+          </br> 4. Documentation specifying the date and newspaper in which the public notice was published, including a copy of the newspaper notice.</br>The Applicant is required to publish the notice, in a newspaper of general circulation (in the municipality
+          in which the site is located), no more than 10 days after the permit application was submitted to the Department.
+          </br>
+          </br>If you choose to (<em>submit/revise</em>) the additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
+          </br>
+          </br>If you have any questions, you can reach me here, or at (<em>Permit Writer's desk phone number</em>).
+          </br>
+          </br>Thank you,
+          </br>(<em>Permit Writer's Signature</em>)</legend>
+        <p>
+          <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_1">Applicant has been notified.</label>
+        </p>
+        <p>
+          <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+      <fieldset class="hide step15 option11111211111114">
+        <legend><b>Coastal General Permit Application: STEP 1. </b>
+          <br/>Does the application have the following?:
+          <br/>
+          <ol class="tooltip">
+            <li> A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);</li>
+            <li> The <b>Compliance Statement</b>, must include a "Section 10 Analysis";<span class="tooltiptext">The "Section 10 Analysis" demonstrates that the findings set forth in CAFRA at <b>N.J.S.A. 13:19-10</b>, and at <b>N.J.A.C. 7:7-1.4</b>, can be made for the proposed development;</span></li>
+            <li> <b>Project plans</b>, which includes (in addition to <b>Step 3</b> above);</li>
+            <ul class="tooltip">
+              <li> Proposed and existing <b>topography</b> where necessary to demonstrate that the proposed development meets the requirements of the Coastal Zone Management Rules;<span class="tooltiptext">All topography shall reference the National Geodetic Vertical Datum of 1929 (NGVD), or include the appropriate conversion factor to NGVD.</span></li>
+              <li> The upper and lower limits of all special areas, as described at N.J.A.C. 7:7-9;</li>
+            </ul>
+          </ol>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_4_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_4_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_4_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_4_2">No.</label>
+        </p>
+        <p>
+      </fieldset>
+
+      <fieldset class="hide step15 option111111111111114">
+        <legend><b>Coastal General Permit Application: STEP 1. </b>
+          <br/>Does the application have the following?:
+          <br/>
+          <ol class="tooltip">
+            <li> A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);</li>
+            <li> The <b>Compliance Statement</b>, must include a "Section 10 Analysis";<span class="tooltiptext">The "Section 10 Analysis" demonstrates that the findings set forth in CAFRA at <b>N.J.S.A. 13:19-10</b>, and at <b>N.J.A.C. 7:7-1.4</b>, can be made for the proposed development;</span></li>
+            <li> <b>Project plans</b>, which includes (in addition to <b>Step 3</b> above);</li>
+            <ul class="tooltip">
+              <li> Proposed and existing <b>topography</b> where necessary to demonstrate that the proposed development meets the requirements of the Coastal Zone Management Rules;<span class="tooltiptext">All topography shall reference the National Geodetic Vertical Datum of 1929 (NGVD), or include the appropriate conversion factor to NGVD.</span></li>
+              <li> The upper and lower limits of all special areas, as described at N.J.A.C. 7:7-9;</li>
+            </ul>
+          </ol>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_4_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_4_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_4_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_4_2">No.</label>
+        </p>
+        <p>
+      </fieldset>
+
+
+
+
+
+
+      <fieldset class="hide step16 option111112111111142">
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+          </br>
+          </br>Dear (<em>Agent Name</em>),
+          </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
+          </br>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
+          </br>
+          </br> 1. A copy of the Compliance Statement, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);
+          </br> 2. A "Section 10 Analysis" within your Compliance Statement;
+          </br> 3. Project plans, which include proposed and existing topography where necessary, </br>to demonstrate that the development meets the requirements of the Coastal Zone Management Rules, </br>and the upper and lower limits of all special
+          areas, as described at N.J.A.C. 7:7-9;
+          </br>
+          </br>If you choose to (<em>submit/revise</em>) the additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
+          </br>
+          </br>If you have any questions, you can reach me here, or at (<em>Permit Writer's desk phone number</em>).
+          </br>
+          </br>Thank you,
+          </br>(<em>Permit Writer's Signature</em>)</legend>
+        <p>
+          <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_1">Applicant has been notified.</label>
+        </p>
+        <p>
+          <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option1111111111111142">
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+          </br>
+          </br>Dear (<em>Agent Name</em>),
+          </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
+          </br>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
+          </br>
+          </br> 1. A copy of the Compliance Statement, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);
+          </br> 2. A "Section 10 Analysis" within your Compliance Statement;
+          </br> 3. Project plans, which include proposed and existing topography where necessary, </br>to demonstrate that the development meets the requirements of the Coastal Zone Management Rules, </br>and the upper and lower limits of all special
+          areas, as described at N.J.A.C. 7:7-9;
+          </br>
+          </br>If you choose to (<em>submit/revise</em>) the additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
+          </br>
+          </br>If you have any questions, you can reach me here, or at (<em>Permit Writer's desk phone number</em>).
+          </br>
+          </br>Thank you,
+          </br>(<em>Permit Writer's Signature</em>)</legend>
+        <p>
+          <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_1">Applicant has been notified.</label>
+        </p>
+        <p>
+          <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+
+      <fieldset class="hide step15 option11111211111115">
+        <legend><b>Freshwater Wetlands General Permit and Transition Area Waiver Application: STEP 1. </b>
+          <br/>Additional information required due to location of the project site:
+          <br/>
+          <ol class="tooltip">
+            <li>A signed Swamp Pink (Helonia Bullata) Certifying Statement;<span class="tooltiptext">If the site is located in a municipality with swamp pink (Helonia Bullata), the application must also include a signed statement from the applicant, certifying that the proposed activities will not result in any direct or indirect adverse impacts to swamp pink or its documented habitat.</span></li>
+            <li>A signed Bog Turtle Certifying Statement;<span class="tooltiptext">If the site is located in a municipality with the endangered bog turtle, the application must also include a signed statement from the applicant, certifying that the proposed activities will not result in any direct or indirect adverse impacts to bog turtle or its documented habitat.</span></li>
+            <li>If the site is located in an area designated a Wild and Scenic River, or under study for such designation, the application must also include a letter from the <b>National Park Service</b> approving the proposed activities;</li>
+            <ul class="tooltip">
+              <li>Portions of the Delaware River (Lower and Middle);</li>
+              <li>Great Egg Harbor River;</li>
+              <li>Maurice River; and</li>
+              <li>Musconetcong River;</li>
+            </ul>
+            <li>For General Permit #25 ONLY - A letter from the local Board of Health, demonstrating compliance with #4 of the Genral Permit #25 Checklist;</li>
+          </ol>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_5_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_5_1">All required additional information is <b>included</b> with the application.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_5_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_5_2">Required information is <b>missing</b> from the application.</label>
+        </p>
+        <p>
+      </fieldset>
+
+      <fieldset class="hide step15 option111111111111115">
+        <legend><b>Freshwater Wetlands General Permit and Transition Area Waiver Application: STEP 1. </b>
+          <br/>Additional information required due to location of the project site:
+          <br/>
+          <ol class="tooltip">
+            <li>A signed Swamp Pink (Helonia Bullata) Certifying Statement;<span class="tooltiptext">If the site is located in a municipality with swamp pink (Helonia Bullata), the application must also include a signed statement from the applicant, certifying that the proposed activities will not result in any direct or indirect adverse impacts to swamp pink or its documented habitat.</span></li>
+            <li>A signed Bog Turtle Certifying Statement;<span class="tooltiptext">If the site is located in a municipality with the endangered bog turtle, the application must also include a signed statement from the applicant, certifying that the proposed activities will not result in any direct or indirect adverse impacts to bog turtle or its documented habitat.</span></li>
+            <li>If the site is located in an area designated a Wild and Scenic River, or under study for such designation, the application must also include a letter from the <b>National Park Service</b> approving the proposed activities;</li>
+            <ul class="tooltip">
+              <li>Portions of the Delaware River (Lower and Middle);</li>
+              <li>Great Egg Harbor River;</li>
+              <li>Maurice River; and</li>
+              <li>Musconetcong River;</li>
+            </ul>
+            <li>For General Permit #25 ONLY - A letter from the local Board of Health, demonstrating compliance with #4 of the Genral Permit #25 Checklist;</li>
+          </ol>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_5_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_5_1">All required additional information is <b>included</b> with the application.</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_5_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_5_2">Required information is <b>missing</b> from the application.</label>
+        </p>
+        <p>
+      </fieldset>
+
+
+
+
+
+
+      <fieldset class="hide step16 option111112111111152">
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+          </br>
+          </br>Dear (<em>Agent Name</em>),
+          </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
+          </br>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
+          </br>
+          </br> 1. A signed Swamp Pink (Helonia Bullata) Certifying Statement;
+          </br> 2. A signed Bog Turtle Certifying Statement;
+          </br> 3. A letter from the National Park Service approving the proposed activities;
+          </br> 4. (<em>For General Permit #25 ONLY</em>) A letter from the local Board of Health, demonstrating compliance with #4 of the Genral Permit #25 Checklist;
+          </br>
+          </br>If you choose to (<em>submit/revise</em>) the additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
+          </br>
+          </br>If you have any questions, you can reach me here, or at (<em>Permit Writer's desk phone number</em>).
+          </br>
+          </br>Thank you,
+          </br>(<em>Permit Writer's Signature</em>)</legend>
+        <p>
+          <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_1">Applicant has been notified.</label>
+        </p>
+        <p>
+          <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option1111111111111152">
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+          </br>
+          </br>Dear (<em>Agent Name</em>),
+          </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
+          </br>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
+          </br>
+          </br> 1. A signed Swamp Pink (Helonia Bullata) Certifying Statement;
+          </br> 2. A signed Bog Turtle Certifying Statement;
+          </br> 3. A letter from the National Park Service approving the proposed activities;
+          </br> 4. (<em>For General Permit #25 ONLY</em>) A letter from the local Board of Health, demonstrating compliance with #4 of the Genral Permit #25 Checklist;
+          </br>
+          </br>If you choose to (<em>submit/revise</em>) the additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
+          </br>
+          </br>If you have any questions, you can reach me here, or at (<em>Permit Writer's desk phone number</em>).
+          </br>
+          </br>Thank you,
+          </br>(<em>Permit Writer's Signature</em>)</legend>
+        <p>
+          <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_1">Applicant has been notified.</label>
+        </p>
+        <p>
+          <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+      <fieldset class="hide step15 option11111211111116">
+        <legend><b>Freshwater Wetlands Individual Permit Application: STEP 1. </b>
+          <br/>Does the application include the following additional information?:
+          <br/>
+          <ol>
+            <li>A detailed description of the proposed activities;</li>
+            <li>an Alternatives Analysis;</li>
+          </ol>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_6_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_6_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_6_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_6_2">No.</label>
+        </p>
+        <p>
+      </fieldset>
+
+      <fieldset class="hide step15 option111111111111116">
+        <legend><b>Freshwater Wetlands Individual Permit Application: STEP 1. </b>
+          <br/>Does the application include the following additional information?:
+          <br/>
+          <ol>
+            <li>A detailed description of the proposed activities;</li>
+            <li>an Alternatives Analysis;</li>
+          </ol>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_6_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_6_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_6_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_6_2">No.</label>
+        </p>
+        <p>
+      </fieldset>
+
+
+
+
+
+
+
+      <fieldset class="hide step16 option111112111111162">
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include the following boilerplate [applicable] language:
+          </br>
+          </br>Dear (<em>Agent Name</em>),
+          </br>The Department is in the process of reviewing (<em> include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
+          </br>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
+          </br>
+          </br> 1. A detailed description of the proposed activities;
+          </br> 2. an Alternatives Analysis;
+          </br>
+          </br>If you choose to (<em>submit/revise</em>) the following additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
+          </br>
+          </br>If you have any questions, you can reach me here, or at (<em>Permit Writer's desk phone number</em>).
+          </br>
+          </br>Thank you,
+          </br>(<em>Permit Writer's Signature</em>)</legend>
+        <p>
+          <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_1">Applicant has been notified.</label>
+        </p>
+        <p>
+          <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option1111111111111162">
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include the following boilerplate [applicable] language:
+          </br>
+          </br>Dear (<em>Agent Name</em>),
+          </br>The Department is in the process of reviewing (<em> include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
+          </br>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
+          </br>
+          </br> 1. A detailed description of the proposed activities;
+          </br> 2. an Alternatives Analysis;
+          </br>
+          </br>If you choose to (<em>submit/revise</em>) the following additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
+          </br>
+          </br>If you have any questions, you can reach me here, or at (<em>Permit Writer's desk phone number</em>).
+          </br>
+          </br>Thank you,
+          </br>(<em>Permit Writer's Signature</em>)</legend>
+        <p>
+          <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_1">Applicant has been notified.</label>
+        </p>
+        <p>
+          <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+      <fieldset class="hide step15 option11111211111117">
+        <legend><b>Higlands Exemption (HAD) Application: STEP 1. </b>
+          <br/>Does the application include the following additional information?:
+          <br/>
+          <ol>
+            <li>A detailed description of the proposed activities;</li>
+            <li>an Alternatives Analysis;</li>
+          </ol>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_7_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_7_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_7_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_7_2">No.</label>
+        </p>
+        <p>
+      </fieldset>
+
+      <fieldset class="hide step15 option111111111111117">
+        <legend><b>Higlands Exemption (HAD) Application: STEP 1. </b>
+          <br/>Does the application include the following additional information?:
+          <br/>
+          <ol>
+            <li>A detailed description of the proposed activities;</li>
+            <li>an Alternatives Analysis;</li>
+          </ol>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_7_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_7_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_7_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_7_2">No.</label>
+        </p>
+        <p>
+      </fieldset>
+
+
+
+
+      <fieldset class="hide step16 option111112111111172">
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include the following boilerplate [applicable] language:
+          </br>
+          </br>Dear (<em>Agent Name</em>),
+          </br>The Department is in the process of reviewing (<em> include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
+          </br>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
+          </br>
+          </br> 1. A detailed description of the proposed activities;
+          </br> 2. an Alternatives Analysis;
+          </br>
+          </br>If you choose to (<em>submit/revise</em>) the following additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
+          </br>
+          </br>If you have any questions, you can reach me here, or at (<em>Permit Writer's desk phone number</em>).
+          </br>
+          </br>Thank you,
+          </br>(<em>Permit Writer's Signature</em>)</legend>
+        <p>
+          <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_1">Applicant has been notified.</label>
+        </p>
+        <p>
+          <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option1111111111111172">
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include the following boilerplate [applicable] language:
+          </br>
+          </br>Dear (<em>Agent Name</em>),
+          </br>The Department is in the process of reviewing (<em> include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
+          </br>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
+          </br>
+          </br> 1. A detailed description of the proposed activities;
+          </br> 2. an Alternatives Analysis;
+          </br>
+          </br>If you choose to (<em>submit/revise</em>) the following additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
+          </br>
+          </br>If you have any questions, you can reach me here, or at (<em>Permit Writer's desk phone number</em>).
+          </br>
+          </br>Thank you,
+          </br>(<em>Permit Writer's Signature</em>)</legend>
+        <p>
+          <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_1">Applicant has been notified.</label>
+        </p>
+        <p>
+          <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+      <fieldset class="hide step15 option11111211111118">
+        <legend><b>E-LOI Application: STEP 1. </b>
+          <br/>Does the application include the following additional information?:
+          <br/>
+          <ol>
+            <li>A detailed description of the proposed activities;</li>
+            <li>an Alternatives Analysis;</li>
+          </ol>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_8_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_8_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_8_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_8_2">No.</label>
+        </p>
+        <p>
+      </fieldset>
+
+      <fieldset class="hide step15 option111111111111118">
+        <legend><b>E-LOI Application: STEP 1. </b>
+          <br/>Does the application include the following additional information?:
+          <br/>
+          <ol>
+            <li>A detailed description of the proposed activities;</li>
+            <li>an Alternatives Analysis;</li>
+          </ol>
+        </legend>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_8_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_8_1">Yes!</label>
+        </p>
+        <p>
+          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_8_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_8_2">No.</label>
+        </p>
+        <p>
+      </fieldset>
+
+
+
+
+
+
+
+      <fieldset class="hide step16 option111112111111182">
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include the following boilerplate [applicable] language:
+          </br>
+          </br>Dear (Agent Name),
+
+          </br>The Department is in the process of reviewing (DLUR File #), an application for (Application Type/s) for Re: (Applicant's Name and project location). In order for the Department to return a positive response for this application, please
+          submit five (5) hard copies of the (original and/or revised) site plans that:
+          </br>
+          </br> 1. Are signed and sealed by a licensed land surveyor or engineer;
+          </br> 2. Submitted at an appropriate scale with a "North" arrow;
+          </br> 3. Have a "Title Block" with the name of the preparer of the plans and the date;
+          </br> 4. Show all existing structures on the site and on all immediate adjacent lots;
+          </br> 5. Show all proposed structures, disturbances, and activities;
+          </br> 6. Show the limits of regulated areas such as: wetlands, transition areas, riparian zones, the mean high water line (MHWL), dunes, etc.
+          </br> 7. All metes and bounds on the site.
+          </br>
+          </br>If you choose to (submit/revise) site plans, please do so by (a date 2 to 3 weeks from the date of this message) or a decision will be made on the application as it currently exists.
+          </br>
+          </br>If you have any questions, you can reach me here, or at (Permit Writer's desk phone number).
+          </br>
+          </br>Thank you,
+          </br>(Permit Writer's Signature)</legend>
+        <p>
+          <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_1">Applicant has been notified.</label>
+        </p>
+        <p>
+          <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="question_3_1_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+        </p>
+      </fieldset>
+
+
+
+
+
+
+
+      <fieldset class="hide step18 option111112111111121">
+        <legend><b>Congratulations!</b>
+          <br/>The Waterfront Development & Coastal Wetlands Individual Permit portion of the application is administratively complete!
+          </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
+          </br>
+          <input type="button" onclick="openCZM()" name="cZMRulesBtn" value="Coastal/CAFRA/CZM Rules 7:7" class="li">
+          <br/>When you are finished with your review, click the radio button below.
+          <p>
+            <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">I have finished my review.</label>
+          </p>
+      </fieldset>
+
+      <fieldset class="hide step18 option1111111111111121">
+        <legend><b>Congratulations!</b>
+          <br/>The Waterfront Development & Coastal Wetlands Individual Permit portion of the application is administratively complete!
+          </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
+          </br>
+          <input type="button" onclick="openCZM()" name="cZMRulesBtn" value="Coastal/CAFRA/CZM Rules 7:7" class="li">
+          <br/>When you are finished with your review, click the radio button below.
+          <p>
+            <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">I have finished my review.</label>
+          </p>
+      </fieldset>
+
+
+
+
+
+
+      <fieldset class="hide step18 option111112111111131">
+        <legend><b>Congratulations!</b>
+          <br/>The CAFRA portion of the application is administratively complete!
+          </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
+          </br>
+          <input type="button" onclick="openCZM()" name="cZMRulesBtn" value="Coastal/CAFRA/CZM Rules 7:7" class="li">
+          <br/>When you are finished with your review, click the radio button below.
+          <p>
+            <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">I have finished my review.</label>
+          </p>
+      </fieldset>
+
+      <fieldset class="hide step18 option1111111111111131">
+        <legend><b>Congratulations!</b>
+          <br/>The CAFRA portion of the application is administratively complete!
+          </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
+          </br>
+          <input type="button" onclick="openCZM()" name="cZMRulesBtn" value="Coastal/CAFRA/CZM Rules 7:7" class="li">
+          <br/>When you are finished with your review, click the radio button below.
+          <p>
+            <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">I have finished my review.</label>
+          </p>
+      </fieldset>
+
+
+
+
+
+
+      <fieldset class="hide step18 option111112111111141">
+        <legend><b>Congratulations!</b>
+          <br/>The Coastal General Permit portion of the application is administratively complete!
+          </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
+          </br>
+          <input type="button" onclick="openCZM()" name="cZMRulesBtn" value="Coastal/CAFRA/CZM Rules 7:7" class="li">
+          <br/>When you are finished with your review, click the radio button below.
+          <p>
+            <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">I have finished my review.</label>
+          </p>
+      </fieldset>
+
+      <fieldset class="hide step18 option1111111111111141">
+        <legend><b>Congratulations!</b>
+          <br/>The Coastal General Permit portion of the application is administratively complete!
+          </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
+          </br>
+          <input type="button" onclick="openCZM()" name="cZMRulesBtn" value="Coastal/CAFRA/CZM Rules 7:7" class="li">
+          <br/>When you are finished with your review, click the radio button below.
+          <p>
+            <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">I have finished my review.</label>
+          </p>
+      </fieldset>
+
+
+
+
+
+
+      <fieldset class="hide step18 option111112111111151">
+        <legend><b>Congratulations!</b>
+          <br/>The Freshwater Wetlands General Permit and Transition Area Waivers portion of the application is administratively complete!
+          </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
+          </br>
+          <input type="button" onclick="openFWW()" name="fWWRulesBtn" value="Freshwater Wetlands Rules 7:7a" class="li">
+          <br/>When you are finished with your review, click the radio button below.
+          <p>
+            <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">I have finished my review.</label>
+          </p>
+      </fieldset>
+
+      <fieldset class="hide step18 option1111111111111151">
+        <legend><b>Congratulations!</b>
+          <br/>The Freshwater Wetlands General Permit and Transition Area Waivers portion of the application is administratively complete!
+          </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
+          </br>
+          <input type="button" onclick="openFWW()" name="fWWRulesBtn" value="Freshwater Wetlands Rules 7:7a" class="li">
+          <br/>When you are finished with your review, click the radio button below.
+          <p>
+            <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">I have finished my review.</label>
+          </p>
+      </fieldset>
+
+
+
+
+
+
+      <fieldset class="hide step18 option111112111111161">
+        <legend><b>Congratulations!</b>
+          <br/>The Freshwater Wetlands Individual Permit portion of the application is administratively complete!
+          </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
+          </br>
+          <input type="button" onclick="openFWW()" name="fWWRulesBtn" value="Freshwater Wetlands Rules 7:7a" class="li">
+          <br/>When you are finished with your review, click the radio button below.
+          <p>
+            <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">I have finished my review.</label>
+          </p>
+      </fieldset>
+
+      <fieldset class="hide step18 option1111111111111161">
+        <legend><b>Congratulations!</b>
+          <br/>The Freshwater Wetlands Individual Permit portion of the application is administratively complete!
+          </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
+          </br>
+          <input type="button" onclick="openFWW()" name="fWWRulesBtn" value="Freshwater Wetlands Rules 7:7a" class="li">
+          <br/>When you are finished with your review, click the radio button below.
+          <p>
+            <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">I have finished my review.</label>
+          </p>
+      </fieldset>
+
+
+
+
+
+
+      <fieldset class="hide step18 option111112111111171">
+        <legend><b>Congratulations!</b>
+          <br/>The Highlands Exemption Application (HAD) portion of the application is administratively complete!
+          </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
+          </br>
+          <input type="button" onclick="openCZM()" name="cZMRulesBtn" value="Coastal/CAFRA/CZM Rules 7:7" class="li">
+          <br/>When you are finished with your review, click the radio button below.
+          <p>
+            <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">I have finished my review.</label>
+          </p>
+      </fieldset>
+
+      <fieldset class="hide step18 option1111111111111171">
+        <legend><b>Congratulations!</b>
+          <br/>The Highlands Exemption Application (HAD) portion of the application is administratively complete!
+          </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
+          </br>
+          <input type="button" onclick="openCZM()" name="cZMRulesBtn" value="Coastal/CAFRA/CZM Rules 7:7" class="li">
+          <br/>When you are finished with your review, click the radio button below.
+          <p>
+            <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">I have finished my review.</label>
+          </p>
+      </fieldset>
+      <script type="text/javascript">
+        function openDEPHome() {
+          window.open("http://www.nj.gov/dep/");
+        }
+
+
+        function openCZM() {
+          window.open("http://www.nj.gov/dep/rules/rules/njac7_7.pdf");
+        }
+
+
+        function openFWW() {
+          window.open("http://www.nj.gov/dep/rules/rules/njac7_7a.pdf");
+        }
+
+
+        function openSWM() {
+          window.open("http://www.nj.gov/dep/rules/rules/njac7_8.pdf");
+        }
+
+
+        function openSWQ() {
+          window.open("http://www.nj.gov/dep/rules/rules/njac7_9b.pdf");
+        }
+
+
+        function openFHA() {
+          window.open("http://www.nj.gov/dep/rules/rules/njac7_13.pdf");
+        }
+
+
+        function openWPCA() {
+          window.open("http://www.nj.gov/dep/rules/rules/njac7_14.pdf");
+        }
+
+      </script>
+
+
+      <!--
+        <ul>
+          <input type="button" onclick="openCZM()" name="cZMRulesBtn" value="Coastal/CAFRA/CZM" class="li">
+          <br/>
+          <br/>
+          <input type="button" onclick="openFWW()" name="fWWRulesBtn" value="Freshwater Wetlands" class="li">
+          <br/>
+          <br/>
+          <input type="button" onclick="openSWM()" name="sWMRulesBtn" value="Stormwater Management" class="li">
+          <br/>
+          <br/>
+          <input type="button" onclick="openSWQ()" name="sWQRulesBtn" value="Surface Water Quality" class="li">
+          <br/>
+          <br/>
+          <input type="button" onclick="openFHA()" name="fHARulesBtn" value="Flood Hazard Area" class="li">
+          <br/>
+          <br/>
+          <input type="button" onclick="openWPCA()" name="wPCARulesBtn" value="Water Pollution Control" class="li">
+          <br/>
+          <br/>
+          <input type="submit" id="clearBtnHeader" value="Clear Form/Start Over" onclick="javascript:history.go(0)" class="li" />
+        </ul>
+      </fieldset>
+-->
+    </form>
+    <p><em>SOP for the Pre-Review of All Land Use Applications  </em>
+      <button onClick="scrollSmoothToTop()">Scroll to Top</button>
+    </p>
+
+  </body>
+
+</html>
