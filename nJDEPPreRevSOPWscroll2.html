@@ -66,10 +66,16 @@
       .tab {
         margin-left: 40px;
       }
+      
+      .frames {
+        width: 100%;
+        height: 300px;
+      }
 
     </style>
 
     <script type='text/javascript'>
+
 
     </script>
 
@@ -170,11 +176,11 @@
 
     </script>
 
-
+    <h4 id="header-wrap">Application Pre-Review  <button onClick="scrollSmoothToBottom()">Scroll to Bottom</button></h4>
   </head>
 
   <body>
-    <h4 id="header-wrap">Application Pre-Review  <button onClick="scrollSmoothToBottom()">Scroll to Bottom</button></h4>
+
     <form action="#" id="unique_id" class="productFilter">
       <br/>
       <br/>
@@ -196,7 +202,7 @@
 
       <fieldset class="hide step2 option1">
         <legend><b>STEP 2.</b>
-          <br/>Do you have <b>original, sealed copies</b> of the <b>engineering plans</b>?</legend>
+          <br/>Do you have <b>original, sealed copies</b> of the <b>engineering/site plans</b>?</legend>
         <p>
           <input id="question_1_1" name="group_2" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1">Yes!</label>
@@ -223,15 +229,30 @@
 
       <fieldset class="hide step3 option11">
         <legend><b>STEP 3.</b>
-          <br/>Do the site plans have the following attributes?:
+          <br/>Do the <b>engineering/site plans</b> have the following attributes?:
           <br/>
-          <br /> 1. Are <b>signed</b> and <b>sealed</b> by a licensed land <b>surveyor</b> or <b>engineer</b>;
-          <br /> 2. Submitted at an appropriate <b>scale</b> with a <b>"North" arrow</b>;
-          <br /> 3. Have a <b>"Title Block"</b> with the name of the preparer of the plans and the <b>date</b>;
-          <br /> 4. Show all <b>existing structures</b> on the <b>site</b> and on all immediate <b>adjacent lots</b>;
-          <br /> 5. Show all <b>proposed structures, disturbances, and activities</b>;
-          <br /> 6. Show the limits of <b>regulated areas</b> such as: wetlands, transition areas, riparian zones, the mean high water line (MHWL), dunes, etc.
-          <br /> 7. All <b>metes</b> and <b>bounds</b> on the site. </legend>
+          <br />
+          <input type="checkbox" id="item1" />
+          <label for="item1">1. Are <b>signed</b> and <b>sealed</b> by a licensed land <b>surveyor</b> or <b>engineer</b>;</label>
+          <br />
+          <input type="checkbox" id="item2" />
+          <label for="item2">2. Submitted at an appropriate <b>scale</b> with a <b>"North" arrow</b>;</label>
+          <br />
+          <input type="checkbox" id="item3" />
+          <label for="item3">3. Have a <b>"Title Block"</b> with the name of the preparer of the plans and the <b>date</b>;</label>
+          <br />
+          <input type="checkbox" id="item4" />
+          <label for="item4">4. Show all <b>existing structures</b> on the <b>site</b> and on all immediate <b>adjacent lots</b>;</label>
+          <br />
+          <input type="checkbox" id="item5" />
+          <label for="item5">5. Show all <b>proposed structures, disturbances, and activities</b>;</label>
+          <br />
+          <input type="checkbox" id="item6" />
+          <label for="item6">6. Show the limits of <b>regulated areas</b> such as: wetlands, transition areas, riparian zones, the mean high water line (MHWL), dunes, etc.</label>
+          <br />
+          <input type="checkbox" id="item7" />
+          <label for="item7">7. All <b>metes</b> and <b>bounds</b> on the site. </label>
+        </legend>
         <p>
           <input id="question_1_1_1" name="group_3" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1">Yes!</label>
@@ -367,7 +388,7 @@
 
       <fieldset class="hide step4 option111">
         <legend><b>STEP 4.</b>
-          <br/>Do the sealed, original engineering plans match what is noted in the "<b>Project Description</b>" section of the associated application?</legend>
+          <br/>Do the sealed, original engineering <b>plans match</b> what is noted in the "<b>Project Description</b>" section of the associated application?</legend>
         <p>
           <input id="question_1_1_1_1" name="group_4" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1">Yes!</label>
@@ -393,8 +414,8 @@
 
 
       <fieldset class="hide step5 option1111">
-        <legend><b>STEP 5.</b>
-          <br/>Are all required signatures completed?</legend>
+        <legend class="tooltip"><b>STEP 5.</b>
+          <br/>Are all <b>required signatures</b> completed?<span class="tooltiptext">I am looking for a list of the required signatures to add as text to this tool tip.</span></legend>
         <p>
           <input id="question_1_1_1_1_1" name="group_5" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1">Yes!</label>
@@ -404,6 +425,7 @@
           <label for="question_1_1_1_1_2">No.</label>
         </p>
       </fieldset>
+
 
       <fieldset class="hide step5 option11112">
         <legend>Does your <b>Supervisor</b> have the documents that have the <b>signatures</b>?</legend>
@@ -472,7 +494,7 @@
 
       <fieldset class="hide step6 option11111">
         <legend><b>STEP 6. <br/>GIS Verification:</b>
-          <br/>Does GIS show that <em>any part</em> of the project is within the <b>Pinelands</b>, <b>Highlands</b>, or <b>Meadowlands</b>?</legend>
+          <br/>Does <b>GIS</b> show that <em>any part</em> of the project is within the <b>Pinelands</b>, <b>Highlands</b>, or <b>Meadowlands</b>?</legend>
         <p>
           <input id="question_1_1_1_1_1_1" name="group_6" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_1">Yes!</label>
@@ -643,8 +665,9 @@
 
 
       <fieldset class="hide step9 option11111211">
-        <legend><b>STEP 9.</b>
-          <br/>Do you have a copy of the most up-to-date <b>Checklist/s</b> for the type of Permit/s requested?</legend>
+        <legend class="tooltip"><b>STEP 9.</b>
+          <br/>Do you have a copy of the most up-to-date <b>Checklist/s</b> for the type of Permit/s requested?<span class="tooltiptext">Checklists can be found at <em>V:\lum\LUR\asu pre review\sop's</em></span>
+        </legend>
         <p>
           <input id="question_1_1_1_1_1_2_1_1_1" name="group_10" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_2_1_1_1">Yes!</label>
@@ -656,8 +679,9 @@
       </fieldset>
 
       <fieldset class="hide step9 option111111111">
-        <legend><b>STEP 9.</b>
-          <br/>Do you have a copy of the most up-to-date <b>Checklist/s</b> for the type of Permit/s requested?</legend>
+        <legend class="tooltip"><b>STEP 9.</b>
+          <br/>Do you have a copy of the most up-to-date <b>Checklist/s</b> for the type of Permit/s requested?<span class="tooltiptext">Checklists can be found at <em>V:\lum\LUR\asu pre review\sop's</em></span>
+        </legend>
         <p>
           <input id="question_1_1_1_1_1_1_1_1_1_1" name="group_10" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_1_1_1_1_1">Yes!</label>
@@ -675,14 +699,17 @@
 
 
       <fieldset class="hide step8 option111112112">
-        <legend>Get the missing materials from your Supervisor.</legend>
+        <legend>Get the missing materials from your Supervisor, or from the shared drive (embedded below).</legend>
         <p>
           <input id="question_1_1_1_1_1_2_1_1_2_1" name="group_9" type="checkbox" onClick="scrollSmoothToBottom()" />
-          <label for="question_1_1_1_1_1_2_1_1_2_1">I have received the missing materials from my Supervisor.</label>
+          <label for="question_1_1_1_1_1_2_1_1_2_1">I have received the missing materials.</label>
         </p>
         <p>
           <input id="question_1_1_1_1_1_2_1_1_2_2" name="group_9" type="checkbox" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_2_1_1_2_2">Click the "Yes!" option under <b>STEP 9</b>.</label>
+        </p>
+        <p>
+          <iframe class="frames" src="V:\lum\LUR\asu pre review\Checklists"></iframe>
         </p>
       </fieldset>
 
@@ -696,6 +723,9 @@
           <input id="question_1_1_1_1_1_1_1_1_1_2_2" name="group_9" type="checkbox" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_1_1_1_1_2_2">Click the "Yes!" option under <b>STEP 9</b>.</label>
         </p>
+        <p>
+          <iframe class="frames" src="V:\lum\LUR\asu pre review\Checklists"></iframe>
+        </p>
       </fieldset>
 
 
@@ -707,7 +737,7 @@
 
       <fieldset class="hide step10 option111112111">
         <legend><b>STEP 10.</b>
-          <br/>Does the application have a USGS quad map, street map, and a letter-sized (<em>8.5 x 11"</em>) with the project site CLEARLY outlined, to scale, on each map?</legend>
+          <br/>Does the application have a <b>USGS quad map</b>, <b>street map</b>, and a <b>letter-sized</b> (<em>8.5 x 11"</em>) <b>map</b> with the project site CLEARLY outlined, to scale, on each map?</legend>
         <p>
           <input id="question_1_1_1_1_1_2_1_1_1_1" name="group_11" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_2_1_1_1_1">Yes!</label>
@@ -720,7 +750,7 @@
 
       <fieldset class="hide step10 option1111111111">
         <legend><b>STEP 10.</b>
-          <br/>Does the application have a USGS quad map, street map, and a letter-sized (<em>8.5 x 11"</em>) with the project site CLEARLY outlined, to scale, on each map?</legend>
+          <br/>Does the application have a <b>USGS quad map</b>, <b>street map</b>, and a <b>letter-sized</b> (<em>8.5 x 11"</em>) <b>map</b> with the project site CLEARLY outlined, to scale, on each map?</legend>
         <p>
           <input id="question_1_1_1_1_1_1_1_1_1_1_1" name="group_11" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_1_1_1_1_1_1">Yes!</label>
@@ -738,7 +768,7 @@
 
 
       <fieldset class="hide step10 option1111121112">
-        <legend>Does Engineering, your Supervisor, or ASU have the missing materials?</legend>
+        <legend>Does <b>Engineering</b>, your <b>Supervisor</b>, or <b>ASU</b> have the missing materials?</legend>
         <p>
           <input id="question_1_1_1_1_1_2_1_1_1_2_1" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_2_1_1_1_2_1">Yes!</label>
@@ -750,7 +780,7 @@
       </fieldset>
 
       <fieldset class="hide step10 option11111111112">
-        <legend>Does Engineering, your Supervisor, or ASU have the missing materials?</legend>
+        <legend>Does <b>Engineering</b>, your <b>Supervisor</b>, or <b>ASU</b> have the missing materials?</legend>
         <p>
           <input id="question_1_1_1_1_1_1_1_1_1_1_2_1" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_1_1_1_1_1_2_1">Yes!</label>
@@ -826,8 +856,9 @@
 
 
       <fieldset class="hide step11 option1111121111">
-        <legend><b>STEP 11.</b>
-          <br/>Does the application have at least <b>four (4)</b> unique, <b>color</b> photos that show all variety of conditions on the site?</legend>
+        <legend class="tooltip"><b>STEP 11.</b>
+          <br/>Does the application have at least <b>four (4)</b> unique, <b>color photos</b> that show all variety of conditions on the site?<span class="tooltiptext">(Note: The photographs shall also show any sections of channel or riparian zone that will be disturbed by the project.)</span>
+        </legend>
         <p>
           <input id="question_1_1_1_1_1_2_1_1_1_1_1" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_2_1_1_1_1_1">Yes!</label>
@@ -839,8 +870,9 @@
       </fieldset>
 
       <fieldset class="hide step11 option11111111111">
-        <legend><b>STEP 11.</b>
-          <br/>Does the application have at least <b>four (4)</b> unique, <b>color</b> photos that show all variety of conditions on the site?</legend>
+        <legend class="tooltip"><b>STEP 11.</b>
+          <br/>Does the application have at least <b>four (4)</b> unique, <b>color photos</b> that show all variety of conditions on the site?<span class="tooltiptext">(Note: The photographs shall also show any sections of channel or riparian zone that will be disturbed by the project.)</span>
+        </legend>
         <p>
           <input id="question_1_1_1_1_1_1_1_1_1_1_1_1" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_1_1_1_1_1_1_1">Yes!</label>
@@ -890,12 +922,31 @@
         <legend><b>STEP 12.</b>
           <br/>Does the application have proof of <b>Public Notice</b> to the following entities?
           <br/>
-          <br/>1. Municipal Clerk (<em>must receive a copy of the ENTIRE application</em>);
-          <br/>2. Municipal Planning Board;
-          <br/>3. Municipal Construction Official;
-          <br/>4. Municipal Environmental Commission (<em>if any</em>);
-          <br/>5. County Planning Board, and;
-          <br/>6. All adjacent neighbors within 200 feet of the project site (<em>this requires validation via a certified list obtained from the municipal tax assessor's office</em>)</legend>
+          <br/>
+          <input type="checkbox" id="item81" />
+          <label for="item81">1. Municipal Clerk (<em>must receive a copy of the ENTIRE application</em>);
+            <label/>
+            <br/>
+            <input type="checkbox" id="item91" />
+            <label for="item91">2. Municipal Planning Board;
+              <label/>
+              <br/>
+              <input type="checkbox" id="item101" />
+              <label for="item101">3. Municipal Construction Official;
+                <label/>
+                <br/>
+                <input type="checkbox" id="item111" />
+                <label for="item111">4. Municipal Environmental Commission (<em>if any</em>);
+                  <label/>
+                  <br/>
+                  <input type="checkbox" id="item121" />
+                  <label for="item121">5. County Planning Board, and;
+                    <label/>
+                    <br/>
+                    <input type="checkbox" id="item131" />
+                    <label for="item131">6. All adjacent neighbors within 200 feet of the project site (<em>this requires validation via a certified list obtained from the municipal tax assessor's office</em>)
+                      <label/>
+        </legend>
         <p>
           <input id="question_1_1_1_1_1_2_1_1_1_1_1_1" name="group_13" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_2_1_1_1_1_1_1">Yes!</label>
@@ -910,12 +961,31 @@
         <legend><b>STEP 12.</b>
           <br/>Does the application have proof of <b>Public Notice</b> to the following entities?
           <br/>
-          <br/>1. Municipal Clerk (<em>must receive a copy of the ENTIRE application</em>);
-          <br/>2. Municipal Planning Board;
-          <br/>3. Municipal Construction Official;
-          <br/>4. Municipal Environmental Commission (<em>if any</em>);
-          <br/>5. County Planning Board, and;
-          <br/>6. All adjacent neighbors within 200 feet of the project site (<em>this requires validation via a certified list obtained from the municipal tax assessor's office</em>)</legend>
+          <br/>
+          <input type="checkbox" id="item82" />
+          <label for="item82">1. Municipal Clerk (<em>must receive a copy of the ENTIRE application</em>);
+            <label/>
+            <br/>
+            <input type="checkbox" id="item92" />
+            <label for="item92">2. Municipal Planning Board;
+              <label/>
+              <br/>
+              <input type="checkbox" id="item102" />
+              <label for="item102">3. Municipal Construction Official;
+                <label/>
+                <br/>
+                <input type="checkbox" id="item112" />
+                <label for="item112">4. Municipal Environmental Commission (<em>if any</em>);
+                  <label/>
+                  <br/>
+                  <input type="checkbox" id="item122" />
+                  <label for="item122">5. County Planning Board, and;
+                    <label/>
+                    <br/>
+                    <input type="checkbox" id="item132" />
+                    <label for="item132">6. All adjacent neighbors within 200 feet of the project site (<em>this requires validation via a certified list obtained from the municipal tax assessor's office</em>)
+                      <label/>
+        </legend>
         <p>
           <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1" name="group_13" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1">Yes!</label>
@@ -1111,12 +1181,24 @@
         <legend><b>FHA: STEP 1. </b>
           <br/>Does the application have the following?:
           </br>
-          </br> 1. A copy of the <b>"Permit & Database Transmittal"</b> with their name highlighted;
-          </br> 2. A copy of the <b>application form</b>;
-          </br> 3. <b>Two (2)</b> copies of the submitted <b>project plans</b>;
-          </br> 4. A copy of the <b>environmental report</b>;
-          </br> 5. A copy of the <b>application report</b>;
-          </br> 6. The <b>NJ Heritage Letter</b>
+          </br>
+          <input type="checkbox" id="item142" />
+          <label for="item142">1. A copy of the <b>"Permit & Database Transmittal"</b> with their name highlighted;</label>
+          </br>
+          <input type="checkbox" id="item152" />
+          <label for="item152">2. A copy of the <b>application form</b>;</label>
+          </br>
+          <input type="checkbox" id="item162" />
+          <label for="item162">3. <b>Two (2)</b> copies of the submitted <b>project plans</b>;</label>
+          </br>
+          <input type="checkbox" id="item172" />
+          <label for="item172">4. A copy of the <b>environmental report</b>;</label>
+          </br>
+          <input type="checkbox" id="item182" />
+          <label for="item182">5. A copy of the <b>application report</b>;</label>
+          </br>
+          <input type="checkbox" id="item192" />
+          <label for="item192">6. The <b>NJ Heritage Letter</b></label>
           </br>
         </legend>
         <p>
@@ -1134,12 +1216,24 @@
         <legend><b>FHA: STEP 1. </b>
           <br/>Does the application have the following?:
           </br>
-          </br> 1. A copy of the <b>"Permit & Database Transmittal"</b> with their name highlighted;
-          </br> 2. A copy of the <b>application form</b>;
-          </br> 3. <b>Two (2)</b> copies of the submitted <b>project plans</b>;
-          </br> 4. A copy of the <b>environmental report</b>;
-          </br> 5. A copy of the <b>application report</b>;
-          </br> 6. The <b>NJ Heritage Letter</b>
+          </br>
+          <input type="checkbox" id="item141" />
+          <label for="item141">1. A copy of the <b>"Permit & Database Transmittal"</b> with their name highlighted;</label>
+          </br>
+          <input type="checkbox" id="item151" />
+          <label for="item151">2. A copy of the <b>application form</b>;</label>
+          </br>
+          <input type="checkbox" id="item161" />
+          <label for="item161">3. <b>Two (2)</b> copies of the submitted <b>project plans</b>;</label>
+          </br>
+          <input type="checkbox" id="item171" />
+          <label for="item171">4. A copy of the <b>environmental report</b>;</label>
+          </br>
+          <input type="checkbox" id="item181" />
+          <label for="item181">5. A copy of the <b>application report</b>;</label>
+          </br>
+          <input type="checkbox" id="item191" />
+          <label for="item191">6. The <b>NJ Heritage Letter</b></label>
           </br>
         </legend>
         <p>
@@ -1158,7 +1252,7 @@
 
       <fieldset class="hide step16 option111112111111112">
         <legend><b>FHA: STEP 2. </b>
-          <br/>Does your Supervisor, or the assigned Engineer have the missing information?:
+          <br/>Does your <b>Supervisor</b>, or the assigned <b>Engineer</b> have the missing information?:
         </legend>
         <p>
           <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_1_1_2_1_1" name="group_17" type="radio" onClick="scrollSmoothToBottom()" />
@@ -1173,7 +1267,7 @@
 
       <fieldset class="hide step16 option1111111111111112">
         <legend><b>FHA: STEP 2. </b>
-          <br/>Does your Supervisor, or the assigned Engineer have the missing information?:
+          <br/>Does your <b>Supervisor</b>, or the assigned <b>Engineer</b> have the missing information?:
         </legend>
         <p>
           <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1" name="group_17" type="radio" onClick="scrollSmoothToBottom()" />
@@ -1303,16 +1397,28 @@
         <legend><b>WFD & Coastal Wetlands IP: STEP 1. </b>
           <br/>Does the application have the following?:
           </br>
+          <input type="checkbox" id="item201" />
+          <label for="item201">A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);</label>
+          </br>
+          <input type="checkbox" id="item211" />
+          <label for="item211"><b>Project plans</b>, which includes;</label>
           <ol>
-            <li>Send the "clearances" (transmittals) of application to all required agencies and insert/complete the appropriate tasks in NJEMS - Activity Tracking;</li>
-            <li>A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);</li>
-            <li><b>Project plans</b>, which includes;</li>
-            <ul>
-              <li>The <b>Mean High Water Line (MHWL)</b>, the <b>Mean Low Water Line (MLWL)</b>, the <b>Upper Wetlands Boundary Line (UWB)</b>, and limits of any existing/proposed Tidelands Instruments;
-                <li>Proposed and existing <b>mooring areas</b>;</li>
-                <li>Water depths at Mean Low Water, especially in the <b>mooring areas</b> and the location of <b> navigation channels</b>; and</li>
-                <li>Public Access - both <b>existing</b> and <b>proposed</b></li>
-            </ul>
+            <li>
+              <input type="checkbox" id="item221" />
+              <label for="item221">The <b>Mean High Water Line (MHWL)</b>, the <b>Mean Low Water Line (MLWL)</b>, the <b>Upper Wetlands Boundary Line (UWB)</b>, and limits of any existing/proposed Tidelands Instruments;</label>
+            </li>
+            <li>
+              <input type="checkbox" id="item231" />
+              <label for="item231">Proposed and existing <b>mooring areas</b>;</label>
+            </li>
+            <li>
+              <input type="checkbox" id="item241" />
+              <label for="item241">Water depths at Mean Low Water, especially in the <b>mooring areas</b> and the location of <b> navigation channels</b>; and</label>
+            </li>
+            <li>
+              <input type="checkbox" id="item251" />
+              <label for="item251">Public Access - both <b>existing</b> and <b>proposed</b></label>
+            </li>
           </ol>
         </legend>
         <p>
@@ -1330,16 +1436,28 @@
         <legend><b>WFD & Coastal Wetlands IP: STEP 1. </b>
           <br/>Does the application have the following?:
           </br>
+          <input type="checkbox" id="item202" />
+          <label for="item202">A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);</label>
+          </br>
+          <input type="checkbox" id="item212" />
+          <label for="item212"><b>Project plans</b>, which includes;</label>
           <ol>
-            <li>Send the "clearances" (transmittals) of application to all required agencies and insert/complete the appropriate tasks in NJEMS - Activity Tracking;</li>
-            <li>A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);</li>
-            <li><b>Project plans</b>, which includes;</li>
-            <ul>
-              <li>The <b>Mean High Water Line (MHWL)</b>, the <b>Mean Low Water Line (MLWL)</b>, the <b>Upper Wetlands Boundary Line (UWB)</b>, and limits of any existing/proposed Tidelands Instruments;
-                <li>Proposed and existing <b>mooring areas</b>;</li>
-                <li>Water depths at Mean Low Water, especially in the <b>mooring areas</b> and the location of <b> navigation channels</b>; and</li>
-                <li>Public Access - both <b>existing</b> and <b>proposed</b></li>
-            </ul>
+            <li>
+              <input type="checkbox" id="item222" />
+              <label for="item222">The <b>Mean High Water Line (MHWL)</b>, the <b>Mean Low Water Line (MLWL)</b>, the <b>Upper Wetlands Boundary Line (UWB)</b>, and limits of any existing/proposed Tidelands Instruments;</label>
+            </li>
+            <li>
+              <input type="checkbox" id="item232" />
+              <label for="item232">Proposed and existing <b>mooring areas</b>;</label>
+            </li>
+            <li>
+              <input type="checkbox" id="item242" />
+              <label for="item242">Water depths at Mean Low Water, especially in the <b>mooring areas</b> and the location of <b> navigation channels</b>; and</label>
+            </li>
+            <li>
+              <input type="checkbox" id="item252" />
+              <label for="item252">Public Access - both <b>existing</b> and <b>proposed</b></label>
+            </li>
           </ol>
         </legend>
         <p>
@@ -1895,12 +2013,20 @@
 
       <fieldset class="hide step15 option11111211111117">
         <legend><b>Higlands Exemption (HAD) Application: STEP 1. </b>
-          <br/>Does the application include the following additional information?:
+          <br/>Does the application include the following <b>additional information</b>?:
           <br/>
-          <ol>
-            <li>A detailed description of the proposed activities;</li>
-            <li>an Alternatives Analysis;</li>
-          </ol>
+          <p class="tooltip">
+            <input type="checkbox" id="high1" />
+            <label for="high1">An exemption for HAD from a qualifying municipality;</label><span class="tooltiptext">If you need to check if a project has received an exemption for HAD from a qualifying municipality, please see the link below which is located on the Highlands Council Website. They update it everyday so it is most current.</span>
+          </p>
+          <p>
+            <input type="checkbox" id="high2" />
+            <label for="high2">General Highlands Applicant Information (3-page application);</label>
+          </p>
+          <p>
+            <input type="checkbox" id="high3" />
+            <label for="high3">A Water Quality Management Plan (WQMP);</label>
+          </p>
         </legend>
         <p>
           <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_7_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
@@ -1910,17 +2036,24 @@
           <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_7_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_7_2">No.</label>
         </p>
-        <p>
+        <button onClick="openHAD()">Tracking sheet for municipal HADs</button>
       </fieldset>
 
       <fieldset class="hide step15 option111111111111117">
-        <legend><b>Higlands Exemption (HAD) Application: STEP 1. </b>
-          <br/>Does the application include the following additional information?:
-          <br/>
-          <ol>
-            <li>A detailed description of the proposed activities;</li>
-            <li>an Alternatives Analysis;</li>
-          </ol>
+        <br/>Does the application include the following <b>additional information</b>?:
+        <br/>
+        <p class="tooltip">
+          <input type="checkbox" id="high4" />
+          <label for="high4">An exemption for HAD from a qualifying municipality;</label><span class="tooltiptext">If you need to check if a project has received an exemption for HAD from a qualifying municipality, please see the link below which is located on the Highlands Council Website. They update it everyday so it is most current.</span>
+        </p>
+        <p>
+          <input type="checkbox" id="high5" />
+          <label for="high5">General Highlands Applicant Information (3-page application);</label>
+        </p>
+        <p>
+          <input type="checkbox" id="high6" />
+          <label for="high6">A Water Quality Management Plan (WQMP);</label>
+        </p>
         </legend>
         <p>
           <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_7_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
@@ -1930,7 +2063,6 @@
           <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_7_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_7_2">No.</label>
         </p>
-        <p>
       </fieldset>
 
 
@@ -1943,8 +2075,9 @@
           </br>The Department is in the process of reviewing (<em> include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
           </br>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
           </br>
-          </br> 1. A detailed description of the proposed activities;
-          </br> 2. an Alternatives Analysis;
+          </br> 1. An exemption for HAD from a qualifying municipality;
+          </br> 2. General Highlands Applicant Information (3-page application);
+          </br> 3. A Water Quality Management Plan (WQMP);
           </br>
           </br>If you choose to (<em>submit/revise</em>) the following additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
           </br>
@@ -1969,8 +2102,9 @@
           </br>The Department is in the process of reviewing (<em> include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
           </br>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
           </br>
-          </br> 1. A detailed description of the proposed activities;
-          </br> 2. an Alternatives Analysis;
+          </br> 1. An exemption for HAD from a qualifying municipality;
+          </br> 2. General Highlands Applicant Information (3-page application);
+          </br> 3. A Water Quality Management Plan (WQMP);
           </br>
           </br>If you choose to (<em>submit/revise</em>) the following additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
           </br>
@@ -2289,6 +2423,15 @@
 
         function openWPCA() {
           window.open("http://www.nj.gov/dep/rules/rules/njac7_14.pdf");
+        }
+
+
+        function openChecklist() {
+          window.open("V:\lum\LUR\asu pre review");
+        }
+
+        function openHAD() {
+          window.open("http://www.nj.gov/njhighlands/projectreview/project_review_tracking.pdf");
         }
 
       </script>
