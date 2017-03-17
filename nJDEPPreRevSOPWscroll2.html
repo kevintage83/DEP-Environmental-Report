@@ -3,7 +3,7 @@
 
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>NJDEP DLUR Pre-Review SOP</title>
+    <title>3NJDEP DLUR Pre-Review SOP</title>
 
 
     <script type='text/javascript' src='https://code.jquery.com/jquery-1.5.js'></script>
@@ -20,10 +20,10 @@
       #header-wrap {
         position: fixed;
         height: auto;
-        width: 100%;
+        width: 50%;
         z-index: 100;
         text-size: 16px;
-        background-color: white;
+        background-color: transparent;
         padding: 1px;
       }
       
@@ -70,6 +70,12 @@
       .frames {
         width: 100%;
         height: 300px;
+      }
+      
+      .commentBox {
+        z-index: 99;
+        position: fixed;
+        right: 0;
       }
 
     </style>
@@ -175,8 +181,9 @@
       }
 
     </script>
-
-    <h4 id="header-wrap">Application Pre-Review  <button onClick="scrollSmoothToBottom()">Scroll to Bottom</button></h4>
+    <h2 id="header-wrap">Application Pre-Review  <button onClick="scrollSmoothToBottom()">Scroll to Bottom</button></h2>
+    <textarea rows="20" cols="70" class="commentBox">
+      Enter your project notes here!</textarea>
   </head>
 
   <body>
@@ -187,8 +194,8 @@
       <br/>
       <br/>
       <fieldset class="step1 option0">
-        <legend><b>STEP 1.</b>
-          <br/> You have received a file! Does <b>NJEMS,</b> and the <b>"Permit Database & Transmittal" Form</b> show that you are the <b>Project Manager</b> for this application?</legend>
+        <legend><b>STEP 1.</b></legend>
+          <br/> You have received a file! Does <b>NJEMS,</b> and the <b>"Permit Database & Transmittal" Form</b> show that you are the <b>Project Manager</b> for this application?
         <p>
           <input id="question_1" name="group_1" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1">Yes!</label>
@@ -201,8 +208,8 @@
 
 
       <fieldset class="hide step2 option1">
-        <legend><b>STEP 2.</b>
-          <br/>Do you have <b>original, sealed copies</b> of the <b>engineering/site plans</b>?</legend>
+        <legend><b>STEP 2.</b></legend>
+          <br/>Do you have <b>original, sealed copies</b> of the <b>engineering/site plans</b>?
         <p>
           <input id="question_1_1" name="group_2" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1">Yes!</label>
@@ -228,7 +235,7 @@
 
 
       <fieldset class="hide step3 option11">
-        <legend><b>STEP 3.</b>
+        <legend><b>STEP 3.</b></legend>
           <br/>Do the <b>engineering/site plans</b> have the following attributes?:
           <br/>
           <br />
@@ -291,7 +298,7 @@
 
 
       <fieldset class="hide step4 option112">
-        <legend>Notify the applicant, via email (cc your Supervisor), that they are missing original, sealed copies of the engineering plans.
+        <legend>Notify the applicant, via email (cc your Supervisor), that they are missing original, sealed copies of the engineering plans.</legend>
           </br>
           </br>Request the sealed originals from the Applicant. Include the following boilerplate language:
           </br>Dear (<em>Agent Name</em>),
@@ -353,7 +360,7 @@
 
 
       <fieldset class="hide step3 option1222">
-        <legend>Notify the Applicant, via email (cc your Supervisor), that they are missing original, sealed copies of the engineering plans.
+        <legend>Notify the Applicant, via email (cc your Supervisor), that they are missing original, sealed copies of the engineering plans.</legend>
           </br>
           </br>Request the sealed originals from the Applicant. Include the following boilerplate language:
           </br>Dear (Agent Name),
@@ -387,8 +394,8 @@
 
 
       <fieldset class="hide step4 option111">
-        <legend><b>STEP 4.</b>
-          <br/>Do the sealed, original engineering <b>plans match</b> what is noted in the "<b>Project Description</b>" section of the associated application?</legend>
+        <legend><b>STEP 4.</b></legend>
+          <br/>Do the sealed, original engineering <b>plans match</b> what is noted in the "<b>Project Description</b>" section of the associated application?
         <p>
           <input id="question_1_1_1_1" name="group_4" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1">Yes!</label>
@@ -414,8 +421,8 @@
 
 
       <fieldset class="hide step5 option1111">
-        <legend class="tooltip"><b>STEP 5.</b>
-          <br/>Are all <b>required signatures</b> completed?<span class="tooltiptext">I am looking for a list of the required signatures to add as text to this tool tip.</span></legend>
+        <legend><b>STEP 5.</b></legend>
+          <br/><p  class="tooltip">Are all <b>required signatures</b> completed?<span class="tooltiptext">I am looking for a list of the required signatures to add as text to this tool tip.</span></p>
         <p>
           <input id="question_1_1_1_1_1" name="group_5" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1">Yes!</label>
@@ -493,8 +500,8 @@
 
 
       <fieldset class="hide step6 option11111">
-        <legend><b>STEP 6. <br/>GIS Verification:</b>
-          <br/>Does <b>GIS</b> show that <em>any part</em> of the project is within the <b>Pinelands</b>, <b>Highlands</b>, or <b>Meadowlands</b>?</legend>
+        <legend><b>STEP 6. <br/>GIS Verification:</b></legend>
+          <br/>Does <b>GIS</b> show that <em>any part</em> of the project is within the <b>Pinelands</b>, <b>Highlands</b>, or <b>Meadowlands</b>?
         <p>
           <input id="question_1_1_1_1_1_1" name="group_6" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_1">Yes!</label>
@@ -539,8 +546,8 @@
 
 
       <fieldset class="hide step9 option111112">
-        <legend><b>STEP 7.</b>
-          <br/>Does the <b>total fee</b> received <b>match</b> the total fees for the permits/authorizations that have been marked on the <b>application form</b>?</legend>
+        <legend><b>STEP 7.</b></legend>
+          <br/>Does the <b>total fee</b> received <b>match</b> the total fees for the permits/authorizations that have been marked on the <b>application form</b>?
         <p>
           <input id="question_1_1_1_1_1_2_1" name="group_8" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_2_1">Yes!</label>
@@ -552,8 +559,8 @@
       </fieldset>
 
       <fieldset class="hide step9 option1111111">
-        <legend><b>STEP 7.</b>
-          <br/>Does the <b>total fee</b> received <b>match</b> the total fees for the permits/authorizations that have been marked on the <b>application form</b>?</legend>
+        <legend><b>STEP 7.</b></legend>
+          <br/>Does the <b>total fee</b> received <b>match</b> the total fees for the permits/authorizations that have been marked on the <b>application form</b>?
         <p>
           <input id="question_1_1_1_1_1_1_1_1" name="group_8" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_1_1_1">Yes!</label>
@@ -736,8 +743,8 @@
 
 
       <fieldset class="hide step10 option111112111">
-        <legend><b>STEP 10.</b>
-          <br/>Does the application have a <b>USGS quad map</b>, <b>street map</b>, and a <b>letter-sized</b> (<em>8.5 x 11"</em>) <b>map</b> with the project site CLEARLY outlined, to scale, on each map?</legend>
+        <legend><b>STEP 10.</b></legend>
+          <br/>Does the application have a <b>USGS quad map</b>, <b>street map</b>, and a <b>letter-sized</b> (<em>8.5 x 11"</em>) <b>map</b> with the project site CLEARLY outlined, to scale, on each map?
         <p>
           <input id="question_1_1_1_1_1_2_1_1_1_1" name="group_11" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_2_1_1_1_1">Yes!</label>
@@ -749,8 +756,8 @@
       </fieldset>
 
       <fieldset class="hide step10 option1111111111">
-        <legend><b>STEP 10.</b>
-          <br/>Does the application have a <b>USGS quad map</b>, <b>street map</b>, and a <b>letter-sized</b> (<em>8.5 x 11"</em>) <b>map</b> with the project site CLEARLY outlined, to scale, on each map?</legend>
+        <legend><b>STEP 10.</b></legend>
+          <br/>Does the application have a <b>USGS quad map</b>, <b>street map</b>, and a <b>letter-sized</b> (<em>8.5 x 11"</em>) <b>map</b> with the project site CLEARLY outlined, to scale, on each map?
         <p>
           <input id="question_1_1_1_1_1_1_1_1_1_1_1" name="group_11" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_1_1_1_1_1_1">Yes!</label>
@@ -919,7 +926,7 @@
 
 
       <fieldset class="hide step12 option11111211111">
-        <legend><b>STEP 12.</b>
+        <legend><b>STEP 12.</b></legend>
           <br/>Does the application have proof of <b>Public Notice</b> to the following entities?
           <br/>
           <br/>
@@ -958,7 +965,7 @@
       </fieldset>
 
       <fieldset class="hide step12 option111111111111">
-        <legend><b>STEP 12.</b>
+        <legend><b>STEP 12.</b></legend>
           <br/>Does the application have proof of <b>Public Notice</b> to the following entities?
           <br/>
           <br/>
@@ -1033,8 +1040,8 @@
 
 
       <fieldset class="hide step13 option111112111111">
-        <legend><b>STEP 13.</b>
-          <br/>Does the application have a <b>Compliance Statement</b>, which demonstrates that the proposed project meets all applicable criteria for the specific permit/s for which applied?</legend>
+        <legend><b>STEP 13.</b></legend>
+          <br/>Does the application have a <b>Compliance Statement</b>, which demonstrates that the proposed project meets all applicable criteria for the specific permit/s for which applied?
         <p>
           <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1" name="group_14" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1">Yes!</label>
@@ -1046,8 +1053,8 @@
       </fieldset>
 
       <fieldset class="hide step13 option1111111111111">
-        <legend><b>STEP 13.</b>
-          <br/>Does the application have a <b>Compliance Statement</b>, which demonstrates that the proposed project meets all applicable criteria for the specific permit/s for which applied?</legend>
+        <legend><b>STEP 13.</b></legend>
+          <br/>Does the application have a <b>Compliance Statement</b>, which demonstrates that the proposed project meets all applicable criteria for the specific permit/s for which applied?
         <p>
           <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1" name="group_14" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1">Yes!</label>
@@ -1094,8 +1101,8 @@
 
 
       <fieldset class="hide step14 option1111121111111">
-        <legend><b>STEP 14.</b>
-          <br/>What is the type of application?</legend>
+        <legend><b>STEP 14.</b></legend>
+          <br/>What is the type of application?
         <p>
           <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_1" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_1">Flood Hazard Area Permitting</label>
@@ -1132,8 +1139,8 @@
 
 
       <fieldset class="hide step14 option11111111111111">
-        <legend><b>STEP 14.</b>
-          <br/>What is the type of application?</legend>
+        <legend><b>STEP 14.</b></legend>
+          <br/>What is the type of application?
         <p>
           <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1">Flood Hazard Area Permitting</label>
@@ -1178,7 +1185,7 @@
 
 
       <fieldset class="hide step15 option11111211111111">
-        <legend><b>FHA: STEP 1. </b>
+        <legend><b>FHA: STEP 1. </b></legend>
           <br/>Does the application have the following?:
           </br>
           </br>
@@ -1213,7 +1220,7 @@
       </fieldset>
 
       <fieldset class="hide step15 option111111111111111">
-        <legend><b>FHA: STEP 1. </b>
+        <legend><b>FHA: STEP 1. </b></legend>
           <br/>Does the application have the following?:
           </br>
           </br>
@@ -1251,9 +1258,8 @@
 
 
       <fieldset class="hide step16 option111112111111112">
-        <legend><b>FHA: STEP 2. </b>
+        <legend><b>FHA: STEP 2. </b></legend>
           <br/>Does your <b>Supervisor</b>, or the assigned <b>Engineer</b> have the missing information?:
-        </legend>
         <p>
           <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_1_1_2_1_1" name="group_17" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_1_1_2_1_1">Yes!</label>
@@ -1266,9 +1272,8 @@
       </fieldset>
 
       <fieldset class="hide step16 option1111111111111112">
-        <legend><b>FHA: STEP 2. </b>
+        <legend><b>FHA: STEP 2. </b></legend>
           <br/>Does your <b>Supervisor</b>, or the assigned <b>Engineer</b> have the missing information?:
-        </legend>
         <p>
           <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1" name="group_17" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1">Yes!</label>
@@ -1287,7 +1292,7 @@
 
 
       <fieldset class="hide step16 option1111121111111122">
-        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:</legend>
           </br>
           </br>Dear (<em>Agent Name</em>),
           </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
@@ -1316,7 +1321,7 @@
       </fieldset>
 
       <fieldset class="hide step16 option11111111111111122">
-        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:</legend>
           </br>
           </br>Dear (<em>Agent Name</em>),
           </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
@@ -1350,7 +1355,7 @@
 
 
       <fieldset class="hide step16 option1111121111111121">
-        <legend>Retrieve the materials from your Supervisor, or the assigned Engineer.
+        <legend>Retrieve the materials from your Supervisor, or the assigned Engineer.</legend>
           <p>
             <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
             <label for="question_3_1_1">I have the materials.</label>
@@ -1362,7 +1367,7 @@
       </fieldset>
 
       <fieldset class="hide step16 option11111111111111121">
-        <legend>Retrieve the materials from your Supervisor, or the assigned Engineer.
+        <legend>Retrieve the materials from your Supervisor, or the assigned Engineer.</legend>
           <p>
             <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
             <label for="question_3_1_1">I have the materials.</label>
@@ -1377,16 +1382,257 @@
 
 
       <fieldset class="hide step18 option111112111111111">
-        <legend><b>Congratulations!</b> </br>The FHA portion of the application is administratively complete! </br>Click the following link to review any applicable code and regulations. </br>
+        <legend><b>Congratulations!</b></legend> </br>The FHA portion of the application is administratively complete! </br>Click the following link to review any applicable code and regulations.
+          </br>You can use the [embedded] notepad to document items relevant to your review!
+          <br/><b>Flood Hazard Area (FHA): <br/>STEP 2. </b><br/>
           <input type="button" onclick="openFHA()" name="fHARulesBtn" value="Flood Hazard Area Rules 7:13" class="li">
           <br/>
+          <p>
+            <input id="question1_2_1_1_1" name="group_19" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question1_2_1_1_1">Continue to STEP 3</label>
+          </p>
       </fieldset>
 
       <fieldset class="hide step18 option1111111111111111">
-        <legend><b>Congratulations!</b> </br>The FHA portion of the application is administratively complete! </br>Click the following link to review any applicable code and regulations. </br>
+        <legend><b>Congratulations!</b></legend> </br>The FHA portion of the application is administratively complete! </br>Click the following link to review any applicable code and regulations.
+          </br>You can use the [embedded] notepad to document items relevant to your review!
+          <br/><b>Flood Hazard Area (FHA): <br/>STEP 2. </b><br/>
           <input type="button" onclick="openFHA()" name="fHARulesBtn" value="Flood Hazard Area Rules 7:13" class="li">
           <br/>
+          <p>
+            <input id="question1_1_1_1_1" name="group_19" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question1_1_1_1_1">Continue to STEP 3</label>
+          </p>
       </fieldset>
+
+
+
+      <fieldset class="hide step18 option1111121111111111">
+        <legend><b>Flood Hazard Area (FHA): <br/>STEP 3. </b></legend>
+          <br/>Open your file number in NJEMS and do the following:
+          </br>
+          <input name="group_20" type="checkbox" id="item201" onClick="scrollSmoothToBottom()" />
+          <label for="item201">1. Click on Activity Tracking, under the [Pending] FHA application. Enter today's date for "PM Start Technical Review". </label>
+          </br>
+          <input name="group_20" type="checkbox" id="item202" onClick="scrollSmoothToBottom()" />
+          <label for="item202">2. Check that the X/Y coordinates of the site and lot and block are accurate in NJEMS. </label>
+          </br>
+          <input name="group_20" type="checkbox" id="item203" onClick="scrollSmoothToBottom()" />
+          <label for="item203">3. FHA application deadlines (45th or 90th day) should be identified and clearly labeled on the pre-review sheet and on the front cover of the file.</label>
+          </br>
+          <input name="group_20" type="checkbox" id="item204" onClick="scrollSmoothToBottom()" />
+          <label for="item204">4. Search the file number in NJEMS to see if there are any previously issued determinations, authorizations, or violations onsite.</label>
+          </br>
+          <input name="group_20" type="checkbox" id="item205" onClick="scrollSmoothToBottom()" />
+          <label for="item205">5. If historical aerials show that there was development onsite that may have needed wetlands authorizations, you can check Paradox, which contains information for authorizations prior to 2002. Otherwise, continue to Flood Hazard Area (FHA):
+            STEP 4. to conduct ArcGIS review.</label>
+          </br>
+          <p>
+            <input id="question_2_2_2_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_20" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question_2_2_2_1_1_1_1_1_1_1_1_1_1_1_2_1">Continue to Flood Hazard Area (FHA): STEP 4: ArcGIS Review.</label>
+          </p>
+          <p>
+            <input id="question_1_3_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_20" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question_1_3_1_1_1_1_1_1_1_1_1_1_1_1_2_1">Continue to Paradox.</label>
+          </p>
+        </legend>
+      </fieldset>
+
+      <fieldset class="hide step18 option11111111111111111">
+        <legend><b>Flood Hazard Area (FHA): <br/>STEP 3. </b></legend>
+          <br/>Open your file number in NJEMS and do the following:
+          </br>
+          <input name="group_20" type="checkbox" id="item201" onClick="scrollSmoothToBottom()" />
+          <label for="item201">1. Click on Activity Tracking, under the [Pending] FHA application. Enter today's date for "PM Start Technical Review". </label>
+          </br>
+          <input name="group_20" type="checkbox" id="item202" onClick="scrollSmoothToBottom()" />
+          <label for="item202">2. Check that the X/Y coordinates of the site and lot and block are accurate in NJEMS. </label>
+          </br>
+          <input name="group_20" type="checkbox" id="item203" onClick="scrollSmoothToBottom()" />
+          <label for="item203">3. FHA application deadlines (45th or 90th day) should be identified and clearly labeled on the pre-review sheet and on the front cover of the file.</label>
+          </br>
+          <input name="group_20" type="checkbox" id="item204" onClick="scrollSmoothToBottom()" />
+          <label for="item204">4. Search the file number in NJEMS to see if there are any previously issued determinations, authorizations, or violations onsite.</label>
+          </br>
+          <input name="group_20" type="checkbox" id="item205" onClick="scrollSmoothToBottom()" />
+          <label for="item205">5. If historical aerials show that there was development onsite that may have needed wetlands authorizations, you can check Paradox, which contains information for authorizations prior to 2002. Otherwise, continue to Flood Hazard Area (FHA):
+            STEP 4. to conduct ArcGIS review.</label>
+          </br>
+          <p>
+            <input id="question_2_2_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_20" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question_2_2_1_1_1_1_1_1_1_1_1_1_1_1_2_1">Continue to Flood Hazard Area (FHA): STEP 4: ArcGIS Review.</label>
+          </p>
+          <p>
+            <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_2_2_1" name="group_20" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_2_2_1">Continue to Paradox.</label>
+          </p>
+        </legend>
+      </fieldset>
+
+
+
+
+      <fieldset class="hide step18 option11111211111111111">
+<legend class="tooltip"><b>Flood Hazard Area (FHA): STEP 4: ArcGIS Review.</b>
+  <br/><p>Open ArcGIS. <span class="tooltiptext">A layer file containing all the data needed to conduct permit pre-review can be found at V:\lum\LUR\Pre-Review-Templates. (You can also use USGS Topoquads found in the "Imagery" category in DEP Data.)</span></p>
+  </br>
+  <input type="checkbox" id="itema201" />
+  <label for="itema201">1. Enter the site X/Y coordinates and turn on the Parcels (block and lot) layer. Zoom-to your site.</label>
+  </br>
+  <input type="checkbox" id="itemb201" />
+  <label for="itemb201">2. USE ArcGIS and Pictometry to look at the land use over the last few decades. If there has been a change of land use without permit authorization, there may be potential for Land Use Enforcement action.</label>
+  </br>
+  <input type="checkbox" id="itemc201" />
+  <label for="itemc201">3. Apply the "Stream Network 2002" layer to check if a feature falls within your site or use the measure tool to see if a feature is within 300 feet.</label>
+  </br>
+  <input type="checkbox" id="itemd201" />
+  <label for="itemd201">4. Apply the "Surface Water Quality Standards" layer. Expand the table of contents to view the color coding system.</label>
+  </br>
+  <input type="checkbox" id="iteme201" />
+  <label for="iteme201">5. Apply the "Watersheds (DEPHUC14)" layer to see the water quality standards of the entire watershed. Identify the layer to see the name of the Watershed and Sub-watershed.</label>
+  </br>
+  <p>
+    Is there a Water feature onsite or within 300'?
+  </p>
+  <p>
+    <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_3_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
+    <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_3_2_1">Yes!</label>
+  </p>
+  <p>
+    <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_3_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
+    <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_3_1_2_1">No.</label>
+  </p>
+</legend>
+      </fieldset>
+
+
+      <fieldset class="hide step18 option111111111111111111">
+<legend class="tooltip"><b>Flood Hazard Area (FHA): STEP 4: ArcGIS Review.</b>
+  <br/><p>Open ArcGIS. <span class="tooltiptext">A layer file containing all the data needed to conduct permit pre-review can be found at V:\lum\LUR\Pre-Review-Templates. (You can also use USGS Topoquads found in the "Imagery" category in DEP Data.)</span></p>
+  </br>
+  <input type="checkbox" id="itema201" />
+  <label for="itema201">1. Enter the site X/Y coordinates and turn on the Parcels (block and lot) layer. Zoom-to your site.</label>
+  </br>
+  <input type="checkbox" id="itemb201" />
+  <label for="itemb201">2. USE ArcGIS and Pictometry to look at the land use over the last few decades. If there has been a change of land use without permit authorization, there may be potential for Land Use Enforcement action.</label>
+  </br>
+  <input type="checkbox" id="itemc201" />
+  <label for="itemc201">3. Apply the "Stream Network 2002" layer to check if a feature falls within your site or use the measure tool to see if a feature is within 300 feet.</label>
+  </br>
+  <input type="checkbox" id="itemd201" />
+  <label for="itemd201">4. Apply the "Surface Water Quality Standards" layer. Expand the table of contents to view the color coding system.</label>
+  </br>
+  <input type="checkbox" id="iteme201" />
+  <label for="iteme201">5. Apply the "Watersheds (DEPHUC14)" layer to see the water quality standards of the entire watershed. Identify the layer to see the name of the Watershed and Sub-watershed.</label>
+  </br>
+  <p>
+    Is there a Water feature onsite or within 300'?
+  </p>
+  <p>
+    <input id="question1_1_1_1_1_1_1_1_1_1_1_3_1_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
+    <label for="question1_1_1_1_1_1_1_1_1_1_1_3_1_1_2_1">Yes!</label>
+  </p>
+  <p>
+    <input id="question2_1_1_1_1_1_1_1_1_1_1_3_1_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
+    <label for="question2_1_1_1_1_1_1_1_1_1_1_3_1_1_2_1">No.</label>
+  </p>
+</legend>
+      </fieldset>
+
+
+
+      <fieldset class="hide step19 option111112111111111111">
+<legend><b>Flood Hazard Area (FHA): STEP 5. </b></legend>
+  <br/><p class="tooltip">Determine if the water feature drains more than 50 acres:<span class="tooltiptext">TIP: It is only necessary to check stream stats when there is a small headwater stream or ditch onsite and the 50 acre threshold is essential to determine if FHA regulations will apply. Use your best judgement of the location of the site in the watershed to determine if stream stats needs to be consulted or not. Sometimes stream stats is consulted AFTER a field visit when a feature is encountered that wasn't obvious on GIS.</span></p>
+  </br>
+  <input type="checkbox" id="itemx201" />
+  <label for="itemx201">1. Use USGS Stream Stats to check if the water feature drains over 50 acres.</label>
+    </br>
+    <p>
+      <input type="button" onclick="openStreamStats()" name="streamStatsBtn" value="Open Stream Stats" class="li">
+    </p>
+  </br>
+  <iframe class="frames" src="V: \lum\LUR\Pre-Review Resources\FHA Resources"></iframe>
+  </br>
+  <input type="checkbox" id="itexm201" />
+  <label for="itexm201">2. Document your findings from Stream Stats in your Application Review Form. Continue to Riparian Zones, below.</label>
+  </br>
+  <p>
+    Riparian zones are determined by bedrock geology of the site, presence of threatened and endangered species downstream, and surface water quality standards of the watershed.
+  </p>
+  <input type="checkbox" id="itxem201" />
+  <label for="item201">All features draining more than 50 acres are regulated and have an associated flood hazard area and riparian zone. </label>
+  </br>
+  <input type="checkbox" id="itxem201" />
+  <label for="item201">Features draining less than 50 acres are regulated if the feature is not a ditch and has a defined bed and bank. These features do not have a flood hazard area, but do have a riparian zone.</label>
+  </br>
+  <p>
+    Does the site have a riparian zone?
+  </p>
+  <p>
+    <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_a_2_1" name="group_19" type="radio" onClick="scrollSmoothToBottom()" />
+    <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_a_2_1">Yes!</label>
+  </p>
+  <p>
+    <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_b_2_1" name="group_19" type="radio" onClick="scrollSmoothToBottom()" />
+    <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_b_2_1">No.</label>
+		</p>
+      </fieldset>
+
+
+      <fieldset class="hide step19 option1111111111111111111">
+<legend><b>Flood Hazard Area (FHA): STEP 5. </b></legend>
+  <br/><p class="tooltip">Determine if the water feature drains more than 50 acres:<span class="tooltiptext">TIP: It is only necessary to check stream stats when there is a small headwater stream or ditch onsite and the 50 acre threshold is essential to determine if FHA regulations will apply. Use your best judgement of the location of the site in the watershed to determine if stream stats needs to be consulted or not. Sometimes stream stats is consulted AFTER a field visit when a feature is encountered that wasn't obvious on GIS.</span></p>
+  </br>
+  <input type="checkbox" id="item201x" />
+  <label for="item201x">1. Use USGS Stream Stats to check if the water feature drains over 50 acres.</label>
+    </br>
+    <p>
+      <input type="button" onclick="openStreamStats()" name="streamStatsBtn" value="Open Stream Stats" class="li">
+    </p>
+  </br>
+  <iframe class="frames" src="V: \lum\LUR\Pre-Review Resources\FHA Resources"></iframe>
+  </br>
+  <input type="checkbox" id="item20x1" />
+  <label for="item20x1">2. Document your findings from Stream Stats in your Application Review Form. Continue to Riparian Zones, below.</label>
+  </br>
+  <p>
+    Riparian zones are determined by bedrock geology of the site, presence of threatened and endangered species downstream, and surface water quality standards of the watershed.
+  </p>
+  <input type="checkbox" id="item2x01" />
+  <label for="item2x01">All features draining more than 50 acres are regulated and have an associated flood hazard area and riparian zone. </label>
+  </br>
+  <input type="checkbox" id="xitem201" />
+  <label for="xitem201">Features draining less than 50 acres are regulated if the feature is not a ditch and has a defined bed and bank. These features do not have a flood hazard area, but do have a riparian zone.</label>
+  </br>
+  <p>
+    Does the site have a riparian zone?
+  </p>
+  <p>
+    <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_c_2_1" name="group_19" type="radio" onClick="scrollSmoothToBottom()" />
+    <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_c_2_1">Yes!</label>
+  </p>
+  <p>
+    <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_d_2_1" name="group_19" type="radio" onClick="scrollSmoothToBottom()" />
+    <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_d_2_1">No.</label>
+		</p>
+      </fieldset>
+
+
+
+
+      <fieldset class="hide step20 option1111121111111111111">
+<p>weee222</p>
+      </fieldset>
+
+
+
+      <fieldset class="hide step20 option11111111111111111111">
+<p>yay111</p>
+
+      </fieldset>
+
+
 
 
 
@@ -1394,7 +1640,7 @@
 
 
       <fieldset class="hide step15 option11111211111112">
-        <legend><b>WFD & Coastal Wetlands IP: STEP 1. </b>
+        <legend><b>WFD & Coastal Wetlands IP: STEP 1. </b></legend>
           <br/>Does the application have the following?:
           </br>
           <input type="checkbox" id="item201" />
@@ -1433,7 +1679,7 @@
       </fieldset>
 
       <fieldset class="hide step15 option111111111111112">
-        <legend><b>WFD & Coastal Wetlands IP: STEP 1. </b>
+        <legend><b>WFD & Coastal Wetlands IP: STEP 1. </b></legend>
           <br/>Does the application have the following?:
           </br>
           <input type="checkbox" id="item202" />
@@ -1477,7 +1723,7 @@
 
 
       <fieldset class="hide step16 option111112111111122">
-        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:</legend>
           </br>
           </br>Dear (<em>Agent Name</em>),
           </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
@@ -1509,7 +1755,7 @@
       </fieldset>
 
       <fieldset class="hide step16 option1111111111111122">
-        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:</legend>
           </br>
           </br>Dear (<em>Agent Name</em>),
           </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
@@ -1545,7 +1791,7 @@
 
 
       <fieldset class="hide step15 option11111211111113">
-        <legend><b>CAFRA Individual Permit Application: STEP 1. </b>
+        <legend><b>CAFRA Individual Permit Application: STEP 1. </b></legend>
           <br/>Does the application have the following?:
           <br/>
           <ol class="tooltip">
@@ -1573,7 +1819,7 @@
       </fieldset>
 
       <fieldset class="hide step15 option111111111111113">
-        <legend><b>CAFRA Individual Permit Application: STEP 1. </b>
+        <legend><b>CAFRA Individual Permit Application: STEP 1. </b></legend>
           <br/>Does the application have the following?:
           <br/>
           <ol class="tooltip">
@@ -1606,7 +1852,7 @@
 
 
       <fieldset class="hide step16 option111112111111132">
-        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:</legend>
           </br>
           </br>Dear (<em>Agent Name</em>),
           </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
@@ -1636,7 +1882,7 @@
       </fieldset>
 
       <fieldset class="hide step16 option1111111111111132">
-        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:</legend>
           </br>
           </br>Dear (<em>Agent Name</em>),
           </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
@@ -1671,7 +1917,7 @@
 
 
       <fieldset class="hide step15 option11111211111114">
-        <legend><b>Coastal General Permit Application: STEP 1. </b>
+        <legend><b>Coastal General Permit Application: STEP 1. </b></legend>
           <br/>Does the application have the following?:
           <br/>
           <ol class="tooltip">
@@ -1696,7 +1942,7 @@
       </fieldset>
 
       <fieldset class="hide step15 option111111111111114">
-        <legend><b>Coastal General Permit Application: STEP 1. </b>
+        <legend><b>Coastal General Permit Application: STEP 1. </b></legend>
           <br/>Does the application have the following?:
           <br/>
           <ol class="tooltip">
@@ -1726,7 +1972,7 @@
 
 
       <fieldset class="hide step16 option111112111111142">
-        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:</legend>
           </br>
           </br>Dear (<em>Agent Name</em>),
           </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
@@ -1754,7 +2000,7 @@
       </fieldset>
 
       <fieldset class="hide step16 option1111111111111142">
-        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:</legend>
           </br>
           </br>Dear (<em>Agent Name</em>),
           </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
@@ -1788,7 +2034,7 @@
 
 
       <fieldset class="hide step15 option11111211111115">
-        <legend><b>Freshwater Wetlands General Permit and Transition Area Waiver Application: STEP 1. </b>
+        <legend><b>Freshwater Wetlands General Permit and Transition Area Waiver Application: STEP 1. </b></legend>
           <br/>Additional information required due to location of the project site:
           <br/>
           <ol class="tooltip">
@@ -1816,7 +2062,7 @@
       </fieldset>
 
       <fieldset class="hide step15 option111111111111115">
-        <legend><b>Freshwater Wetlands General Permit and Transition Area Waiver Application: STEP 1. </b>
+        <legend><b>Freshwater Wetlands General Permit and Transition Area Waiver Application: STEP 1. </b></legend>
           <br/>Additional information required due to location of the project site:
           <br/>
           <ol class="tooltip">
@@ -1849,7 +2095,7 @@
 
 
       <fieldset class="hide step16 option111112111111152">
-        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:</legend>
           </br>
           </br>Dear (<em>Agent Name</em>),
           </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
@@ -1877,7 +2123,7 @@
       </fieldset>
 
       <fieldset class="hide step16 option1111111111111152">
-        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include any of the following [applicable] boilerplate language:</legend>
           </br>
           </br>Dear (<em>Agent Name</em>),
           </br>The Department is in the process of reviewing (<em>include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
@@ -1910,7 +2156,7 @@
 
 
       <fieldset class="hide step15 option11111211111116">
-        <legend><b>Freshwater Wetlands Individual Permit Application: STEP 1. </b>
+        <legend><b>Freshwater Wetlands Individual Permit Application: STEP 1. </b></legend>
           <br/>Does the application include the following additional information?:
           <br/>
           <ol>
@@ -1930,7 +2176,7 @@
       </fieldset>
 
       <fieldset class="hide step15 option111111111111116">
-        <legend><b>Freshwater Wetlands Individual Permit Application: STEP 1. </b>
+        <legend><b>Freshwater Wetlands Individual Permit Application: STEP 1. </b></legend>
           <br/>Does the application include the following additional information?:
           <br/>
           <ol>
@@ -1956,7 +2202,7 @@
 
 
       <fieldset class="hide step16 option111112111111162">
-        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include the following boilerplate [applicable] language:
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include the following boilerplate [applicable] language:</legend>
           </br>
           </br>Dear (<em>Agent Name</em>),
           </br>The Department is in the process of reviewing (<em> include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
@@ -1982,7 +2228,7 @@
       </fieldset>
 
       <fieldset class="hide step16 option1111111111111162">
-        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include the following boilerplate [applicable] language:
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include the following boilerplate [applicable] language:</legend>
           </br>
           </br>Dear (<em>Agent Name</em>),
           </br>The Department is in the process of reviewing (<em> include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
@@ -2012,7 +2258,7 @@
 
 
       <fieldset class="hide step15 option11111211111117">
-        <legend><b>Higlands Exemption (HAD) Application: STEP 1. </b>
+        <legend><b>Higlands Exemption (HAD) Application: STEP 1. </b></legend>
           <br/>Does the application include the following <b>additional information</b>?:
           <br/>
           <p class="tooltip">
@@ -2069,7 +2315,7 @@
 
 
       <fieldset class="hide step16 option111112111111172">
-        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include the following boilerplate [applicable] language:
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include the following boilerplate [applicable] language:</legend>
           </br>
           </br>Dear (<em>Agent Name</em>),
           </br>The Department is in the process of reviewing (<em> include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
@@ -2096,7 +2342,7 @@
       </fieldset>
 
       <fieldset class="hide step16 option1111111111111172">
-        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include the following boilerplate [applicable] language:
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include the following boilerplate [applicable] language:</legend>
           </br>
           </br>Dear (<em>Agent Name</em>),
           </br>The Department is in the process of reviewing (<em> include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
@@ -2127,7 +2373,7 @@
 
 
       <fieldset class="hide step15 option11111211111118">
-        <legend><b>E-LOI Application: STEP 1. </b>
+        <legend><b>E-LOI Application: STEP 1. </b></legend>
           <br/>Does the application include the following additional information?:
           <br/>
           <ol>
@@ -2147,7 +2393,7 @@
       </fieldset>
 
       <fieldset class="hide step15 option111111111111118">
-        <legend><b>E-LOI Application: STEP 1. </b>
+        <legend><b>E-LOI Application: STEP 1. </b></legend>
           <br/>Does the application include the following additional information?:
           <br/>
           <ol>
@@ -2173,7 +2419,7 @@
 
 
       <fieldset class="hide step16 option111112111111182">
-        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include the following boilerplate [applicable] language:
+        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include the following boilerplate [applicable] language:</legend>
           </br>
           </br>Dear (Agent Name),
 
@@ -2211,7 +2457,7 @@
 
 
       <fieldset class="hide step18 option111112111111121">
-        <legend><b>Congratulations!</b>
+        <legend><b>Congratulations!</b></legend>
           <br/>The Waterfront Development & Coastal Wetlands Individual Permit portion of the application is administratively complete!
           </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
           </br>
@@ -2224,7 +2470,7 @@
       </fieldset>
 
       <fieldset class="hide step18 option1111111111111121">
-        <legend><b>Congratulations!</b>
+        <legend><b>Congratulations!</b></legend>
           <br/>The Waterfront Development & Coastal Wetlands Individual Permit portion of the application is administratively complete!
           </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
           </br>
@@ -2242,7 +2488,7 @@
 
 
       <fieldset class="hide step18 option111112111111131">
-        <legend><b>Congratulations!</b>
+        <legend><b>Congratulations!</b></legend>
           <br/>The CAFRA portion of the application is administratively complete!
           </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
           </br>
@@ -2255,7 +2501,7 @@
       </fieldset>
 
       <fieldset class="hide step18 option1111111111111131">
-        <legend><b>Congratulations!</b>
+        <legend><b>Congratulations!</b></legend>
           <br/>The CAFRA portion of the application is administratively complete!
           </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
           </br>
@@ -2273,7 +2519,7 @@
 
 
       <fieldset class="hide step18 option111112111111141">
-        <legend><b>Congratulations!</b>
+        <legend><b>Congratulations!</b></legend>
           <br/>The Coastal General Permit portion of the application is administratively complete!
           </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
           </br>
@@ -2286,7 +2532,7 @@
       </fieldset>
 
       <fieldset class="hide step18 option1111111111111141">
-        <legend><b>Congratulations!</b>
+        <legend><b>Congratulations!</b></legend>
           <br/>The Coastal General Permit portion of the application is administratively complete!
           </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
           </br>
@@ -2304,7 +2550,7 @@
 
 
       <fieldset class="hide step18 option111112111111151">
-        <legend><b>Congratulations!</b>
+        <legend><b>Congratulations!</b></legend>
           <br/>The Freshwater Wetlands General Permit and Transition Area Waivers portion of the application is administratively complete!
           </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
           </br>
@@ -2317,7 +2563,7 @@
       </fieldset>
 
       <fieldset class="hide step18 option1111111111111151">
-        <legend><b>Congratulations!</b>
+        <legend><b>Congratulations!</b></legend>
           <br/>The Freshwater Wetlands General Permit and Transition Area Waivers portion of the application is administratively complete!
           </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
           </br>
@@ -2335,7 +2581,7 @@
 
 
       <fieldset class="hide step18 option111112111111161">
-        <legend><b>Congratulations!</b>
+        <legend><b>Congratulations!</b></legend>
           <br/>The Freshwater Wetlands Individual Permit portion of the application is administratively complete!
           </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
           </br>
@@ -2348,7 +2594,7 @@
       </fieldset>
 
       <fieldset class="hide step18 option1111111111111161">
-        <legend><b>Congratulations!</b>
+        <legend><b>Congratulations!</b></legend>
           <br/>The Freshwater Wetlands Individual Permit portion of the application is administratively complete!
           </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
           </br>
@@ -2366,7 +2612,7 @@
 
 
       <fieldset class="hide step18 option111112111111171">
-        <legend><b>Congratulations!</b>
+        <legend><b>Congratulations!</b></legend>
           <br/>The Highlands Exemption Application (HAD) portion of the application is administratively complete!
           </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
           </br>
@@ -2379,7 +2625,7 @@
       </fieldset>
 
       <fieldset class="hide step18 option1111111111111171">
-        <legend><b>Congratulations!</b>
+        <legend><b>Congratulations!</b></legend>
           <br/>The Highlands Exemption Application (HAD) portion of the application is administratively complete!
           </br>Click the following link to reference the applicable code and regulations (a new browser tab will open). </br>
           </br>
@@ -2432,6 +2678,14 @@
 
         function openHAD() {
           window.open("http://www.nj.gov/njhighlands/projectreview/project_review_tracking.pdf");
+        }
+
+        function openHADRules() {
+          window.open("http://www.nj.gov/dep/rules/rules/njac7_38.pdf");
+        }
+
+        function openStreamStats() {
+          window.open("http://water.usgs.gov/osw/streamstats/new_jersey.html");
         }
 
       </script>
