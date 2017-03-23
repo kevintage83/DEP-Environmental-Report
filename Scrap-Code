@@ -226,3 +226,253 @@
     <p>
       Using LetterBuilder in NJEMS, begin writing the FHA Environmental Report. If the application contains more than the FHA, restart/refresh this page and check them accordingly.
     </p>
+
+
+
+
+
+
+
+----scrap code-------
+
+
+FHA STEP3 name="group_18"
+step19 option1111121111111111
+step19 option11111111111111111
+
+FHA STEP4 name="group_20" just changed to group_19
+step20 option11111211111111111
+step20 option111111111111111111 wont show the next step after clicking yes
+
+FHA STEP5 name="group_21" changed to group_20
+step21 option111112111111111111
+step21 option1111111111111111111
+
+FHA STEP6 name="group_22"
+step22 option1111121111111111111
+step22 option11111111111111111111
+
+
+_______SECOND TRY__________
+FHA STEP3 name="group_18"
+step19 option1111121111111111
+step19 option11111111111111111
+
+FHA STEP4 name="group_20" unclicked the Yes option here after selecting Yes on STEP5
+step20 option11111211111111111
+step20 option111111111111111111
+
+FHA STEP5 name="group_21"
+
+
+FHA STEP6 name="group_22"
+
+
+
+
+
+
+_______ALL LOGIC_____________
+STEP 1 
+class="step1 option0"
+name="group_1"
+
+STEP 2
+class="step2 option1"
+name="group_2"
+
+STEP 3
+class="step3 option11"
+name="group_3"
+
+STEP 4
+class="step4 option111"
+name="group_4"
+
+STEP 5
+class="step5 option1111"
+name="group_5"
+
+STEP 6
+class="step6 option11111"
+name="group_6"
+
+STEP 7
+class="step9 option111112"
+class="step9 option1111111"
+name="group_8"
+
+STEP 8
+class="step8 option1111121"
+class="step8 option11111111"
+name="group_9"
+
+STEP 9
+class="step9 option11111211"
+class="step9 option111111111"
+name="group_10"
+
+STEP 10
+class="step10 option111112111"
+class="step10 option1111111111"
+name="group_11"
+
+STEP 11
+class="step11 option1111121111"
+class="step11 option11111111111"
+name="group_12"
+
+STEP 12
+class="step12 option11111211111"
+class="step12 option111111111111"
+name="group_13"
+
+
+STEP 13
+class="step13 option111112111111"
+class="step13 option1111111111111"
+name="group_14"
+
+STEP 14
+class="step14 option1111121111111"
+class="step14 option11111111111111"
+name="group_15"
+
+FHA STEP 1
+class="step15 option11111211111111"
+class="step15 option111111111111111"
+name="group_16"
+
+FHA STEP 2
+class="step16 option111112111111112"
+class="step16 option1111111111111112"
+name="group_17"
+
+FHA (Congrats!)
+class="step18 option111112111111111"
+class="step18 option1111111111111111"
+name="group_19"
+
+FHA STEP 3
+class="step19 option1111121111111111"
+class="step19 option11111111111111111"
+name="group_18"
+
+FHA STEP 4
+class="step20 option11111211111111111"
+class="step20 option111111111111111111"
+name="group_20"
+
+FHA STEP 5
+class="step21 option111112111111111111"
+class="step21 option1111111111111111111"
+name="group_21"
+
+FHA STEP 6
+class="step22 option1111121111111111111"
+class="step22 option11111111111111111111"
+name="group_22"
+
+---then---
+
+FHA STEP 7 (T&E)
+class="step23 option11111211111111111111"
+class="step23 option111111111111111111111"
+name="group_23"
+I pledge allegiance
+
+FHA STEP 8
+class="step24 option111112111111111111111"
+class="step24 option1111111111111111111111"
+name="group_24"
+to the Flag of the United States of America
+
+FHA STEP 9
+class="step25 option1111121111111111111111"
+class="step25 option11111111111111111111111"
+name="group_25"
+and to the Republic for which it stands
+
+FHA STEP 10
+class="step26 option11111211111111111111111"
+class="step26 option111111111111111111111111"
+name="group_26"
+one Nation under God
+
+
+---------also---------------
+
+FHA STEP 7 (T&E)
+1111121111111111121
+class="step23 option11111211111111111111"
+class="step23 option111111111111111111111"
+name="group_23"
+I pledge allegiance
+
+FHA STEP 8
+class="step24 option111112111111111111111"
+class="step24 option1111111111111111111111"
+name="group_24"
+to the Flag of the United States of America
+
+FHA STEP 9
+class="step25 option1111121111111111111111"
+class="step25 option11111111111111111111111"
+name="group_25"
+and to the Republic for which it stands
+
+FHA STEP 10
+class="step26 option11111211111111111111111"
+class="step26 option111111111111111111111111"
+name="group_26"
+one Nation under God
+
+
+---5x--------x<--14th point here
+111112111111111111112
+ all yes
+
+
+----------dump bin for SWM------------
+No/Yes
+<legend class="tooltip"><b>Flood Hazard Area (FHA): STEP 8: Stormwater Management.</b></legend>
+  <p>
+    The entire project should be evaluated to determine if major development criteria are met. If the project proposes more than an acre of total disturbance or more than a quarter acre of new impervious within wetlands and transition area, a stormwater review
+    is warranted.
+  </p>
+  <p>
+    Do the proposed activities create more than 0.25 acres of new impervious surface or disturb more than one acre of land? <span class="tooltiptext">Projects that create more than 0.25 acres of new impervious surface or disturb more than one acre of land are considered a "major development" and are subject to a stormwater management review by DLUR Engineers. </span>
+  </p>
+  <p>
+    <input id="question_2_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
+    <label for="question_2_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">No. (Continue to STEP 9)</label>
+  </p>
+  <p>
+    <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
+    <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">Yes!</label>
+  </p>
+      </fieldset>
+
+      <fieldset class="hide step24 option1111111111111111111111">
+<legend class="tooltip"><b>Flood Hazard Area (FHA): STEP 8: Stormwater Management.</b></legend>
+  <p>
+    The entire project should be evaluated to determine if major development criteria are met. If the project proposes more than an acre of total disturbance or more than a quarter acre of new impervious within wetlands and transition area, a stormwater review
+    is warranted.
+  </p>
+  <p>
+    Do the proposed activities create more than 0.25 acres of new impervious surface or disturb more than one acre of land? <span class="tooltiptext">Projects that create more than 0.25 acres of new impervious surface or disturb more than one acre of land are considered a "major development" and are subject to a stormwater management review by DLUR Engineers. </span>
+  </p>
+  <p>
+    <input id="question_2_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
+    <label for="question_2_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">No. (Continue to STEP 9)</label>
+  </p>
+  <p>
+    <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
+    <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">Yes!</label>
+  </p>
+
+
+All Yes
+11111111111111111123
+11111111111111111122
+
