@@ -1,0 +1,228 @@
+<legend><b>Flood Hazard Area (FHA): STEP 7. </b></legend>
+<p>
+  Check for Threatened and Endangered (T&E) species.
+</p>
+<p class="tooltip">Check Landscape Project 3.1 layer on GIS: <span class="tooltiptext">T&E note goes here</span></p>
+<input type="checkbox" id="item201" onClick="scrollSmoothToBottom()" />
+<label for="item201">1. Apply the Landscape Project 3.1 layer for the appropriate region (Atlantic Coastal, Piedmont Plains, Delaware Bay, etc.) as found in the DEP data bar. </label>
+</br>
+<input type="checkbox" id="item202" onClick="scrollSmoothToBottom()" />
+<label for="item202">2. Use the Identify tool on segment(s) over the project site and adjacent properties. Check for Land Use Rank (LNDR) with a rating of 3 or above. </label>
+</br>
+<input type="checkbox" id="item203" onClick="scrollSmoothToBottom()" />
+<label for="item203">3. Identify the species of concern.</label>
+</br>
+<p class="tooltip">
+  Check for T&E plants:<span class="tooltiptext">T&E PLANTS note goes here</span>
+</p>
+<input type="checkbox" id="item204" onClick="scrollSmoothToBottom()" />
+<label for="item204">1. Apply the Natural Heritage Plant Grid GIS Layer (grid). </label>
+</br>
+<input type="checkbox" id="item205" onClick="scrollSmoothToBottom()" />
+<label for="item205">2. Use the Identify tool to see which plants are listed in the grid.</label>
+</br>
+<p>
+  Does ArcGIS identify potential habitat <b>on the site</b> or <b>within a mile downstream</b> (as determined with Natural Heritage Program Letter), for which a T&E review is required?
+</p>
+<p>
+  <input id="question_2_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_23" type="radio" onClick="scrollSmoothToBottom()" />
+  <label for="question_2_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">No. (Continue to STEP 8)</label>
+</p>
+<p>
+  <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_23" type="radio" onClick="scrollSmoothToBottom()" />
+  <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">Yes!</label>
+</p>
+<p>
+  <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_23" type="radio" onClick="scrollSmoothToBottom()" />
+  <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">Yes, and I have sent the file information to T&E! (Continue to STEP 8)</label>
+</p>
+
+
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+
+<legend class="tooltip"><b>Flood Hazard Area (FHA): STEP  7 (Continued):</b></legend>
+<p>Check the Natural Heritage Program Letter (NHP) to see if there are Critically Dependent Species on Water Courses on the site or within a mile.<span class="tooltiptext">JSTIP: Note for NHP Letter</span></p>
+<p>
+  Open the file in NJEMS:
+</p>
+<input type="checkbox" id="itema201" />
+<label for="itema201">1. Select the appropriate activity and hit "<em>Create New Document."</em></label>
+</br>
+<input type="checkbox" id="itemb201" />
+<label for="itemb201">2. Under "<em>Type</em>," select "<em>Word Processing</em>."</label>
+</br>
+<input type="checkbox" id="itemc201" />
+<label for="itemc201">3. From the list of Word Processing templates, select "<em>T&E Form FHA</em>." </label>
+</br>
+<input type="checkbox" id="itemd201" />
+<label for="itemd201">4. Fill out form and print one copy. Save form to NJEMS.</label>
+<p class="tooltip"><span class="tooltiptext">JSTIP:	Remember to add the "date permit was received", "date you sent the review to T&E." The 45th (GP) or 90th (IP) day deadline date should be clearly visible in large lettering on the form so the T&E staff knows to prioritize. Make sure that all permits with the application are noted.  (sometimes the automated document does not populate all this information on the form)</span>
+</p>
+</br>
+<input type="checkbox" id="iteme201" />
+<label for="iteme201">5. Activity Tracking: Add Row, select "Group Task" box, and select "T&E Species Habitat Review" from the drop down. Assign "PM Send T&E Review to T&E" unit to yourself. Assign all other tasks to appropriate T&E staff for your region.</label>
+</br>
+<p>
+  Deliver the review package to the T&E Unit (baskets sorted by permit type and geographic region located outside T&E unit cube area) containing:
+</p>
+<ol>
+  <li>A copy of the T&E review form</li>
+  <li>A copy of the LURP form;</li>
+  <li>A USGS map or road map showing property location; and</li>
+  <li>One copy of the plan. </li>
+</ol>
+<p>
+  <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_23" type="checkbox" onClick="scrollSmoothToBottom()" />
+  <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">I have sent the information to T&E.</label>
+</p>
+<p>
+  <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_23" type="checkbox" onClick="scrollSmoothToBottom()" />
+  <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">Select "Yes, and I have sent the file information to T&E! (Continue to STEP 8)" under <b>Flood Hazard Area (FHA): STEP 7</b> (above).</label>
+</p>
+</br>
+</br>
+</br>
+</br>
+</br>
+<legend class="tooltip"><b>Flood Hazard Area (FHA): STEP 4: Paradox Review.</b></legend>
+<p>Navigate to depnet/ and click on Web Intelligence on the left hand list. <span class="tooltiptext">If you cannot gain access with this combination of username/password, email Imran Hussain at Imran.hussain@dep.nj.gov to request access to web intelligence. He will provide you with login information.</span>
+</p>
+<input type="checkbox" id="item201" />
+<label for="item201">1. Enter your login info.</label>
+<ul>
+  <li>User name: firstinitiallastname ie: jsmith ;</li>
+  <li>Password: firstinitiallastname ie: jsmith ;</li>
+</ul>
+</br>
+<input type="checkbox" id="item201" />
+<label for="item201">2. Click on Documents on the left hand side. </label>
+</br>
+<input type="checkbox" id="item201" />
+<label for="item201">3. Expand the Public Documents tab on the left hand side. Navigate down to Land Use and expand. Open Paradox.</label>
+</br>
+<input type="checkbox" id="item201" />
+<label for="item201">4. Choose your search method under the Title list. Searching by block-lot and county-municipality or by file number are the easiest ways to find your site. Enter the site information and click “run request”. If there are approvals on the site, a report
+  will be generated which details the file number, site location, permit type, owner, and program manager. Use this information to locate the file if necessary.</label>
+</br>
+<input type="checkbox" id="item201" />
+<label for="item201">5. Once you've completed this section of the review, select "Continue to Flood Hazard Area (FHA): STEP 4: ArcGIS Review." under "<b>Flood Hazard Area (FHA): STEP 3. </b>" </label>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<legend ><b>Flood Hazard Area (FHA): STEP 8: Stormwater Management.</b></legend>
+  <p>
+    The entire project should be evaluated to determine if major development criteria are met. If the project proposes more than an acre of total disturbance or more than a quarter acre of new impervious within wetlands and transition area, a stormwater review
+    is warranted.
+  </p>
+  <p class="tooltip">
+    Do the proposed activities create more than 0.25 acres of new impervious surface or disturb more than one acre of land? <span class="tooltiptext">Projects that create more than 0.25 acres of new impervious surface or disturb more than one acre of land are considered a "major development" and are subject to a stormwater management review by DLUR Engineers. </span>
+  </p>
+  <p>
+    <input id="question_2_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
+    <label for="question_2_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">Yes!</label>
+  </p>
+  <p>
+    <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
+    <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">No. (Continue to STEP 9)</label>
+  </p>
+
+
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+
+  <legend class="tooltip"><b>Flood Hazard Area (FHA): STEP 7. </b></legend>
+  <p>
+    EPA Jurisdiction:
+  </p>
+  <p>
+    Check the proposed project for the following:
+  </p>
+  <input type="checkbox" id="item201" />
+  <label for="item201">Discharge with potential for affecting endangered or threatened species.</label>
+  </br>
+  <input type="checkbox" id="item201" />
+  <label for="item201">Discharges of dredged or fill material which have the potential for adverse impacts on the waters of a state other than New Jersey;</label>
+  </br>
+  <input type="checkbox" id="item201" />
+  <label for="item201">Discharges known or suspected to contain toxic pollutants, hazardous substances, toxic substances, or hazardous waste;</label>
+  </br>
+  <input type="checkbox" id="item201" />
+  <label for="item201">Discharges located in the proximity of a public water supply intake;</label>
+  </br>
+  <input type="checkbox" id="item201" />
+  <label for="item201">Discharges within critical areas established under state or Federal law; including but not limited to:</label>
+  <ul>
+    <li>A National or State forest,</li>
+    <li>fish or wildlife sanctuary,</li>
+    <li>National or historic monument,</li>
+    <li>Wilderness area or preserve,</li>
+    <li>A site identified or proposed under the National Historic Preservation Act; or</li>
+    <li>A component of the National Wild and Scenic Rivers system.</li>
+  </ul>
+  <input type="checkbox" id="item201" />
+  <label for="item201">The filling of five or more acres of freshwater wetlands or State open waters and/or any regulated activity which results in significant reductions in the ecological, commercial, or recreational values or five or more acres of freshwater wetlands or
+    State open waters;</label>
+  </br>
+  <input type="checkbox" id="item201" />
+  <label for="item201">Culvert enclosures of more than 100 feet
+    </br>
+    <input type="checkbox" id="item201" />
+    <label for="item201">Channelization or more than 500 feet of a river or stream;</label>
+    </br>
+    <input type="checkbox" id="item201" />
+    <label for="item201">Cutting more than 5 acres of trees in wetlands for airport site line clearing.</label>
+    </br>
+    <p>
+      A template letter is found at V:>lum>LUR>Pre-Review Resources>Transmittal sheets>USEPA Wotus Determination Request. The letter should be amended to include project specific details. Along with the letter, include the first page of DLUR application, the
+      Permit and Database transmittal, a USGS location map and/or tax map, a copy of a plan that shows the wetland line, and any other supporting documents or site plans. Send packet to the attention of Bob Montgomerie: montgomerie.robert@epa.gov and
+      copy Dan Montella: Montella.daniel@epa.gov.
+    </p>
+    <p>
+      Does the proposed project have any of the above characteristics?
+    </p>
+    <p>
+      <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_25" type="radio" onClick="scrollSmoothToBottom()" />
+      <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">Yes!</label>
+    </p>
+    <p>
+      <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_25" type="radio" onClick="scrollSmoothToBottom()" />
+      <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">No.</label>
+    </p>
+
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+
+
+
+    <legend class="tooltip"><b>Flood Hazard Area (FHA): STEP 10. </b></legend>
+    <p>
+      Wrap Up:
+    </p>
+    <input type="checkbox" id="item201e" />
+    <label for="item201e">1.	In Activity Tracking, whoever fills out the pre-review checklist (PRO or pre-reviewer) should assign "Start Technical Review" and "End Technical Review" to themselves and add the appropriate date.
+    </label>
+    </br>
+    <input type="checkbox" id="item20e1" />
+    <label for="item20e1">2.	Add the checklist to NJEMS as a Blank Word Document (title the document "Pre Review.")</label>
+    </br>
+    <input type="checkbox" id="item2e01" />
+    <label for="item2e01">3.	If the pre-review PRO is not the lead reviewer on the project, then the file should be delivered to the lead reviewer with the checklist attached to the left side of the folder.</label>
+    </br>
+    <p>
+      Using LetterBuilder in NJEMS, begin writing the FHA Environmental Report. If the application contains more than the FHA, restart/refresh this page and check them accordingly.
+    </p>
