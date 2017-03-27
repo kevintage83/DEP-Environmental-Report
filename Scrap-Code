@@ -491,8 +491,26 @@ If so:
 9.	Fill out the form and print one copy. Save form to NJEMS.
 a.	Remember to add the date you sent the review to T&E(“date received”). The 90th day deadline date should be clearly visible in large lettering on the form so the T&E staff can plan accordingly.  Make sure that all permits with the application are noted.  (The automated document does not populate all this information on the form)
 10.	Activity Tracking: Add Row, select “Group Task” box, and select “T&E Species Habitat Review” from the drop down. Assign “PM Send T&E Review to T&E” unit to yourself. Assign all other tasks to appropriate T&E staff for your region.
-
-
+STEP I: EPA Jurisdiction
+STEP J: EPA Priority Wetlands(need to confirm that this is actually required for this type iof permit)?
+STEP K: United States Fish & Wildlife Service (USFWS) Review
+This step should be pre-screened by application support unit (ASU), but for a diligent review, please check Activity Tracking to see if a USFWS review request has been sent by ASU.  If not, then the following screening should be done.  
+To determine whether the pending wetland permit requires USFWS review, use the “Two-Way Memorandum USFWS/NJDEP Freshwater Wetlands Permit Application Review” form found in V:\lum\LUR\Pre-Review Resources\Transmittal Sheets.  If your pending permit is not listed on the transmittal, then USFWS review is not required.
+If the permit is applicable, the PRO still needs to check if the municipality is listed in the “USFW Federally Listed and Candidate Species Occurrences in New Jersey by County and Municipality” packet found in V:\lum\LUR\Pre-Review Resources\FWW Resources.
+If the permit is listed in the memorandum, and the project proposes disturbance to wetlands (not just transition area), and the municipality is listed in the packet, a USFWS review is required.  The PRO should create a package containing: 
+1.	A copy of the LURP Permit Application Transmittal Form; 
+2.	A copy of the LURP form; 
+3.	A USGS map or road map showing property location; and 
+4.	One copy of the plan.
+The package can be placed in the bin labeled USFW Review (North or South) located next to the T&E Unit.  
+STEP L: SHPO
+STEP M: Located in CAFRA area? (CAFRA instructions start on pg.16)
+STEP N: Use the ArcGIS “1970 Wetland Basemaps” layer to determine if your site has coastal wetlands. (pg 17)
+STEP O: 6.	TIDELANDS
+a.	Make sure there is a copy of the tideland’s instrument for all work on natural waterways. They need to at least submit proof that they have sent a letter or a request of tideland’s interest. Show limits of Tidelands boundary on plans if license, lease, or grant is in effect.
+b.	Application from the NJDEP do not require Tideland evidence
+c.      Lagoon work does not require Tidelands
+STEP P: Wrap up Include the GENERAL ISSUES WITH WATERFRONT GP’S AND IP’S on the last page of the WFD IP & GP SOP)
 
 
 
@@ -513,6 +531,8 @@ STEP A: If reviewing a stand-alone wetlands LOI/permit, only these six plants re
 STEP B: Is there potential habitat onsite or within 150'?
 If so:
 
+STEP C: Soils: 
+	Use the DEP Data Soils (SSURGO) View layer to determine the soils that are mapped onsite. Soils should be checked for both LOIs and Permit pre-review. This information is helpful for making wetland determinations: if soils that are “poorly drained” or “somewhat poorly drained” are mapped onsite, these areas that wetlands are most likely to occur and help narrow the focus of what to inspect in the field. The mapped soil type is also required for the Wetland Data Form. 
 
 
 
@@ -529,8 +549,23 @@ Check for vernal pool habitat (FWW Permits only):
 4.	Fill out the form and print one copy. Save form to NJEMS.
 a.	Remember to add the date you sent the review to T&E (“date received”), the Project Manager (PRO) and make sure that all types of permits with the application are noted.  (The automated document does not populate all this information on the form). Under Landscape Mapping: Version 2.1/3.0, write in the region (i.e., Piedmont Plains)
 5.	Activity Tracking: Add Row, select “Group Task” box, and select “T&E Species Habitat Review” from the drop down. Assign “PM Send T&E Review to T&E” unit to yourself. Assign all other tasks to appropriate T&E staff for your region.
+Wetland Information 
+	Check fishery resource (FWW permits only):
+o	Apply the “Surface Water Quality Standards” layer.  An exceptional resource value designation is applicable for wetlands that discharge to FW1 or FW2 trout production waters and their tributaries.
+•	If the screening does not result in an exceptional resource value or T&E review, then the PRO may select the 50’ Intermediate box or 0’ Ordinary box.  Ordinary RVC is generally reserved for ditches, swales, and isolated wetlands that are surrounded by more than 50% disturbed area. If the project needs further review to determine RVC mark the box labeled “Not Sure” and the PRO will fill out the box once a site inspection and T&E review are complete.
+•	Acreage of Disturbance (for FWW Wetlands, Transition Area, and State Open Water)
+•	FWW Undisturbed (wetland acreage remaining after permit action has been conducted/total wetland acreage onsite minus permanently disturbed wetlands)
+•	FWW Preserved (or “deed restricted”)
+For more information, follow the guide “NJEMS FWW Tracking SOP” found in V:\lum\LUR\Pre-Review Resources\SOPs.
 
 
+
+
+
+CAFRA Section:
+	CAFRA Forested (CAFRA permits only: disturbed and preserved)
+For more information, follow the guide “resource Preserved SOP Final Draft” found in V:\lum\LUR\Pre-Review Resources\SOPs.
+ 
 
 
 T&E Notes
