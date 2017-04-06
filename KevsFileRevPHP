@@ -14,7 +14,6 @@
     <script type='text/javascript' src='https://code.jquery.com/jquery-1.5.js'></script>
 
     <style type='text/css'>
-
       fieldset {
         margin: 10px 0;
       }
@@ -89,6 +88,7 @@
 
     <script type='text/javascript'>
 
+
     </script>
 
     <script type='text/javascript'>
@@ -157,6 +157,7 @@
         function() {
           base.productFilterSetup();
         });
+
     </script>
 
     <script type='text/javascript'>
@@ -190,7 +191,7 @@
         <legend>
           <b>STEP 1.</b>
         </legend>
-        <p> 
+        <p>
           You have received a file! Does <b>NJEMS,</b> and the <b>"Permit Database & Transmittal" Form</b> show that you are the <b>Project Manager</b> for this application?
         </p>
         <p>
@@ -254,46 +255,46 @@
           Do the <b>engineering/site plans</b> have the following attributes?:
         </p>
         <p>
-        <input type="checkbox" id="engrPlansItem1" />
-        <label for="engrPlansItem1">
-          1. Are <b>signed</b> and <b>sealed</b> by a licensed land <b>surveyor</b> or <b>engineer</b>;
-        </label>
+          <input type="checkbox" id="engrPlansItem1" />
+          <label for="engrPlansItem1">
+            1. Are <b>signed</b> and <b>sealed</b> by a licensed land <b>surveyor</b> or <b>engineer</b>;
+          </label>
         </p>
         <p>
-        <input type="checkbox" id="engrPlansItem2" />
-        <label for="engrPlansItem2">
-          2. Submitted at an appropriate <b>scale</b> with a <b>"North" arrow</b>;
-        </label>
+          <input type="checkbox" id="engrPlansItem2" />
+          <label for="engrPlansItem2">
+            2. Submitted at an appropriate <b>scale</b> with a <b>"North" arrow</b>;
+          </label>
         </p>
         <p>
-        <input type="checkbox" id="engrPlansItem3" />
-        <label for="engrPlansItem3">
-          3. Have a <b>"Title Block"</b> with the name of the preparer of the plans and the <b>date</b>;
-        </label>
+          <input type="checkbox" id="engrPlansItem3" />
+          <label for="engrPlansItem3">
+            3. Have a <b>"Title Block"</b> with the name of the preparer of the plans and the <b>date</b>;
+          </label>
         </p>
         <p>
-        <input type="checkbox" id="engrPlansItem4" />
-        <label for="engrPlansItem4">
-          4. Show all <b>existing structures</b> on the <b>site</b> and on all immediate <b>adjacent lots</b>;
-        </label>
+          <input type="checkbox" id="engrPlansItem4" />
+          <label for="engrPlansItem4">
+            4. Show all <b>existing structures</b> on the <b>site</b> and on all immediate <b>adjacent lots</b>;
+          </label>
         </p>
         <p>
-        <input type="checkbox" id="engrPlansItem5" />
-        <label for="engrPlansItem5">
-          5. Show all <b>proposed structures, disturbances, and activities</b>;
-        </label>
+          <input type="checkbox" id="engrPlansItem5" />
+          <label for="engrPlansItem5">
+            5. Show all <b>proposed structures, disturbances, and activities</b>;
+          </label>
         </p>
         <p>
-        <input type="checkbox" id="engrPlansItem6" />
-        <label for="engrPlansItem6">
-          6. Show the limits of <b>regulated areas</b> such as: wetlands, transition areas, riparian zones, the mean high water line (MHWL), dunes, etc.
-        </label>
+          <input type="checkbox" id="engrPlansItem6" />
+          <label for="engrPlansItem6">
+            6. Show the limits of <b>regulated areas</b> such as: wetlands, transition areas, riparian zones, the mean high water line (MHWL), dunes, etc.
+          </label>
         </p>
         <p>
-        <input type="checkbox" id="engrPlansItem7" />
-        <label for="engrPlansItem7">
-          7. All <b>metes</b> and <b>bounds</b> on the site. 
-        </label>
+          <input type="checkbox" id="engrPlansItem7" />
+          <label for="engrPlansItem7">
+            7. All <b>metes</b> and <b>bounds</b> on the site.
+          </label>
         </p>
         <p>
           <input id="engrPlansYes" name="group_3" type="radio" onClick="scrollSmoothToBottom()" />
@@ -354,8 +355,8 @@
         </p>
         <br/>Dear (<em>Agent Name</em>),
 
-        <br/>The Department is in the process of reviewing (<em>DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>). In order for the Department to return a positive response for
-        this application, please submit five (5) hard copies of the (original and/or revised) site plans that:
+        <br/>The Department is in the process of reviewing (<em>DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>). In order for the Department to return a positive response for this
+        application, please submit five (5) hard copies of the (original and/or revised) site plans that:
         <br/>
         <br/> 1. Are signed and sealed by a licensed land surveyor or engineer;
         <br/> 2. Submitted at an appropriate scale with a "North" arrow;
@@ -648,7 +649,7 @@
           <input type="button" onclick="openHighlandsSOP()" name="highlandRulesBtn" value="Highlands Checklist" />
         </p>
         <p>
-         <input type="button" onclick="openPinelandsSOP()" name="pinelandRulesBtn" value="Pinelands Exemptions" />
+          <input type="button" onclick="openPinelandsSOP()" name="pinelandRulesBtn" value="Pinelands Exemptions" />
         </p>
         <p>
           <input id="dLURSpecRegionYes" name="group_6" type="checkbox" onClick="scrollSmoothToBottom()" />
@@ -690,7 +691,7 @@
 
       <fieldset class="hide step7 option111112">
         <legend>
-         <b>STEP 7.</b>
+          <b>STEP 7.</b>
         </legend>
         <p>
           Does the <b>total fee</b> received <b>match</b> the total fees for the permits/authorizations that have been marked on the <b>application form</b>?
@@ -739,7 +740,7 @@
         </legend>
         <p class="tooltip">
           Is the fee breakdown that is shown on the "<b>Fee Calculation Sheet</b>" accurate?
-            <span class="tooltiptext">
+          <span class="tooltiptext">
               The maximum application fee (cap) for either an Upland or In-Water Waterfront Development Application is $30,000 per permit type. For example: if you are applying for both an upland and an in-water Waterfront Development, the maximum fee is applied to each permit for a maximum total of $60,000, plus any applicable stormwater review fee. There is no "cap" for a Coastal Wetlands permit. NJDEP and Port Authority NJ/NY do not pay fees for these types of applications (<em>Memo dated 5/12/1982</em>). Other fee agreements can be found at <em>V:\lum\LUR\asu pre review\sop's</em>           
             </span>
         </p>
@@ -787,7 +788,7 @@
         </legend>
         <p class="tooltip">
           Do you have a copy of the most up-to-date <b>Checklist/s</b> for the type of Permit/s requested?
-            <span class="tooltiptext">
+          <span class="tooltiptext">
               Checklists can be found at <em>V:\lum\LUR\asu pre review\sop's</em>
             </span>
         </p>
@@ -862,7 +863,7 @@
 
       <fieldset class="hide step11 option1111121112">
         <legend>
-          Does <b>Engineering</b>, your <b>Supervisor</b>, or <b>ASU</b> have the missing materials? 
+          Does <b>Engineering</b>, your <b>Supervisor</b>, or <b>ASU</b> have the missing materials?
         </legend>
         <p>
           <input id="haveUSGSQuadMapYes" name="group_11" type="radio" onClick="scrollSmoothToBottom()" />
@@ -920,7 +921,7 @@
         </legend>
         <p class="tooltip">
           Does the application have at least <b>four (4)</b> unique, <b>color photos</b> that show all variety of conditions on the site?
-            <span class="tooltiptext">
+          <span class="tooltiptext">
               (Note: The photographs shall also show any sections of channel or riparian zone that will be disturbed by the project.)
             </span>
         </p>
@@ -985,32 +986,32 @@
           <label for="pubNotice4">
             4. Municipal Environmental Commission (<em>if any</em>);
           </label>
-       </p>
-       <p>
-         <input type="checkbox" id="pubNotice5" />
-         <label for="pubNotice5">
-           5. County Planning Board, and;
-         </label>
-       </p>
-       <p>
-         <input type="checkbox" id="pubNotice6" />
-         <label for="pubNotice6">
-           6. All adjacent neighbors within 200 feet of the project site (<em>this requires validation via a certified list obtained from the municipal tax assessor's office</em>)
-         </label>
-       </p>
-       <p>
-         <input id="pubNoticeYes" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
-         <label for="pubNoticeYes">
-           Yes!
-         </label>
-      </p>
-      <p>
-        <input id="pubNoticeNo" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
-        <label for="pubNoticeNo">
-          No.
-        </label>
-      </p>
-    </fieldset>
+        </p>
+        <p>
+          <input type="checkbox" id="pubNotice5" />
+          <label for="pubNotice5">
+            5. County Planning Board, and;
+          </label>
+        </p>
+        <p>
+          <input type="checkbox" id="pubNotice6" />
+          <label for="pubNotice6">
+            6. All adjacent neighbors within 200 feet of the project site (<em>this requires validation via a certified list obtained from the municipal tax assessor's office</em>)
+          </label>
+        </p>
+        <p>
+          <input id="pubNoticeYes" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="pubNoticeYes">
+            Yes!
+          </label>
+        </p>
+        <p>
+          <input id="pubNoticeNo" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="pubNoticeNo">
+            No.
+          </label>
+        </p>
+      </fieldset>
 
       <fieldset class="hide step12 option111112111112">
         <legend>
@@ -1132,40 +1133,40 @@
           Does the application have the following?:
         </p>
         <p>
-        <input type="checkbox" id="fHAAppCheck1" />
-        <label for="fHAAppCheck1">
-          1. A copy of the <b>"Permit & Database Transmittal"</b> with their name highlighted;
-        </label>
-        </p>
-        <p> 
-        <input type="checkbox" id="fHAAppCheck2" />
-        <label for="fHAAppCheck2">
-          2. A copy of the <b>application form</b>;
-        </label>
+          <input type="checkbox" id="fHAAppCheck1" />
+          <label for="fHAAppCheck1">
+            1. A copy of the <b>"Permit & Database Transmittal"</b> with their name highlighted;
+          </label>
         </p>
         <p>
-        <input type="checkbox" id="fHAAppCheck3" />
-        <label for="fHAAppCheck3">
-          3. <b>Two (2)</b> copies of the submitted <b>project plans</b>;
-        </label>
+          <input type="checkbox" id="fHAAppCheck2" />
+          <label for="fHAAppCheck2">
+            2. A copy of the <b>application form</b>;
+          </label>
         </p>
         <p>
-        <input type="checkbox" id="fHAAppCheck4" />
-        <label for="fHAAppCheck4">
-          4. A copy of the <b>environmental report</b>;
-        </label>
+          <input type="checkbox" id="fHAAppCheck3" />
+          <label for="fHAAppCheck3">
+            3. <b>Two (2)</b> copies of the submitted <b>project plans</b>;
+          </label>
         </p>
         <p>
-        <input type="checkbox" id="fHAAppCheck5" />
-        <label for="fHAAppCheck5">
-          5. A copy of the <b>application report</b>;
-        </label>
+          <input type="checkbox" id="fHAAppCheck4" />
+          <label for="fHAAppCheck4">
+            4. A copy of the <b>environmental report</b>;
+          </label>
         </p>
         <p>
-        <input type="checkbox" id="fHAAppCheck6" />
-        <label for="fHAAppCheck6">
-          6. The <b>NJ Heritage Letter</b>
-        </label>
+          <input type="checkbox" id="fHAAppCheck5" />
+          <label for="fHAAppCheck5">
+            5. A copy of the <b>application report</b>;
+          </label>
+        </p>
+        <p>
+          <input type="checkbox" id="fHAAppCheck6" />
+          <label for="fHAAppCheck6">
+            6. The <b>NJ Heritage Letter</b>
+          </label>
         </p>
         <p>
           <input id="fHAAppCheckYes" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
@@ -1210,8 +1211,9 @@
         <br/>
         <br/> 1. A copy of the Compliance Statement;
         <br/> 2. A copy of the application report;
-        <br/> 3. Project plans, which include proposed and existing topography where necessary, <br/>to demonstrate that the development meets the requirements of the Coastal Zone Management Rules, <br/>and the upper and lower limits of all special areas,
-        as described at N.J.A.C. 7:7-9;
+        <br/> 3. Project plans, which include proposed and existing topography where necessary,
+        <br/>to demonstrate that the development meets the requirements of the Coastal Zone Management Rules,
+        <br/>and the upper and lower limits of all special areas, as described at N.J.A.C. 7:7-9;
         <br/> 4. The NJ Heritage Letter
         <br/>
         <br/>If you choose to (<em>submit/revise</em>) the additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
@@ -1258,11 +1260,11 @@
         <p>
           Click the following link to review any applicable code and regulations.
         </p>
-        <p> 
+        <p>
           You can use the [embedded] notepad to document items relevant to your review!
         </p>
         <p>
-        <input type="button" onclick="openFHA()" name="fHARulesBtn" value="Flood Hazard Area Rules 7:13" class="li">
+          <input type="button" onclick="openFHA()" name="fHARulesBtn" value="Flood Hazard Area Rules 7:13" class="li">
         </p>
         <p>
           <input id="fHAComplete" name="group_17" type="radio" onClick="scrollSmoothToBottom()" />
@@ -1282,13 +1284,13 @@
         <p>
           <input type="checkbox" id="fHANJEMS1" onClick="scrollSmoothToBottom()" />
           <label for="fHANJEMS1">
-            1. Click on Activity Tracking, under the [Pending] FHA application. Enter today's date for "PM Start Technical Review". 
+            1. Click on Activity Tracking, under the [Pending] FHA application. Enter today's date for "PM Start Technical Review".
           </label>
         </p>
         <p>
           <input type="checkbox" id="fHANJEMS2" onClick="scrollSmoothToBottom()" />
           <label for="fHANJEMS2">
-            2. Check that the X/Y coordinates of the site and lot and block are accurate in NJEMS. 
+            2. Check that the X/Y coordinates of the site and lot and block are accurate in NJEMS.
           </label>
         </p>
         <p>
@@ -1306,7 +1308,8 @@
         <p>
           <input type="checkbox" id="fHANJEMS5" onClick="scrollSmoothToBottom()" />
           <label for="fHANJEMS5">
-            5. If historical aerials show that there was development onsite that may have needed wetlands authorizations, you can check Paradox, which contains information for authorizations prior to 2002. Otherwise, continue to Flood Hazard Area (FHA): STEP 4. to conduct ArcGIS review.
+            5. If historical aerials show that there was development onsite that may have needed wetlands authorizations, you can check Paradox, which contains information for authorizations prior to 2002. Otherwise, continue to Flood Hazard Area (FHA): STEP 4. to
+            conduct ArcGIS review.
           </label>
         </p>
         <p>
@@ -1326,12 +1329,12 @@
       <fieldset class="hide step19 option11111211111111112">
         <legend class="tooltip">
           <b>Flood Hazard Area (FHA): STEP 4: Paradox Review.</b>
-            <span class="tooltiptext">
+          <span class="tooltiptext">
               If you cannot gain access with this combination of username/password, email Imran Hussain at Imran.hussain@dep.nj.gov to request access to web intelligence. He will provide you with login information.
             </span>
         </legend>
         <p>
-          <input type="button" onclick="openParadox()" name="paradoxBtn" value="Open Paradox"/>
+          <input type="button" onclick="openParadox()" name="paradoxBtn" value="Open Paradox" />
         </p>
         <p>
           <input type="checkbox" id="fHAArcGIS1" />
@@ -1350,7 +1353,7 @@
         <p>
           <input type="checkbox" id="fHAParadox1" />
           <label for="fHAParadox1">
-            2. Click on Documents on the left hand side. 
+            2. Click on Documents on the left hand side.
           </label>
         </p>
         <p>
@@ -1362,13 +1365,14 @@
         <p>
           <input type="checkbox" id="fHAParadox3" />
           <label for="fHAParadox3">
-            4. Choose your search method under the Title list. Searching by block-lot and county-municipality or by file number are the easiest ways to find your site. Enter the site information and click "run request". If there are approvals on the site, a report will be generated which details the file number, site location, permit type, owner, and program manager. Use this information to locate the file if necessary.
+            4. Choose your search method under the Title list. Searching by block-lot and county-municipality or by file number are the easiest ways to find your site. Enter the site information and click "run request". If there are approvals on the site, a report
+            will be generated which details the file number, site location, permit type, owner, and program manager. Use this information to locate the file if necessary.
           </label>
         </p>
         <p>
           <input type="checkbox" id="fHAParadox4" />
           <label for="fHAParadox4">
-            5. Once you've completed this section of the review, select "Continue to Flood Hazard Area (FHA): STEP 4: ArcGIS Review." under "<b>Flood Hazard Area (FHA): STEP 3. </b>" 
+            5. Once you've completed this section of the review, select "Continue to Flood Hazard Area (FHA): STEP 4: ArcGIS Review." under "<b>Flood Hazard Area (FHA): STEP 3. </b>"
           </label>
         </p>
       </fieldset>
@@ -1378,8 +1382,8 @@
           <b>Flood Hazard Area (FHA): STEP 4: ArcGIS Review.</b>
         </legend>
         <p class="tooltip">
-          Open ArcGIS. 
-            <span class="tooltiptext">
+          Open ArcGIS.
+          <span class="tooltiptext">
               A layer file containing all the data needed to conduct permit pre-review can be found at V:\lum\LUR\Pre-Review-Templates. (You can also use USGS Topoquads found in the "Imagery" category in DEP Data.)
             </span>
         </p>
@@ -1430,7 +1434,114 @@
         <p>
           <input id="fHAArcGISContinue" name="group_19" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="fHAArcGISContinue">
-            Continue to Threatened and Endangered.
+            Continue to Threatened and Endangered Species.
+          </label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step20 option111112111111111111">
+        <legend>
+          <b>Flood Hazard Area (FHA): STEP 5. </b>
+        </legend>
+        <p class="tooltip">
+          Determine if the water feature drains more than 50 acres:
+            <span class="tooltiptext">
+              TIP: It is only necessary to check stream stats when there is a small headwater stream or ditch onsite and the 50 acre threshold is essential to determine if FHA regulations will apply. Use your best judgement of the location of the site in the watershed to determine if stream stats needs to be consulted or not. Sometimes stream stats is consulted AFTER a field visit when a feature is encountered that wasn't obvious on GIS.
+            </span>
+        </p>
+        <p>
+          <input type="button" onclick="openStreamStats()" name="streamStatsBtn" value="Open Stream Stats" class="li">
+          <input type="button" onclick="openStreamStatsSOP()" name="streamStatsSOPBtn" value="Stream Stats Guidance">
+        </p>
+        <p>
+          <input type="checkbox" id="streamStats1" />
+          <label for="streamStats1">
+            1. Use USGS Stream Stats to check if the water feature drains over 50 acres.
+          </label> 
+        </p>
+        <p>
+          <input type="checkbox" id="streamStats2" />
+          <label for="streamStats2">
+            2. Document your findings from Stream Stats in your Application Review Form. Continue to Riparian Zones, below.
+          </label>
+        </p>
+        <p>
+          Riparian zones are determined by geology of the site, presence of threatened and endangered species downstream, and surface water quality standards of the watershed.
+        </p>
+        <p>
+          <input type="checkbox" id="streamStats3" />
+          <label for="streamStats3">
+            All features draining more than 50 acres are regulated and have an associated flood hazard area and riparian zone. 
+          </label>
+        </p>
+          <input type="checkbox" id="streamStats4" />
+          <label for="streamStats4">
+            Features draining less than 50 acres are regulated if the feature is not a ditch and has a defined bed and bank. These features do not have a flood hazard area, but do have a riparian zone.</label>
+        </p>
+        <p>
+          Does the site have a riparian zone?
+        </p>
+        <p>
+          <input id="streamStatsYes" name="group_20" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="streamStatsYes">
+            Yes!
+          </label>
+        </p>
+        <p>
+          <input id="streamStatsNo" name="group_20" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="streamStatsNo">
+            No.
+          </label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step20 option1111121111111111112">
+        <legend>
+          STEP 5
+        </legend>
+        <p>
+          Annotate these conditions in your file notes. 
+        </p>
+        <p>
+          Select "<em>Continue to Threatened & Endangered Species</em>" under STEP 4.
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step21 option1111121111111111111">
+        <legend class="tooltip">
+          <b>Flood Hazard Area (FHA): STEP 6. </b> 
+            <span class="tooltiptext">
+              A 150 foot riparian zone can also be attributed to a regulated water if there are critically dependent T&E species onsite or within one downstream mile.  Please see the T&E section for more information.
+            </span>
+        </legend>
+        <p>
+          Determine the <b>riparian zone</b>:
+        </p>
+        <p>
+          <input type="checkbox" id="rZDet1" />
+          <label for="rZDet1">
+            300': Category One (C1) waters and all upstream tributaries within the same HUC14.
+          </label>
+        </p>
+        <p>
+          <input type="checkbox" id="rZDet2" />
+          <label for="rZDet2">
+            150': Trout production waters and all upstream waters; Trout maintenance waters and all upstream waters within one linear mile; waters flowing through an area with acid producing soils; and waters with critically dependent T&E species (see note).
+          </label>
+        </p>
+        <p>
+          <input type="checkbox" id="rZDet3" />
+          <label for="rZDet3">
+            50': All other regulated features 
+          </label>
+        </p>
+        <p>
+          Document your findings in your Application Review Form. Continue to Threatened & Endangered (T&E) Species determination.
+        </p>
+        <p>
+          <input id="rZDet4" name="group_21" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="rZDet4">
+            Select "<em>Continue to Threatened & Endangered Species</em>" under STEP 4.
           </label>
         </p>
       </fieldset>
@@ -1442,43 +1553,320 @@
         <p>
           Check for Threatened and Endangered (T&E) species.
         </p>
-        <p class="tooltip">Check Landscape Project 3.1 layer on GIS: <span class="tooltiptext">T&E note goes here</span></p>
-        <br/>
-        <input type="checkbox" id="item201" onClick="scrollSmoothToBottom()" />
-        <label for="item201">1. Apply the Landscape Project 3.1 layer for the appropriate region (Atlantic Coastal, Piedmont Plains, Delaware Bay, etc.) as found in the DEP data bar. </label>
-        <br/>
-        <input type="checkbox" id="item202" onClick="scrollSmoothToBottom()" />
-        <label for="item202">2. Use the Identify tool on segment(s) over the project site and adjacent properties. Check for Land Use Rank (LNDR) with a rating of 3 or above. </label>
-        <br/>
-        <input type="checkbox" id="item203" onClick="scrollSmoothToBottom()" />
-        <label for="item203">3. Identify the species of concern.</label>
-        <br/>
+        <p class="tooltip">
+          Check Landscape Project 3.1 layer on GIS: 
+            <span class="tooltiptext">
+              T&E note goes here.
+            </span>
+        </p>
+        <p>
+          <input type="checkbox" id="fHATAndE1" onClick="scrollSmoothToBottom()" />
+          <label for="fHATAndE1">
+            1. Apply the Landscape Project 3.1 layer for the appropriate region (Atlantic Coastal, Piedmont Plains, Delaware Bay, etc.) as found in the DEP data bar. 
+          </label>
+        </p>
+        <p>
+          <input type="checkbox" id="fHATAndE2" onClick="scrollSmoothToBottom()" />
+          <label for="fHATAndE2">
+            2. Use the Identify tool on segment(s) over the project site and adjacent properties. Check for Land Use Rank (LNDR) with a rating of 3 or above. 
+          </label>
+        </p>
+        <p>
+          <input type="checkbox" id="fHATAndE3" onClick="scrollSmoothToBottom()" />
+          <label for="fHATAndE3">
+            3. Identify the species of concern.
+          </label>
+        </p>
         <p class="tooltip">
           Check for T&E plants:<span class="tooltiptext">T&E PLANTS note goes here</span>
         </p>
-        <br/>
-        <input type="checkbox" id="item204" onClick="scrollSmoothToBottom()" />
-        <label for="item204">1. Apply the Natural Heritage Plant Grid GIS Layer (grid). </label>
-        <br/>
-        <input type="checkbox" id="item205" onClick="scrollSmoothToBottom()" />
-        <label for="item205">2. Use the Identify tool to see which plants are listed in the grid.</label>
-        <br/>
+        <p>
+          <input type="checkbox" id="fHATAndE4" onClick="scrollSmoothToBottom()" />
+          <label for="fHATAndE4">
+            1. Apply the Natural Heritage Plant Grid GIS Layer (grid). 
+          </label>
+        </p>
+        <p>
+          <input type="checkbox" id="fHATAndE5" onClick="scrollSmoothToBottom()" />
+          <label for="fHATAndE5">
+            2. Use the Identify tool to see which plants are listed in the grid.
+          </label>
+        </p>
         <p>
           Does ArcGIS identify potential habitat <b>on the site</b> or <b>within a mile downstream</b> (as determined with Natural Heritage Program Letter), for which a T&E review is required?
         </p>
         <p>
-          <input id="question_2_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_23" type="radio" onClick="scrollSmoothToBottom()" />
-          <label for="question_2_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">Yes!</label>
+          <input id="fHATAndEYes" name="group_20" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="fHATAndEYes">
+            Yes!
+          </label>
         </p>
         <p>
-          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_23" type="radio" onClick="scrollSmoothToBottom()" />
-          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">No.</label>
+          <input id="fHATAndENo" name="group_20" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="fHATAndENo">
+            No.
+          </label>
         </p>
         <p>
-          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_23" type="radio" onClick="scrollSmoothToBottom()" />
-          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">Yes, and I have sent the file information to T&E! (Continue to STEP 6)</label>
+          <input id="fHATAndEContinue" name="group_20" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="fHATAndEContinue">
+            Continue to STEP 6.
+          </label>
         </p>
       </fieldset>
+
+      <fieldset class="hide step21 option1111121111111111121">
+        <legend class="tooltip">
+          <b>Flood Hazard Area (FHA): STEP  5 (Continued):</b>
+        </legend>
+        <p>
+          Check the Natural Heritage Program Letter (NHP) to see if there are Critically Dependent Species on Water Courses on the site or within a mile.
+            <span class="tooltiptext">
+              JSTIP: Note for NHP Letter
+            </span>
+        </p>
+        <p>
+          Open the file in NJEMS:
+        </p>
+        <p>
+          <input type="checkbox" id="nHPLetter1" />
+          <label for="nHPLetter1">
+            1. Select the appropriate activity and hit "<em>Create New Document."</em>
+          </label>
+        </p>
+        <p>
+          <input type="checkbox" id="nHPLetter2" />
+          <label for="nHPLetter2">
+            2. Under "<em>Type</em>," select "<em>Word Processing</em>."
+          </label>
+        </p>
+        <p>
+          <input type="checkbox" id="nHPLetter3" />
+          <label for="nHPLetter3">
+            3. From the list of Word Processing templates, select "<em>T&E Form FHA</em>." 
+          </label>
+        </p>
+        <p class="tooltip">
+          <span class="tooltiptext">
+            Remember to add the "date permit was received", "date you sent the review to T&E." The 45th (GP) or 90th (IP) day deadline date should be clearly visible in large lettering on the form so the T&E staff knows to prioritize. Make sure that all permits with the application are noted.  (sometimes the automated document does not populate all this information on the form)
+          </span>
+          <input type="checkbox" id="nHPLetter4" />
+          <label for="nHPLetter">
+            4. Fill out form and print one copy. Save form to NJEMS.
+          </label>
+        </p>
+        <p>
+          <input type="checkbox" id="nHPLetter5" />
+          <label for="nHPLetter5">
+            5. Activity Tracking: Add Row, select "Group Task" box, and select "T&E Species Habitat Review" from the drop down. Assign "PM Send T&E Review to T&E" unit to yourself. Assign all other tasks to appropriate T&E staff for your region.
+          </label>
+        </p>
+        <p>
+          Deliver the review package to the T&E Unit (baskets sorted by permit type and geographic region located outside T&E unit cube area) containing:
+        </p>
+        <ol>
+          <li>
+            A copy of the T&E review form
+          </li>
+          <li>
+            A copy of the LURP form;
+          </li>
+          <li>
+            A USGS map or road map showing property location; and
+          </li>
+          <li>
+            One copy of the plan. 
+          </li>
+        </ol>
+        <p>
+          <input id="nHPLetter6" name="group_22" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="nHPLetter6">I have sent the information to T&E.</label>
+        </p>
+        <p>
+          <input id="nHPLetter7" name="group_22" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="nHPLetter7">
+            Select "<em>Continue to STEP 6</em>" under <b>Flood Hazard Area (FHA): STEP 5</b>.
+          </label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step21 option1111121111111111122">
+        <legend>
+          <b>Flood Hazard Area (FHA): STEP 6: Stormwater Management.</b>
+        </legend>
+        <p>
+          The entire project should be evaluated to determine if major development criteria are met. If the project proposes more than an acre of total disturbance or more than a quarter acre of new impervious within wetlands and transition area, a stormwater review is warranted.
+        </p>
+        <p class="tooltip">
+          Do the proposed activities create more than 0.25 acres of new impervious surface or disturb more than one acre of land? 
+            <span class="tooltiptext">
+              Projects that create more than 0.25 acres of new impervious surface or disturb more than one acre of land are considered a "major development" and are subject to a stormwater management review by DLUR Engineers. 
+            </span>
+        </p>
+        <p>
+          <iframe class="frames" src="file:///V:/lum/LUR/Pre-Review%20Resources/FHA%20Resources/Stormwater%20Flow%20Chart.pdf">
+          </iframe>
+        </p>
+        <p>
+          <input id="sWMgtNo" name="group_21" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="sWMgtNo">
+            Yes! 
+          </label>
+        </p>
+        <p>
+          <input id="sWMgtYes" name="group_21" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="sWMgtYes">
+            No.
+          </label>
+        </p>
+        <p>
+          <input id="sWMgtContinue" name="group_21" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="sWMgtContinue">
+            Continue to STEP 7.
+          </label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step22 option11111211111111111221">
+        <legend class="tooltip">
+          <b>Flood Hazard Area (FHA): STEP 7. </b>
+          <span class="tooltiptext">
+            A template letter is found at V:>lum>LUR>Pre-Review Resources>Transmittal sheets>USEPA Wotus Determination Request. The letter should be amended to include project specific details. Along with the letter, include the first page of DLUR application, the Permit and Database transmittal, a USGS location map and/or tax map, a copy of a plan that shows the wetland line, and any other supporting documents or site plans. Send packet to the attention of Bob Montgomerie: montgomerie.robert@epa.gov and copy Dan Montella: Montella.daniel@epa.gov.
+          </span>
+        </legend>
+        <p>
+          EPA Jurisdiction:
+        </p>
+        <p>
+          Check the proposed project for the following:
+        </p>
+        <p> 
+          <input type="checkbox" id="ePAJuris1" />
+          <label for="ePAJuris1">
+            Discharge with potential for affecting endangered or threatened species.
+          </label>
+       </p>
+       <p>
+         <input type="checkbox" id="ePAJuris2" />
+         <label for="ePAJuris2">
+           Discharges of dredged or fill material which have the potential for adverse impacts on the waters of a state other than New Jersey;
+         </label>
+       </p>
+       <p>
+         <input type="checkbox" id="ePAJuris3" />
+         <label for="ePAJuris3">
+           Discharges known or suspected to contain toxic pollutants, hazardous substances, toxic substances, or hazardous waste;
+         </label>
+       </p>
+       <p>
+         <input type="checkbox" id="ePAJuris4" />
+         <label for="ePAJuris4">
+           Discharges located in the proximity of a public water supply intake;
+         </label>
+       </p>
+       <p>
+         <input type="checkbox" id="ePAJuris5" />
+         <label for="ePAJuris5">
+           Discharges within critical areas established under state or Federal law; including but not limited to:
+         </label>
+       </p>
+       <ul>
+         <li>
+           A National or State forest,
+         </li>
+         <li>
+           fish or wildlife sanctuary,
+         </li>
+         <li>
+           National or historic monument,
+         </li>
+         <li>
+           Wilderness area or preserve,
+         </li>
+         <li>
+           A site identified or proposed under the National Historic Preservation Act; or
+         </li>
+         <li>
+           A component of the National Wild and Scenic Rivers system.
+         </li>
+       </ul>
+       <p>
+         <input type="checkbox" id="ePAJuris6" />
+         <label for="ePAJuris6">
+           The filling of five or more acres of freshwater wetlands or State open waters and/or any regulated activity which results in significant reductions in the ecological, commercial, or recreational values or five or more acres of freshwater wetlands or State open waters;
+         </label>
+       </p>
+       <p>
+         <input type="checkbox" id="ePAJuris7" />
+         <label for="ePAJuris7">
+           Culvert enclosures of more than 100 feet
+         </label>
+       </p>
+       <p>
+         <input type="checkbox" id="ePAJuris8" />
+         <label for="ePAJuris8">
+           Channelization or more than 500 feet of a river or stream;
+         </label>
+       </p>
+       <p>
+         <input type="checkbox" id="ePAJuris9" />
+         <label for="ePAJuris9">
+           Cutting more than 5 acres of trees in wetlands for airport site line clearing.
+         </label>
+       </p>
+       <p>
+         Does the proposed project have any of the above characteristics?
+       </p>
+       <p>
+         <input id="ePAJurisYes" name="group_22" type="checkbox" onClick="scrollSmoothToBottom()" />
+         <label for="ePAJurisYes">
+           Yes!
+         </label>
+       </p>
+       <p>
+         <input id="ePAJurisNo" name="group_22" type="checkbox" onClick="scrollSmoothToBottom()" />
+         <label for="ePAJurisNo">
+           No.
+         </label>
+       </p>
+       <p>
+         <input id="ePAJurisContinue" name="group_22" type="radio" onClick="scrollSmoothToBottom()" />
+         <label for="ePAJurisContinue">
+           Continue to STEP 8.
+         </label>
+       </p>
+     </fieldset>
+
+      <fieldset class="hide step23 option111112111111111112211">
+        <legend class="tooltip">
+          <b>Flood Hazard Area (FHA): STEP 8. </b>
+        </legend>
+        <p>
+          Wrap Up:
+        </p>
+          <input type="checkbox" id="fHAWrapUp1" />
+          <label for="fHAWrapUp1">
+            1. In Activity Tracking, whoever fills out the pre-review checklist (PRO or pre-reviewer) should assign "Start Technical Review" and "End Technical Review" to themselves and add the appropriate date.
+          </label>
+        </p>
+        <p>
+          <input type="checkbox" id="fHAWrapUp2" />
+          <label for="fHAWrapUp2">
+            2. Add the checklist to NJEMS as a Blank Word Document (title the document "Pre Review.")
+          </label>
+        </p>
+        <p>
+          <input type="checkbox" id="fHAWrapUp3" />
+          <label for="fHAWrapUp3">
+            3. If the pre-review PRO is not the lead reviewer on the project, then the file should be delivered to the lead reviewer with the checklist attached to the left side of the folder.
+          </label>
+        </p>
+        <p>
+          Using LetterBuilder in NJEMS, begin writing the FHA Environmental Report. If the application contains more than the FHA, restart/refresh this page and check them accordingly.
+        </p>
+      </fieldset>
+
+
 
 
 
@@ -1549,6 +1937,7 @@
         function openStateAidInfo() {
           window.open("http://www.state.nj.us/dca/divisions/dlgs/resources/stateaidinfo.shtml.pdf");
         }
+
       </script>
 
 
