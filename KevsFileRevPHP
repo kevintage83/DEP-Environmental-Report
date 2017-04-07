@@ -7916,7 +7916,8 @@
         <br/>The Highlands Exemption Application (HAD) portion of the application is administratively complete!
         <br/>Click the following link to reference the applicable code and regulations (a new browser tab will open). <br/>
         <br/>
-        <input type="button" onclick="openCZM()" name="cZMRulesBtn" value="Coastal/CAFRA/CZM Rules 7:7" class="li">
+        <input type="button" onclick="openHAD()" name="hADBtn" value="Highlands Exemption Review" class="li">
+        <input type="button" onclick="openHADRules()" name="hADRulesBtn" value="Highlands Exemption Rules" class="li">
         <br/>When you are finished with your review, click the radio button below.
         <p>
           <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
@@ -8017,11 +8018,8 @@
           <input type="button" onclick="openFWW()" name="fWWRulesBtn" value="Freshwater Wetlands" class="li" />
         </p>
         <p>
-          When you are finished with your review, click the radio button below.
-        </p>
-        <p>
-          <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()"/>
-          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">I have finished my review.</label>
+          <input id="eLOIDone" name="group_18" type="checkbox" onClick="scrollSmoothToBottom()"/>
+          <label for="eLOIDone">I have finished my review.</label>
         </p>
       </fieldset>
 
