@@ -163,7 +163,7 @@
     <script type='text/javascript'>
       function scrollSmoothToBottom(id) {
         var div = document.getElementById(id);
-        $('body').animate({
+        $('body,html').animate({
           scrollTop: document.body.scrollHeight
         }, 500);
       }
