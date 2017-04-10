@@ -81,7 +81,7 @@
       .commentBox {
         z-index: 99;
         position: fixed;
-        right: 0;
+        width: 100%;
       }
 
     </style>
@@ -176,7 +176,9 @@
 
     </script>
     <h2 id="header-wrap">Application Pre-Review  <button onClick="scrollSmoothToBottom()">Scroll to Bottom</button></h2>
-    <textarea rows="20" cols="70" class="commentBox"> Enter your project notes here!</textarea>
+      <br/>
+      <br/>
+    <textarea rows="20" class="commentBox"> Enter your project notes here!</textarea>
   </head>
 
   <body>
@@ -186,7 +188,19 @@
       <br/>
       <br/>
       <br/>
-
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       <fieldset class="step1 option0">
         <legend>
           <b>STEP 1.</b>
@@ -664,14 +678,14 @@
           </label>
         </p>
         <p>
-          <input id="dLURSpecRegionNo" name="group_6" type="radio" onClick="scrollSmoothToBottom()" />
+          <input id="dLURSpecRegionNo" name="group_7" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="dLURSpecRegionNo">
             No.
           </label>
         </p>
       </fieldset>
 
-      <fieldset class="hide step6 option1111111">
+      <fieldset class="hide step7 option1111111">
         <legend>
           Return the application accordingly with a <b>top sheet</b> directing the Applicant where the application should be submitted. Include a <b>refund request form</b>.
         </legend>
@@ -7908,20 +7922,27 @@
           <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_7_2" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_7_2">No.</label>
         </p>
-        <button onClick="openHAD()">Tracking sheet for municipal HADs</button>
+        <button onClick="openHAD()">
+          Tracking sheet for municipal HADs
+        </button>
       </fieldset>
 
       <fieldset class="hide step18 option111112111111171">
-        <legend><b>Congratulations!</b></legend>
+        <legend>
+          <b>Congratulations!</b>
+        </legend>
         <br/>The Highlands Exemption Application (HAD) portion of the application is administratively complete!
-        <br/>Click the following link to reference the applicable code and regulations (a new browser tab will open). <br/>
+        <br/>Click the following link to reference the applicable code and regulations (a new browser tab will open). 
+        <br/>
         <br/>
         <input type="button" onclick="openHAD()" name="hADBtn" value="Highlands Exemption Review" class="li">
         <input type="button" onclick="openHADRules()" name="hADRulesBtn" value="Highlands Exemption Rules" class="li">
         <br/>When you are finished with your review, click the radio button below.
         <p>
           <input id="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
-          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">I have finished my review.</label>
+          <label for="question_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2_1">
+            I have finished my review.
+          </label>
         </p>
       </fieldset>
 
@@ -7953,14 +7974,15 @@
       </fieldset>
 
       <fieldset class="hide step15 option11111211111118">
-        <legend><b>E-LOI Application: STEP 1. </b></legend>
+        <legend>
+          <b>E-LOI Application: STEP 1. </b>
+        </legend>
         <br/>Does the application include the following additional information?:
         <br/>
         <ol>
           <li>A detailed description of the proposed activities;</li>
           <li>an Alternatives Analysis;</li>
         </ol>
-        </legend>
         <p>
           <input id="question_1_1_1_1_1_2_1_1_1_1_1_1_1_8_1" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="question_1_1_1_1_1_2_1_1_1_1_1_1_1_8_1">Yes!</label>
@@ -7973,7 +7995,9 @@
       </fieldset>
 
       <fieldset class="hide step16 option111112111111182">
-        <legend><b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include the following boilerplate [applicable] language:</legend>
+        <legend>
+          <b>Notify the Applicant</b>, via email (cc your Supervisor), that <b>the application is missing required information</b>. Include the following boilerplate [applicable] language:
+        </legend>
         <br/>
         <br/>Dear (Agent Name),
 
@@ -7993,14 +8017,18 @@
         <br/>If you have any questions, you can reach me here, or at (Permit Writer's desk phone number).
         <br/>
         <br/>Thank you,
-        <br/>(Permit Writer's Signature)</legend>
+        <br/>(Permit Writer's Signature)
         <p>
           <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
-          <label for="question_3_1_1">Applicant has been notified.</label>
+          <label for="question_3_1_1">
+            Applicant has been notified.
+          </label>
         </p>
         <p>
           <input id="question_3_1_2" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
-          <label for="question_3_1_2">Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.</label>
+          <label for="question_3_1_2">
+            Annotate these changes to the Application under <b>Activity Tracking</b> in <b>NJEMS</b>.
+          </label>
         </p>
       </fieldset>
 
