@@ -35,6 +35,12 @@
       #clearBtnHeader {
         background-color: red;
       }
+
+      body {
+        min-height: 400px;
+        margin-bottom: 70px;
+        clear: both;
+      }
       
       .tooltip {
         position: relative;
@@ -89,26 +95,34 @@
         height: relative;
       }
 
-      #date90 {
-        float: left;
-      }
-
-      #date60 {
-        float: left;
-      }
-
-      #date20 {
-        float: left;
-      }
-
-      #date {
-        float: left;
-      }
 
       #timers {
         float: left;
         width: relative;
         padding: 2px;
+      }
+
+      #deadlines {
+        background: #444;
+        color: #DEDEDE;
+        font: normal 16px arial,verdana,sans-serf;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        width: 200px;
+      }
+
+      footer { 
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 96;
+        background-color: green;
+        padding: 2px;
+        margin-bottom: -11px;
+        margin-left: -10px;
+        margin-rightt: -10px;
       }
 
     </style>
@@ -182,6 +196,50 @@
 
     </script>
 
+    <script type="text/javascript">
+
+        function Get20Days() {
+          var aSUDate20 = new Date(document.getElementById("aSU_Date").value);
+          aSUDate20.setDate(aSUDate20.getDate() + 20);
+          return aSUDate20;
+        }
+
+        function Get45Days() {
+          var aSUDate45 = new Date(document.getElementById("aSU_Date").value);
+          aSUDate45.setDate(aSUDate45.getDate() + 45);
+          return aSUDate45;
+        }
+
+        function Get60Days() {
+          var aSUDate60 = new Date(document.getElementById("aSU_Date").value);
+          aSUDate60.setDate(aSUDate60.getDate() + 60);
+          return aSUDate60;
+        }
+
+        function Get90Days() {
+          var aSUDate90 = new Date(document.getElementById("aSU_Date").value);
+          aSUDate90.setDate(aSUDate90.getDate() + 90);
+          return aSUDate90;
+        }
+
+        function Get180Days() {
+          var aSUDate180 = new Date(document.getElementById("aSU_Date").value);
+          aSUDate180.setDate(aSUDate180.getDate() + 180);
+          return aSUDate180;
+        }
+
+        function cal() {
+          if (document.getElementById("aSU_Date")) {
+            document.getElementById("numdays20").value=Get20Days();
+            document.getElementById("numdays45").value=Get45Days();
+            document.getElementById("numdays60").value=Get60Days();
+            document.getElementById("numdays90").value=Get90Days();
+            document.getElementById("numdays180").value=Get180Days();
+          }
+        }
+
+    </script>
+
     <script type='text/javascript'>
       function scrollSmoothToBottom(id) {
         var div = document.getElementById(id);
@@ -201,19 +259,18 @@
     <textarea rows="20" class="commentBox"> Enter your project notes here!
     </textarea>
 
-    <h2 id="header-wrap">
+    <h1 id="header-wrap">
       DLUR Application Review  
         <button onClick="scrollSmoothToBottom()">
           Scroll to Bottom
         </button>    
-    </h2>   
+    </h1>   
 
   </head>
 
   <body>
 
     <form action="#" id="unique_id" class="productFilter">
-      <br/>
       <br/>
       <script type="text/javascript">
 
@@ -229,70 +286,110 @@
         }	else  {
 	  greeting = 'Welcome!';
         }
-        document.write('<h3>' + greeting + '</h3>');
+        document.write('<h2>' + greeting + '</h2>');
 
       </script> 
-      <br/>
-      <div id="timers">
-        <div id="date">
-        </div>
-        <br/>
-        <div id="date20">
-        </div>
-        <br/>
-        <div id="date45">
-        </div>
-        <div id="date60">
-        </div>
-        <br/>
-        <div id="date90">
-        </div>
-        <br/>
-        <div id="date120">
-        </div>
-        <div id="date180">
-        </div>
-      </div>
+
+      <fieldset class="step1 option0" id="timers">
+        <div id="display0"></div>
+        <div id="display20"></div>
+        <div id="display45"></div>
+        <div id="display60"></div>
+        <div id="display90"></div>
+        <div id="display120"></div>
+        <div id="display180"></div>
+      </fieldset>
 
       <script type="text/javascript">
+        function formatDate(date) {
 
-        var d = new Date();
-        document.getElementById("date").innerHTML = "Today is " + d;
+          var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+          return months[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear();
+        }
 
-        var d20 = new Date();
-        d20.setDate(d20.getDate() + 19);
-        document.getElementById("date20").innerHTML = "20 days from today is " + d20;
+         var d0 = new Date();
+         d0.setDate(d0.getDate())
+         document.getElementById("display0").innerHTML = "Today is " + formatDate(new Date(d0));
 
-        var d45 = new Date();
-        d45.setDate(d45.getDate() + 44);
-        document.getElementById("date45").innerHTML = "45 days from today is " + d45;
+         var d20 = new Date();
+         d20.setDate(d20.getDate() + 19)
+         document.getElementById("display20").innerHTML = "20 days from today is " + formatDate(new Date(d20));
 
-        var d60 = new Date();
-        d60.setDate(d60.getDate() + 59);
-        document.getElementById("date60").innerHTML = "60 days from today is " + d60;
+         var d45 = new Date();
+         d45.setDate(d45.getDate() + 44)
+         document.getElementById("display45").innerHTML = "45 days from today is " + formatDate(new Date(d45));
 
-        var d90 = new Date();
-        d90.setDate(d90.getDate() + 89);
-        document.getElementById("date90").innerHTML = "90 days from today is " + d90;
+         var d60 = new Date();
+         d60.setDate(d60.getDate() + 59)
+         document.getElementById("display60").innerHTML = "60 days from today is " + formatDate(new Date(d60));
 
-        var d120 = new Date();
-        d120.setDate(d120.getDate() + 119);
-        document.getElementById("date120").innerHTML = "120 days from today is " + d120;
+         var d90 = new Date();
+         d90.setDate(d90.getDate() + 89)
+         document.getElementById("display90").innerHTML = "90 days from today is " + formatDate(new Date(d90));
 
-        var d180 = new Date();
-        d180.setDate(d180.getDate() + 179);
-        document.getElementById("date180").innerHTML = "180 days from today is " + d180;
+         var d120 = new Date();
+         d120.setDate(d120.getDate() + 119)
+         document.getElementById("display120").innerHTML = "120 days from today is " + formatDate(new Date(d120));
 
-      </script>  
+         var d180 = new Date();
+         d180.setDate(d180.getDate() + 179);
+         document.getElementById("display180").innerHTML = "180 days from today is " + formatDate(new Date(d180));
+      </script>
       <br/>
       <br/>
       <br/>
-      <br/>   
       <br/>
       <br/>
       <br/>
       <br/>
       <br/>
+      <br/>
+      <br/>
+  
+<div>
+  <p>
+    <label>
+      ASU Date:
+    </label>
+    <input type="date" class="textbox" id="aSU_Date" onchange="cal()" />
+  </p>
+</div>
+
+<div>
+  <label>
+    20th day Deadline:
+  </label>
+  <input type="text" class="textbox" id="numdays20" />
+</div>
+
+<div>
+  <label>
+    45th day Deadline:
+  </label>
+  <input type="text" class="textbox" id="numdays45" />
+</div>
+
+<div>
+  <label>
+    60th day Deadline:
+  </label>
+  <input type="text" class="textbox" id="numdays60" />
+</div>
+
+<div>
+  <label>
+    90th day Deadline:
+  </label>
+  <input type="text" class="textbox" id="numdays90" />
+</div>
+
+<div>
+  <label>
+    180th day Deadline:
+  </label>
+  <input type="text" class="textbox" id="numdays180" />
+</div>
+
       <fieldset class="step1 option0">
         <legend>
           <b>STEP 1.</b>
@@ -8220,14 +8317,14 @@
       </script>
 
     </form>
-
+  </body>
+    <footer>
       <div>
         <em>SOP for the Review of All Land Use Applications.</em>
         <button onClick="scrollSmoothToTop()">
           Scroll to Top
         </button>
-</div>
- 
+      </div>
 
       <p> 
         <b>N.J.A.C. Quick References</b>
@@ -8246,7 +8343,7 @@
           <input type="submit" id="clearBtnHeader" value="Clear Form/Start Over" onclick="javascript:history.go(0)" class="li" />
         
       </p>
-      
-  </body>
+    </footer>      
+
 
 </html>
