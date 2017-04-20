@@ -31,11 +31,9 @@
         margin-top: -11px;
         margin-left: -10px;
       }
-      
       #clearBtnHeader {
         background-color: red;
       }
-      
       body {
         min-height: 400px;
         margin-bottom: 70px;
@@ -94,36 +92,28 @@
         width: 30%;
         height: relative;
       }
-      
       #timers {
         float: left;
         width: relative;
         padding: 2px;
       }
-      
       #deadlines {
         background: #444;
         color: #DEDEDE;
-        font: normal 16px arial, verdana, sans-serf;
+        font: normal 16px arial,verdana,sans-serf;
         height: 40px;
         line-height: 40px;
         text-align: center;
         width: 200px;
       }
-      
-      footer {
+      footer { 
         display: block;
-        position: fixed;
-        bottom: 0;
         width: 100%;
         z-index: 96;
         background-color: green;
         padding: 2px;
-        margin-bottom: -11px;
-        margin-left: -10px;
-        margin-rightt: -10px;
-      }
 
+      }
     </style>
 
     <script type='text/javascript'>
@@ -213,6 +203,7 @@
 
 
     <script type="text/javascript">
+
       function Get20Days() {
         var aSUDate20 = new Date(document.getElementById("aSU_Date").value);
         aSUDate20.setDate(aSUDate20.getDate() + 28);
@@ -309,10 +300,10 @@
     <script type="text/javascript">
       setInterval(getCurrentDateTime, 1000);
 
-      function getCurrentDateTime() {
+      function getCurrentDateTime()
+      {
         document.getElementById("timeDiv").innerHTML = "It is currently " + new Date();
       }
-
     </script>
 
   </head>
@@ -341,15 +332,15 @@
 
       <fieldset class="step0 option0">
         <div id="timers">
-          <div id="timeDiv"> Calculating...
-          </div>
-          <div>
-            Please enter the ASU date listed on the "<em>Permit Database Transmittal Form</em>" below.
-          </div>
+        <div id="timeDiv"> Calculating...
+        </div>
+<div>
+Please enter the <b>ASU Date</b> listed on the "<em>Permit Database Transmittal Form</em>" below.
+</div>
           <div>
 
             <label>
-              ASU Date:
+              <b>ASU Date:</b>
             </label>
             <input type="date" class="textbox" id="aSU_Date" onchange="cal()" />
 
@@ -357,55 +348,56 @@
 
           <div>
             <label>
-              20<sup>th</sup> day deadline:
+              <b>20</b><sup>th</sup> day deadline:
             </label>
             <input type="text" class="textbox" id="numdays20" />
           </div>
 
           <div>
             <label>
-              30<sup>th</sup> day deadline:
+              <b>30</b><sup>th</sup> day deadline:
             </label>
             <input type="text" class="textbox" id="numdays30" />
           </div>
 
           <div>
             <label>
-              45<sup>th</sup> day deadline:
+              <b>45</b><sup>th</sup> day deadline:
             </label>
             <input type="text" class="textbox" id="numdays45" />
           </div>
 
           <div>
             <label>
-              60<sup>th</sup> day deadline:
+              <b>60</b><sup>th</sup> day deadline:
             </label>
             <input type="text" class="textbox" id="numdays60" />
           </div>
 
           <div>
             <label>
-              90<sup>th</sup> day deadline:
+              <b>90</b><sup>th</sup> day deadline:
             </label>
             <input type="text" class="textbox" id="numdays90" />
           </div>
 
           <div>
             <label>
-              120<sup>th</sup> day deadline:
+              <b>120</b><sup>th</sup> day deadline:
             </label>
             <input type="text" class="textbox" id="numdays120" />
           </div>
 
           <div>
             <label>
-              180<sup>th</sup> day deadline:
+              <b>180</b><sup>th</sup> day deadline:
             </label>
             <input type="text" class="textbox" id="numdays180" />
           </div>
         </div>
 
         <script type="text/javascript">
+
           var d = new Date();
           document.getElementById("date").innerHTML = "Today is " + d;
 
@@ -1044,7 +1036,8 @@
         <legend class="tooltip">
           <span class="tooltiptext">
               A folder containing all the checklists needed to conduct permit pre-review can be found at V:\lum\LUR\asu pre review\Checklists.
-            </span> Get the missing materials from your Supervisor or from the shared drive.
+            </span>
+          Get the missing materials from your Supervisor or from the shared drive.
         </legend>
         <p>
           <input id="getMissingData1" name="group_9" type="checkbox" onClick="scrollSmoothToBottom()" />
@@ -2102,10 +2095,10 @@
           Does the application have the following?:
         </p>
         <p>
-          <input type="checkbox" id="wFDCheck1" />
-          <label for="wFDCheck1">
-            A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);
-          </label>
+        <input type="checkbox" id="wFDCheck1" />
+        <label for="wFDCheck1">
+          A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);
+        </label>
         </p>
         <p>
           <input type="checkbox" id="wFDCheck2" />
@@ -2244,7 +2237,7 @@
           Click the following link to review any applicable code and regulations.
         </p>
         <p>
-          You can use the [embedded] notepad to document items relevant to your review!
+          You can use the [embedded] notepad to document items relevant to your review! 
         </p>
         <p>
           <input id="wFDCongrats" name="group_17" type="radio" onClick="scrollSmoothToBottom()" />
@@ -2288,7 +2281,8 @@
         <p>
           <input type="checkbox" id="wFDNJEMS5" onClick="scrollSmoothToBottom()" />
           <label for="wFDNJEMS5">
-            5. If historical aerials show that there was development onsite that may have needed wetlands authorizations, you can check Paradox, which contains information for authorizations prior to 2002. Otherwise, continue to STEP 4. to conduct ArcGIS review.
+            5. If historical aerials show that there was development onsite that may have needed wetlands authorizations, you can check Paradox, which contains information for authorizations prior to 2002. Otherwise, continue to STEP 4. to
+            conduct ArcGIS review.
           </label>
         </p>
         <p>
@@ -2821,7 +2815,7 @@
       <fieldset class="hide step23 option111112111111121112211">
         <legend class="tooltip">
           <b>WFD & Coastal Wetlands IP: STEP 8. </b>
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               For further assistance; you may use the guidance document on the EPA Priority Wetland Layer found at V:\lum\LUR\Pre-Review Resources\SOPs
             </span>
         </legend>
@@ -2831,8 +2825,8 @@
         <p>
           <input type="checkbox" id="wFDEPAPriority1" />
           <label for="wFDEPAPriority1" class="tooltip">
-            Use the GIS Layer
-            <span class="tooltiptext">
+            Use the GIS Layer 
+              <span class="tooltiptext">
                 found at V:\lum\LUR\GIS_Data\ EPA_Priority_Wetlands.lyr
               </span>
           </label>
@@ -2842,7 +2836,7 @@
           <label for="wFDEPAPriority2">
             Use the Identify tool to see information, including caveats for wetlands that may fall in the geographic area but are excluded from the EPA priority.
           </label>
-        </p>
+        </p>  
         <p>
           Soils:
         </p>
@@ -2879,8 +2873,7 @@
         </p>
         <ul>
           <li>If your pending permit is not listed on the transmittal, then USFWS review is not required.</li>
-          <li>If the permit is applicable, the PRO still needs to check if the municipality is listed in the "USFW Federally Listed and Candidate Species Occurrences in New Jersey by County and Municipality" packet found in V:\lum\LUR\Pre-Review Resources\FWW
-            Resources.</li>
+          <li>If the permit is applicable, the PRO still needs to check if the municipality is listed in the "USFW Federally Listed and Candidate Species Occurrences in New Jersey by County and Municipality" packet found in V:\lum\LUR\Pre-Review Resources\FWW Resources.</li>
         </ul>
         <p>
           <input type="checkbox" id="wFDUSFWS2" />
@@ -2890,10 +2883,10 @@
         </p>
         <ol>
           <li>
-            A copy of the LURP Permit Application Transmittal Form;
+            A copy of the LURP Permit Application Transmittal Form; 
           </li>
           <li>
-            A copy of the LURP form;
+            A copy of the LURP form; 
           </li>
           <li>
             A USGS map or road map showing property location; and
@@ -2907,31 +2900,31 @@
           <label for="wFDUSFWS3">
             Place in the bin labeled USFW Review (North or South) located next to the T&E Unit.
           </label>
-          <p>
-            In NJEMS, complete the following in activity tracking:
-          </p>
-          <p>
-            <input type="checkbox" id="wFDUSFWS4" />
-            <label for="wFDUSFWS4">1. Add row, select group task, and select "Pre-review Send USFWS In-House Review to T&E." </label>
-          </p>
-          <p>
-            <input type="checkbox" id="wFDUSFWS5" />
-            <label for="wFDUSFWS5">
-              2. Assign the "Pre-review Send USFWS In-House Review to T&E" task to yourself and add date requested, Assign the other tasks to Karena DiLeo and leave the dates blank.
-            </label>
-          </p>
-          <p>
-            <input id="wFDUSFWSContinue" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
-            <label for="wFDUSFWSContinue">
-              Continue to State Historic Preservation Office (SHPO) Review
-            </label>
-          </p>
+        <p>
+          In NJEMS, complete the following in activity tracking:
+        </p>
+        <p>
+          <input type="checkbox" id="wFDUSFWS4" />
+          <label for="wFDUSFWS4">1. Add row, select group task, and select "Pre-review Send USFWS In-House Review to T&E." </label>
+        </p>
+        <p>
+          <input type="checkbox" id="wFDUSFWS5" />
+          <label for="wFDUSFWS5">
+            2. Assign the "Pre-review Send USFWS In-House Review to T&E" task to yourself and add date requested, Assign the other tasks to Karena DiLeo and leave the dates blank.
+          </label>
+        </p>
+        <p>
+          <input id="wFDUSFWSContinue" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="wFDUSFWSContinue">
+            Continue to State Historic Preservation Office (SHPO) Review
+          </label>
+        </p>
       </fieldset>
 
       <fieldset class="hide step25 option1111121111111211122111">
         <legend class="tooltip">
           <b>WFD & Coastal Wetlands IP: STEP 10. </b>
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               A SHPO review may be required for a Freshwater Wetland Permit or a Coastal Zone Management Permit that has historic archeological resources onsite. Aspects of a project that could affect SHPO resources are impacts to historic sites or buildings, historic neighborhoods and/or archeological resources.
             </span>
         </legend>
@@ -2941,8 +2934,7 @@
         <p>
           <input type="checkbox" id="wFDSHPO1" />
           <label for="wFDSHPO1">
-            Select the layer "Historic Preservation Data." Please be sure to check each of the sublayers under this layer (click on plus and check each of the four sublayers including Historic District, Historic Fill, Historic Site, and Historic Archeological Site
-            Grid.) If any of these layers intersect the project site, then a SHPO review is required.
+            Select the layer "Historic Preservation Data." Please be sure to check each of the sublayers under this layer (click on plus and check each of the four sublayers including Historic District, Historic Fill, Historic Site, and Historic Archeological Site Grid.) If any of these layers intersect the project site, then a SHPO review is required.
           </label>
         </p>
         <p>
@@ -2966,7 +2958,7 @@
         <p>
           <input id="wFDSHPOContinue" name="group_25" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="wFDSHPOContinue">
-            No State Historic Preservation Office (SHPO) Review is required.
+             No State Historic Preservation Office (SHPO) Review is required.
           </label>
         </p>
       </fieldset>
@@ -2974,56 +2966,56 @@
       <fieldset class="hide step26 option11111211111112111221111">
         <legend class="tooltip">
           <b>WFD & Coastal Wetlands IP: STEP 11 </b>
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               A SHPO review may be required for a Freshwater Wetland Permit or a Coastal Zone Management Permit that has historic archeological resources onsite. Aspects of a project that could affect SHPO resources are impacts to historic sites or buildings, historic neighborhoods and/or archeological resources.
             </span>
         </legend>
-        <p>
-          <input type="checkbox" id="wFDSHPOPart21" />
-          <label for="wFDSHPOPart21">
-            If a SHPO review is required, fill out the LURP Permit Application Transmittal Form and include the following:
-          </label>
-          <ol>
-            <li>
-              A copy of the LURP Permit Application Transmittal Form;
-            </li>
-            <li>
-              A copy of the LURP form;
-            </li>
-            <li>
-              A USGS map or road map showing property location; and
-            </li>
-            <li>
-              One copy of the plan.
-            </li>
-          </ol>
-          <p>
-            <input type="checkbox" id="wFDSHPOPart22" />
-            <label for="wFDSHPOPart22">
-              Deliver the package to the SHPO secretary at 501 East State St 4th Floor southwest corner or to the SHPO mail box bin the lunchroom.
-            </label>
-          </p>
-          <p>
-            In NJEMS, the following should be completed in activity tracking:
-          </p>
-          <p>
-            <input type="checkbox" id="wFDSHPOPart23" />
-            <label for="wFDSHPOPart23">
-              1. Add row, select group task, select SHPO referral.
-            </label>
-          </p>
-          <p>
-            <input type="checkbox" id="wFDSHPOPart24" />
-            <label for="wFDSHPOPart24">
-              2. Assign "Request Comments from SHPO" and "Receive SHPO comments" to yourself and add date requested.
-            </label>
-          </p>
-          <p>
-            <input id="wFDSHPOPart25" name="group_26" type="radio" onClick="scrollSmoothToBottom()" />
-            <label for="wFDSHPOPart25">
-              Continue to check CAFRA
-            </label>
-          </p>
+      <p>
+       <input type="checkbox" id="wFDSHPOPart21" />
+       <label for="wFDSHPOPart21">
+         If a SHPO review is required, fill out the LURP Permit Application Transmittal Form and include the following:
+       </label>
+       <ol>
+         <li>
+           A copy of the LURP Permit Application Transmittal Form; 
+         </li>
+         <li>
+           A copy of the LURP form; 
+         </li>
+         <li>
+           A USGS map or road map showing property location; and
+         </li>
+         <li>
+           One copy of the plan.
+         </li>
+       </ol>
+       <p>
+         <input type="checkbox" id="wFDSHPOPart22" />
+         <label for="wFDSHPOPart22">
+           Deliver the package to the SHPO secretary at 501 East State St 4th Floor southwest corner or to the SHPO mail box bin the lunchroom.
+         </label>
+       </p>
+       <p>
+         In NJEMS, the following should be completed in activity tracking:
+       </p>
+       <p>
+         <input type="checkbox" id="wFDSHPOPart23" />
+         <label for="wFDSHPOPart23">
+           1. Add row, select group task, select SHPO referral. 
+         </label>
+       </p>
+       <p>
+         <input type="checkbox" id="wFDSHPOPart24" />
+         <label for="wFDSHPOPart24">
+           2. Assign "Request Comments from SHPO" and "Receive SHPO comments" to yourself and add date requested.
+         </label>
+       </p>
+       <p>
+        <input id="wFDSHPOPart25" name="group_26" type="radio" onClick="scrollSmoothToBottom()" />
+        <label for="wFDSHPOPart25">
+          Continue to check CAFRA
+        </label>
+        </p>
       </fieldset>
 
       <fieldset class="hide step27 option111112111111121112211111">
@@ -3061,7 +3053,7 @@
           <input type="checkbox" id="wFDCAFRACheck5" />
           <label for="wFDCAFRACheck5">
             5. Check here if the project within 500 feet of the MHWL and proposes 25 or more residential units or 50 or more parking spaces.
-            <span class="tooltiptext">
+              <span class="tooltiptext">
                 If yes, then a CAFRA permit is generally required.  The exception occurs when the project occurs within a "qualifying municipality." which can be determined by checking the latest list at http://www.state.nj.us/dca/divisions/dlgs/resources/stateaidinfo.shtml. If the project municipality is listed, then the threshold for CAFRA jurisdiction is different and can be as much as 75 or more residential units or 150 or more parking spaces.  Please see N.J.A.C. 7:7-2.2(a)3 and 4 for more information.
               </span>
           </label>
@@ -3113,7 +3105,7 @@
         </legend>
         <p class="tooltip">
           Use the ArcGIS "1970 Wetland Basemaps" layer to determine if your site has coastal wetlands.
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               The basemap can be found in the DEP data bar under "imagery" labeled as "1970 Wetlands Basemap".
             </span>
         </p>
@@ -3156,7 +3148,7 @@
           <input type="checkbox" id="wFDTidelands1" />
           <label for="wFDTidelands1" class="tooltip">
             1. Make sure there is a copy of the tideland's instrument for all work on natural waterways.
-            <span class="tooltiptext">
+              <span class="tooltiptext">
                 They need to at least submit proof that they have sent a letter or a request of tideland's interest. Show limits of Tidelands boundary on plans if license, lease, or grant is in effect.
               </span>
           </label>
@@ -3256,8 +3248,7 @@
         <p>
           <input type="checkbox" id="wFDWrapUp12" />
           <label for="wFDWrapUp12">
-            i. All IP applications on Natural Waterways go to the Project Manager of that town unless in an Urban Growth area. In the Urban Growth area all IP's for docks and piers are assigned to Chris Jones and he will reassign them. All other type of work in Urban
-            Growth area that requires any type of waterfront IP goes to the Urban Growth project manager assigned to that town.
+            i. All IP applications on Natural Waterways go to the Project Manager of that town unless in an Urban Growth area. In the Urban Growth area all IP's for docks and piers are assigned to Chris Jones and he will reassign them. All other type of work in Urban Growth area that requires any type of waterfront IP goes to the Urban Growth project manager assigned to that town.
           </label>
         </p>
         <p>
@@ -3276,31 +3267,28 @@
         <p>
           <input type="checkbox" id="wFDWrapUp15" />
           <label for="wFDWrapUp15">
-            l. There are two different types of COASTAL GP's. The waterfront GP's are for work not requiring an IP taking place waterward of the MHWL. There are also Coastal GP's under CAFRA these are for work Upland of the MHWL in the CAFRA area or out of the CAFRA
-            area. This is confusing mistake made when the types of GP's were being assigned in NJEMS. Until we create a new Class Code in NJEMS for coastal GP's we will have this confusion.
+             l. There are two different types of COASTAL GP's. The waterfront GP's are for work not requiring an IP taking place waterward of the MHWL. There are also Coastal GP's under CAFRA these are for work Upland of the MHWL in the CAFRA area or out of the CAFRA area. This is confusing mistake made when the types of GP's were being assigned in NJEMS. Until we create a new Class Code in NJEMS for coastal GP's we will have this confusion.
           </label>
         </p>
         <p>
           <input type="checkbox" id="wFDWrapUp16" />
           <label for="wFDWrapUp16">
-            m. Ensure waterway is actually a man made lagoon and NOT a man-altered waterway. This would kick the project into an IP and the GP unit doesn't always check. A natural waterway usually has water flowing through it. If the only flow is tide going up and
-            down it is usually man made or man altered. Man altered like the Cape May canal needs IP's not GP's. In IMAP pull up the location of the property and using the tidelands layer you can check if the water body is claimed by tidelands then it
-            is natural if unclaimed it is man made.
+            m. Ensure waterway is actually a man made lagoon and NOT a man-altered waterway. This would kick the project into an IP and the GP unit doesn't always check. A natural waterway usually has water flowing through it. If the only flow is tide going up and down it is usually man made or man altered. Man altered like the Cape May canal needs IP's not GP's. In IMAP pull up the location of the property and using the tidelands layer you can check if the water body is claimed by tidelands then it is natural if unclaimed it is man made.
           </label>
         </p>
         <p>
-          <input type="checkbox" id="wFDWrapUp17" />
-          <label for="wFDWrapUp17">
-            n. If an applicant built a home before CAFRA II 1996 they can subdivide and apply for a GP8 to build a new home. If the home was built or rebuilt under a GP after CAFRA II the second home needs a CAFRA IP.
-          </label>
-        </p>
-        <p>
-          <input type="checkbox" id="wFDWrapUp18" />
-          <label for="wFDWrapUp18">
-            o. All GP's for reconstruction of a single family home if on a dune or along first house on atlantic ocean show be assigned to regions.
-          </label>
-        </p>
-      </fieldset>
+         <input type="checkbox" id="wFDWrapUp17" />
+         <label for="wFDWrapUp17">
+           n. If an applicant built a home before CAFRA II 1996 they can subdivide and apply for a GP8 to build a new home. If the home was built or rebuilt under a GP after CAFRA II the second home needs a CAFRA IP.
+         </label>
+       </p>
+       <p>
+         <input type="checkbox" id="wFDWrapUp18" />
+         <label for="wFDWrapUp18">
+           o. All GP's for reconstruction of a single family home if on a dune or along first house on atlantic ocean show be assigned to regions.
+         </label>
+       </p>
+     </fieldset>
 
       <fieldset class="hide step15 option11111211111113">
         <legend>
@@ -3310,10 +3298,10 @@
           Does the application have the following?:
         </p>
         <p>
-          <input type="checkbox" id="cAFwFDCheck1" />
-          <label for="cAFwFDCheck1">
-            A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);
-          </label>
+        <input type="checkbox" id="cAFwFDCheck1" />
+        <label for="cAFwFDCheck1">
+          A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);
+        </label>
         </p>
         <p>
           <input type="checkbox" id="cAFwFDCheck2" />
@@ -3452,7 +3440,7 @@
           Click the following link to review any applicable code and regulations.
         </p>
         <p>
-          You can use the [embedded] notepad to document items relevant to your review!
+          You can use the [embedded] notepad to document items relevant to your review! 
         </p>
         <p>
           <input id="cAFwFDCongrats" name="group_17" type="radio" onClick="scrollSmoothToBottom()" />
@@ -3496,7 +3484,8 @@
         <p>
           <input type="checkbox" id="cAFwFDNJEMS5" onClick="scrollSmoothToBottom()" />
           <label for="cAFwFDNJEMS5">
-            5. If historical aerials show that there was development onsite that may have needed wetlands authorizations, you can check Paradox, which contains information for authorizations prior to 2002. Otherwise, continue to STEP 4. to conduct ArcGIS review.
+            5. If historical aerials show that there was development onsite that may have needed wetlands authorizations, you can check Paradox, which contains information for authorizations prior to 2002. Otherwise, continue to STEP 4. to
+            conduct ArcGIS review.
           </label>
         </p>
         <p>
@@ -4029,7 +4018,7 @@
       <fieldset class="hide step23 option111112111111131112211">
         <legend class="tooltip">
           <b>CAFRA IP: STEP 8. </b>
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               For further assistance; you may use the guidance document on the EPA Priority Wetland Layer found at V:\lum\LUR\Pre-Review Resources\SOPs
             </span>
         </legend>
@@ -4039,8 +4028,8 @@
         <p>
           <input type="checkbox" id="cAFwFDEPAPriority1" />
           <label for="cAFwFDEPAPriority1" class="tooltip">
-            Use the GIS Layer
-            <span class="tooltiptext">
+            Use the GIS Layer 
+              <span class="tooltiptext">
                 found at V:\lum\LUR\GIS_Data\ EPA_Priority_Wetlands.lyr
               </span>
           </label>
@@ -4050,7 +4039,7 @@
           <label for="cAFwFDEPAPriority2">
             Use the Identify tool to see information, including caveats for wetlands that may fall in the geographic area but are excluded from the EPA priority.
           </label>
-        </p>
+        </p>  
         <p>
           Soils:
         </p>
@@ -4087,8 +4076,7 @@
         </p>
         <ul>
           <li>If your pending permit is not listed on the transmittal, then USFWS review is not required.</li>
-          <li>If the permit is applicable, the PRO still needs to check if the municipality is listed in the "USFW Federally Listed and Candidate Species Occurrences in New Jersey by County and Municipality" packet found in V:\lum\LUR\Pre-Review Resources\FWW
-            Resources.</li>
+          <li>If the permit is applicable, the PRO still needs to check if the municipality is listed in the "USFW Federally Listed and Candidate Species Occurrences in New Jersey by County and Municipality" packet found in V:\lum\LUR\Pre-Review Resources\FWW Resources.</li>
         </ul>
         <p>
           <input type="checkbox" id="cAFwFDUSFWS2" />
@@ -4098,10 +4086,10 @@
         </p>
         <ol>
           <li>
-            A copy of the LURP Permit Application Transmittal Form;
+            A copy of the LURP Permit Application Transmittal Form; 
           </li>
           <li>
-            A copy of the LURP form;
+            A copy of the LURP form; 
           </li>
           <li>
             A USGS map or road map showing property location; and
@@ -4115,31 +4103,31 @@
           <label for="cAFwFDUSFWS3">
             Place in the bin labeled USFW Review (North or South) located next to the T&E Unit.
           </label>
-          <p>
-            In NJEMS, complete the following in activity tracking:
-          </p>
-          <p>
-            <input type="checkbox" id="cAFwFDUSFWS4" />
-            <label for="cAFwFDUSFWS4">1. Add row, select group task, and select "Pre-review Send USFWS In-House Review to T&E." </label>
-          </p>
-          <p>
-            <input type="checkbox" id="cAFwFDUSFWS5" />
-            <label for="cAFwFDUSFWS5">
-              2. Assign the "Pre-review Send USFWS In-House Review to T&E" task to yourself and add date requested, Assign the other tasks to Karena DiLeo and leave the dates blank.
-            </label>
-          </p>
-          <p>
-            <input id="cAFwFDUSFWSContinue" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
-            <label for="cAFwFDUSFWSContinue">
-              Continue to State Historic Preservation Office (SHPO) Review
-            </label>
-          </p>
+        <p>
+          In NJEMS, complete the following in activity tracking:
+        </p>
+        <p>
+          <input type="checkbox" id="cAFwFDUSFWS4" />
+          <label for="cAFwFDUSFWS4">1. Add row, select group task, and select "Pre-review Send USFWS In-House Review to T&E." </label>
+        </p>
+        <p>
+          <input type="checkbox" id="cAFwFDUSFWS5" />
+          <label for="cAFwFDUSFWS5">
+            2. Assign the "Pre-review Send USFWS In-House Review to T&E" task to yourself and add date requested, Assign the other tasks to Karena DiLeo and leave the dates blank.
+          </label>
+        </p>
+        <p>
+          <input id="cAFwFDUSFWSContinue" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="cAFwFDUSFWSContinue">
+            Continue to State Historic Preservation Office (SHPO) Review
+          </label>
+        </p>
       </fieldset>
 
       <fieldset class="hide step25 option1111121111111311122111">
         <legend class="tooltip">
           <b>CAFRA IP: STEP 10. </b>
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               A SHPO review may be required for a Freshwater Wetland Permit or a Coastal Zone Management Permit that has historic archeological resources onsite. Aspects of a project that could affect SHPO resources are impacts to historic sites or buildings, historic neighborhoods and/or archeological resources.
             </span>
         </legend>
@@ -4149,8 +4137,7 @@
         <p>
           <input type="checkbox" id="cAFwFDSHPO1" />
           <label for="cAFwFDSHPO1">
-            Select the layer "Historic Preservation Data." Please be sure to check each of the sublayers under this layer (click on plus and check each of the four sublayers including Historic District, Historic Fill, Historic Site, and Historic Archeological Site
-            Grid.) If any of these layers intersect the project site, then a SHPO review is required.
+            Select the layer "Historic Preservation Data." Please be sure to check each of the sublayers under this layer (click on plus and check each of the four sublayers including Historic District, Historic Fill, Historic Site, and Historic Archeological Site Grid.) If any of these layers intersect the project site, then a SHPO review is required.
           </label>
         </p>
         <p>
@@ -4174,7 +4161,7 @@
         <p>
           <input id="cAFwFDSHPOContinue" name="group_25" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="cAFwFDSHPOContinue">
-            No State Historic Preservation Office (SHPO) Review is required.
+             No State Historic Preservation Office (SHPO) Review is required.
           </label>
         </p>
       </fieldset>
@@ -4182,56 +4169,56 @@
       <fieldset class="hide step26 option11111211111113111221111">
         <legend class="tooltip">
           <b>CAFRA IP: STEP 11 </b>
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               A SHPO review may be required for a Freshwater Wetland Permit or a Coastal Zone Management Permit that has historic archeological resources onsite. Aspects of a project that could affect SHPO resources are impacts to historic sites or buildings, historic neighborhoods and/or archeological resources.
             </span>
         </legend>
-        <p>
-          <input type="checkbox" id="cAFwFDSHPOPart21" />
-          <label for="cAFwFDSHPOPart21">
-            If a SHPO review is required, fill out the LURP Permit Application Transmittal Form and include the following:
-          </label>
-          <ol>
-            <li>
-              A copy of the LURP Permit Application Transmittal Form;
-            </li>
-            <li>
-              A copy of the LURP form;
-            </li>
-            <li>
-              A USGS map or road map showing property location; and
-            </li>
-            <li>
-              One copy of the plan.
-            </li>
-          </ol>
-          <p>
-            <input type="checkbox" id="cAFwFDSHPOPart22" />
-            <label for="cAFwFDSHPOPart22">
-              Deliver the package to the SHPO secretary at 501 East State St 4th Floor southwest corner or to the SHPO mail box bin the lunchroom.
-            </label>
-          </p>
-          <p>
-            In NJEMS, the following should be completed in activity tracking:
-          </p>
-          <p>
-            <input type="checkbox" id="cAFwFDSHPOPart23" />
-            <label for="cAFwFDSHPOPart23">
-              1. Add row, select group task, select SHPO referral.
-            </label>
-          </p>
-          <p>
-            <input type="checkbox" id="cAFwFDSHPOPart24" />
-            <label for="cAFwFDSHPOPart24">
-              2. Assign "Request Comments from SHPO" and "Receive SHPO comments" to yourself and add date requested.
-            </label>
-          </p>
-          <p>
-            <input id="cAFwFDSHPOPart25" name="group_26" type="radio" onClick="scrollSmoothToBottom()" />
-            <label for="cAFwFDSHPOPart25">
-              Continue to check CAFRA
-            </label>
-          </p>
+      <p>
+       <input type="checkbox" id="cAFwFDSHPOPart21" />
+       <label for="cAFwFDSHPOPart21">
+         If a SHPO review is required, fill out the LURP Permit Application Transmittal Form and include the following:
+       </label>
+       <ol>
+         <li>
+           A copy of the LURP Permit Application Transmittal Form; 
+         </li>
+         <li>
+           A copy of the LURP form; 
+         </li>
+         <li>
+           A USGS map or road map showing property location; and
+         </li>
+         <li>
+           One copy of the plan.
+         </li>
+       </ol>
+       <p>
+         <input type="checkbox" id="cAFwFDSHPOPart22" />
+         <label for="cAFwFDSHPOPart22">
+           Deliver the package to the SHPO secretary at 501 East State St 4th Floor southwest corner or to the SHPO mail box bin the lunchroom.
+         </label>
+       </p>
+       <p>
+         In NJEMS, the following should be completed in activity tracking:
+       </p>
+       <p>
+         <input type="checkbox" id="cAFwFDSHPOPart23" />
+         <label for="cAFwFDSHPOPart23">
+           1. Add row, select group task, select SHPO referral. 
+         </label>
+       </p>
+       <p>
+         <input type="checkbox" id="cAFwFDSHPOPart24" />
+         <label for="cAFwFDSHPOPart24">
+           2. Assign "Request Comments from SHPO" and "Receive SHPO comments" to yourself and add date requested.
+         </label>
+       </p>
+       <p>
+        <input id="cAFwFDSHPOPart25" name="group_26" type="radio" onClick="scrollSmoothToBottom()" />
+        <label for="cAFwFDSHPOPart25">
+          Continue to check CAFRA
+        </label>
+        </p>
       </fieldset>
 
       <fieldset class="hide step27 option111112111111131112211111">
@@ -4269,7 +4256,7 @@
           <input type="checkbox" id="cAFwFDCAFRACheck5" />
           <label for="cAFwFDCAFRACheck5">
             5. Check here if the project within 500 feet of the MHWL and proposes 25 or more residential units or 50 or more parking spaces.
-            <span class="tooltiptext">
+              <span class="tooltiptext">
                 If yes, then a CAFRA permit is generally required.  The exception occurs when the project occurs within a "qualifying municipality." which can be determined by checking the latest list at http://www.state.nj.us/dca/divisions/dlgs/resources/stateaidinfo.shtml. If the project municipality is listed, then the threshold for CAFRA jurisdiction is different and can be as much as 75 or more residential units or 150 or more parking spaces.  Please see N.J.A.C. 7:7-2.2(a)3 and 4 for more information.
               </span>
           </label>
@@ -4321,7 +4308,7 @@
         </legend>
         <p class="tooltip">
           Use the ArcGIS "1970 Wetland Basemaps" layer to determine if your site has coastal wetlands.
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               The basemap can be found in the DEP data bar under "imagery" labeled as "1970 Wetlands Basemap".
             </span>
         </p>
@@ -4364,7 +4351,7 @@
           <input type="checkbox" id="cAFwFDTidelands1" />
           <label for="cAFwFDTidelands1" class="tooltip">
             1. Make sure there is a copy of the tideland's instrument for all work on natural waterways.
-            <span class="tooltiptext">
+              <span class="tooltiptext">
                 They need to at least submit proof that they have sent a letter or a request of tideland's interest. Show limits of Tidelands boundary on plans if license, lease, or grant is in effect.
               </span>
           </label>
@@ -4464,8 +4451,7 @@
         <p>
           <input type="checkbox" id="cAFwFDWrapUp12" />
           <label for="cAFwFDWrapUp12">
-            i. All IP applications on Natural Waterways go to the Project Manager of that town unless in an Urban Growth area. In the Urban Growth area all IP's for docks and piers are assigned to Chris Jones and he will reassign them. All other type of work in Urban
-            Growth area that requires any type of waterfront IP goes to the Urban Growth project manager assigned to that town.
+            i. All IP applications on Natural Waterways go to the Project Manager of that town unless in an Urban Growth area. In the Urban Growth area all IP's for docks and piers are assigned to Chris Jones and he will reassign them. All other type of work in Urban Growth area that requires any type of waterfront IP goes to the Urban Growth project manager assigned to that town.
           </label>
         </p>
         <p>
@@ -4484,31 +4470,28 @@
         <p>
           <input type="checkbox" id="cAFwFDWrapUp15" />
           <label for="cAFwFDWrapUp15">
-            l. There are two different types of COASTAL GP's. The waterfront GP's are for work not requiring an IP taking place waterward of the MHWL. There are also Coastal GP's under CAFRA these are for work Upland of the MHWL in the CAFRA area or out of the CAFRA
-            area. This is confusing mistake made when the types of GP's were being assigned in NJEMS. Until we create a new Class Code in NJEMS for coastal GP's we will have this confusion.
+             l. There are two different types of COASTAL GP's. The waterfront GP's are for work not requiring an IP taking place waterward of the MHWL. There are also Coastal GP's under CAFRA these are for work Upland of the MHWL in the CAFRA area or out of the CAFRA area. This is confusing mistake made when the types of GP's were being assigned in NJEMS. Until we create a new Class Code in NJEMS for coastal GP's we will have this confusion.
           </label>
         </p>
         <p>
           <input type="checkbox" id="cAFwFDWrapUp16" />
           <label for="cAFwFDWrapUp16">
-            m. Ensure waterway is actually a man made lagoon and NOT a man-altered waterway. This would kick the project into an IP and the GP unit doesn't always check. A natural waterway usually has water flowing through it. If the only flow is tide going up and
-            down it is usually man made or man altered. Man altered like the Cape May canal needs IP's not GP's. In IMAP pull up the location of the property and using the tidelands layer you can check if the water body is claimed by tidelands then it
-            is natural if unclaimed it is man made.
+            m. Ensure waterway is actually a man made lagoon and NOT a man-altered waterway. This would kick the project into an IP and the GP unit doesn't always check. A natural waterway usually has water flowing through it. If the only flow is tide going up and down it is usually man made or man altered. Man altered like the Cape May canal needs IP's not GP's. In IMAP pull up the location of the property and using the tidelands layer you can check if the water body is claimed by tidelands then it is natural if unclaimed it is man made.
           </label>
         </p>
         <p>
-          <input type="checkbox" id="cAFwFDWrapUp17" />
-          <label for="cAFwFDWrapUp17">
-            n. If an applicant built a home before CAFRA II 1996 they can subdivide and apply for a GP8 to build a new home. If the home was built or rebuilt under a GP after CAFRA II the second home needs a CAFRA IP.
-          </label>
-        </p>
-        <p>
-          <input type="checkbox" id="cAFwFDWrapUp18" />
-          <label for="cAFwFDWrapUp18">
-            o. All GP's for reconstruction of a single family home if on a dune or along first house on atlantic ocean show be assigned to regions.
-          </label>
-        </p>
-      </fieldset>
+         <input type="checkbox" id="cAFwFDWrapUp17" />
+         <label for="cAFwFDWrapUp17">
+           n. If an applicant built a home before CAFRA II 1996 they can subdivide and apply for a GP8 to build a new home. If the home was built or rebuilt under a GP after CAFRA II the second home needs a CAFRA IP.
+         </label>
+       </p>
+       <p>
+         <input type="checkbox" id="cAFwFDWrapUp18" />
+         <label for="cAFwFDWrapUp18">
+           o. All GP's for reconstruction of a single family home if on a dune or along first house on atlantic ocean show be assigned to regions.
+         </label>
+       </p>
+     </fieldset>
 
       <fieldset class="hide step15 option11111211111114">
         <legend>
@@ -4518,10 +4501,10 @@
           Does the application have the following?:
         </p>
         <p>
-          <input type="checkbox" id="gPcAFwFDCheck1" />
-          <label for="gPcAFwFDCheck1">
-            A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);
-          </label>
+        <input type="checkbox" id="gPcAFwFDCheck1" />
+        <label for="gPcAFwFDCheck1">
+          A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);
+        </label>
         </p>
         <p>
           <input type="checkbox" id="gPcAFwFDCheck2" />
@@ -4660,7 +4643,7 @@
           Click the following link to review any applicable code and regulations.
         </p>
         <p>
-          You can use the [embedded] notepad to document items relevant to your review!
+          You can use the [embedded] notepad to document items relevant to your review! 
         </p>
         <p>
           <input id="gPcAFwFDCongrats" name="group_17" type="radio" onClick="scrollSmoothToBottom()" />
@@ -4704,7 +4687,8 @@
         <p>
           <input type="checkbox" id="gPcAFwFDNJEMS5" onClick="scrollSmoothToBottom()" />
           <label for="gPcAFwFDNJEMS5">
-            5. If historical aerials show that there was development onsite that may have needed wetlands authorizations, you can check Paradox, which contains information for authorizations prior to 2002. Otherwise, continue to STEP 4. to conduct ArcGIS review.
+            5. If historical aerials show that there was development onsite that may have needed wetlands authorizations, you can check Paradox, which contains information for authorizations prior to 2002. Otherwise, continue to STEP 4. to
+            conduct ArcGIS review.
           </label>
         </p>
         <p>
@@ -5237,7 +5221,7 @@
       <fieldset class="hide step23 option111112111111141112211">
         <legend class="tooltip">
           <b>CAFRA GP: STEP 8. </b>
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               For further assistance; you may use the guidance document on the EPA Priority Wetland Layer found at V:\lum\LUR\Pre-Review Resources\SOPs
             </span>
         </legend>
@@ -5247,8 +5231,8 @@
         <p>
           <input type="checkbox" id="gPcAFwFDEPAPriority1" />
           <label for="gPcAFwFDEPAPriority1" class="tooltip">
-            Use the GIS Layer
-            <span class="tooltiptext">
+            Use the GIS Layer 
+              <span class="tooltiptext">
                 found at V:\lum\LUR\GIS_Data\ EPA_Priority_Wetlands.lyr
               </span>
           </label>
@@ -5258,7 +5242,7 @@
           <label for="gPcAFwFDEPAPriority2">
             Use the Identify tool to see information, including caveats for wetlands that may fall in the geographic area but are excluded from the EPA priority.
           </label>
-        </p>
+        </p>  
         <p>
           Soils:
         </p>
@@ -5295,8 +5279,7 @@
         </p>
         <ul>
           <li>If your pending permit is not listed on the transmittal, then USFWS review is not required.</li>
-          <li>If the permit is applicable, the PRO still needs to check if the municipality is listed in the "USFW Federally Listed and Candidate Species Occurrences in New Jersey by County and Municipality" packet found in V:\lum\LUR\Pre-Review Resources\FWW
-            Resources.</li>
+          <li>If the permit is applicable, the PRO still needs to check if the municipality is listed in the "USFW Federally Listed and Candidate Species Occurrences in New Jersey by County and Municipality" packet found in V:\lum\LUR\Pre-Review Resources\FWW Resources.</li>
         </ul>
         <p>
           <input type="checkbox" id="gPcAFwFDUSFWS2" />
@@ -5306,10 +5289,10 @@
         </p>
         <ol>
           <li>
-            A copy of the LURP Permit Application Transmittal Form;
+            A copy of the LURP Permit Application Transmittal Form; 
           </li>
           <li>
-            A copy of the LURP form;
+            A copy of the LURP form; 
           </li>
           <li>
             A USGS map or road map showing property location; and
@@ -5323,31 +5306,31 @@
           <label for="gPcAFwFDUSFWS3">
             Place in the bin labeled USFW Review (North or South) located next to the T&E Unit.
           </label>
-          <p>
-            In NJEMS, complete the following in activity tracking:
-          </p>
-          <p>
-            <input type="checkbox" id="gPcAFwFDUSFWS4" />
-            <label for="gPcAFwFDUSFWS4">1. Add row, select group task, and select "Pre-review Send USFWS In-House Review to T&E." </label>
-          </p>
-          <p>
-            <input type="checkbox" id="gPcAFwFDUSFWS5" />
-            <label for="gPcAFwFDUSFWS5">
-              2. Assign the "Pre-review Send USFWS In-House Review to T&E" task to yourself and add date requested, Assign the other tasks to Karena DiLeo and leave the dates blank.
-            </label>
-          </p>
-          <p>
-            <input id="gPcAFwFDUSFWSContinue" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
-            <label for="gPcAFwFDUSFWSContinue">
-              Continue to State Historic Preservation Office (SHPO) Review
-            </label>
-          </p>
+        <p>
+          In NJEMS, complete the following in activity tracking:
+        </p>
+        <p>
+          <input type="checkbox" id="gPcAFwFDUSFWS4" />
+          <label for="gPcAFwFDUSFWS4">1. Add row, select group task, and select "Pre-review Send USFWS In-House Review to T&E." </label>
+        </p>
+        <p>
+          <input type="checkbox" id="gPcAFwFDUSFWS5" />
+          <label for="gPcAFwFDUSFWS5">
+            2. Assign the "Pre-review Send USFWS In-House Review to T&E" task to yourself and add date requested, Assign the other tasks to Karena DiLeo and leave the dates blank.
+          </label>
+        </p>
+        <p>
+          <input id="gPcAFwFDUSFWSContinue" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="gPcAFwFDUSFWSContinue">
+            Continue to State Historic Preservation Office (SHPO) Review
+          </label>
+        </p>
       </fieldset>
 
       <fieldset class="hide step25 option1111121111111411122111">
         <legend class="tooltip">
           <b>CAFRA GP: STEP 10. </b>
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               A SHPO review may be required for a Freshwater Wetland Permit or a Coastal Zone Management Permit that has historic archeological resources onsite. Aspects of a project that could affect SHPO resources are impacts to historic sites or buildings, historic neighborhoods and/or archeological resources.
             </span>
         </legend>
@@ -5357,8 +5340,7 @@
         <p>
           <input type="checkbox" id="gPcAFwFDSHPO1" />
           <label for="gPcAFwFDSHPO1">
-            Select the layer "Historic Preservation Data." Please be sure to check each of the sublayers under this layer (click on plus and check each of the four sublayers including Historic District, Historic Fill, Historic Site, and Historic Archeological Site
-            Grid.) If any of these layers intersect the project site, then a SHPO review is required.
+            Select the layer "Historic Preservation Data." Please be sure to check each of the sublayers under this layer (click on plus and check each of the four sublayers including Historic District, Historic Fill, Historic Site, and Historic Archeological Site Grid.) If any of these layers intersect the project site, then a SHPO review is required.
           </label>
         </p>
         <p>
@@ -5382,7 +5364,7 @@
         <p>
           <input id="gPcAFwFDSHPOContinue" name="group_25" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="gPcAFwFDSHPOContinue">
-            No State Historic Preservation Office (SHPO) Review is required.
+             No State Historic Preservation Office (SHPO) Review is required.
           </label>
         </p>
       </fieldset>
@@ -5390,56 +5372,56 @@
       <fieldset class="hide step26 option11111211111114111221111">
         <legend class="tooltip">
           <b>CAFRA GP: STEP 11 </b>
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               A SHPO review may be required for a Freshwater Wetland Permit or a Coastal Zone Management Permit that has historic archeological resources onsite. Aspects of a project that could affect SHPO resources are impacts to historic sites or buildings, historic neighborhoods and/or archeological resources.
             </span>
         </legend>
-        <p>
-          <input type="checkbox" id="gPcAFwFDSHPOPart21" />
-          <label for="gPcAFwFDSHPOPart21">
-            If a SHPO review is required, fill out the LURP Permit Application Transmittal Form and include the following:
-          </label>
-          <ol>
-            <li>
-              A copy of the LURP Permit Application Transmittal Form;
-            </li>
-            <li>
-              A copy of the LURP form;
-            </li>
-            <li>
-              A USGS map or road map showing property location; and
-            </li>
-            <li>
-              One copy of the plan.
-            </li>
-          </ol>
-          <p>
-            <input type="checkbox" id="gPcAFwFDSHPOPart22" />
-            <label for="gPcAFwFDSHPOPart22">
-              Deliver the package to the SHPO secretary at 501 East State St 4th Floor southwest corner or to the SHPO mail box bin the lunchroom.
-            </label>
-          </p>
-          <p>
-            In NJEMS, the following should be completed in activity tracking:
-          </p>
-          <p>
-            <input type="checkbox" id="gPcAFwFDSHPOPart23" />
-            <label for="gPcAFwFDSHPOPart23">
-              1. Add row, select group task, select SHPO referral.
-            </label>
-          </p>
-          <p>
-            <input type="checkbox" id="gPcAFwFDSHPOPart24" />
-            <label for="gPcAFwFDSHPOPart24">
-              2. Assign "Request Comments from SHPO" and "Receive SHPO comments" to yourself and add date requested.
-            </label>
-          </p>
-          <p>
-            <input id="gPcAFwFDSHPOPart25" name="group_26" type="radio" onClick="scrollSmoothToBottom()" />
-            <label for="gPcAFwFDSHPOPart25">
-              Continue to check CAFRA
-            </label>
-          </p>
+      <p>
+       <input type="checkbox" id="gPcAFwFDSHPOPart21" />
+       <label for="gPcAFwFDSHPOPart21">
+         If a SHPO review is required, fill out the LURP Permit Application Transmittal Form and include the following:
+       </label>
+       <ol>
+         <li>
+           A copy of the LURP Permit Application Transmittal Form; 
+         </li>
+         <li>
+           A copy of the LURP form; 
+         </li>
+         <li>
+           A USGS map or road map showing property location; and
+         </li>
+         <li>
+           One copy of the plan.
+         </li>
+       </ol>
+       <p>
+         <input type="checkbox" id="gPcAFwFDSHPOPart22" />
+         <label for="gPcAFwFDSHPOPart22">
+           Deliver the package to the SHPO secretary at 501 East State St 4th Floor southwest corner or to the SHPO mail box bin the lunchroom.
+         </label>
+       </p>
+       <p>
+         In NJEMS, the following should be completed in activity tracking:
+       </p>
+       <p>
+         <input type="checkbox" id="gPcAFwFDSHPOPart23" />
+         <label for="gPcAFwFDSHPOPart23">
+           1. Add row, select group task, select SHPO referral. 
+         </label>
+       </p>
+       <p>
+         <input type="checkbox" id="gPcAFwFDSHPOPart24" />
+         <label for="gPcAFwFDSHPOPart24">
+           2. Assign "Request Comments from SHPO" and "Receive SHPO comments" to yourself and add date requested.
+         </label>
+       </p>
+       <p>
+        <input id="gPcAFwFDSHPOPart25" name="group_26" type="radio" onClick="scrollSmoothToBottom()" />
+        <label for="gPcAFwFDSHPOPart25">
+          Continue to check CAFRA
+        </label>
+        </p>
       </fieldset>
 
       <fieldset class="hide step27 option111112111111141112211111">
@@ -5477,7 +5459,7 @@
           <input type="checkbox" id="gPcAFwFDCAFRACheck5" />
           <label for="gPcAFwFDCAFRACheck5">
             5. Check here if the project within 500 feet of the MHWL and proposes 25 or more residential units or 50 or more parking spaces.
-            <span class="tooltiptext">
+              <span class="tooltiptext">
                 If yes, then a CAFRA permit is generally required.  The exception occurs when the project occurs within a "qualifying municipality." which can be determined by checking the latest list at http://www.state.nj.us/dca/divisions/dlgs/resources/stateaidinfo.shtml. If the project municipality is listed, then the threshold for CAFRA jurisdiction is different and can be as much as 75 or more residential units or 150 or more parking spaces.  Please see N.J.A.C. 7:7-2.2(a)3 and 4 for more information.
               </span>
           </label>
@@ -5529,7 +5511,7 @@
         </legend>
         <p class="tooltip">
           Use the ArcGIS "1970 Wetland Basemaps" layer to determine if your site has coastal wetlands.
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               The basemap can be found in the DEP data bar under "imagery" labeled as "1970 Wetlands Basemap".
             </span>
         </p>
@@ -5572,7 +5554,7 @@
           <input type="checkbox" id="gPcAFwFDTidelands1" />
           <label for="gPcAFwFDTidelands1" class="tooltip">
             1. Make sure there is a copy of the tideland's instrument for all work on natural waterways.
-            <span class="tooltiptext">
+              <span class="tooltiptext">
                 They need to at least submit proof that they have sent a letter or a request of tideland's interest. Show limits of Tidelands boundary on plans if license, lease, or grant is in effect.
               </span>
           </label>
@@ -5672,8 +5654,7 @@
         <p>
           <input type="checkbox" id="gPcAFwFDWrapUp12" />
           <label for="gPcAFwFDWrapUp12">
-            i. All IP applications on Natural Waterways go to the Project Manager of that town unless in an Urban Growth area. In the Urban Growth area all IP's for docks and piers are assigned to Chris Jones and he will reassign them. All other type of work in Urban
-            Growth area that requires any type of waterfront IP goes to the Urban Growth project manager assigned to that town.
+            i. All IP applications on Natural Waterways go to the Project Manager of that town unless in an Urban Growth area. In the Urban Growth area all IP's for docks and piers are assigned to Chris Jones and he will reassign them. All other type of work in Urban Growth area that requires any type of waterfront IP goes to the Urban Growth project manager assigned to that town.
           </label>
         </p>
         <p>
@@ -5692,31 +5673,28 @@
         <p>
           <input type="checkbox" id="gPcAFwFDWrapUp15" />
           <label for="gPcAFwFDWrapUp15">
-            l. There are two different types of COASTAL GP's. The waterfront GP's are for work not requiring an IP taking place waterward of the MHWL. There are also Coastal GP's under CAFRA these are for work Upland of the MHWL in the CAFRA area or out of the CAFRA
-            area. This is confusing mistake made when the types of GP's were being assigned in NJEMS. Until we create a new Class Code in NJEMS for coastal GP's we will have this confusion.
+             l. There are two different types of COASTAL GP's. The waterfront GP's are for work not requiring an IP taking place waterward of the MHWL. There are also Coastal GP's under CAFRA these are for work Upland of the MHWL in the CAFRA area or out of the CAFRA area. This is confusing mistake made when the types of GP's were being assigned in NJEMS. Until we create a new Class Code in NJEMS for coastal GP's we will have this confusion.
           </label>
         </p>
         <p>
           <input type="checkbox" id="gPcAFwFDWrapUp16" />
           <label for="gPcAFwFDWrapUp16">
-            m. Ensure waterway is actually a man made lagoon and NOT a man-altered waterway. This would kick the project into an IP and the GP unit doesn't always check. A natural waterway usually has water flowing through it. If the only flow is tide going up and
-            down it is usually man made or man altered. Man altered like the Cape May canal needs IP's not GP's. In IMAP pull up the location of the property and using the tidelands layer you can check if the water body is claimed by tidelands then it
-            is natural if unclaimed it is man made.
+            m. Ensure waterway is actually a man made lagoon and NOT a man-altered waterway. This would kick the project into an IP and the GP unit doesn't always check. A natural waterway usually has water flowing through it. If the only flow is tide going up and down it is usually man made or man altered. Man altered like the Cape May canal needs IP's not GP's. In IMAP pull up the location of the property and using the tidelands layer you can check if the water body is claimed by tidelands then it is natural if unclaimed it is man made.
           </label>
         </p>
         <p>
-          <input type="checkbox" id="gPcAFwFDWrapUp17" />
-          <label for="gPcAFwFDWrapUp17">
-            n. If an applicant built a home before CAFRA II 1996 they can subdivide and apply for a GP8 to build a new home. If the home was built or rebuilt under a GP after CAFRA II the second home needs a CAFRA GP.
-          </label>
-        </p>
-        <p>
-          <input type="checkbox" id="gPcAFwFDWrapUp18" />
-          <label for="gPcAFwFDWrapUp18">
-            o. All GP's for reconstruction of a single family home if on a dune or along first house on atlantic ocean show be assigned to regions.
-          </label>
-        </p>
-      </fieldset>
+         <input type="checkbox" id="gPcAFwFDWrapUp17" />
+         <label for="gPcAFwFDWrapUp17">
+           n. If an applicant built a home before CAFRA II 1996 they can subdivide and apply for a GP8 to build a new home. If the home was built or rebuilt under a GP after CAFRA II the second home needs a CAFRA GP.
+         </label>
+       </p>
+       <p>
+         <input type="checkbox" id="gPcAFwFDWrapUp18" />
+         <label for="gPcAFwFDWrapUp18">
+           o. All GP's for reconstruction of a single family home if on a dune or along first house on atlantic ocean show be assigned to regions.
+         </label>
+       </p>
+     </fieldset>
 
       <fieldset class="hide step15 option11111211111115">
         <legend>
@@ -5726,10 +5704,10 @@
           Does the application have the following?:
         </p>
         <p>
-          <input type="checkbox" id="fWGPwFDCheck1" />
-          <label for="fWGPwFDCheck1">
-            A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);
-          </label>
+        <input type="checkbox" id="fWGPwFDCheck1" />
+        <label for="fWGPwFDCheck1">
+          A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);
+        </label>
         </p>
         <p>
           <input type="checkbox" id="fWGPwFDCheck2" />
@@ -5871,7 +5849,7 @@
           Click the following link to review any applicable code and regulations.
         </p>
         <p>
-          You can use the [embedded] notepad to document items relevant to your review!
+          You can use the [embedded] notepad to document items relevant to your review! 
         </p>
         <p>
           <input id="fWGPwFDCongrats" name="group_17" type="radio" onClick="scrollSmoothToBottom()" />
@@ -5915,7 +5893,8 @@
         <p>
           <input type="checkbox" id="fWGPwFDNJEMS5" onClick="scrollSmoothToBottom()" />
           <label for="fWGPwFDNJEMS5">
-            5. If historical aerials show that there was development onsite that may have needed wetlands authorizations, you can check Paradox, which contains information for authorizations prior to 2002. Otherwise, continue to STEP 4. to conduct ArcGIS review.
+            5. If historical aerials show that there was development onsite that may have needed wetlands authorizations, you can check Paradox, which contains information for authorizations prior to 2002. Otherwise, continue to STEP 4. to
+            conduct ArcGIS review.
           </label>
         </p>
         <p>
@@ -6448,7 +6427,7 @@
       <fieldset class="hide step23 option111112111111151112211">
         <legend class="tooltip">
           <b>Freshwater Wetlands GP and Transition Area Waivers STEP 8. </b>
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               For further assistance; you may use the guidance document on the EPA Priority Wetland Layer found at V:\lum\LUR\Pre-Review Resources\SOPs
             </span>
         </legend>
@@ -6458,8 +6437,8 @@
         <p>
           <input type="checkbox" id="fWGPwFDEPAPriority1" />
           <label for="fWGPwFDEPAPriority1" class="tooltip">
-            Use the GIS Layer
-            <span class="tooltiptext">
+            Use the GIS Layer 
+              <span class="tooltiptext">
                 found at V:\lum\LUR\GIS_Data\ EPA_Priority_Wetlands.lyr
               </span>
           </label>
@@ -6469,7 +6448,7 @@
           <label for="fWGPwFDEPAPriority2">
             Use the Identify tool to see information, including caveats for wetlands that may fall in the geographic area but are excluded from the EPA priority.
           </label>
-        </p>
+        </p>  
         <p>
           Soils:
         </p>
@@ -6506,8 +6485,7 @@
         </p>
         <ul>
           <li>If your pending permit is not listed on the transmittal, then USFWS review is not required.</li>
-          <li>If the permit is applicable, the PRO still needs to check if the municipality is listed in the "USFW Federally Listed and Candidate Species Occurrences in New Jersey by County and Municipality" packet found in V:\lum\LUR\Pre-Review Resources\FWW
-            Resources.</li>
+          <li>If the permit is applicable, the PRO still needs to check if the municipality is listed in the "USFW Federally Listed and Candidate Species Occurrences in New Jersey by County and Municipality" packet found in V:\lum\LUR\Pre-Review Resources\FWW Resources.</li>
         </ul>
         <p>
           <input type="checkbox" id="fWGPwFDUSFWS2" />
@@ -6517,10 +6495,10 @@
         </p>
         <ol>
           <li>
-            A copy of the LURP Permit Application Transmittal Form;
+            A copy of the LURP Permit Application Transmittal Form; 
           </li>
           <li>
-            A copy of the LURP form;
+            A copy of the LURP form; 
           </li>
           <li>
             A USGS map or road map showing property location; and
@@ -6534,31 +6512,31 @@
           <label for="fWGPwFDUSFWS3">
             Place in the bin labeled USFW Review (North or South) located next to the T&E Unit.
           </label>
-          <p>
-            In NJEMS, complete the following in activity tracking:
-          </p>
-          <p>
-            <input type="checkbox" id="fWGPwFDUSFWS4" />
-            <label for="fWGPwFDUSFWS4">1. Add row, select group task, and select "Pre-review Send USFWS In-House Review to T&E." </label>
-          </p>
-          <p>
-            <input type="checkbox" id="fWGPwFDUSFWS5" />
-            <label for="fWGPwFDUSFWS5">
-              2. Assign the "Pre-review Send USFWS In-House Review to T&E" task to yourself and add date requested, Assign the other tasks to Karena DiLeo and leave the dates blank.
-            </label>
-          </p>
-          <p>
-            <input id="fWGPwFDUSFWSContinue" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
-            <label for="fWGPwFDUSFWSContinue">
-              Continue to State Historic Preservation Office (SHPO) Review
-            </label>
-          </p>
+        <p>
+          In NJEMS, complete the following in activity tracking:
+        </p>
+        <p>
+          <input type="checkbox" id="fWGPwFDUSFWS4" />
+          <label for="fWGPwFDUSFWS4">1. Add row, select group task, and select "Pre-review Send USFWS In-House Review to T&E." </label>
+        </p>
+        <p>
+          <input type="checkbox" id="fWGPwFDUSFWS5" />
+          <label for="fWGPwFDUSFWS5">
+            2. Assign the "Pre-review Send USFWS In-House Review to T&E" task to yourself and add date requested, Assign the other tasks to Karena DiLeo and leave the dates blank.
+          </label>
+        </p>
+        <p>
+          <input id="fWGPwFDUSFWSContinue" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="fWGPwFDUSFWSContinue">
+            Continue to State Historic Preservation Office (SHPO) Review
+          </label>
+        </p>
       </fieldset>
 
       <fieldset class="hide step25 option1111121111111511122111">
         <legend class="tooltip">
           <b>Freshwater Wetlands GP and Transition Area Waivers STEP 10. </b>
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               A SHPO review may be required for a Freshwater Wetland Permit or a Coastal Zone Management Permit that has historic archeological resources onsite. Aspects of a project that could affect SHPO resources are impacts to historic sites or buildings, historic neighborhoods and/or archeological resources.
             </span>
         </legend>
@@ -6568,8 +6546,7 @@
         <p>
           <input type="checkbox" id="fWGPwFDSHPO1" />
           <label for="fWGPwFDSHPO1">
-            Select the layer "Historic Preservation Data." Please be sure to check each of the sublayers under this layer (click on plus and check each of the four sublayers including Historic District, Historic Fill, Historic Site, and Historic Archeological Site
-            Grid.) If any of these layers intersect the project site, then a SHPO review is required.
+            Select the layer "Historic Preservation Data." Please be sure to check each of the sublayers under this layer (click on plus and check each of the four sublayers including Historic District, Historic Fill, Historic Site, and Historic Archeological Site Grid.) If any of these layers intersect the project site, then a SHPO review is required.
           </label>
         </p>
         <p>
@@ -6593,7 +6570,7 @@
         <p>
           <input id="fWGPwFDSHPOContinue" name="group_25" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="fWGPwFDSHPOContinue">
-            No State Historic Preservation Office (SHPO) Review is required.
+             No State Historic Preservation Office (SHPO) Review is required.
           </label>
         </p>
       </fieldset>
@@ -6601,56 +6578,56 @@
       <fieldset class="hide step26 option11111211111115111221111">
         <legend class="tooltip">
           <b>Freshwater Wetlands GP and Transition Area Waivers STEP 11 </b>
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               A SHPO review may be required for a Freshwater Wetland Permit or a Coastal Zone Management Permit that has historic archeological resources onsite. Aspects of a project that could affect SHPO resources are impacts to historic sites or buildings, historic neighborhoods and/or archeological resources.
             </span>
         </legend>
-        <p>
-          <input type="checkbox" id="fWGPwFDSHPOPart21" />
-          <label for="fWGPwFDSHPOPart21">
-            If a SHPO review is required, fill out the LURP Permit Application Transmittal Form and include the following:
-          </label>
-          <ol>
-            <li>
-              A copy of the LURP Permit Application Transmittal Form;
-            </li>
-            <li>
-              A copy of the LURP form;
-            </li>
-            <li>
-              A USGS map or road map showing property location; and
-            </li>
-            <li>
-              One copy of the plan.
-            </li>
-          </ol>
-          <p>
-            <input type="checkbox" id="fWGPwFDSHPOPart22" />
-            <label for="fWGPwFDSHPOPart22">
-              Deliver the package to the SHPO secretary at 501 East State St 4th Floor southwest corner or to the SHPO mail box bin the lunchroom.
-            </label>
-          </p>
-          <p>
-            In NJEMS, the following should be completed in activity tracking:
-          </p>
-          <p>
-            <input type="checkbox" id="fWGPwFDSHPOPart23" />
-            <label for="fWGPwFDSHPOPart23">
-              1. Add row, select group task, select SHPO referral.
-            </label>
-          </p>
-          <p>
-            <input type="checkbox" id="fWGPwFDSHPOPart24" />
-            <label for="fWGPwFDSHPOPart24">
-              2. Assign "Request Comments from SHPO" and "Receive SHPO comments" to yourself and add date requested.
-            </label>
-          </p>
-          <p>
-            <input id="fWGPwFDSHPOPart25" name="group_26" type="radio" onClick="scrollSmoothToBottom()" />
-            <label for="fWGPwFDSHPOPart25">
-              Continue to check CAFRA
-            </label>
-          </p>
+      <p>
+       <input type="checkbox" id="fWGPwFDSHPOPart21" />
+       <label for="fWGPwFDSHPOPart21">
+         If a SHPO review is required, fill out the LURP Permit Application Transmittal Form and include the following:
+       </label>
+       <ol>
+         <li>
+           A copy of the LURP Permit Application Transmittal Form; 
+         </li>
+         <li>
+           A copy of the LURP form; 
+         </li>
+         <li>
+           A USGS map or road map showing property location; and
+         </li>
+         <li>
+           One copy of the plan.
+         </li>
+       </ol>
+       <p>
+         <input type="checkbox" id="fWGPwFDSHPOPart22" />
+         <label for="fWGPwFDSHPOPart22">
+           Deliver the package to the SHPO secretary at 501 East State St 4th Floor southwest corner or to the SHPO mail box bin the lunchroom.
+         </label>
+       </p>
+       <p>
+         In NJEMS, the following should be completed in activity tracking:
+       </p>
+       <p>
+         <input type="checkbox" id="fWGPwFDSHPOPart23" />
+         <label for="fWGPwFDSHPOPart23">
+           1. Add row, select group task, select SHPO referral. 
+         </label>
+       </p>
+       <p>
+         <input type="checkbox" id="fWGPwFDSHPOPart24" />
+         <label for="fWGPwFDSHPOPart24">
+           2. Assign "Request Comments from SHPO" and "Receive SHPO comments" to yourself and add date requested.
+         </label>
+       </p>
+       <p>
+        <input id="fWGPwFDSHPOPart25" name="group_26" type="radio" onClick="scrollSmoothToBottom()" />
+        <label for="fWGPwFDSHPOPart25">
+          Continue to check CAFRA
+        </label>
+        </p>
       </fieldset>
 
       <fieldset class="hide step27 option111112111111151112211111">
@@ -6688,7 +6665,7 @@
           <input type="checkbox" id="fWGPwFDCAFRACheck5" />
           <label for="fWGPwFDCAFRACheck5">
             5. Check here if the project within 500 feet of the MHWL and proposes 25 or more residential units or 50 or more parking spaces.
-            <span class="tooltiptext">
+              <span class="tooltiptext">
                 If yes, then a CAFRA permit is generally required.  The exception occurs when the project occurs within a "qualifying municipality." which can be determined by checking the latest list at http://www.state.nj.us/dca/divisions/dlgs/resources/stateaidinfo.shtml. If the project municipality is listed, then the threshold for CAFRA jurisdiction is different and can be as much as 75 or more residential units or 150 or more parking spaces.  Please see N.J.A.C. 7:7-2.2(a)3 and 4 for more information.
               </span>
           </label>
@@ -6740,7 +6717,7 @@
         </legend>
         <p class="tooltip">
           Use the ArcGIS "1970 Wetland Basemaps" layer to determine if your site has coastal wetlands.
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               The basemap can be found in the DEP data bar under "imagery" labeled as "1970 Wetlands Basemap".
             </span>
         </p>
@@ -6783,7 +6760,7 @@
           <input type="checkbox" id="fWGPwFDTidelands1" />
           <label for="fWGPwFDTidelands1" class="tooltip">
             1. Make sure there is a copy of the tideland's instrument for all work on natural waterways.
-            <span class="tooltiptext">
+              <span class="tooltiptext">
                 They need to at least submit proof that they have sent a letter or a request of tideland's interest. Show limits of Tidelands boundary on plans if license, lease, or grant is in effect.
               </span>
           </label>
@@ -6883,8 +6860,7 @@
         <p>
           <input type="checkbox" id="fWGPwFDWrapUp12" />
           <label for="fWGPwFDWrapUp12">
-            i. All IP applications on Natural Waterways go to the Project Manager of that town unless in an Urban Growth area. In the Urban Growth area all IP's for docks and piers are assigned to Chris Jones and he will reassign them. All other type of work in Urban
-            Growth area that requires any type of waterfront IP goes to the Urban Growth project manager assigned to that town.
+            i. All IP applications on Natural Waterways go to the Project Manager of that town unless in an Urban Growth area. In the Urban Growth area all IP's for docks and piers are assigned to Chris Jones and he will reassign them. All other type of work in Urban Growth area that requires any type of waterfront IP goes to the Urban Growth project manager assigned to that town.
           </label>
         </p>
         <p>
@@ -6903,31 +6879,28 @@
         <p>
           <input type="checkbox" id="fWGPwFDWrapUp15" />
           <label for="fWGPwFDWrapUp15">
-            l. There are two different types of COASTAL GP's. The waterfront GP's are for work not requiring an IP taking place waterward of the MHWL. There are also Coastal GP's under CAFRA these are for work Upland of the MHWL in the CAFRA area or out of the CAFRA
-            area. This is confusing mistake made when the types of GP's were being assigned in NJEMS. Until we create a new Class Code in NJEMS for coastal GP's we will have this confusion.
+             l. There are two different types of COASTAL GP's. The waterfront GP's are for work not requiring an IP taking place waterward of the MHWL. There are also Coastal GP's under CAFRA these are for work Upland of the MHWL in the CAFRA area or out of the CAFRA area. This is confusing mistake made when the types of GP's were being assigned in NJEMS. Until we create a new Class Code in NJEMS for coastal GP's we will have this confusion.
           </label>
         </p>
         <p>
           <input type="checkbox" id="fWGPwFDWrapUp16" />
           <label for="fWGPwFDWrapUp16">
-            m. Ensure waterway is actually a man made lagoon and NOT a man-altered waterway. This would kick the project into an IP and the GP unit doesn't always check. A natural waterway usually has water flowing through it. If the only flow is tide going up and
-            down it is usually man made or man altered. Man altered like the Cape May canal needs IP's not GP's. In IMAP pull up the location of the property and using the tidelands layer you can check if the water body is claimed by tidelands then it
-            is natural if unclaimed it is man made.
+            m. Ensure waterway is actually a man made lagoon and NOT a man-altered waterway. This would kick the project into an IP and the GP unit doesn't always check. A natural waterway usually has water flowing through it. If the only flow is tide going up and down it is usually man made or man altered. Man altered like the Cape May canal needs IP's not GP's. In IMAP pull up the location of the property and using the tidelands layer you can check if the water body is claimed by tidelands then it is natural if unclaimed it is man made.
           </label>
         </p>
         <p>
-          <input type="checkbox" id="fWGPwFDWrapUp17" />
-          <label for="fWGPwFDWrapUp17">
-            n. If an applicant built a home before CAFRA II 1996 they can subdivide and apply for a GP8 to build a new home. If the home was built or rebuilt under a GP after CAFRA II the second home needs a CAFRA GP.
-          </label>
-        </p>
-        <p>
-          <input type="checkbox" id="fWGPwFDWrapUp18" />
-          <label for="fWGPwFDWrapUp18">
-            o. All GP's for reconstruction of a single family home if on a dune or along first house on atlantic ocean show be assigned to regions.
-          </label>
-        </p>
-      </fieldset>
+         <input type="checkbox" id="fWGPwFDWrapUp17" />
+         <label for="fWGPwFDWrapUp17">
+           n. If an applicant built a home before CAFRA II 1996 they can subdivide and apply for a GP8 to build a new home. If the home was built or rebuilt under a GP after CAFRA II the second home needs a CAFRA GP.
+         </label>
+       </p>
+       <p>
+         <input type="checkbox" id="fWGPwFDWrapUp18" />
+         <label for="fWGPwFDWrapUp18">
+           o. All GP's for reconstruction of a single family home if on a dune or along first house on atlantic ocean show be assigned to regions.
+         </label>
+       </p>
+     </fieldset>
 
       <fieldset class="hide step15 option11111211111116">
         <legend>
@@ -6937,10 +6910,10 @@
           Does the application have the following?:
         </p>
         <p>
-          <input type="checkbox" id="fWIPwFDCheck1" />
-          <label for="fWIPwFDCheck1">
-            A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);
-          </label>
+        <input type="checkbox" id="fWIPwFDCheck1" />
+        <label for="fWIPwFDCheck1">
+          A copy of the <b>Compliance Statement</b>, which must address the Rules on Coastal Zone Management (N.J.A.C. 7:7);
+        </label>
         </p>
         <p>
           <input type="checkbox" id="fWIPwFDCheck2" />
@@ -7082,7 +7055,7 @@
           Click the following link to review any applicable code and regulations.
         </p>
         <p>
-          You can use the [embedded] notepad to document items relevant to your review!
+          You can use the [embedded] notepad to document items relevant to your review! 
         </p>
         <p>
           <input id="fWIPwFDCongrats" name="group_17" type="radio" onClick="scrollSmoothToBottom()" />
@@ -7126,7 +7099,8 @@
         <p>
           <input type="checkbox" id="fWIPwFDNJEMS5" onClick="scrollSmoothToBottom()" />
           <label for="fWIPwFDNJEMS5">
-            5. If historical aerials show that there was development onsite that may have needed wetlands authorizations, you can check Paradox, which contains information for authorizations prior to 2002. Otherwise, continue to STEP 4. to conduct ArcGIS review.
+            5. If historical aerials show that there was development onsite that may have needed wetlands authorizations, you can check Paradox, which contains information for authorizations prior to 2002. Otherwise, continue to STEP 4. to
+            conduct ArcGIS review.
           </label>
         </p>
         <p>
@@ -7659,7 +7633,7 @@
       <fieldset class="hide step23 option111112111111161112211">
         <legend class="tooltip">
           <b>Freshwater Wetlands IP STEP 8. </b>
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               For further assistance; you may use the guidance document on the EPA Priority Wetland Layer found at V:\lum\LUR\Pre-Review Resources\SOPs
             </span>
         </legend>
@@ -7669,8 +7643,8 @@
         <p>
           <input type="checkbox" id="fWIPwFDEPAPriority1" />
           <label for="fWIPwFDEPAPriority1" class="tooltip">
-            Use the GIS Layer
-            <span class="tooltiptext">
+            Use the GIS Layer 
+              <span class="tooltiptext">
                 found at V:\lum\LUR\GIS_Data\ EPA_Priority_Wetlands.lyr
               </span>
           </label>
@@ -7680,7 +7654,7 @@
           <label for="fWIPwFDEPAPriority2">
             Use the Identify tool to see information, including caveats for wetlands that may fall in the geographic area but are excluded from the EPA priority.
           </label>
-        </p>
+        </p>  
         <p>
           Soils:
         </p>
@@ -7717,8 +7691,7 @@
         </p>
         <ul>
           <li>If your pending permit is not listed on the transmittal, then USFWS review is not required.</li>
-          <li>If the permit is applicable, the PRO still needs to check if the municipality is listed in the "USFW Federally Listed and Candidate Species Occurrences in New Jersey by County and Municipality" packet found in V:\lum\LUR\Pre-Review Resources\FWW
-            Resources.</li>
+          <li>If the permit is applicable, the PRO still needs to check if the municipality is listed in the "USFW Federally Listed and Candidate Species Occurrences in New Jersey by County and Municipality" packet found in V:\lum\LUR\Pre-Review Resources\FWW Resources.</li>
         </ul>
         <p>
           <input type="checkbox" id="fWIPwFDUSFWS2" />
@@ -7728,10 +7701,10 @@
         </p>
         <ol>
           <li>
-            A copy of the LURP Permit Application Transmittal Form;
+            A copy of the LURP Permit Application Transmittal Form; 
           </li>
           <li>
-            A copy of the LURP form;
+            A copy of the LURP form; 
           </li>
           <li>
             A USGS map or road map showing property location; and
@@ -7745,31 +7718,31 @@
           <label for="fWIPwFDUSFWS3">
             Place in the bin labeled USFW Review (North or South) located next to the T&E Unit.
           </label>
-          <p>
-            In NJEMS, complete the following in activity tracking:
-          </p>
-          <p>
-            <input type="checkbox" id="fWIPwFDUSFWS4" />
-            <label for="fWIPwFDUSFWS4">1. Add row, select group task, and select "Pre-review Send USFWS In-House Review to T&E." </label>
-          </p>
-          <p>
-            <input type="checkbox" id="fWIPwFDUSFWS5" />
-            <label for="fWIPwFDUSFWS5">
-              2. Assign the "Pre-review Send USFWS In-House Review to T&E" task to yourself and add date requested, Assign the other tasks to Karena DiLeo and leave the dates blank.
-            </label>
-          </p>
-          <p>
-            <input id="fWIPwFDUSFWSContinue" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
-            <label for="fWIPwFDUSFWSContinue">
-              Continue to State Historic Preservation Office (SHPO) Review
-            </label>
-          </p>
+        <p>
+          In NJEMS, complete the following in activity tracking:
+        </p>
+        <p>
+          <input type="checkbox" id="fWIPwFDUSFWS4" />
+          <label for="fWIPwFDUSFWS4">1. Add row, select group task, and select "Pre-review Send USFWS In-House Review to T&E." </label>
+        </p>
+        <p>
+          <input type="checkbox" id="fWIPwFDUSFWS5" />
+          <label for="fWIPwFDUSFWS5">
+            2. Assign the "Pre-review Send USFWS In-House Review to T&E" task to yourself and add date requested, Assign the other tasks to Karena DiLeo and leave the dates blank.
+          </label>
+        </p>
+        <p>
+          <input id="fWIPwFDUSFWSContinue" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="fWIPwFDUSFWSContinue">
+            Continue to State Historic Preservation Office (SHPO) Review
+          </label>
+        </p>
       </fieldset>
 
       <fieldset class="hide step25 option1111121111111611122111">
         <legend class="tooltip">
           <b>Freshwater Wetlands IP STEP 10. </b>
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               A SHPO review may be required for a Freshwater Wetland Permit or a Coastal Zone Management Permit that has historic archeological resources onsite. Aspects of a project that could affect SHPO resources are impacts to historic sites or buildings, historic neighborhoods and/or archeological resources.
             </span>
         </legend>
@@ -7779,8 +7752,7 @@
         <p>
           <input type="checkbox" id="fWIPwFDSHPO1" />
           <label for="fWIPwFDSHPO1">
-            Select the layer "Historic Preservation Data." Please be sure to check each of the sublayers under this layer (click on plus and check each of the four sublayers including Historic District, Historic Fill, Historic Site, and Historic Archeological Site
-            Grid.) If any of these layers intersect the project site, then a SHPO review is required.
+            Select the layer "Historic Preservation Data." Please be sure to check each of the sublayers under this layer (click on plus and check each of the four sublayers including Historic District, Historic Fill, Historic Site, and Historic Archeological Site Grid.) If any of these layers intersect the project site, then a SHPO review is required.
           </label>
         </p>
         <p>
@@ -7804,7 +7776,7 @@
         <p>
           <input id="fWIPwFDSHPOContinue" name="group_25" type="radio" onClick="scrollSmoothToBottom()" />
           <label for="fWIPwFDSHPOContinue">
-            No State Historic Preservation Office (SHPO) Review is required.
+             No State Historic Preservation Office (SHPO) Review is required.
           </label>
         </p>
       </fieldset>
@@ -7812,56 +7784,56 @@
       <fieldset class="hide step26 option11111211111116111221111">
         <legend class="tooltip">
           <b>Freshwater Wetlands IP STEP 11 </b>
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               A SHPO review may be required for a Freshwater Wetland Permit or a Coastal Zone Management Permit that has historic archeological resources onsite. Aspects of a project that could affect SHPO resources are impacts to historic sites or buildings, historic neighborhoods and/or archeological resources.
             </span>
         </legend>
-        <p>
-          <input type="checkbox" id="fWIPwFDSHPOPart21" />
-          <label for="fWIPwFDSHPOPart21">
-            If a SHPO review is required, fill out the LURP Permit Application Transmittal Form and include the following:
-          </label>
-          <ol>
-            <li>
-              A copy of the LURP Permit Application Transmittal Form;
-            </li>
-            <li>
-              A copy of the LURP form;
-            </li>
-            <li>
-              A USGS map or road map showing property location; and
-            </li>
-            <li>
-              One copy of the plan.
-            </li>
-          </ol>
-          <p>
-            <input type="checkbox" id="fWIPwFDSHPOPart22" />
-            <label for="fWIPwFDSHPOPart22">
-              Deliver the package to the SHPO secretary at 501 East State St 4th Floor southwest corner or to the SHPO mail box bin the lunchroom.
-            </label>
-          </p>
-          <p>
-            In NJEMS, the following should be completed in activity tracking:
-          </p>
-          <p>
-            <input type="checkbox" id="fWIPwFDSHPOPart23" />
-            <label for="fWIPwFDSHPOPart23">
-              1. Add row, select group task, select SHPO referral.
-            </label>
-          </p>
-          <p>
-            <input type="checkbox" id="fWIPwFDSHPOPart24" />
-            <label for="fWIPwFDSHPOPart24">
-              2. Assign "Request Comments from SHPO" and "Receive SHPO comments" to yourself and add date requested.
-            </label>
-          </p>
-          <p>
-            <input id="fWIPwFDSHPOPart25" name="group_26" type="radio" onClick="scrollSmoothToBottom()" />
-            <label for="fWIPwFDSHPOPart25">
-              Continue to check CAFRA
-            </label>
-          </p>
+      <p>
+       <input type="checkbox" id="fWIPwFDSHPOPart21" />
+       <label for="fWIPwFDSHPOPart21">
+         If a SHPO review is required, fill out the LURP Permit Application Transmittal Form and include the following:
+       </label>
+       <ol>
+         <li>
+           A copy of the LURP Permit Application Transmittal Form; 
+         </li>
+         <li>
+           A copy of the LURP form; 
+         </li>
+         <li>
+           A USGS map or road map showing property location; and
+         </li>
+         <li>
+           One copy of the plan.
+         </li>
+       </ol>
+       <p>
+         <input type="checkbox" id="fWIPwFDSHPOPart22" />
+         <label for="fWIPwFDSHPOPart22">
+           Deliver the package to the SHPO secretary at 501 East State St 4th Floor southwest corner or to the SHPO mail box bin the lunchroom.
+         </label>
+       </p>
+       <p>
+         In NJEMS, the following should be completed in activity tracking:
+       </p>
+       <p>
+         <input type="checkbox" id="fWIPwFDSHPOPart23" />
+         <label for="fWIPwFDSHPOPart23">
+           1. Add row, select group task, select SHPO referral. 
+         </label>
+       </p>
+       <p>
+         <input type="checkbox" id="fWIPwFDSHPOPart24" />
+         <label for="fWIPwFDSHPOPart24">
+           2. Assign "Request Comments from SHPO" and "Receive SHPO comments" to yourself and add date requested.
+         </label>
+       </p>
+       <p>
+        <input id="fWIPwFDSHPOPart25" name="group_26" type="radio" onClick="scrollSmoothToBottom()" />
+        <label for="fWIPwFDSHPOPart25">
+          Continue to check CAFRA
+        </label>
+        </p>
       </fieldset>
 
       <fieldset class="hide step27 option111112111111161112211111">
@@ -7899,7 +7871,7 @@
           <input type="checkbox" id="fWIPwFDCAFRACheck5" />
           <label for="fWIPwFDCAFRACheck5">
             5. Check here if the project within 500 feet of the MHWL and proposes 25 or more residential units or 50 or more parking spaces.
-            <span class="tooltiptext">
+              <span class="tooltiptext">
                 If yes, then a CAFRA permit is generally required.  The exception occurs when the project occurs within a "qualifying municipality." which can be determined by checking the latest list at http://www.state.nj.us/dca/divisions/dlgs/resources/stateaidinfo.shtml. If the project municipality is listed, then the threshold for CAFRA jurisdiction is different and can be as much as 75 or more residential units or 150 or more parking spaces.  Please see N.J.A.C. 7:7-2.2(a)3 and 4 for more information.
               </span>
           </label>
@@ -7951,7 +7923,7 @@
         </legend>
         <p class="tooltip">
           Use the ArcGIS "1970 Wetland Basemaps" layer to determine if your site has coastal wetlands.
-          <span class="tooltiptext">
+            <span class="tooltiptext">
               The basemap can be found in the DEP data bar under "imagery" labeled as "1970 Wetlands Basemap".
             </span>
         </p>
@@ -7994,7 +7966,7 @@
           <input type="checkbox" id="fWIPwFDTidelands1" />
           <label for="fWIPwFDTidelands1" class="tooltip">
             1. Make sure there is a copy of the tideland's instrument for all work on natural waterways.
-            <span class="tooltiptext">
+              <span class="tooltiptext">
                 They need to at least submit proof that they have sent a letter or a request of tideland's interest. Show limits of Tidelands boundary on plans if license, lease, or grant is in effect.
               </span>
           </label>
@@ -8094,8 +8066,7 @@
         <p>
           <input type="checkbox" id="fWIPwFDWrapUp12" />
           <label for="fWIPwFDWrapUp12">
-            i. All IP applications on Natural Waterways go to the Project Manager of that town unless in an Urban Growth area. In the Urban Growth area all IP's for docks and piers are assigned to Chris Jones and he will reassign them. All other type of work in Urban
-            Growth area that requires any type of waterfront IP goes to the Urban Growth project manager assigned to that town.
+            i. All IP applications on Natural Waterways go to the Project Manager of that town unless in an Urban Growth area. In the Urban Growth area all IP's for docks and piers are assigned to Chris Jones and he will reassign them. All other type of work in Urban Growth area that requires any type of waterfront IP goes to the Urban Growth project manager assigned to that town.
           </label>
         </p>
         <p>
@@ -8114,31 +8085,28 @@
         <p>
           <input type="checkbox" id="fWIPwFDWrapUp15" />
           <label for="fWIPwFDWrapUp15">
-            l. There are two different types of COASTAL GP's. The waterfront GP's are for work not requiring an IP taking place waterward of the MHWL. There are also Coastal GP's under CAFRA these are for work Upland of the MHWL in the CAFRA area or out of the CAFRA
-            area. This is confusing mistake made when the types of GP's were being assigned in NJEMS. Until we create a new Class Code in NJEMS for coastal GP's we will have this confusion.
+             l. There are two different types of COASTAL GP's. The waterfront GP's are for work not requiring an IP taking place waterward of the MHWL. There are also Coastal GP's under CAFRA these are for work Upland of the MHWL in the CAFRA area or out of the CAFRA area. This is confusing mistake made when the types of GP's were being assigned in NJEMS. Until we create a new Class Code in NJEMS for coastal GP's we will have this confusion.
           </label>
         </p>
         <p>
           <input type="checkbox" id="fWIPwFDWrapUp16" />
           <label for="fWIPwFDWrapUp16">
-            m. Ensure waterway is actually a man made lagoon and NOT a man-altered waterway. This would kick the project into an IP and the GP unit doesn't always check. A natural waterway usually has water flowing through it. If the only flow is tide going up and
-            down it is usually man made or man altered. Man altered like the Cape May canal needs IP's not GP's. In IMAP pull up the location of the property and using the tidelands layer you can check if the water body is claimed by tidelands then it
-            is natural if unclaimed it is man made.
+            m. Ensure waterway is actually a man made lagoon and NOT a man-altered waterway. This would kick the project into an IP and the GP unit doesn't always check. A natural waterway usually has water flowing through it. If the only flow is tide going up and down it is usually man made or man altered. Man altered like the Cape May canal needs IP's not GP's. In IMAP pull up the location of the property and using the tidelands layer you can check if the water body is claimed by tidelands then it is natural if unclaimed it is man made.
           </label>
         </p>
         <p>
-          <input type="checkbox" id="fWIPwFDWrapUp17" />
-          <label for="fWIPwFDWrapUp17">
-            n. If an applicant built a home before CAFRA II 1996 they can subdivide and apply for a GP8 to build a new home. If the home was built or rebuilt under a GP after CAFRA II the second home needs a CAFRA GP.
-          </label>
-        </p>
-        <p>
-          <input type="checkbox" id="fWIPwFDWrapUp18" />
-          <label for="fWIPwFDWrapUp18">
-            o. All GP's for reconstruction of a single family home if on a dune or along first house on atlantic ocean show be assigned to regions.
-          </label>
-        </p>
-      </fieldset>
+         <input type="checkbox" id="fWIPwFDWrapUp17" />
+         <label for="fWIPwFDWrapUp17">
+           n. If an applicant built a home before CAFRA II 1996 they can subdivide and apply for a GP8 to build a new home. If the home was built or rebuilt under a GP after CAFRA II the second home needs a CAFRA GP.
+         </label>
+       </p>
+       <p>
+         <input type="checkbox" id="fWIPwFDWrapUp18" />
+         <label for="fWIPwFDWrapUp18">
+           o. All GP's for reconstruction of a single family home if on a dune or along first house on atlantic ocean show be assigned to regions.
+         </label>
+       </p>
+     </fieldset>
 
       <fieldset class="hide step15 option11111211111117">
         <legend>
@@ -8175,8 +8143,7 @@
           <b>Congratulations!</b>
         </legend>
         <br/>The Highlands Exemption Application (HAD) portion of the application is administratively complete!
-        <br/>Click the following link to reference the applicable code and regulations (a new browser tab will open).
-        <br/>
+        <br/>Click the following link to reference the applicable code and regulations (a new browser tab will open). <br/>
         <br/>
         <input type="button" onclick="openHAD()" name="hADBtn" value="Highlands Exemption Review" class="li">
         <input type="button" onclick="openHADRules()" name="hADRulesBtn" value="Highlands Exemption Rules" class="li">
@@ -8193,19 +8160,19 @@
         </legend>
         <br/>
         <p>Dear (<em>Agent Name</em>),
-          <br/>The Department is in the process of reviewing (<em> include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
-          <br/>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
-          <br/>
-          <br/> 1. An exemption for HAD from a qualifying municipality;
-          <br/> 2. General Highlands Applicant Information (3-page application);
-          <br/> 3. A Water Quality Management Plan (WQMP);
-          <br/>
-          <br/>If you choose to (<em>submit/revise</em>) the following additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
-          <br/>
-          <br/>If you have any questions, you can reach me here, or at (<em>Permit Writer's desk phone number</em>).
-          <br/>
-          <br/>Thank you,
-          <br/>(<em>Permit Writer's Signature</em>)</p>
+        <br/>The Department is in the process of reviewing (<em> include DLUR File #</em>), an application for (<em>Application Type/s</em>) for Re: (<em>Applicant's Name and project location</em>).
+        <br/>In order for the Department to return a positive response for this application, please submit (<em>submit/revise</em>) the following additional information:
+        <br/>
+        <br/> 1. An exemption for HAD from a qualifying municipality;
+        <br/> 2. General Highlands Applicant Information (3-page application);
+        <br/> 3. A Water Quality Management Plan (WQMP);
+        <br/>
+        <br/>If you choose to (<em>submit/revise</em>) the following additional information, please do so by (<em>a date 2 to 3 weeks from the date of this message</em>) or a decision will be made on the application as it currently exists.
+        <br/>
+        <br/>If you have any questions, you can reach me here, or at (<em>Permit Writer's desk phone number</em>).
+        <br/>
+        <br/>Thank you,
+        <br/>(<em>Permit Writer's Signature</em>)</p>
         <p>
           <input id="question_3_1_1" name="group_5" type="checkbox" onClick="scrollSmoothToBottom()" />
           <label for="question_3_1_1">Applicant has been notified.</label>
@@ -8278,18 +8245,18 @@
       <fieldset class="hide step18 option111112111111181">
         <legend>
           <b>Congratulations!</b>
-        </legend>
+        </legend> 
         <p>
-          The E-LOI portion of the application is administratively complete!
+          The E-LOI portion of the application is administratively complete! 
         </p>
         <p>
-          Schedule a date for a site visit.</br>
-        </p>
+          Schedule a date for a site visit.</br>  
+        </p> 
         <p>
           <input type="button" onclick="openFWW()" name="fWWRulesBtn" value="Freshwater Wetlands" class="li" />
         </p>
         <p>
-          <input id="eLOIDone" name="group_18" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <input id="eLOIDone" name="group_18" type="checkbox" onClick="scrollSmoothToBottom()"/>
           <label for="eLOIDone">I have finished my review.</label>
         </p>
       </fieldset>
@@ -8365,32 +8332,32 @@
 
     </form>
   </body>
-  <footer class="footer">
-    <div>
-      <em>SOP for the Review of All Land Use Applications.</em>
-      <button onClick="scrollSmoothToTop()">
-        Scroll to Top
-      </button>
-    </div>
+    <footer class="footer">
+      <div>
+        <em>SOP for the Review of All Land Use Applications.</em>
+        <button onClick="scrollSmoothToTop()">
+          Scroll to Top
+        </button>
+      </div>
 
-    <p>
-      <b>N.J.A.C. Quick References</b>
-      <input type="button" onclick="openCZM()" name="cZMRulesBtn" value="Coastal/CAFRA/CZM" class="li" />
+      <p> 
+        <b>N.J.A.C. Quick References</b>
+          <input type="button" onclick="openCZM()" name="cZMRulesBtn" value="Coastal/CAFRA/CZM" class="li" />
 
-      <input type="button" onclick="openFWW()" name="fWWRulesBtn" value="Freshwater Wetlands" class="li" />
+          <input type="button" onclick="openFWW()" name="fWWRulesBtn" value="Freshwater Wetlands" class="li" />
 
-      <input type="button" onclick="openSWM()" name="sWMRulesBtn" value="Stormwater Management" class="li" />
+          <input type="button" onclick="openSWM()" name="sWMRulesBtn" value="Stormwater Management" class="li" />
 
-      <input type="button" onclick="openSWQ()" name="sWQRulesBtn" value="Surface Water Quality" class="li" />
+          <input type="button" onclick="openSWQ()" name="sWQRulesBtn" value="Surface Water Quality" class="li" />
 
-      <input type="button" onclick="openFHA()" name="fHARulesBtn" value="Flood Hazard Area" class="li" />
+          <input type="button" onclick="openFHA()" name="fHARulesBtn" value="Flood Hazard Area" class="li" />
 
-      <input type="button" onclick="openWPCA()" name="wPCARulesBtn" value="Water Pollution Control" class="li" />
+          <input type="button" onclick="openWPCA()" name="wPCARulesBtn" value="Water Pollution Control" class="li" />
 
-      <input type="submit" id="clearBtnHeader" value="Clear Form/Start Over" onclick="javascript:history.go(0)" class="li" />
-
-    </p>
-  </footer>
+          <input type="submit" id="clearBtnHeader" value="Clear Form/Start Over" onclick="javascript:history.go(0)" class="li" />
+        
+      </p>
+    </footer>      
 
 
 </html>
