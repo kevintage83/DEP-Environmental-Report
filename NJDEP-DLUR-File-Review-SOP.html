@@ -37,9 +37,9 @@
       }
       
       body {
-        min-height: 400px;
-        margin-bottom: 70px;
         clear: both;
+        background-color: #ffffff;
+        background-image: url("http://www.commentnation.com/backgrounds/images/white_marbled_paper_background_texture_seamless.jpg");
       }
       
       .tooltip {
@@ -94,6 +94,7 @@
         width: 30%;
         height: relative;
         border-color: green;
+        background-image: url("http://www.timvandevall.com/wp-content/uploads/2013/10/Printable-Notebook-Paper-05.jpg")
       }
       
       #timers {
@@ -103,7 +104,6 @@
       }
       
       #deadlines {
-        background: #444;
         color: #DEDEDE;
         font: normal 16px arial, verdana, sans-serf;
         height: 40px;
@@ -123,7 +123,9 @@
       .shortDate {
         width: 75px;
         border-style: none;
+
       }
+
     </style>
 
     <script type='text/javascript'>
@@ -210,7 +212,7 @@
       }
 
     </script>
-    
+
     <script type="text/javascript">
       function Get20Days() {
         var aSUDate20 = new Date(document.getElementById("aSU_Date").value);
@@ -340,19 +342,19 @@
 
       <fieldset class="step0 option0">
         <div id="timers">
-          <div id="timeDiv"> Calculating...
+          <div id="timeDiv"> Retrieving current time...
           </div>
           <div>
-            Please enter the <b>ASU Date</b> listed on the "<em>Permit Database Transmittal Form</em>" below.
+            Please enter the <b>Date Received</b> listed on the "<em>Permit Database Transmittal Form</em>" below.
           </div>
 
           <div>
 
             <label>
-              <b>Enter ASU Date:</b>
+              <b>Enter Date Received:</b>
             </label>
-            <input type="date" class="textbox" id="aSU_Date" onchange="cal()" />
-
+            <input type="date" class="textbox" id="aSU_Date" placeholder="mm-dd-yyyy" />
+            <input type="button" onclick="cal()" value="Calculate" />
           </div>
 
           <div>
@@ -1701,9 +1703,9 @@
           </label>
         </p>
         <p>
-        <input type="checkbox" id="streamStats4" />
-        <label for="streamStats4">
-          Features draining less than 50 acres are regulated if the feature is not a ditch and has a defined bed and bank. These features do not have a flood hazard area, but do have a riparian zone.
+          <input type="checkbox" id="streamStats4" />
+          <label for="streamStats4">
+            Features draining less than 50 acres are regulated if the feature is not a ditch and has a defined bed and bank. These features do not have a flood hazard area, but do have a riparian zone.
           </label>
         </p>
         <p>
@@ -2075,10 +2077,10 @@
           Wrap Up:
         </p>
         <p>
-        <input type="checkbox" id="fHAWrapUp1" />
-        <label for="fHAWrapUp1">
-          1. In Activity Tracking, whoever fills out the pre-review checklist (PRO or pre-reviewer) should assign "Start Technical Review" and "End Technical Review" to themselves and add the appropriate date.
-        </label>
+          <input type="checkbox" id="fHAWrapUp1" />
+          <label for="fHAWrapUp1">
+            1. In Activity Tracking, whoever fills out the pre-review checklist (PRO or pre-reviewer) should assign "Start Technical Review" and "End Technical Review" to themselves and add the appropriate date.
+          </label>
         </p>
         <p>
           <input type="checkbox" id="fHAWrapUp2" />
@@ -2457,10 +2459,10 @@
           </label>
         </p>
         <p>
-        <input type="checkbox" id="wFDStreamStats4" />
-        <label for="wFDStreamStats4">
-          Features draining less than 50 acres are regulated if the feature is not a ditch and has a defined bed and bank. These features do not have a flood hazard area, but do have a riparian zone.
-        </label>
+          <input type="checkbox" id="wFDStreamStats4" />
+          <label for="wFDStreamStats4">
+            Features draining less than 50 acres are regulated if the feature is not a ditch and has a defined bed and bank. These features do not have a flood hazard area, but do have a riparian zone.
+          </label>
         </p>
         <p>
           Does the site have a riparian zone?
@@ -2885,7 +2887,8 @@
         <ul>
           <li>If your pending permit is not listed on the transmittal, then USFWS review is not required.</li>
           <li>If the permit is applicable, the PRO still needs to check if the municipality is listed in the "USFW Federally Listed and Candidate Species Occurrences in New Jersey by County and Municipality" packet found in V:\lum\LUR\Pre-Review Resources\FWW
-            Resources.</li>
+            Resources.
+          </li>
         </ul>
         <p>
           <input type="checkbox" id="wFDUSFWS2" />
@@ -3667,10 +3670,10 @@
           </label>
         </p>
         <p>
-        <input type="checkbox" id="cAFwFDStreamStats4" />
-        <label for="cAFwFDStreamStats4">
-          Features draining less than 50 acres are regulated if the feature is not a ditch and has a defined bed and bank. These features do not have a flood hazard area, but do have a riparian zone.
-        </label>
+          <input type="checkbox" id="cAFwFDStreamStats4" />
+          <label for="cAFwFDStreamStats4">
+            Features draining less than 50 acres are regulated if the feature is not a ditch and has a defined bed and bank. These features do not have a flood hazard area, but do have a riparian zone.
+          </label>
         </p>
         <p>
           Does the site have a riparian zone?
@@ -4095,7 +4098,8 @@
         <ul>
           <li>If your pending permit is not listed on the transmittal, then USFWS review is not required.</li>
           <li>If the permit is applicable, the PRO still needs to check if the municipality is listed in the "USFW Federally Listed and Candidate Species Occurrences in New Jersey by County and Municipality" packet found in V:\lum\LUR\Pre-Review Resources\FWW
-            Resources.</li>
+            Resources.
+          </li>
         </ul>
         <p>
           <input type="checkbox" id="cAFwFDUSFWS2" />
@@ -4877,10 +4881,10 @@
           </label>
         </p>
         <p>
-        <input type="checkbox" id="gPcAFwFDStreamStats4" />
-        <label for="gPcAFwFDStreamStats4">
-          Features draining less than 50 acres are regulated if the feature is not a ditch and has a defined bed and bank. These features do not have a flood hazard area, but do have a riparian zone.
-        </label>
+          <input type="checkbox" id="gPcAFwFDStreamStats4" />
+          <label for="gPcAFwFDStreamStats4">
+            Features draining less than 50 acres are regulated if the feature is not a ditch and has a defined bed and bank. These features do not have a flood hazard area, but do have a riparian zone.
+          </label>
         </p>
         <p>
           Does the site have a riparian zone?
@@ -5305,7 +5309,8 @@
         <ul>
           <li>If your pending permit is not listed on the transmittal, then USFWS review is not required.</li>
           <li>If the permit is applicable, the PRO still needs to check if the municipality is listed in the "USFW Federally Listed and Candidate Species Occurrences in New Jersey by County and Municipality" packet found in V:\lum\LUR\Pre-Review Resources\FWW
-            Resources.</li>
+            Resources.
+          </li>
         </ul>
         <p>
           <input type="checkbox" id="gPcAFwFDUSFWS2" />
@@ -6090,10 +6095,10 @@
           </label>
         </p>
         <p>
-        <input type="checkbox" id="fWGPwFDStreamStats4" />
-        <label for="fWGPwFDStreamStats4">
-          Features draining less than 50 acres are regulated if the feature is not a ditch and has a defined bed and bank. These features do not have a flood hazard area, but do have a riparian zone.
-        </label>
+          <input type="checkbox" id="fWGPwFDStreamStats4" />
+          <label for="fWGPwFDStreamStats4">
+            Features draining less than 50 acres are regulated if the feature is not a ditch and has a defined bed and bank. These features do not have a flood hazard area, but do have a riparian zone.
+          </label>
         </p>
         <p>
           Does the site have a riparian zone?
@@ -6518,7 +6523,8 @@
         <ul>
           <li>If your pending permit is not listed on the transmittal, then USFWS review is not required.</li>
           <li>If the permit is applicable, the PRO still needs to check if the municipality is listed in the "USFW Federally Listed and Candidate Species Occurrences in New Jersey by County and Municipality" packet found in V:\lum\LUR\Pre-Review Resources\FWW
-            Resources.</li>
+            Resources.
+          </li>
         </ul>
         <p>
           <input type="checkbox" id="fWGPwFDUSFWS2" />
@@ -7303,10 +7309,10 @@
           </label>
         </p>
         <p>
-        <input type="checkbox" id="fWIPwFDStreamStats4" />
-        <label for="fWIPwFDStreamStats4">
-          Features draining less than 50 acres are regulated if the feature is not a ditch and has a defined bed and bank. These features do not have a flood hazard area, but do have a riparian zone.
-        </label>
+          <input type="checkbox" id="fWIPwFDStreamStats4" />
+          <label for="fWIPwFDStreamStats4">
+            Features draining less than 50 acres are regulated if the feature is not a ditch and has a defined bed and bank. These features do not have a flood hazard area, but do have a riparian zone.
+          </label>
         </p>
         <p>
           Does the site have a riparian zone?
@@ -7731,7 +7737,8 @@
         <ul>
           <li>If your pending permit is not listed on the transmittal, then USFWS review is not required.</li>
           <li>If the permit is applicable, the PRO still needs to check if the municipality is listed in the "USFW Federally Listed and Candidate Species Occurrences in New Jersey by County and Municipality" packet found in V:\lum\LUR\Pre-Review Resources\FWW
-            Resources.</li>
+            Resources.
+          </li>
         </ul>
         <p>
           <input type="checkbox" id="fWIPwFDUSFWS2" />
