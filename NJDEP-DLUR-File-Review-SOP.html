@@ -43,7 +43,7 @@
       body {
         clear: both;
         background-color: #ffffff;
-        background-image: url("http://www.commentnation.com/backgrounds/images/white_marbled_paper_background_texture_seamless.jpg");
+        background-image: url("https://s-media-cache-ak0.pinimg.com/originals/ad/10/0b/ad100b95c959df307de6172281345863.jpg");
       }
       
       .tooltip {
@@ -120,7 +120,7 @@
         display: block;
         width: 100%;
         z-index: 96;
-        background-color: green;
+        background-color: transparent;
         padding: 2px;
       }
       
@@ -132,6 +132,14 @@
       
       fieldset {
         border-color: #e6e6e6;
+      }
+      
+      div.inline {
+        float: left;
+      }
+      
+      .clearBoth {
+        clear: both;
       }
 
     </style>
@@ -328,7 +336,7 @@
         var min = Math.floor(leftSec / (60));
         var leftSec = leftSec - min * 60;
 
-        document.getElementById("showTime").innerHTML = "You have " + days + " calendar days until the 20<sup>th</sup> day pre-review deadline passes.";
+        document.getElementById("showTime").innerHTML = "<b>You have " + days + " calendar days until the 20<sup>th</sup> day pre-review deadline passes.</b>";
 
         setTimeout(showDiff, 1000);
 
@@ -359,25 +367,32 @@
   <body>
 
     <form action="#" id="unique_id" class="productFilter">
-
       <br/>
-      <script type="text/javascript">
-        var today = new Date();
-        var hourNow = today.getHours();
-        var greeting;
-        if (hourNow >= 18) {
-          greeting = 'Good evening!';
-        } else if (hourNow >= 12) {
-          greeting = 'Good afternoon!';
-        } else if (hourNow >= 0) {
-          greeting = 'Good morning!';
-        } else {
-          greeting = 'Welcome!';
-        }
-        document.write('<h3>' + greeting + '</h3>');
+      <br/>
+      <div class="inline">
+        <img src="http://www.sustainablejersey.com/fileadmin/_migrated/RTE/RTEmagicC_dep_logo.jpg.jpg" alt="NJDEP logo" style="width:50px;height:50px;">
+      </div>
+      <div class="inline">
+        <script type="text/javascript">
+          var today = new Date();
+          var hourNow = today.getHours();
+          var greeting;
+          if (hourNow >= 18) {
+            greeting = 'Good evening!';
+          } else if (hourNow >= 12) {
+            greeting = 'Good afternoon!';
+          } else if (hourNow >= 0) {
+            greeting = 'Good morning!';
+          } else {
+            greeting = 'Welcome!';
+          }
+          document.write('<h3>' + greeting + '</h3>');
 
-      </script>
-
+        </script>
+      </div>
+      <br/>
+      <br/>
+      <br/>
       <fieldset class="step0 option0">
         <div id="timers">
           <div id="timeDiv"> Retrieving current time...
@@ -8340,7 +8355,7 @@
           The E-LOI portion of the application is administratively complete!
         </p>
         <p>
-          Schedule a date for a site visit.</br>
+          Schedule a date for a site visit.
         </p>
         <p>
           <input type="button" onclick="openFWW()" name="fWWRulesBtn" value="Freshwater Wetlands" class="li" />
@@ -8423,7 +8438,7 @@
 
   <footer class="footer">
     <div>
-      <em>SOP for the Review of All Land Use Applications.</em>
+      <b><em>SOP for the Review of All Land Use Applications.</em></b>
       <button onClick="scrollSmoothToTop()">
         Scroll to Top
       </button>
