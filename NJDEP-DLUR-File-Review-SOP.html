@@ -362,6 +362,8 @@
 
     </script>
 
+
+
   </head>
 
   <body>
@@ -402,7 +404,6 @@
           </div>
 
           <div>
-
             <label>
               <b>Enter Date Received:</b>
             </label>
@@ -8355,7 +8356,7 @@
           The E-LOI portion of the application is administratively complete!
         </p>
         <p>
-          Schedule a date for a site visit.
+          Schedule a date for a site visit.</br>
         </p>
         <p>
           <input type="button" onclick="openFWW()" name="fWWRulesBtn" value="Freshwater Wetlands" class="li" />
@@ -8445,6 +8446,28 @@
     </div>
     <div id="showTime">
     </div>
+
+    <script>
+      function calcShellfish1() {
+        var num1 = document.getElementById("sqFtBeyondMHWL").value;
+        var total1 = Number((num1 * .75 * .25 * 25.73).toFixed(2));
+        document.getElementById("shellfish1").innerHTML = "The shellfish contribution for hard clam high and/or soft clam is $" + total1;
+      }
+
+    </script>
+    <script>
+      function calcShellfish2() {
+        var num2 = document.getElementById("sqFtBeyondMHWL").value;
+        var total2 = Number((num2 * .35 * .25 * 25.73).toFixed(2));
+        document.getElementById("shellfish2").innerHTML = "The shellfish contribution for moderate hard clam is $" + total2;
+      }
+
+    </script>
+
+    <input type="text" id="sqFtBeyondMHWL" placeholder="Enter a number" />Sq. Ft. (beyonw MHWL)
+    <input type="button" id="sqFtBeyondMHWL" onClick="calcShellfish1();calcShellfish2();" value="calculate shellfish" />
+    <div id="shellfish1"></div>
+    <div id="shellfish2"></div>
 
     <div>
       <b>N.J.A.C. Quick References</b>
