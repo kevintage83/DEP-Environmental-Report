@@ -351,7 +351,7 @@
       DLUR Application Review  
         <button onClick="scrollSmoothToBottom()">
           Scroll to Bottom
-        </button>    
+        </button>
     </h2>
     <script type="text/javascript">
       setInterval(getCurrentDateTime, 1000);
@@ -361,8 +361,6 @@
       }
 
     </script>
-
-
 
   </head>
 
@@ -8464,10 +8462,6 @@
 
     </script>
 
-    <input type="text" id="sqFtBeyondMHWL" placeholder="Enter a number" />Sq. Ft. (beyonw MHWL)
-    <input type="button" id="sqFtBeyondMHWL" onClick="calcShellfish1();calcShellfish2();" value="calculate shellfish" />
-    <div id="shellfish1"></div>
-    <div id="shellfish2"></div>
 
     <div>
       <b>N.J.A.C. Quick References</b>
@@ -8486,6 +8480,15 @@
       <input type="submit" id="clearBtnHeader" value="Clear Form/Start Over" onclick="javascript:history.go(0)" class="li" />
 
     </div>
+
+
+    <div><b>Shellfish Contribution Calculator</b>
+    <input type="text" id="sqFtBeyondMHWL" placeholder="Enter a number" size="11" /> Sq. Ft. (beyond MHWL)
+    <input type="button" id="sqFtBeyondMHWL" onClick="calcShellfish1();calcShellfish2();" value="Calculate Shellfish Contribution" /></div>
+    <div id="shellfish1"></div>
+    <div id="shellfish2"></div>
+
+
   </footer>
 
 </html>
