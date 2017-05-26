@@ -7,6 +7,7 @@
     <meta name="description" content="NJDEP DLUR File Review SOP">
     <meta name="keywords" content="NJDEP,DLUR,File,Review,SOP">
     <meta name="author" content="Kevin W. Burns">
+    <meta name="contributors" content="Andrew Dromboski, Ryan Anderson, Lisa Dunne, Iman Olguin-Lira, Sydney Hetrick, Christian Zografos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>NJDEP DLUR File Review SOP</title>
@@ -344,7 +345,7 @@
 
     </script>
 
-    <textarea rows="20" class="commentBox"> Enter your project notes here!
+    <textarea rows="20" class="commentBox" name="type" id="mytext"> Enter your project notes here!
     </textarea>
 
     <h2 id="header-wrap">
@@ -366,9 +367,255 @@
 
   <body>
 
-    <form action="#" id="unique_id" class="productFilter">
+    <br/>
+    <br/>
+    <br/>
+
+
+    <select id="dropdown">
+      <option value="">FWW SPECIAL CONDITIONS</option>
+      <option value="textVar1">General - Disturbance Amount</option>
+      <option value="textVar2">General - TAW</option>
+      <option value="textVar3">General - Additional Un-permitted Disturbance </option>
+      <option value="textVar4">General - Permit expires with Authorization</option>
+      <option value="textVar5">General - Property Owner Consent</option>
+      <option value="textVar6">General - Grades</option>
+      <option value="textVar7">General - Notice to Enforcement</option>
+      <option value="textVar8">General - Sediment Fence</option>
+      <option value="textVar9">General - Split rail fence- TAW</option>
+      <option value="textVar10">General - protect trees</option>
+      <option value="textVar11"> General - channel</option>
+      <option value="textVar12"> General - dewatering</option>
+      <option value="textVar13"> General - concrete</option>
+      <option value="textVar14"> LOI/EPA Priority </option>
+      <option value="textVar15"> FHA Jurisdiction </option>
+      <option value="textVar16"> TA don't maintain as lawn</option>
+      <option value="textVar17"> GP1</option>
+      <option value="textVar18"> GP2</option>
+      <option value="textVar19"> GP2</option>
+      <option value="textVar20"> GP2</option>
+      <option value="textVar21"> GP2</option>
+      <option value="textVar22"> GP2</option>
+      <option value="textVar23"> GP2</option>
+      <option value="textVar24"> GP3</option>
+      <option value="textVar25"> GP4</option>
+      <option value="textVar26"> GP4</option>
+      <option value="textVar27"> GP4</option>
+      <option value="textVar28"> GP5</option>
+      <option value="textVar29"> GP5</option>
+      <option value="textVar30"> GP7</option>
+      <option value="textVar31"> GP8</option>
+      <option value="textVar32"> GP9</option>
+      <option value="textVar33"> GP9</option>
+      <option value="textVar34"> GP9</option>
+      <option value="textVar35"> GP10</option>
+      <option value="textVar36"> GP11</option>
+      <option value="textVar37"> GP11</option>
+      <option value="textVar38"> GP11</option>
+      <option value="textVar39"> GP12</option>
+      <option value="textVar40"> GP12</option>
+      <option value="textVar41"> GP12</option>
+      <option value="textVar42"> GP12</option>
+      <option value="textVar43"> GP13</option>
+      <option value="textVar44"> GP13</option>
+      <option value="textVar45"> GP13</option>
+      <option value="textVar46"> GP13</option>
+      <option value="textVar47"> GP13</option>
+      <option value="textVar48"> GP14</option>
+      <option value="textVar49"> GP14</option>
+      <option value="textVar50"> GP14</option>
+      <option value="textVar51"> GP15</option>
+      <option value="textVar52"> GP16</option>
+      <option value="textVar53"> GP16</option>
+      <option value="textVar54"> GP17</option>
+      <option value="textVar55"> GP17</option>
+      <option value="textVar56"> GP17</option>
+      <option value="textVar57"> GP17</option>
+      <option value="textVar58"> GP18</option>
+      <option value="textVar59"> GP18</option>
+      <option value="textVar60"> GP18</option>
+      <option value="textVar61"> GP18</option>
+      <option value="textVar62"> GP18</option>
+      <option value="textVar63"> GP19</option>
+      <option value="textVar64"> GP20</option>
+      <option value="textVar65"> GP20</option>
+      <option value="textVar66"> GP20</option>
+      <option value="textVar67"> GP20</option>
+      <option value="textVar68"> GP20</option>
+      <option value="textVar69"> GP20</option>
+      <option value="textVar70"> GP21</option>
+      <option value="textVar71"> GP21</option>
+      <option value="textVar72"> GP21</option>
+      <option value="textVar73"> GP21</option>
+      <option value="textVar74"> GP21</option>
+      <option value="textVar75"> GP21</option>
+      <option value="textVar76"> GP23</option>
+      <option value="textVar77"> GP23</option>
+      <option value="textVar78"> GP23</option>
+      <option value="textVar79"> GP24</option>
+      <option value="textVar80"> GP25</option>
+      <option value="textVar81"> GP25</option>
+      <option value="textVar82"> GP25</option>
+      <option value="textVar83"> GP26</option>
+      <option value="textVar84"> GP26</option>
+      <option value="textVar85"> GP26</option>
+      <option value="textVar86"> GP26</option>
+      <option value="textVar87"> GP26</option>
+      <option value="textVar88"> GP26</option>
+      <option value="textVar89"> GP26</option>
+      <option value="textVar90"> GP26</option>
+      <option value="textVar91"> SWM BASINS</option>
+      <option value="textVar92"> SWM BASINS; No review - no jurisdiction</option>
+      <option value="textVar93"> Basin-not Major</option>
+      <option value="textVar94"> C1 - Encroachment</option>
+      <option value="textVar95"> Did not verify wetlands</option>
+      <option value="textVar96"> ACID soils</option>
+      <option value="textVar97"> CONSISTENCY</option>
+      <option value="textVar98"> Fishery Conditions</option>
+      <option value="textVar99"> Fishery Conditions</option>
+      <option value="textVar100"> Additional Permits</option>
+      <option value="textVar101"> Transition areas restoration</option>
+      <option value="textVar102"> Transition areas restoration</option>
+      <option value="textVar103"> Transition areas restoration</option>
+      <option value="textVar104"> Transition Area Averaging Plan</option>
+      <option value="textVar105"> Fences TAW</option>
+      <option value="textVar106"> Grading review</option>
+      <option value="textVar107"> (T&E-may survey in future)</option>
+      <option value="textVar108"> Highlands Preservation Area but Exempt Project</option>
+      <option value="textVar109"> General Conditions</option>
+      <option value="textVar110"> Dredging</option>
+      <option value="textVar111"> Dredging</option>
+    </select>
+    <script type="text/javascript">
+      var textVar1 = 'The total amount of disturbance associated with this authorization shall not exceed ____ acres (_______ SF) of _________wetlands. ';
+      var textVar2 = 'This permit authorizes the disturbance of approximately (acreage) of an acre of freshwater wetlands and /or State open water for the (proposed activity) under General Permit No. __. The wetlands affected by this permit authorization are of Intermediate/Exceptional resource value and the standard transition area or buffer required adjacent to these wetlands is ___ feet.  This general permit includes a transition area waiver, which allows encroachment only in that portion of the transition area, which has been determined by the Department to be necessary to accomplish the regulated activities.  Any additional regulated activities conducted within the standard transition area on-site shall require a separate transition area waiver from the Division.  Regulated activities within a transition area are defined at  N.J.A.C. 7:7A-2.6. Please refer to the Freshwater Wetlands Protection Act (N.J.S.A. 13:9B-1 et seq.) and implementing rules (N.J.A.C. 7:7A-1.1 et seq.) for additional information. ';
+      var textVar3 = 'Any additional un-permitted disturbance of freshwater wetlands, State open waters and/or transition areas besides that shown on the approved plans shall be considered a violation of the Freshwater Wetlands Protection Act Rules unless the activity is exempt or a permit is obtained from the Department prior to the start of the proposed disturbance. ';
+      var textVar4 = "This authorization for a General Permit is valid for a term not to exceed five years from the date of this letter.  If the permittee wishes to continue an activity covered by the permit after the expiration date of the permit, the permittee must apply for and obtain a permit extension or a new permit, prior to the permit's expiration. If the term of the authorization exceeds the expiration date of the general permit issued by rule, and the permit upon which the authorization is based is modified by rule to include more stringent standards or conditions, or is not reissued, the applicant must comply with the requirements of the new regulations by applying for a new GP authorization or an Individual permit. ";
+      var textVar5 = 'The permittee shall obtain all necessary consent from affected off-site and easement property owners.  No work is to occur without proper permissions. ';
+      var textVar6 = 'The construction activities shall not cause any change in pre-construction elevation of freshwater wetlands, transition areas, or State open waters. ';
+      var textVar7 = 'The permittee shall submit written notification to the Bureau of Coastal and Land Use Compliance and Enforcement, Mail Code 401-04C, 401 East State Street, PO Box 420, Trenton, NJ 08625-0420, at least seven days prior to the commencement of site preparation, or of regulated activities, whichever comes first.  The notification shall contain proof of recording of a conservation restriction or easement, if one was required as part of the permit. ';
+      var textVar8 = 'The permittee will be responsible for the installation of a sediment barrier around all disturbed soils, which is sufficient to prevent the sedimentation of the remaining wetlands and transition area. ';
+      var textVar9 = 'Following construction, the permittee shall install a split rail fence or equivalent along the limits of the modified transition area to ensure that subsequent activities on site do not encroach into the remaining wetland and transition areas. ';
+      var textVar10 = 'Prior to construction, all of the trees as shown on the referenced plan which are NOT to be removed shall be marked and protective construction fence must be placed around each tree for the duration of construction until the site is stabilized. ';
+      var textVar11 = 'No construction equipment shall be stored, staged or driven within any channel, freshwater wetland or transition area. ';
+      var textVar12 = 'Any dewatering must include properly sized temporary sediment basins or other filtering methods to reduce turbidity.  The stream area to receive return water discharged from dewatering areas must be encompassed by turbidity barrier. ';
+      var textVar13 = 'Any and all precautions must be taken to prevent raw concrete [e.g. abutments/footings] from coming in contact with the waters of the tributary; raw concrete is toxic to aquatic biota. ';
+      var textVar14 = 'The wetlands have also been identified as being priority wetlands by the U.S. Environmental Protection Agency.  This classification may affect the types of permits or transition area waivers available for the above referenced property. ';
+      var textVar15 = 'The proposed project may be (is) located within the flood hazard area of the _______ River (or "onsite watercourse".  Therefore, the applicant shall obtain a Flood Hazard Area applicability determination or FHA permit for any construction on-site. ';
+      var textVar16 = 'The permittee shall be responsible for preserving and minimizing vegetation disturbances within the wetland transition areas.  All temporary disturbances around the proposed construction shall be replanted with native herbaceous and woody vegetation where applicable and not maintained as lawn or landscaped area. ';
+      var textVar17 = 'The authorized activities are for the maintenance of the existing (PROJECT) only.  No additional Freshwater Wetlands disturbance is permitted. ';
+      var textVar18 = 'The permanently maintained clearing over the utility line shall be no wider than ___ feet. ';
+      var textVar19 = 'The trench into which the utility line is placed shall be no wider than necessary to comply with the Federal O.S.H.A. safety standards. ';
+      var textVar20 = 'Temporary disturbance, as defined at N.J.A.C. 7:7A-1.4, such as temporary construction clearing or temporary storage of dirt or equipment, shall be the minimum size necessary for compliance with applicable laws. ';
+      var textVar21 = 'Any excavation within the wetland or wetland transition area, shall be backfilled to the preexisting elevation and the uppermost 18 inches of the excavation shall be backfilled with the original topsoil material. ';
+      var textVar22 = 'The activities shall not cause any change in preconstruction elevation of a freshwater wetland or transition area. ';
+      var textVar23 = 'Any pipes laid shall be properly sealed so as to prevent leaking or infiltration and designed so as not to form or provide a conduit for groundwater to be discharged or drained from the wetlands. ';
+      var textVar24 = 'Temporarily left blank ';
+      var textVar25 = 'The clearing of wetlands for the geophysical investigation shall be selective to include only those areas of the property that are necessary to carry out the intent of the remedial investigation and for worker safety.';
+      var textVar26 = 'Temporarily left blank ';
+      var textVar27 = 'After the removal of hazardous material and remediation is completed, the ground elevations must be returned to the original elevations by either removal or replacement of suitable soil to preexisting elevation.  If an area was mounded, the finished elevations shall match the surrounding topography. ';
+      var textVar28 = 'Temporarily left blank ';
+      var textVar29 = 'The amount of disturbance shall be the minimum necessary to adequately close and/or maintain the landfill. ';
+      var textVar30 = 'The total amount of disturbance associated with this authorization shall not exceed ____ acres (_____ SF). ';
+      var textVar31 = 'This permit authorizes the disturbance of up to750 square feet of wetlands/transition areas for the construction of ___________. ';
+      var textVar32 = 'The amount of disturbance to vegetation must be the minimum required to comply with the protected air space provisions for a public use aeronautical facility, mandated by the Federal Aviation Administration (FAA) and set forth in the New Jersey Department of Transportation rules at N.J.A.C. 16:54-4.2. ';
+      var textVar33 = 'All tree stumps, brush stumps and root systems shall be left in place in the wetlands and be done in a manner that will minimize adverse environmental impacts on wetlands and/or transition areas, taking into consideration all applicable laws including the State Forest Fire Service requirements at N.J.S.A. 13:9-23.  Mechanized vehicles are not to be used to drag material out of the wetlands [N.J.A.C. 7:7A-5.9(e)4.]. ';
+      var textVar34 = 'The permittee shall use best management practices during clearing activities to preserve and protect freshwater wetlands, transition areas and streams.  Such practices shall include, but not necessarily limited to, the use of silt fencing to protect wetlands and streams, the use of equipment mats in wetland areas to prevent rutting, and limiting the number of passes through wetlands by equipment. ';
+      var textVar35 = 'Do we add the mitigation condition? ';
+      var textVar36 = 'Any pipes laid through wetlands, transition areas, or State open water must be properly sealed so as to prevent leaking or infiltration.  Pipes and backfilled materials must be placed entirely beneath the pre-existing ground elevation. ';
+      var textVar37 = 'The excavation within the wetlands and transition area must be backfilled with the original soil material or suitable material to within 18 inches of the surface.  The upper 18 inches must be backfilled with the original topsoil material to the preexisting elevation and replanted with indigenous species. ';
+      var textVar38 = 'The applicant shall be responsible for ensuring that the back-filling activities do not interfere with the natural hydraulic characteristics of the wetland, such as flow characteristics of groundwater on the site. ';
+      var textVar39 = 'The area of disturbance shall be the minimum necessary to obtain the desired information ';
+      var textVar40 = 'The soil shall be restored to its pre-existing elevation, retaining its original soil layers.  [N.J.A.C.7:7A-5.12(c)]. ';
+      var textVar41 = 'The placement of fill material within any freshwater wetland or transition area for equipment access is prohibited. ';
+      var textVar42 = 'Disturbance for soil borings in or adjacent to the wetlands and associated transition areas on the above referenced property shall be done in such a way as to minimize the removal of vegetation. ';
+      var textVar43 = 'In addition to obtaining all necessary approvals, permittee is advised that approvals from the following may be required: The Division of Fish, Game and Wildlife, New Jersey Department of Environmental Protection for the proposed lake lowering.  Call: 908-236-2118 for an application; time constraints, rates of lowering/refilling and fish salvage requirements are found in this permit. [N.J.A.C.7:7A-5.13(c)1] ';
+      var textVar44 = 'Dredging activities shall not begin before the lake is lowered. [N.J.A.C.7:7A-5.13(c)2], and dredging activities shall end before the lake is refilled. [N.J.A.C.7:7A-5.13(c)3] ';
+      var textVar45 = 'Inflow waters shall be diverted around the pond to maintain stream flows to the downstream watershed. The diverted waters shall be free of sediment from the project.  If pumps are used, the area around the pump shall be screened to prevent entrainment of fish and other aquatic organisms.[N.J.A.C.7:7A-5.13(d)2] ';
+      var textVar46 = 'Access shall only be as shown on the above-referenced plan, and shall be restored to its pre-existing elevation and condition upon completion of the dredging. [N.J.A.C.7:7A-5.13(e)] ';
+      var textVar47 = 'The permittee shall remove no more than [ENTER THE AUTHORIZED DEPTH OF SEDIMENT] ___ inches of sediment, as described and shown on the above-referenced plans. [N.J.A.C.7:7A-5.13(f)1] ';
+      var textVar48 = 'The disturbance of wetlands and associated transition areas on site shall be limited to that which is necessary to complete the investigation and installation of the monitoring wells. ';
+      var textVar49 = 'Once all groundwater monitoring wells have been installed onsite, the permittee shall report the number and location of all wells to the Department. (APPLIES TO BLANKET APPROVALS) ';
+      var textVar50 = 'All activities must be conducted in accordance with a Department approved Remedial Investigation Work Plan. ';
+      var textVar51 = 'All mosquito control activities must comply with “Best Management Practices for Mosquito Management”, issued by the State Mosquito Control Commission. ';
+      var textVar52 = '(Mitigation Conditions will usually apply) ';
+      var textVar53 = 'The activities shall disturb the minimum amount of freshwater wetlands, transition areas, and/or State open waters necessary to successfully implement the project plan. ';
+      var textVar54 = 'Upon completion of the project, the permittee must incorporate features designed to educate the user about the importance of freshwater wetlands, transition areas and State open waters as per N.J.A.C. 7:7A-5.17 of the Freshwater Wetlands Protection Act Rules ';
+      var textVar55 = 'The permittee shall ensure that the proposed activities do not interfere with the natural hydrology of the area. ';
+      var textVar56 = 'In order to preserve the stream channel and any low flow characteristics the pilings of the footbridge must not be placed within the stream channel. ';
+      var textVar57 = 'Non-polluting wood-products must be used in the construction of the retaining wall; no creosote or CCA lumber shall be used in order to protect the environment from the effects of leaching. ';
+      var textVar58 = "All activities shall be conducted in accordance with a permit issued pursuant to N.J.A.C. 7:20 by the Department's Dam Safety Section in the Division of Engineering and Construction. ";
+      var textVar59 = 'Any temporary disturbances to wetlands, transition area or State open waters shall be the minimum necessary to comply with the dam safety permit. ';
+      var textVar60 = 'A current and valid lake lowering permit must be obtained from the Bureau of Freshwater Fisheries (call 908-236-2118 for an application) if any lake lowering is required.  Timing constraints, rates of lowering/refilling and fish salvage requirements are found in this permit.  Due to the size of the lake, the number of fish likely to be present and the costs involved in a fish salvage operation, the Department highly recommends that a cofferdam be used instead of lowering the lake. ';
+      var textVar61 = 'The permittee shall minimize impacts on freshwater wetlands, transition areas, and/or State open waters through the use of best management practices including, but not limited to:  replanting disturbed areas with indigenous wetland plants, stabilizing disturbed soils, and backfilling the uppermost 18 inches of any excavation with the original topsoil material. ';
+      var textVar62 = "[IF DAM IS REMOVED AND DAM OWNER CONTROLS LAKE BOTTOM] The owner shall execute and record a conservation restriction covering the lake bottom area. The conservation restriction shall prohibit any development or regulated activity for five years from the date the dam is removed, in order to allow the stream corridor and associated wetlands in the lake bottom area to revert to their natural state.  The conservation restriction shall include the land covered by the lake bottom and all associated wetlands, as they exist at the time the dam is removed.  When the conservation restriction expires, the Department's jurisdiction under this chapter shall be based on existing conditions on the site. [N.J.A.C.7:7A-5.18 (e)] ";
+      var textVar63 = 'The dock or pier shall be elevated on pilings so that it does not affect the hydrology of the surrounding wetland ';
+      var textVar64 = 'Activities shall not impair surface water flow into or out of any wetland area. [N.J.A.C.7:7A-5.20(e)1.] ';
+      var textVar65 = 'Access through wetlands and transition areas shall be only as depicted on the above-referenced plans. [N.J.A.C.7:7A-5.20(e)2.] ';
+      var textVar66 = 'No construction equipment shall be stored, staged or driven within any channel, freshwater wetland or transition area ';
+      var textVar67 = 'The permittee shall place no more than [ENTER AMOUNT] cubic yards of rip-rap or other stabilization material. [N.J.A.C.7:7A-5.20(e)6.] ';
+      var textVar68 = 'All riparian vegetation removed during construction must be replanted in kind or along other suitable plant-deficient riparian areas. ';
+      var textVar69 = 'Non-polluting wood-products must be used in the construction of the retaining wall; no creosote or CCA lumber shall be used in order to protect the environment from the effects of leaching. ';
+      var textVar70 = "The permittee shall adhere to managing the Right of Ways according to DFW/ENSP's power line maintenance BMP's as found in “No-Harm/Best Management Practices for Wildlife Habitat Along Utility-Line Right of Ways” last updated July 23, 2004. ";
+      var textVar71 = 'Temporary disturbance of freshwater wetlands, transition areas, and/or State open waters during construction shall be no greater than ____ acres and no wider than sixty ____ feet wide, including vegetative clearing and disturbance for access during construction. ';
+      var textVar72 = 'Permanent disturbance of freshwater wetlands, transition areas, and or State open waters, including the area of vegetative clearing to be maintained underneath the utility line shall be no greater than ____ acres and no wider than ____ feet. ';
+      var textVar73 = 'Upon completion of the project, any freshwater wetlands, transition areas, or State open waters disturbed, which are not within the cleared area to be maintained underneath the utility line, shall be allowed to revert to their natural condition.  All disturbed areas scheduled to be reseeded shall use indigenous grasses and shrub type species. ';
+      var textVar74 = 'The permittee shall ensure that the activities do not interfere with the natural hydraulic characteristics of the wetlands, transition area, or State open water. ';
+      var textVar75 = 'Any State open water crossings shall be restored to pre-construction conditions. ';
+      var textVar76 = "The permittee shall minimize impacts to freshwater wetlands and/or State open waters by:  implementing best management practices recommended by the Rutgers Cranberry and Blueberry Experimentation Station, stabilizing all disturbed areas in accordance with the New Jersey Field Office Technical Guide, 1998 edition, as amended and supplemented, issued by the U.S. Department of Agriculture's Natural Resources Conservation Service (NRCS), available from the NRCS at 1370 Hamilton Street, Somerset, New Jersey 08873, and using integrated pest management techniques. ";
+      var textVar77 = 'Any discharge of dredged or fill material shall consist of clean, suitable material free from toxic pollutants in toxic amounts, and shall comply with all applicable Department rules and specifications regarding use of dredged or fill material. [N.J.A.C. 7:7A-5.23(o)3] ';
+      var textVar78 = 'The Commissioner reserves the right (i.e., discretion) to modify, suspend, or revoke General Permit 23 authorizations.  The permittee shall cease, refrain from, or modify activities when notified by the Department that modification, revocation or suspension of this permit is required.  [N.J.A.C. 7:7A-5.23(r)] ';
+      var textVar79 = 'The activities shall not drain, or remove from jurisdiction, any additional or adjacent wetlands other than the ____ of an acre directly impacted by the activities permitted herein. ';
+      var textVar80 = 'This authorization for construction of an individual subsurface septic system is valid only if the existing system has been  determined to be malfunctioning as defined at Section 7:7A-5.25(b)2 of the Rules ';
+      var textVar81 = 'This authorization for construction of an individual septic does not authorize expansion or change in the use of the building or facility. ';
+      var textVar82 = 'All fills must be performed using relevant best management practices, including the use of clean, suitable non-toxic fill materials and the implementation of proper soil erosion and sediment control measures. ';
+      var textVar83 = 'The activity shall not alter or disturb the natural stream banks. General permit 26 does not authorize the straightening or realignment of a channel or stream. ';
+      var textVar84 = 'The permittee shall access the stream only as shown on the plan and the disturbance to vegetation in these areas shall be the minimum necessary for the project.  Any additional disturbances to the riparian vegetation must be replanted in kind or with native, non-invasive species of similar growth form (i.e. tree, shrub, etc.) and wetland tolerance (i.e. FAC, FACW, etc.). ';
+      var textVar85 = 'The permittee shall make every effort to perform work from only one stream bank of each individual stream. ';
+      var textVar86 = 'The amount of accumulated sediment/material to be removed from the channel bottom/stream bed is a maximum of_____ feet which is _____ cubic yards. [N.J.A.C. 7:7A-5.26(b)5] ';
+      var textVar87 = 'No heavy equipment shall be used in the channel. [N.J.A.C. 7:7A-5.26(b)7] ';
+      var textVar88 = 'The applicant shall preserve vegetation and tree canopy on the more southerly and westerly stream bank. [N.J.A.C. 7:7A-5.26(b)8] ';
+      var textVar89 = 'The permittee shall submit to the Department a  written notice of completion, containing a certification that meets both of the following criteria: 1. The certification is signed by a licensed professional engineer who is the county or municipal engineer, or who is employed by the appropriate Soil Conservation District; and 2. The certification states each condition required by N.J.A.C. 7:7A-5.26(b,c and/or d) that applies to the project and states whether the condition has been satisfied. [N.J.A.C. 7:7A-5.26(i)] ';
+      var textVar90 = 'The sole purpose of the activities is to remove sediment, debris and/or garbage and obstructions to flow within the natural stream beds.  This permit does not authorize removal of sediment below the natural stream bottom. ';
+      var textVar91 = "The applicant must make specific arrangements to ensure the continuous maintenance and efficient operation of all proposed water quality measures on this site in accordance with the Department's Best Management Practices Manual.  This includes, but is not limited to the cleaning and inspection of all water quality inlets, devices and stormwater management basins at least 4 times a year and after every major storm, and the continuous implementation of appropriate soil conservation practices within any basins, grassed swales, stormwater outfall structures and other similar appurtenances throughout the site in order to limit soil erosion and sediment discharge into adjacent waterways. ";
+      var textVar92 = "The decision to authorize this Freshwater Wetlands Statewide General Permit did not include a review for compliance with the Stormwater Management Regulations at N.J.A.C. 7:8.  The Department notes that the proposed development meets the definition of a major development as defined in N.J.A.C. 7:8-1.2,  however, the relevant activities are located outside of this permit's jurisdiction.  As such, the issuance of this general permit should not be construed as an indication that this project meets any municipal or State stormwater management regulations which may apply, including, but not limited to the State Stormwater Management Regulations at N.J.A.C 7:8-1.1 et. Seq. ";
+      var textVar93 = 'The decision to authorize this (Insert permit type) did not include a review for compliance with the Stormwater Management Regulations at N.J.A.C. 7:8.  The Division of Land Use Regulation notes that the proposed development does not meet the definition of a major development as defined in N.J.A.C. 7:8-1.2.  As such, the issuance of this (Insert permit type) should not be construed as an indication that this project meets any municipal stormwater management regulations which may apply. ';
+      var textVar94 = "Because the proposed development will encroach  into the 300-foot buffer of a Category 1 watercourse, the permittee must obtain written authorization for the proposed development in accordance with N.J.A.C. 7:8-5.5 from the Department's Division of  Land Use Planning, which may be reached at (609) 292-0060.  This (Insert permit type) has been approved because the project satisfies the requirements of the (Insert applicable rules).  This decision does not in any way indicate that the required authorization from the Division of Land Use Planning will also be obtained.  No construction may begin until all necessary approvals are obtained from the Department ";
+      var textVar95 = 'This permit does not verify the full extent of wetlands on-site.  If the applicant is proposing further construction activities on-site they are encouraged to apply for a Verification type Letter of Interpretation from this office.  This type of Letter of Interpretation will verify the extent of wetlands on the property and determine the resource value of those wetlands. ';
+      var textVar96 = 'During construction, all excavation must be adequately monitored for the presence of acid-producing deposits.  If any such deposits are encountered, the Flood hazard Area Control Act Rules at N.J.A.C. 7:13 must be implemented ';
+      var textVar97 = "This project has not been reviewed for consistency with the applicable Areawide Water Quality Management Plan or the Statewide Water Quality Management Planning Rules at N.J.A.C. 7:15.  As such, this authorization shall not be construed as any type of consistency determination for any sewage generating structures on the project site. For information regarding the water quality planning process, please contact the Department's Office of Land Use Planning at (609) 984-6888. ";
+      var textVar98 = 'In order to protect the [SPECIES] within the (stream), any proposed grading or construction activities within the banks of this or any other stream on site are prohibited between [ENTER TIMING RESTRICTION] of each year.  In addition, any activity within the 100-year flood plain or flood hazard area of this watercourse which could introduce sediment into said stream or which could cause an increase in the natural level of turbidity is also prohibited during this period.  The Department reserves the right to suspend all regulated activities on site should it be determined that the applicant has not taken proper precautions to ensure continuous compliance with this condition. ';
+      var textVar99 = 'In order to protect the (species) within (stream), any proposed grading or construction activity, which could introduce sediment into State open waters or which could cause an increase in the natural level of turbidity, is prohibited between May 1 and June 30 of each year. ';
+      var textVar100 = "All necessary local, Federal, and other State approvals must be obtained by the applicant prior to the commencement of the herein permitted activities.  Approvals from the following may be required: The Division of Fish and Wildlife, New Jersey Department of Environmental Protection, for the lake lowering. Dam Safety and Flood Control, New Jersey Department of Environmental Protection The Department's Bureau of Engineering and Permitting (extension of sanitary sewer lines) The Department's Bureau of Safe Drinking Water (extension of water lines) ";
+      var textVar101 = 'The wetland transition area and restoration areas within the conservation easement shall not be maintained as a lawn or landscaped area.  These areas shall be allowed to revert to a natural habitat. ';
+      var textVar102 = 'The restored area must be planted prior to or concurrent with the construction of the approved project.  The planting list must follow the proposed and approved plans referenced above, which are approved by the Department. ';
+      var textVar103 = 'Permittee shall be responsible for ensuring plants are restored at 85 percent survival and 85 percent area coverage of mitigation plantings or target hydrophytes ';
+      var textVar104 = '1. The transition area may be reduced by XX square feet and shall or compensated by an equal or greater surface area as shown on the referenced plan. 2. The transition area shall not be reduced to less than XX feet in width at any location as shown on the referenced plan. ';
+      var textVar105 = 'Pursuant to N.J.A.C. 7:7A-6.1(b)3 the modified transition area must be fenced using a type of fencing that protects and maintains all functions and values of the resources.  This must be done prior to construction of the structure (including site preparation), and the fence must be permanently maintained so as to clearly delineate its boundary and to prevent people from entering and/or disturbing the transition area and/or wetland. ';
+      var textVar106 = "The decision to authorize this Freshwater Wetlands Statewide General Permit did not include a detail review of the site grading.  Therefore, the proposed grading of the site shall be done in way that will not cause adverse impacts on adjacent properties and wetlands.  The applicant's engineer shall insure that site grading and stormwater management are done in such a way to mitigate for any impacts. ";
+      var textVar107 = "Please be advised, the Department has determined that suitable but presently undocumented habitat for {state and federally listed bog turtle} occurs within the on-site wetlands.  As a result, we reserve the right to conduct presence or absence surveys for this species during the appropriate time of the year.  The results of this survey may affect the extent of regulated transition areas applied to the subject wetlands and the requirements for authorizations under the Department's Statewide or Individual wetland permit programs. ";
+      var textVar108 = '(In Highlands Preservation Area but Exempt project) Please be advised that this property is located within the Highlands Preservation Area, as defined in N.J.S.A. 13:20-1. Therefore, any project proposed on this property may be subject to the requirements of the Highlands Water Protection and Planning Act (HWPPA). In addition to wetlands and transition areas the Highlands Water Protection and Planning Act establishes additional environmental limitations that may affect development of this property.  However, an in-house Highlands Applicability Determination has been done for the proposed addition to the existing single residential dwelling.  As currently proposed, the single residential dwelling addition has been determined to be exempt from the Highlands Act.  This determination shall be considered null and void if changes are made to the project that would increase the scope or area disturbed by the project, or result in a change in use or change the method of wastewater treatment; or the information submitted to obtain this determination from the Department is later determined to be inaccurate. ';
+      var textVar109 = 'This permit authorizes the disturbance of approximately (acreage) of an acre of freshwater wetlands and /or State open water for the (proposed activity) under General Permit No. (GP#6). The wetlands affected by this permit authorization are of Intermediate/Exceptional resource vale and the standard transition area or buffer required adjacent to these wetlands is XXX feet.  This general permit includes a transition area waiver, which allows encroachment only in that portion of the transition area, which has been determined by the Department to be necessary to accomplish the regulated activities.  Any additional regulated activities conducted within the standard transition area on-site shall require a separate transition area waiver from the Division.  Regulated activities within a transition area are defined at N.J.A.C. 7:7A-6.2. Please refer to the Freshwater Wetlands Protection Act (N.J.S.A. 13:9B-1 et seq.) and implementing rules for additional information. ';
+      var textVar110 = 'Any discharge of dredged or fill material shall consist of clean, suitable material free from toxic pollutants (see 40 CFR 401) in toxic amounts, and shall comply with all applicable Department rules and specifications regarding use of dredged or fill material. ';
+      var textVar111 = 'If activities under the general permit involve excavation or dredging, the applicant shall use an acceptable disposal site for the excavated or dredged material. No material shall be deposited or dewatered in freshwater wetlands, transition areas, State open waters or other environmentally sensitive areas. The Department may require testing of dredged material if there is reason to suspect that the material is contaminated. If any dredged material is contaminated with toxic substances, the dredged material shall be removed and disposed of in accordance with Department-approved procedures. ';
+
+
+      var mytextbox = document.getElementById('mytext');
+      var mydropdown = document.getElementById('dropdown');
+
+      mydropdown.onchange = function() {
+        mytextbox.value = mytextbox.value + window[this.value] + String.fromCharCode(13) + String.fromCharCode(13);
+
+      }
+
+    </script>
+
+    <form action="#" id="unique_id" class="productFilter" name="form1" method=post>
+
       <br/>
       <br/>
+      <br/>
+
       <div class="inline">
         <img src="http://www.sustainablejersey.com/fileadmin/_migrated/RTE/RTEmagicC_dep_logo.jpg.jpg" alt="NJDEP logo" style="width:50px;height:50px;">
       </div>
@@ -466,23 +713,26 @@
         </script>
       </fieldset>
 
+      <div id="showTime">
+      </div>
+
       <fieldset class="step1 option0">
         <legend>
           <b>STEP 1.</b>
         </legend>
         <p>
-          You have received a file! Does <b>NJEMS,</b> and the <b>"Permit Database & Transmittal" Form</b> show that you are the <b>Project Manager</b> for this application?
+          You have received a file! Does <b>NJEMS,</b> and the <b>"Permit Database & Transmittal" Form</b> show that you are the <b>Environmental Specialist</b> or <b>Engineer</b> for this application?
         </p>
         <p>
-          <input id="pMCheckYes" name="group_1" type="radio" onClick="scrollSmoothToBottom()" />
-          <label for="pMCheckYes">
-            Yes!
+          <input id="pMCheckES" name="group_1" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="pMCheckES">
+            Environmental <b>Specialist</b>
           </label>
         </p>
         <p>
-          <input id="pMCheckNo" name="group_1" type="radio" onClick="scrollSmoothToBottom()" />
-          <label for="pMCheckNo">
-            No.
+          <input id="pMCheckEng" name="group_1" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="pMCheckEng">
+            Engineer
           </label>
         </p>
       </fieldset>
@@ -509,22 +759,1184 @@
       </fieldset>
 
       <fieldset class="hide step2 option2">
-        <legend>
-          Notify your Supervisor via email, and await further instruction.
-        </legend>
+        <legend>What is the type of application?</legend>
         <p>
-          <input id="noEngrPlansTask1" name="group_2" type="checkbox" onClick="scrollSmoothToBottom()" />
-          <label for="noEngrPlansTask1">
-            Print a hard copy of your email to your Supervisor.
-          </label>
+          <input id="FHAType" name="group_2" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="FHAType">Flood Hazard Area Permitting</label>
         </p>
         <p>
-          <input id="noEngrPlansTask2" name="group_2" type="checkbox" onClick="scrollSmoothToBottom()" />
-          <label for="noEngrPlansTask2">
-            Place the printed email inside the file folder.
-          </label>
+          <input id="wFDAndCoastalType" name="group_2" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="wFDAndCoastalType">Waterfront Development & Coastal Wetlands Individual Permit Application</label>
+        </p>
+        <p>
+          <input id="cAFRAIPType" name="group_2" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="cAFRAIPType">CAFRA Individual Permit Application</label>
+        </p>
+        <p>
+          <input id="coastalGPType" name="group_2" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="coastalGPType">Coastal General Permit Application</label>
+        </p>
+        <p>
+          <input id="fWWGPType" name="group_2" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="fWWGPType">Freshwater Wetlands General Permit and Transition Area Waivers</label>
+        </p>
+        <p>
+          <input id="fWWIPType" name="group_2" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="fWWIPType">Freshwater Wetlands Individual Permit Application</label>
+        </p>
+        <p>
+          <input id="sWMType" name="group_2" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="sWMType">Stormwater Management</label>
+        </p>
+        <p>
+          <input id="eLOIType" name="group_2" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="eLOIType">E-LOI Application</label>
+        </p>
+        <p>
+          <input id="uplandType" name="group_2" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="uplandType">Upland Waterfront Development</label>
         </p>
       </fieldset>
+
+      <fieldset class="hide step2 option27">
+        <legend><b>STEP 1.</b></legend>
+        <p>Is the project residential or non-residential?</p>
+        <p>
+          <input id="residential" name="group_3" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="residential">Residential</label>
+        </p>
+        <p>
+          <input id="nonResidential" name="group_3" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="nonResidential">Non-residential</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option271">
+        <legend><b>STEP 2. </b></legend>
+        <p>
+          <b>Non-residential:</b> Is the facility for commercial or recreation/entertainment purposes?
+        </p>
+
+        <p>
+          <input id="commercialPurposes" name="group_4" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="commercialPurposes">Commercial purposes</label>
+        </p>
+        <p>
+          <input id="recreationalPurposes" name="group_4" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="recreationalPurposes">Recreation/entertainment purposes</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option2711">
+        <legend><b>Stormwater Management STEP 2. </b></legend>
+        <p>
+          <b>Submittal requirements</b>
+        </p>
+        <p>
+          Does the application include the following materials?
+        </p>
+        <ul>
+          <li>Submitted <b>grading</b>, <b>utility</b> and <b>basin detail drawings</b></li>
+          <li>Drainage area <b>maps</b></li>
+          <li><b>Soils map</b> with the site <em>marked</em></li>
+          <li><b>Existing and proposed drainage area map, showing:</b></li>
+          <ul>
+            <li>Points of analysis</li>
+            <li>Flow path</li>
+            <li>Sub areas with size of <em>each</em> sub-area</li>
+            <li><b>Runoff curve numbers</b> used for <em>each</em> sub-area</li>
+          </ul>
+        </ul>
+        <p>
+          <input id="submittalRequirementsYes" name="group_5" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="submittalRequirementsYes">Yes!</label>
+        </p>
+        <p>
+          <input id="submittalRequirementsNo" name="group_5" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="submittalRequirementsNo">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option27111">
+        <legend><b>Hydrology STEP 3. </b></legend>
+        <p>
+          Method used to analyze site hydrology:
+          <input type="text" />
+        </p>
+        <p>
+          <b>Have the following conditions been met?</b>
+        </p>
+        <input type="checkbox" id="curveNumbers" />
+        <label for="curveNumbers"> Curve numbers have been selected to reflect <em>good</em> conditions for existing</label>
+        <br/>
+        <input type="checkbox" id="pervious" />
+        <label for="pervious"><b>Pervious</b> and <b>impervious</b> areas have been <em>separately</em> analyzed for connected impervious areas</label>
+        <br/>
+        <input type="checkbox" id="sheetFlow" />
+        <label for="sheetFlow">Maximum sheet flow for Time of Concentration
+          <input type="text" />(<em>&lt;150ft.</em>)</label>
+        <br/>
+        <input type="checkbox" id="roughnessCoeff">
+        <label for="roughnessCoeff">Maximum roughness coefficient
+          <input type="text" />(<em>must be = 0.4</em>)</label>
+        <br/>
+        <input type="checkbox" id="rainfallsUsed" />
+        <label for="rainfallsUsed">Rainfalls used (<em>must be 2004 or later</em>)</label>
+        <ul>
+          <li>
+            <input type="checkbox" id="mRC100" />
+            <label for="mRC100">100 year</label>
+          </li>
+          <li>
+            <input type="checkbox" id="mRC10" />
+            <label for="mRC10">10 year</label>
+          </li>
+          <li>
+            <input type="checkbox" id="mRC2" />
+            <label for="mRC2">2 year</label>
+          </li>
+        </ul>
+        <input type="checkbox" id="rainDistUsed" />
+        <label for="rainDistUsed">Rain distribution used:</label>
+        <ul>
+          <li>
+            <input type="checkbox" id="rDUType3" />
+            <label for="rDUType3">Type III</label>
+          </li>
+          <li>
+            <input type="checkbox" id="delmarva" />
+            <label for="delmarva">Delmarva</label>
+          </li>
+          <li>
+            <input type="checkbox" id="other" />
+            <label for="other">Other</label>
+          </li>
+        </ul>
+        <input type="checkbox" id="flowCharts" />
+        <label for="flowCharts">Flow charts for the hydrological model were included (<em>if they were created</em>)</label>
+        <br/>
+        <input type="checkbox" id="allCalcs" />
+        <label for="allCalcs">Included all necessary calculations, including composite inflow hydrographs</label>
+        <p>
+          <input id="hydrologyRequirementsYes" name="group_6" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="hydrologyRequirementsYes">Yes!</label>
+        </p>
+        <p>
+          <input id="hydrologyRequirementsNo" name="group_6" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="hydrologyRequirementsNo">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option271111">
+        <legend><b>Low Impact Development STEP 4. </b></legend>
+        <p>
+          Have you submitted a NSPS spreadsheet?
+        </p>
+        <p>
+          <input id="nSPSYes" name="group_7" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="nSPSYes">Yes!</label>
+        </p>
+        <p>
+          <input id="nSPSNo" name="group_7" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="nSPSNo">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option2711111">
+        <legend><b>Low Impact Development STEP 4a. </b></legend>
+        <p>
+          Does this project meet the NSPS spreadsheet points requirements?
+        </p>
+        <p>
+          <input id="lowImpactYes" name="group_8" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="lowImpactYes">Yes!</label>
+        </p>
+        <p>
+          <input id="lowImpactNo" name="group_8" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="lowImpactNo">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option27111111">
+        <legend><b>Low Impact Development STEP 4a. </b></legend>
+        <p>
+          Has a site plan been submitted with all non-structural features highlighted?
+        </p>
+        <p>
+          What are the existing points?
+          <input type="text" />
+        </p>
+        <p>
+          What are the proposed site points?
+          <input type="text" />
+        </p>
+        <p>
+          What are the required site points?
+          <input type="text" />
+        </p>
+        <p>
+          What are the proposed LID elements (<em>brief verbal description of the major elements</em>)?
+          <input type="text" />
+        </p>
+        <p>
+          <input id="highlightedYes" name="group_9" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="highlightedYes">Yes!</label>
+        </p>
+        <p>
+          <input id="highlightedNo" name="group_9" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="highlightedNo">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option271111111">
+        <legend><b>Low Impact Development STEP 4b. </b></legend>
+        <p>
+          Is a non-structural checklist is included?
+        </p>
+        <p>
+          <input id="nonStrucChecklistYes" name="group_10" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="nonStrucChecklistYes">Yes!</label>
+        </p>
+        <p>
+          <input id="nonStrucChecklistNo" name="group_10" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="nonStrucChecklistNo">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option2711111111">
+        <legend><b>Low Impact Development STEP 4b. </b></legend>
+        <p>
+          Was an alternative analysis submitted?
+        </p>
+        <p>
+          <input id="altAnalysisYes" name="group_11" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="altAnalysisYes">Yes!</label>
+        </p>
+        <p>
+          <input id="altAnalysisNo" name="group_11" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="altAnalysisNo">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option27111111111">
+        <legend><b>Low Impact Development STEP 4b. </b></legend>
+        <p>
+          Was a linear development waiver requested?
+        </p>
+        <p>
+          <input id="altAnalysisYes" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="altAnalysisYes">Yes!</label>
+        </p>
+        <p>
+          <input id="altAnalysisNo" name="group_12" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="altAnalysisNo">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option271111111111">
+        <legend><b>Recharge Management STEP 5. </b></legend>
+        <p>
+          Is recharge required on this site?
+        </p>
+        <p>
+          <input id="altAnalysisYes" name="group_13" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="altAnalysisYes">Yes!</label>
+        </p>
+        <p>
+          <input id="altAnalysisNo" name="group_13" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="altAnalysisNo">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option2711111111111">
+        <legend><b>Recharge Management STEP 5. </b></legend>
+        <p>
+          Why is recharge not required on this site?
+        </p>
+        <p>
+          <textarea rows="10" cols="70" class="commentBox"> Enter your project notes here!
+          </textarea>
+        </p>
+        <p>
+          <input id="altAnalysisContinue" name="group_14" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="altAnalysisContinue">Continue.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option27111111111111">
+        <legend><b>Recharge Methodology STEP 5a. </b></legend>
+        <p>
+          Was deficit based on annual rainfall?
+        </p>
+        <p>
+          <input id="annualRainfallYes" name="group_15" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="annualRainfallYes">Yes!</label>
+        </p>
+        <p>
+          <input id="annualRainfallNo" name="group_15" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="annualRainfallNo">No.</label>
+        </p>
+        <p>
+          Was the GSR-32 spreadsheet required?
+        </p>
+        <p>
+          <input id="gSR32Yes" name="group_15" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="gSR32Yes">Yes!</label>
+        </p>
+        <p>
+          <input id="gSR32No" name="group_15" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="gSR32No">No.</label>
+        </p>
+        <p>
+          Existing site's recharge volume
+          <input type="text" />
+        </p>
+        <p>
+          Total deficit for the site prior to proposed recharge structures
+          <input type="text" />
+        </p>
+        <p>
+          Does the proposed recharge consider the pre-existing recharge in the recharge area?
+        </p>
+        <p>
+          <input id="rechargeAreaYes" name="group_15" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="rechargeAreaYes">Yes!</label>
+        </p>
+        <p>
+          <input id="rechargeAreaNo" name="group_15" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="rechargeAreaNo">No.</label>
+        </p>
+        <p>
+          <input id="rechargeAreaNA" name="group_15" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="rechargeAreaNA">N/A</label>
+        </p>
+        <p>
+          <input id="altAnalysisContinue2" name="group_15" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="altAnalysisContinue2">Continue.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option271111111111111">
+        <legend><b>Recharge Methodology STEP 5b. </b></legend>
+        <p>
+          Was deficit based on 2-year increased flow volume?
+        </p>
+        <p>
+          <input id="flowVolYes" name="group_16" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="flowVolYes">Yes!</label>
+        </p>
+        <p>
+          <input id="flowVolNo" name="group_16" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="flowVolNo">No.</label>
+        </p>
+        <p>
+          <input id="flowVolNA" name="group_16" type="checkbox" onClick="scrollSmoothToBottom()" />
+          <label for="flowVolNA">N/A</label>
+        </p>
+        <p>
+          If yes, explain how the increase in flow was infiltrated:
+        </p>
+        <p>
+          <textarea rows="10" cols="70" class="commentBox"> Enter your project notes here!
+          </textarea>
+        </p>
+        <p>
+          <b>Existing</b> 2 year runoff volume:
+          <input type="text" />
+        </p>
+        <p>
+          <b>Proposed</b> 2 year runoff volume:
+          <input type="text" />
+        </p>
+        <p>
+          Volume recharged in BMPs:
+          <input type="text" />
+        </p>
+
+        <table style="border-color: blue;">
+          <caption>
+            <p><strong><u>List and describe each facility that addresses recharge:</u></strong></p>
+          </caption>
+          <tbody>
+            <tr>
+              <td>Facility/Basin name</td>
+              <td>Facility/Basin type</td>
+              <td>Recharge vol. for each facility</td>
+              <td>BMP bottom elevation</td>
+              <td>Seasonal High Ground Water Elevation</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td>
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td>
+                <input type="text" style="border-color: transparent; text-align: right;" />gallons</td>
+              <td>
+                <input type="text" style="border-color: transparent; text-align: right;" />ft.</td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right; width: 220px;" />ft.</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td>
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td>
+                <input type="text" style="border-color: transparent; text-align: right;" />gallons</td>
+              <td>
+                <input type="text" style="border-color: transparent; text-align: right;" />ft.</td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right; width: 220px;" />ft.</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td>
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td>
+                <input type="text" style="border-color: transparent; text-align: right;" />gallons</td>
+              <td>
+                <input type="text" style="border-color: transparent; text-align: right;" />ft.</td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right; width: 220px;" />ft.</td>
+            </tr>
+            <tr>
+              <td>TOTALS</td>
+              <td>
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td>
+                <input type="text" style="border-color: transparent; text-align: right;" />gallons</td>
+              <td>
+                <input type="text" style="border-color: transparent; text-align: right;" />ft.</td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right; width: 220px;" />ft.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          What was the field-tested soil permeability?<em><small>(give a range) </small></em>
+          <input type="text" /> units
+        </p>
+        <p>
+          Is the design permeability half of field permeability?
+        </p>
+        <input type="checkbox" id="permabilityHalfYes" />
+        <label for="permabilityHalfYes">Yes!</label>
+        <br/>
+        <input type="checkbox" id="permabilityHalfNo" />
+        <label for="permabilityHalfNo">No.</label>
+        <p>
+          Evacuation time in the BMP <em><small>(&lt;72 hours)</small></em>
+          <input type="text" />
+        </p>
+        <p>
+          <input id="rechargeAreaContinue" name="group_16" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="rechargeAreaContinue">Continue.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option2711111111111111">
+        <legend><b>STEP 6: Quantity Control:  (NJAC 7:13-5.4)</b></legend>
+        <p>
+          Is quantity control required for this job (if "No," explain)?
+          <br/>
+          <input type="checkbox" id="quantityControlYes" />
+          <label for="quantityControlYes">Yes!</label>
+          <br/>
+          <input type="checkbox" id="quantityControlNo" />
+          <label for="quantityControlNo">No.</label>
+          <br/>
+          <input type="checkbox" id="quantityControlNA" />
+          <label for="quantityControlNA">N/A</label>
+          <br/>
+          <textarea rows="10" cols="70" class="commentBox"> Enter your project notes here!</textarea>
+        </p>
+        <p>
+          Does this project meet the required reductions?
+          <br/>
+          <input type="checkbox" id="requiredReductionsYes" />
+          <label for="requiredReductionsYes">Yes!</label>
+          <br/>
+          <input type="checkbox" id="requiredReductionsNo" />
+          <label for="requiredReductionsNo">No.</label>
+          <br/>
+          <input type="checkbox" id="requiredReductionsNA" />
+          <label for="requiredReductionsNA">N/A</label>
+          <br/>
+          <p>
+            <input id="quantityControlContinue" name="group_17" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="quantityControlContinue">Continue.</label>
+          </p>
+
+          <table style="border-color: blue;">
+            <caption>
+              <p><strong>List and describe each facility that addresses SW <u>quantity </u>control:</strong></p>
+            </caption>
+            <tbody>
+              <tr>
+                <td>
+                  Facility/Basin name
+                </td>
+                <td>
+                  Facility/Basin type
+                </td>
+                <td>
+                  Lowest outlet structure, size & elevation in basin
+                </td>
+                <td>
+                  Next outlet size & elevation
+                </td>
+                <td>
+                  Next outlet size & elevation
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: right;">
+                  <input type="text" style="border-color: transparent; text-align: right;" />
+                </td>
+                <td style="text-align: right;">
+                  <input type="text" style="border-color: transparent; text-align: right;" />
+                </td>
+                <td style="text-align: right;">
+                  <input type="text" style="border-color: transparent; text-align: right;" />
+                </td>
+                <td style="text-align: right;">
+                  <input type="text" style="border-color: transparent; text-align: right;" />
+                </td>
+                <td style="text-align: right;">
+                  <input type="text" style="border-color: transparent; text-align: right;" />
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: right;">
+                  <input type="text" style="border-color: transparent; text-align: right;" />
+                </td>
+                <td style="text-align: right;">
+                  <input type="text" style="border-color: transparent; text-align: right;" />
+                </td>
+                <td style="text-align: right;">
+                  <input type="text" style="border-color: transparent; text-align: right;" />
+                </td>
+                <td style="text-align: right;">
+                  <input type="text" style="border-color: transparent; text-align: right;" />
+                </td>
+                <td style="text-align: right;">
+                  <input type="text" style="border-color: transparent; text-align: right;" />
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: right;">
+                  <input type="text" style="border-color: transparent; text-align: right;" />
+                </td>
+                <td style="text-align: right;">
+                  <input type="text" style="border-color: transparent; text-align: right;" />
+                </td>
+                <td style="text-align: right;">
+                  <input type="text" style="border-color: transparent; text-align: right;" />
+                </td>
+                <td style="text-align: right;">
+                  <input type="text" style="border-color: transparent; text-align: right;" />
+                </td>
+                <td style="text-align: right;">
+                  <input type="text" style="border-color: transparent; text-align: right;" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            <input id="quantityControlContinue" name="group_17" type="radio" onClick="scrollSmoothToBottom()" />
+            <label for="quantityControlContinue">Continue.</label>
+          </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option27111111111111111">
+        <legend><strong>STEP 6: Quantity Control: (NJAC 7:13-5.4)</strong> (Continued)</legend>
+        <table style="border-color: blue;">
+          <caption>
+            <p><strong>
+<u>POINT OF ANALYSIS 1:</u>
+</strong></p>
+          </caption>
+          <tbody>
+            <tr>
+              <td>
+                Storm <em>(year)</em>
+              </td>
+              <td>
+                Existing Peak Flow Rate
+              </td>
+              <td>
+                Allowable Peak Flow Rate
+              </td>
+              <td>
+                Total Proposed Peak Flow Rate
+              </td>
+              <td>
+                Basin <small>No. 1</small> outflows
+              </td>
+              <td>
+                Basin <small>No. 2</small> outflows
+              </td>
+              <td>
+                Basin <small>No. 3</small> outflows
+              </td>
+              <td>
+                Bypass flows
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">
+                2-year
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">
+                10-year
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">
+                100-year
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br/>
+        <table style="border-color: blue;">
+          <caption>
+            <p><strong>
+<u>POINT OF ANALYSIS 2:</u>
+</strong></p>
+          </caption>
+          <tbody>
+            <tr>
+              <td>
+                Storm <em>(year)</em>
+              </td>
+              <td>
+                Existing Peak Flow Rate
+              </td>
+              <td>
+                Allowable Peak Flow Rate
+              </td>
+              <td>
+                Total Proposed Peak Flow Rate
+              </td>
+              <td>
+                Basin <small>No. 1</small> outflows
+              </td>
+              <td>
+                Basin <small>No. 2</small> outflows
+              </td>
+              <td>
+                Basin <small>No. 3</small> outflows
+              </td>
+              <td>
+                Bypass flows
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">
+                2-year
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">
+                10-year
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">
+                100-year
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" /> <em><sup>cu.ft.</sup>&frasl;<sub>sec.</sub></em>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          <input id="analysisPointContinue" name="group_18" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="analysisPointContinue">Continue.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option271111111111111111">
+        <legend>STEP 7: Water Quality Control (NJAC 7:13-5.5)</legend>
+        <p>
+          Is water quality control required? If "No," explain why not.
+          <br/>
+          <input type="checkbox" id="wQCReqdYes" />
+          <label for="wQCReqdYes">Yes!</label>
+          <br/>
+          <input type="checkbox" id="wQCReqdNo" />
+          <label for="wQCReqdNo">No.</label>
+          <br/>
+          <input type="checkbox" id="wQCReqdNA" />
+          <label for="wQCReqdNA">N/A</label>
+          <br/>
+          <textarea rows="10" cols="70" class="commentBox"> Enter your project notes here!</textarea>
+        </p>
+        <p>
+          Project meets the 80% TSS removal criteria.
+          <br/>
+          <input type="checkbox" id="tSS80ReqdYes" />
+          <label for="tSS80ReqdYes">Yes!</label>
+          <br/>
+          <input type="checkbox" id="tSS80ReqdNo" />
+          <label for="tSS80ReqdNo">No.</label>
+          <br/>
+          <input type="checkbox" id="tSS80ReqdNA" />
+          <label for="tSS80ReqdNA">N/A</label>
+          <p>
+            <p>
+              Project meets 80% TSS removal prior to discharge to an underground perforated infiltration system.
+              <br/>
+              <input type="checkbox" id="tSS80RemReqdYes" />
+              <label for="tSS80RemReqdYes">Yes!</label>
+              <br/>
+              <input type="checkbox" id="tSS80RemReqdNo" />
+              <label for="tSS80RemReqdNo">No.</label>
+              <br/>
+              <input type="checkbox" id="tSS80RemReqdNA" />
+              <label for="tSS80RemReqdNA">N/A</label>
+              <p>
+                <p>
+                  Project meets the 95% TSS for discharge in SWRPA
+                  <br/>
+                  <input type="checkbox" id="tSS80ReqdYes" />
+                  <label for="tSS80ReqdYes">Yes!</label>
+                  <br/>
+                  <input type="checkbox" id="tSS80ReqdNo" />
+                  <label for="tSS80ReqdNo">No.</label>
+                  <br/>
+                  <input type="checkbox" id="tSS80ReqdNA" />
+                  <label for="tSS80ReqdNA">N/A</label>
+                  <p>
+                    <p>
+                      Project meets 50% TSS on redevelopment areas
+                      <br/>
+                      <input type="checkbox" id="tSS50RemReqdYes" />
+                      <label for="tSS50RemReqdYes">Yes!</label>
+                      <br/>
+                      <input type="checkbox" id="tSS50RemReqdNo" />
+                      <label for="tSS50RemReqdNo">No.</label>
+                      <br/>
+                      <input type="checkbox" id="tSS50RemReqdNA" />
+                      <label for="tSS50RemReqdNA">N/A</label>
+                      <p>Evacuation time in the BMP ( &lt;72 hours)
+                        <input type="text" /> hours</p>
+                      <p>
+                        <input id="analysisPointContinue" name="group_19" type="radio" onClick="scrollSmoothToBottom()" />
+                        <label for="analysisPointContinue">Continue.</label>
+                      </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option2711111111111111111">
+        <legend><b>STEP 7: Water Quality Control:  (NJAC 7:13-5.5)</b></legend>
+        <table style="border-color: blue;">
+          <caption>
+            <p><strong>List and describe each facility that addresses SW <u>quality </u>control:</strong></p>
+          </caption>
+          <tbody>
+            <tr>
+              <td>
+                Facility/Basin name
+              </td>
+              <td>
+                Facility/Basin type
+              </td>
+              <td>
+                How is water quality achieved?
+              </td>
+              <td>
+                Water quality volume
+              </td>
+              <td>
+                Assigned TSS removal rates
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+              <td style="text-align: right;">
+                <input type="text" style="border-color: transparent; text-align: right;" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          <input id="quantityControlContinue" name="group_20" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="quantityControlContinue">Continue.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option27111111111111111111">
+        <legend><b>STEP 8: Maintenance:  (NJAC 7:13-5.8)</b></legend>
+        <p>
+          Signed and sealed operation and maintenance manual submitted?
+        </p>
+        <p>
+          <input id="maintenanceYes" name="group_21" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="maintenanceYes">Yes!</label>
+        </p>
+        <p>
+          <input id="maintenanceNo" name="group_21" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="maintenanceNo">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option271111111111111111111">
+        <legend><b>STEP 8: Maintenance:  (NJAC 7:13-5.8)</b> (Continued)</legend>
+        <p>
+          Manual in accordance with N.J.A.C. 7:8-5.8?
+        </p>
+        <p>
+          Responsible party name, address, phone no.
+          <br/>Name:
+          <input type="text" />
+          <br/>Address:
+          <input type="text" />
+          <br/>Phone:
+          <input type="text" />
+        </p>
+        <p>
+          <input id="manualYes" name="group_22" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="manualYes">Yes!</label>
+        </p>
+        <p>
+          <input id="manualNo" name="group_22" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="manualNo">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option2711111111111111111111">
+        <legend><b>STEP 9: SWRPA Checklist (NJAC 7:13-5.5)</b></legend>
+        <p>
+          Is a SWRPA checklist submitted?
+          <br/>
+          <input type="checkbox" id="sWRPACheckYes" />
+          <label for="sWRPACheckYes">Yes!</label>
+          <br/>
+          <input type="checkbox" id="sWRPACheckNo" />
+          <label for="sWRPACheckNo">No.</label>
+          <br/>
+          <input type="checkbox" id="sWRPACheckNA" />
+          <label for="sWRPACheckNA">N/A</label>
+        </p>
+        <p>
+          <input id="mContinue" name="group_23" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="mContinue">Continue</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option27111111111111111111111">
+        <legend><b>STEP 8: Maintenance:  (NJAC 7:13-5.8)</b> (Continued)</legend>
+        <p>
+          Manual in accordance with N.J.A.C. 7:8-5.8?
+        </p>
+        <p>
+          Responsible party name, address, phone no.
+          <br/>Name:
+          <input type="text" />
+          <br/>Address:
+          <input type="text" />
+          <br/>Phone:
+          <input type="text" />
+        </p>
+        <p>
+          <input id="manualYes" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="manualYes">Yes!</label>
+        </p>
+        <p>
+          <input id="manualNo" name="group_24" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="manualNo">No.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option271111111111111111111111">
+        <legend><b>STEP 9: SWRPA Checklist (NJAC 7:13-5.5)</b></legend>
+        <p>
+          Is a SWRPA checklist submitted?
+          <br/>
+          <input type="checkbox" id="sWRPACheckYes" />
+          <label for="sWRPACheckYes">Yes!</label>
+          <br/>
+          <input type="checkbox" id="sWRPACheckNo" />
+          <label for="sWRPACheckNo">No.</label>
+          <br/>
+          <input type="checkbox" id="sWRPACheckNA" />
+          <label for="sWRPACheckNA">N/A</label>
+        </p>
+        <textarea rows="10" cols="70" class="commentBox"> Enter your project notes here!</textarea>
+        <p>
+          <input id="sWRPACont" name="group_25" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="sWRPACont">Continue.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option2711111111111111111111111">
+        <legend><b>Recommendations</b></legend>
+        <p>
+          Does this project meet all requirements of NJAC 7:8?
+          <br/>
+          <input type="checkbox" id="meets78Yes" />
+          <label for="meets78Yes">Yes!</label>
+          <br/>
+          <input type="checkbox" id="meets78No" />
+          <label for="meets78No">No.</label>
+          <br/>
+          <input type="checkbox" id="meets78NA" />
+          <label for="meets78NA">N/A</label>
+        </p>
+        <p>
+          <input id="sWRPACont2" name="group_26" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="sWRPACont2">Continue.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option27111111111111111111111111">
+        <legend><b>Recommendations</b> (Continued)</legend>
+        <p>
+          Is project eligible for linear development waiver?
+          <br/>
+          <input type="checkbox" id="linWaivYes" />
+          <label for="linWaivYes">Yes!</label>
+          <br/>
+          <input type="checkbox" id="linWaivNo" />
+          <label for="linWaivNo">No.</label>
+          <br/>
+          <input type="checkbox" id="linWaivNA" />
+          <label for="linWaivNA">N/A</label>
+        </p>
+        <p>
+          <input id="sWRPACont3" name="group_27" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="sWRPACont3">Continue.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option271111111111111111111111111">
+        <legend><b>Recommendations</b> (Continued)</legend>
+        <p>List all items seeking a hardship
+          <br/>
+          <textarea rows="10" cols="70" class="commentBox"> Enter your project notes here!</textarea>
+        </p>
+        <p>
+          <input id="sWRPACont4" name="group_28" type="radio" onClick="scrollSmoothToBottom()" />
+          <label for="sWRPACont4">Continue.</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="hide step16 option2711111111111111111111111111">
+        <legend><b>Wrap-Up</b></legend>
+        Design Engineer Name:
+        <input type="text" />
+        <br/> Design Engineer Email/ID:
+        <input type="text" />
+        <br/> Design Engineer Phone:
+        <input type="text" />
+        <br/>
+        <input id="sWRPACont5" name="group_29" type="radio" onClick="scrollSmoothToBottom()" />
+        <label for="sWRPACont5">Continue.</label>
+      </fieldset>
+
+      <fieldset class="hide step16 option27111111111111111111111111111">
+        <legend><b>Reviewing Agency Certification</b></legend>
+        <p>
+          I have completed a review of all SWM information submitted, including but not limited to calculations, plans, the SWM Checklist/Summary and other supporting information. Based upon this review, I have determined that the submitted application:
+          <br/>
+          <input type="checkbox" id="linWaivYes" />
+          <label for="linWaivYes">satisfies the requirements of the SWM Rules, N.J.A.C. 7:13-8.</label>
+          <br/>
+          <input type="checkbox" id="linWaivNo" />
+          <label for="linWaivNo">does not satisfy the requirements of the SWM Rules. Therefore, this application is recommended for denial. The specific reasons to be included in the denial letter are attached to this report.
+          </label>
+          Government Agency Engineering Reviewer:
+          <input type="text" />
+          <br/> Engineering Supervisor:
+          <input type="text" />
+          <br/> Name of the Government Agency:
+          <input type="text" />
+          <br/> Date:
+          <input type="date" />
+        </p>
+      </fieldset>
+
 
       <fieldset class="hide step3 option11">
         <legend>
@@ -1836,7 +3248,7 @@
           Check for Threatened and Endangered (T&E) species.
         </p>
         <p class="tooltip">
-          Check Landscape Project 3.1 layer on GIS:
+          Check Landscape Project 3.3 layer on GIS:
           <span class="tooltiptext">
               Some habitats are ranked 3, 4, or 5 for species that are not dependent on wetlands, and these do not require a review by the T&E unit. For a list of these species, see the document titled "T&E species ranks regarding potential impacts from groundwater draw down" found at V:\lum\LUR\Pre-review Resources\FWW Resources. Species ranked N/A are not wetland dependent and do not require a review by the T&E unit. Species ranked 3, 2, or 1, are potentially affected by changes in hydrology and therefore a review needs to be sent to the T&E unit. Properties within areas ranked 1 or 2 do not feature documented habitat and no further endangered or threatened species review is required. 
             </span>
@@ -1844,7 +3256,7 @@
         <p>
           <input type="checkbox" id="fHATAndE1" onClick="scrollSmoothToBottom()" />
           <label for="fHATAndE1">
-            1. Apply the Landscape Project 3.1 layer for the appropriate region (Atlantic Coastal, Piedmont Plains, Delaware Bay, etc.) as found in the DEP data bar.
+            1. Apply the Landscape Project 3.3 layer for the appropriate region (Atlantic Coastal, Piedmont Plains, Delaware Bay, etc.) as found in the DEP data bar.
           </label>
         </p>
         <p>
@@ -2592,7 +4004,7 @@
           Check for Threatened and Endangered (T&E) species.
         </p>
         <p class="tooltip">
-          Check Landscape Project 3.1 layer on GIS:
+          Check Landscape Project 3.3 layer on GIS:
           <span class="tooltiptext">
               Some habitats are ranked 3, 4, or 5 for species that are not dependent on wetlands, and these do not require a review by the T&E unit. For a list of these species, see the document titled "T&E species ranks regarding potential impacts from groundwater draw down" found at V:\lum\LUR\Pre-review Resources\FWW Resources. Species ranked N/A are not wetland dependent and do not require a review by the T&E unit. Species ranked 3, 2, or 1, are potentially affected by changes in hydrology and therefore a review needs to be sent to the T&E unit. Properties within areas ranked 1 or 2 do not feature documented habitat and no further endangered or threatened species review is required. 
             </span>
@@ -2600,7 +4012,7 @@
         <p>
           <input type="checkbox" id="wFDTAndE1" onClick="scrollSmoothToBottom()" />
           <label for="wFDTAndE1">
-            1. Apply the Landscape Project 3.1 layer for the appropriate region (Atlantic Coastal, Piedmont Plains, Delaware Bay, etc.) as found in the DEP data bar.
+            1. Apply the Landscape Project 3.3 layer for the appropriate region (Atlantic Coastal, Piedmont Plains, Delaware Bay, etc.) as found in the DEP data bar.
           </label>
         </p>
         <p>
@@ -3803,7 +5215,7 @@
           Check for Threatened and Endangered (T&E) species.
         </p>
         <p class="tooltip">
-          Check Landscape Project 3.1 layer on GIS:
+          Check Landscape Project 3.3 layer on GIS:
           <span class="tooltiptext">
               Some habitats are ranked 3, 4, or 5 for species that are not dependent on wetlands, and these do not require a review by the T&E unit. For a list of these species, see the document titled "T&E species ranks regarding potential impacts from groundwater draw down" found at V:\lum\LUR\Pre-review Resources\FWW Resources. Species ranked N/A are not wetland dependent and do not require a review by the T&E unit. Species ranked 3, 2, or 1, are potentially affected by changes in hydrology and therefore a review needs to be sent to the T&E unit. Properties within areas ranked 1 or 2 do not feature documented habitat and no further endangered or threatened species review is required. 
             </span>
@@ -3811,7 +5223,7 @@
         <p>
           <input type="checkbox" id="cAFwFDTAndE1" onClick="scrollSmoothToBottom()" />
           <label for="cAFwFDTAndE1">
-            1. Apply the Landscape Project 3.1 layer for the appropriate region (Atlantic Coastal, Piedmont Plains, Delaware Bay, etc.) as found in the DEP data bar.
+            1. Apply the Landscape Project 3.3 layer for the appropriate region (Atlantic Coastal, Piedmont Plains, Delaware Bay, etc.) as found in the DEP data bar.
           </label>
         </p>
         <p>
@@ -5014,7 +6426,7 @@
           Check for Threatened and Endangered (T&E) species.
         </p>
         <p class="tooltip">
-          Check Landscape Project 3.1 layer on GIS:
+          Check Landscape Project 3.3 layer on GIS:
           <span class="tooltiptext">
               Some habitats are ranked 3, 4, or 5 for species that are not dependent on wetlands, and these do not require a review by the T&E unit. For a list of these species, see the document titled "T&E species ranks regarding potential impacts from groundwater draw down" found at V:\lum\LUR\Pre-review Resources\FWW Resources. Species ranked N/A are not wetland dependent and do not require a review by the T&E unit. Species ranked 3, 2, or 1, are potentially affected by changes in hydrology and therefore a review needs to be sent to the T&E unit. Properties within areas ranked 1 or 2 do not feature documented habitat and no further endangered or threatened species review is required. 
             </span>
@@ -5022,7 +6434,7 @@
         <p>
           <input type="checkbox" id="gPcAFwFDTAndE1" onClick="scrollSmoothToBottom()" />
           <label for="gPcAFwFDTAndE1">
-            1. Apply the Landscape Project 3.1 layer for the appropriate region (Atlantic Coastal, Piedmont Plains, Delaware Bay, etc.) as found in the DEP data bar.
+            1. Apply the Landscape Project 3.3 layer for the appropriate region (Atlantic Coastal, Piedmont Plains, Delaware Bay, etc.) as found in the DEP data bar.
           </label>
         </p>
         <p>
@@ -6228,7 +7640,7 @@
           Check for Threatened and Endangered (T&E) species.
         </p>
         <p class="tooltip">
-          Check Landscape Project 3.1 layer on GIS:
+          Check Landscape Project 3.3 layer on GIS:
           <span class="tooltiptext">
               Some habitats are ranked 3, 4, or 5 for species that are not dependent on wetlands, and these do not require a review by the T&E unit. For a list of these species, see the document titled "T&E species ranks regarding potential impacts from groundwater draw down" found at V:\lum\LUR\Pre-review Resources\FWW Resources. Species ranked N/A are not wetland dependent and do not require a review by the T&E unit. Species ranked 3, 2, or 1, are potentially affected by changes in hydrology and therefore a review needs to be sent to the T&E unit. Properties within areas ranked 1 or 2 do not feature documented habitat and no further endangered or threatened species review is required. 
             </span>
@@ -6236,7 +7648,7 @@
         <p>
           <input type="checkbox" id="fWGPwFDTAndE1" onClick="scrollSmoothToBottom()" />
           <label for="fWGPwFDTAndE1">
-            1. Apply the Landscape Project 3.1 layer for the appropriate region (Atlantic Coastal, Piedmont Plains, Delaware Bay, etc.) as found in the DEP data bar.
+            1. Apply the Landscape Project 3.3 layer for the appropriate region (Atlantic Coastal, Piedmont Plains, Delaware Bay, etc.) as found in the DEP data bar.
           </label>
         </p>
         <p>
@@ -7442,7 +8854,7 @@
           Check for Threatened and Endangered (T&E) species.
         </p>
         <p class="tooltip">
-          Check Landscape Project 3.1 layer on GIS:
+          Check Landscape Project 3.3 layer on GIS:
           <span class="tooltiptext">
               Some habitats are ranked 3, 4, or 5 for species that are not dependent on wetlands, and these do not require a review by the T&E unit. For a list of these species, see the document titled "T&E species ranks regarding potential impacts from groundwater draw down" found at V:\lum\LUR\Pre-review Resources\FWW Resources. Species ranked N/A are not wetland dependent and do not require a review by the T&E unit. Species ranked 3, 2, or 1, are potentially affected by changes in hydrology and therefore a review needs to be sent to the T&E unit. Properties within areas ranked 1 or 2 do not feature documented habitat and no further endangered or threatened species review is required. 
             </span>
@@ -7450,7 +8862,7 @@
         <p>
           <input type="checkbox" id="fWIPwFDTAndE1" onClick="scrollSmoothToBottom()" />
           <label for="fWIPwFDTAndE1">
-            1. Apply the Landscape Project 3.1 layer for the appropriate region (Atlantic Coastal, Piedmont Plains, Delaware Bay, etc.) as found in the DEP data bar.
+            1. Apply the Landscape Project 3.3 layer for the appropriate region (Atlantic Coastal, Piedmont Plains, Delaware Bay, etc.) as found in the DEP data bar.
           </label>
         </p>
         <p>
@@ -8433,6 +9845,7 @@
       </script>
 
     </form>
+
   </body>
 
   <footer class="footer">
@@ -8441,8 +9854,6 @@
       <button onClick="scrollSmoothToTop()">
         Scroll to Top
       </button>
-    </div>
-    <div id="showTime">
     </div>
 
     <script>
@@ -8462,8 +9873,8 @@
 
     </script>
 
-
     <div>
+
       <b>N.J.A.C. Quick References</b>
       <input type="button" onclick="openCZM()" name="cZMRulesBtn" value="Coastal/CAFRA/CZM" class="li" />
 
@@ -8483,11 +9894,11 @@
 
 
     <div><b>Shellfish Contribution Calculator</b>
-    <input type="text" id="sqFtBeyondMHWL" placeholder="Enter a number" size="11" /> Sq. Ft. (beyond MHWL)
-    <input type="button" id="sqFtBeyondMHWL" onClick="calcShellfish1();calcShellfish2();" value="Calculate Shellfish Contribution" /></div>
+      <input type="text" id="sqFtBeyondMHWL" placeholder="Enter a number" size="11" /> Sq. Ft. (beyond MHWL)
+      <input type="button" id="sqFtBeyondMHWL" onClick="calcShellfish1();calcShellfish2();" value="Calculate Shellfish Contribution" />
+    </div>
     <div id="shellfish1"></div>
     <div id="shellfish2"></div>
-
 
   </footer>
 
