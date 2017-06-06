@@ -93,7 +93,7 @@
       }
       
       .frames2 {
-        width: relative;
+        width: auto;
         height: 200px;
         float: left;
       }
@@ -362,7 +362,7 @@
 
     </script>
 
-    <textarea rows="20" class="commentBox" name="type" id="mytext" onmouseover="scrollBottom();"> Enter your project notes here!
+    <textarea rows="20" class="commentBox" name="type" id="mytext"> Enter your project notes here!
     </textarea>
 
     <h2 id="header-wrap">
@@ -412,6 +412,8 @@
       <br/>
       <br/>
       <fieldset class="step0 option0">
+        <legend>
+          <h3>Deadline Calculator Tool</h3></legend>
         <div id="timers">
           <div id="timeDiv"> Retrieving current time...
           </div>
@@ -488,126 +490,127 @@
 
       <fieldset class="step0 option0">
         <legend>
-          <h3>Permit Conditions Generator</h3></legend>
+          <h3>Permit Conditions Generator Tool</h3></legend>
         <div><b>FWW Special Conditions</b></div>
-        <select id="dropdown">
-          <option value="">FWW SPECIAL CONDITIONS</option>
-          <option value="textVar1">General - Disturbance Amount</option>
-          <option value="textVar2">General - TAW</option>
-          <option value="textVar3">General - Additional Un-permitted Disturbance </option>
-          <option value="textVar4">General - Permit expires with Authorization</option>
-          <option value="textVar5">General - Property Owner Consent</option>
-          <option value="textVar6">General - Grades</option>
-          <option value="textVar7">General - Notice to Enforcement</option>
-          <option value="textVar8">General - Sediment Fence</option>
-          <option value="textVar9">General - Split rail fence - TAW</option>
-          <option value="textVar10">General - protect trees</option>
-          <option value="textVar11"> General - channel</option>
-          <option value="textVar12"> General - dewatering</option>
-          <option value="textVar13"> General - concrete</option>
-          <option value="textVar14"> LOI/EPA Priority </option>
-          <option value="textVar15"> FHA Jurisdiction </option>
-          <option value="textVar16"> TA don't maintain as lawn</option>
-          <option value="textVar17"> GP1</option>
-          <option value="textVar18"> GP2</option>
-          <option value="textVar19"> GP2</option>
-          <option value="textVar20"> GP2</option>
-          <option value="textVar21"> GP2</option>
-          <option value="textVar22"> GP2</option>
-          <option value="textVar23"> GP2</option>
-          <option value="textVar24"> GP3</option>
-          <option value="textVar25"> GP4</option>
-          <option value="textVar26"> GP4</option>
-          <option value="textVar27"> GP4</option>
-          <option value="textVar28"> GP5</option>
-          <option value="textVar29"> GP5</option>
-          <option value="textVar30"> GP7</option>
-          <option value="textVar31"> GP8</option>
-          <option value="textVar32"> GP9</option>
-          <option value="textVar33"> GP9</option>
-          <option value="textVar34"> GP9</option>
-          <option value="textVar35"> GP10</option>
-          <option value="textVar36"> GP11</option>
-          <option value="textVar37"> GP11</option>
-          <option value="textVar38"> GP11</option>
-          <option value="textVar39"> GP12</option>
-          <option value="textVar40"> GP12</option>
-          <option value="textVar41"> GP12</option>
-          <option value="textVar42"> GP12</option>
-          <option value="textVar43"> GP13</option>
-          <option value="textVar44"> GP13</option>
-          <option value="textVar45"> GP13</option>
-          <option value="textVar46"> GP13</option>
-          <option value="textVar47"> GP13</option>
-          <option value="textVar48"> GP14</option>
-          <option value="textVar49"> GP14</option>
-          <option value="textVar50"> GP14</option>
-          <option value="textVar51"> GP15</option>
-          <option value="textVar52"> GP16</option>
-          <option value="textVar53"> GP16</option>
-          <option value="textVar54"> GP17</option>
-          <option value="textVar55"> GP17</option>
-          <option value="textVar56"> GP17</option>
-          <option value="textVar57"> GP17</option>
-          <option value="textVar58"> GP18</option>
-          <option value="textVar59"> GP18</option>
-          <option value="textVar60"> GP18</option>
-          <option value="textVar61"> GP18</option>
-          <option value="textVar62"> GP18</option>
-          <option value="textVar63"> GP19</option>
-          <option value="textVar64"> GP20</option>
-          <option value="textVar65"> GP20</option>
-          <option value="textVar66"> GP20</option>
-          <option value="textVar67"> GP20</option>
-          <option value="textVar68"> GP20</option>
-          <option value="textVar69"> GP20</option>
-          <option value="textVar70"> GP21</option>
-          <option value="textVar71"> GP21</option>
-          <option value="textVar72"> GP21</option>
-          <option value="textVar73"> GP21</option>
-          <option value="textVar74"> GP21</option>
-          <option value="textVar75"> GP21</option>
-          <option value="textVar76"> GP23</option>
-          <option value="textVar77"> GP23</option>
-          <option value="textVar78"> GP23</option>
-          <option value="textVar79"> GP24</option>
-          <option value="textVar80"> GP25</option>
-          <option value="textVar81"> GP25</option>
-          <option value="textVar82"> GP25</option>
-          <option value="textVar83"> GP26</option>
-          <option value="textVar84"> GP26</option>
-          <option value="textVar85"> GP26</option>
-          <option value="textVar86"> GP26</option>
-          <option value="textVar87"> GP26</option>
-          <option value="textVar88"> GP26</option>
-          <option value="textVar89"> GP26</option>
-          <option value="textVar90"> GP26</option>
-          <option value="textVar91"> SWM BASINS</option>
-          <option value="textVar92"> SWM BASINS; No review - no jurisdiction</option>
-          <option value="textVar93"> Basin - not Major</option>
-          <option value="textVar94"> C1 - Encroachment</option>
-          <option value="textVar95"> Did not verify wetlands</option>
-          <option value="textVar96"> Acid soils</option>
-          <option value="textVar97"> Consistency</option>
-          <option value="textVar98"> Fishery Conditions</option>
-          <option value="textVar99"> Fishery Conditions</option>
-          <option value="textVar100"> Additional Permits</option>
-          <option value="textVar101"> Transition areas restoration</option>
-          <option value="textVar102"> Transition areas restoration</option>
-          <option value="textVar103"> Transition areas restoration</option>
-          <option value="textVar104"> Transition Area Averaging Plan</option>
-          <option value="textVar105"> Fences TAW</option>
-          <option value="textVar106"> Grading review</option>
-          <option value="textVar107"> T&E (may survey in future)</option>
-          <option value="textVar108"> Highlands Preservation Area but Exempt Project</option>
-          <option value="textVar109"> General Conditions</option>
-          <option value="textVar110"> Dredging (1)</option>
-          <option value="textVar111"> Dredging (2)</option>
+        <select id="dropdown" onclick="scrollBottom();">
+          <option value="">FWW SPECIAL & GENERAL CONDITIONS</option>
+          <option value="textVar0">General - Blanket Utility Maintenance Permit
+            <option value="textVar1">General - Disturbance Amount</option>
+            <option value="textVar2">General - TAW</option>
+            <option value="textVar3">General - Additional Un-permitted Disturbance </option>
+            <option value="textVar4">General - Permit expires with Authorization</option>
+            <option value="textVar5">General - Property Owner Consent</option>
+            <option value="textVar6">General - Grades</option>
+            <option value="textVar7">General - Notice to Enforcement</option>
+            <option value="textVar8">General - Sediment Fence</option>
+            <option value="textVar9">General - Split rail fence - TAW</option>
+            <option value="textVar10">General - protect trees</option>
+            <option value="textVar11"> General - channel</option>
+            <option value="textVar12"> General - dewatering</option>
+            <option value="textVar13"> General - concrete</option>
+            <option value="textVar14"> LOI/EPA Priority </option>
+            <option value="textVar15"> FHA Jurisdiction </option>
+            <option value="textVar16"> TA don't maintain as lawn</option>
+            <option value="textVar17"> GP1</option>
+            <option value="textVar18"> GP2</option>
+            <option value="textVar19"> GP2</option>
+            <option value="textVar20"> GP2</option>
+            <option value="textVar21"> GP2</option>
+            <option value="textVar22"> GP2</option>
+            <option value="textVar23"> GP2</option>
+            <option value="textVar24"> GP3</option>
+            <option value="textVar25"> GP4</option>
+            <option value="textVar26"> GP4</option>
+            <option value="textVar27"> GP4</option>
+            <option value="textVar28"> GP5</option>
+            <option value="textVar29"> GP5</option>
+            <option value="textVar30"> GP7</option>
+            <option value="textVar31"> GP8</option>
+            <option value="textVar32"> GP9</option>
+            <option value="textVar33"> GP9</option>
+            <option value="textVar34"> GP9</option>
+            <option value="textVar35"> GP10</option>
+            <option value="textVar36"> GP11</option>
+            <option value="textVar37"> GP11</option>
+            <option value="textVar38"> GP11</option>
+            <option value="textVar39"> GP12</option>
+            <option value="textVar40"> GP12</option>
+            <option value="textVar41"> GP12</option>
+            <option value="textVar42"> GP12</option>
+            <option value="textVar43"> GP13</option>
+            <option value="textVar44"> GP13</option>
+            <option value="textVar45"> GP13</option>
+            <option value="textVar46"> GP13</option>
+            <option value="textVar47"> GP13</option>
+            <option value="textVar48"> GP14</option>
+            <option value="textVar49"> GP14</option>
+            <option value="textVar50"> GP14</option>
+            <option value="textVar51"> GP15</option>
+            <option value="textVar52"> GP16</option>
+            <option value="textVar53"> GP16</option>
+            <option value="textVar54"> GP17</option>
+            <option value="textVar55"> GP17</option>
+            <option value="textVar56"> GP17</option>
+            <option value="textVar57"> GP17</option>
+            <option value="textVar58"> GP18</option>
+            <option value="textVar59"> GP18</option>
+            <option value="textVar60"> GP18</option>
+            <option value="textVar61"> GP18</option>
+            <option value="textVar62"> GP18</option>
+            <option value="textVar63"> GP19</option>
+            <option value="textVar64"> GP20</option>
+            <option value="textVar65"> GP20</option>
+            <option value="textVar66"> GP20</option>
+            <option value="textVar67"> GP20</option>
+            <option value="textVar68"> GP20</option>
+            <option value="textVar69"> GP20</option>
+            <option value="textVar70"> GP21</option>
+            <option value="textVar71"> GP21</option>
+            <option value="textVar72"> GP21</option>
+            <option value="textVar73"> GP21</option>
+            <option value="textVar74"> GP21</option>
+            <option value="textVar75"> GP21</option>
+            <option value="textVar76"> GP23</option>
+            <option value="textVar77"> GP23</option>
+            <option value="textVar78"> GP23</option>
+            <option value="textVar79"> GP24</option>
+            <option value="textVar80"> GP25</option>
+            <option value="textVar81"> GP25</option>
+            <option value="textVar82"> GP25</option>
+            <option value="textVar83"> GP26</option>
+            <option value="textVar84"> GP26</option>
+            <option value="textVar85"> GP26</option>
+            <option value="textVar86"> GP26</option>
+            <option value="textVar87"> GP26</option>
+            <option value="textVar88"> GP26</option>
+            <option value="textVar89"> GP26</option>
+            <option value="textVar90"> GP26</option>
+            <option value="textVar91"> SWM BASINS</option>
+            <option value="textVar92"> SWM BASINS; No review - no jurisdiction</option>
+            <option value="textVar93"> Basin - not Major</option>
+            <option value="textVar94"> C1 - Encroachment</option>
+            <option value="textVar95"> Did not verify wetlands</option>
+            <option value="textVar96"> Acid soils</option>
+            <option value="textVar97"> Consistency</option>
+            <option value="textVar98"> Fishery Conditions</option>
+            <option value="textVar99"> Fishery Conditions</option>
+            <option value="textVar100"> Additional Permits</option>
+            <option value="textVar101"> Transition areas restoration</option>
+            <option value="textVar102"> Transition areas restoration</option>
+            <option value="textVar103"> Transition areas restoration</option>
+            <option value="textVar104"> Transition Area Averaging Plan</option>
+            <option value="textVar105"> Fences TAW</option>
+            <option value="textVar106"> Grading review</option>
+            <option value="textVar107"> T&E (may survey in future)</option>
+            <option value="textVar108"> Highlands Preservation Area but Exempt Project</option>
+            <option value="textVar109"> General Conditions</option>
+            <option value="textVar110"> Dredging (1)</option>
+            <option value="textVar111"> Dredging (2)</option>
         </select>
         <div>&nbsp;</div>
 
         <div><b>CZM General Conditions</b></div>
-        <select id="cZMDropdown">
+        <select id="cZMDropdown" onclick="scrollBottom();">
           <option value="">CZM GENERAL CONDITIONS</option>
           <option value="cZMTextVar1">Constructing a Dock - Standard Coastal Permit</option>
           <option value="cZMTextVar2">Constructing WFD Docks - Standard Coastal Permit</option>
@@ -638,7 +641,7 @@
 
 
         <div><b>Coastal Special Conditions</b></div>
-        <select id="coastalDropdown">
+        <select id="coastalDropdown" onclick="scrollBottom();">
           <option value="">COASTAL SPECIAL CONDITIONS</option>
           <option value="coastalTextVar1">GP's - Coastal GP's</option>
           <option value="coastalTextVar2">Standard</option>
@@ -670,7 +673,7 @@
         <div>&nbsp;</div>
 
         <div><b>FHA Standard & Special Conditions</b></div>
-        <select id="fHADropdown">
+        <select id="fHADropdown" onclick="scrollBottom();">
           <option value="">FHA SPECIAL CONDITIONS</option>
           <option value="fHATextVar1">General - GP's and IP's</option>
           <option value="fHATextVar2">General - Earthwork N.J.A.C. 7:13-11.1(d) and (e)</option>
@@ -716,7 +719,7 @@
         <div>&nbsp;</div>
 
         <div><b>Conservation Restriction Conditions</b></div>
-        <select id="conservationDropdown">
+        <select id="conservationDropdown" onclick="scrollBottom();">
           <option value="">CONSERVATION RESTRICTION CONDITIONS</option>
           <option value="consvTextVar1">Dune Area & Adjacent Beach Area</option>
           <option value="consvTextVar2">Dune Area</option>
@@ -733,7 +736,7 @@
         <div>&nbsp;</div>
 
         <div><b>T&E Restriction Conditions</b> (Fauna)</div>
-        <select id="tAndEDropdown">
+        <select id="tAndEDropdown" onclick="scrollBottom();">
           <option value="">T&E RESTRICTION CONDITIONS [N.J.A.C. 7:7A-4.3(b)3 and 7:7A-7.2(b)3]</option>
           <option value="tAndETextVar1">Blue-spotted Salamander</option>
           <option value="tAndETextVar2">Tiger Salamander</option>
@@ -773,7 +776,7 @@
         <div>&nbsp;</div>
 
         <div><b>T&E Restriction Conditions</b> (Stream Classifications)</div>
-        <select id="streamDropdown">
+        <select id="streamDropdown" onclick="scrollBottom();">
           <option value="">T&E RESTRICTION CONDITIONS [Trout, Non-trout, and Anadormous Fish]</option>
           <option value="streamTextVar1">All Trout Production Waters, Except Rainbow Trout</option>
           <option value="streamTextVar2">Rainbow trout production waters</option>
@@ -795,7 +798,7 @@
         <div>&nbsp;</div>
 
         <div><b>T&E Restriction Conditions</b> (Blanket Utility Maintenance)</div>
-        <select id="floraDropdown">
+        <select id="floraDropdown" onclick="scrollBottom();">
           <option value="">T&E RESTRICTION CONDITIONS [N.J.A.C. 7:7A-4.3(b)3 and 7:7A-7.2(b)3]</option>
           <option value="floraTextVar1">Conditions for Vegetation Maintenance</option>
           <option value="floraTextVar2">Conditions for All Other Maintenance Projects</option>
@@ -809,6 +812,7 @@
       </fieldset>
 
       <script type="text/javascript">
+        var textVar0 = "SPECIAL CONDITIONS: \n \n 1. Material Disposal: All excavated material and dredge material shall be disposed of in a lawful manner. The material shall be placed outside of any flood hazard area, riparian zone, regulated water, freshwater/coastal wetlands and adjacent transition area, and in such a way as to not interfere with the positive drainage of the receiving area. \n \n 2. Construction equipment shall not be stored, staged or driven within any channel or freshwater wetland unless necessary to access the area to be maintained. \n \n 3. For the purposes of this permit, the Department has determined that this project is not a Major Development as defined in the Stormwater Management rules at N.J.A.C. 7:8-1.2. Therefore, the Department did not review the proposed stormwater management system onsite for compliance with these rules. \n \n 4. This permit does not authorize the disturbance of any regulated areas outside of the existing, permanently maintained right of way.  Any disturbance to regulated areas outside of the existing, permanently maintained right of way, or acquiring of new right-of-way, will require additional permits from the Department. \n \n 5. This permit does not authorize any new temporary or permanent access roads.  Any new access roads will require a separate review and approval from the Department. \n \n 6. Prior to the commencement of maintenance activities within portions of the right of way on State owned lands, which Permitee leases from NJDEP, the permittee shall notify the DEP Office of Leases (presently George Chidley via e-mail at George.Chidley@dep.nj.gov, or successor at (609) 633-7575) to ensure compliance with the lease agreement. \n \n 7. The permittee shall provide written notification to the appropriate NJDEP Division of Land Use Regulation (DLUR) project manager listed on the permit at (609)777-0454 no less than thirty (30) days prior to any proposed activities involving excavation within freshwater wetlands, riparian zones, Flood Hazard Area and/or State open waters. Note: Emergency repair, replacement or maintenance projects or other time-sensitive situations which cannot be afforded the requested 30 days advance notice shall be brought to the Department’s attention immediately and will be handled in a project-related timeline appropriate to ensure timely action may be taken by the permittee. \n \n The Permittee shall provide the above listed offices with the following information: \n \n \t a. The specific location of the proposed work, including the nearest roadway intersection or other landmark and the name of the nearest waterway, municipality and county; \n \n \t b. The location highlighted on a portion of the appropriate USGS quadrangle; \n \n \t c. A brief description of the proposed work; \n \n \t d. The complete footprint of disturbance of wetlands impacts (both temporary and permanent) of the proposed project area or delineation of spans of ROW being maintained, electronically submitted in the form of a GIS shapefile or USGS map (PDF). \n \n \t e. The name and telephone number of the environmental representative supervising the work; \n \n \t f. The timeframe of the proposed work including start and anticipated finish dates; \n \n \t g. The area of the proposed freshwater wetlands, state open water and/or transition area disturbance. \n \n Following notification, the Department shall perform a brief review of the proposed excavation in order to determine compliance with the provisions of this permit. After review, the Department shall respond in one of the following ways: \n \n \t 1) Request more information, \n \n \t 2) Impose conditions on the proposed work, or \n \n \t 3) Not object to the proposed work. The Department will make every effort to request additional information within 14 days of the notification and provide a decision within 30 days. The Permittee shall be required to address any adverse comments received from these offices in order to be in compliance with the Freshwater Wetlands Protection Act. No excavation may begin until the Department has approved the proposed work in this manner. Please note, the mowing and routine clearing and pruning of vegetation along the right-of-way shall not require any prior notification in accordance with this condition. However, all other conditions of this permit including timing restrictions shall be observed for all types of maintenance. The Permittee shall be required to address any comments received from these offices in order to be in compliance with the Freshwater Wetlands Protection Act Rules, and Flood Hazard Area Control Act Rules. No work shall begin until any comments have been addressed. \n \n 8. The permittee shall notify the municipality at least 30 days prior to undertaking any vegetative management authorized under this permit in order to provide an opportunity to comment. Notification shall be sent to the Municipal Clerk and Municipal construction Official and include maps showing the location of work and a description of the maintenance activity proposed. \n \n 9. With the exception of vegetation maintenance portion of the project, the permittee shall provide an environmental representative on-site to oversee the regulated activities and to ensure compliance with the conditions of this permit. This representative shall be responsible for maintaining accurate records of each disturbance to freshwater wetlands, transition areas, State open waters, riparian zones and flood hazard areas. An annual report shall be prepared based on the records collected by the environmental representative for that year, and shall be submitted to NJDEP Division of Land Use Regulation by January 31 of the following year. \n \n \t a. Photographs of each regulated area before and after the disturbance. \n \n \t b. Acreage of regulated areas disturbed for each activity \n \n \t c. A list of vegetation that was re-established within each disturbed area \n \n \t d. A description of how each disturbed area was stabilized and restored in accordance with the best management practices and the provision of the permit. \n \n 10.	Prior to application of herbicides in regulated areas, the permittee shall obtain an Aquatic Pesticide Permit from the Department. In addition, the applicant shall notify the municipality, the owner of the property of the easement being treated, and the owners of properties directly adjacent to the easement being treated of the herbicide maintenance activities. The permittee shall mow and spot-treat vegetation with herbicide where possible and minimize the use of broad-scale herbicide application. \n \n 11. To protect the State's fishery resources the Department has promulgated various seasonal timing restrictions. The specific timing restrictions for stream segments within this project area can be found on the Division's website http://www.nj.gov/dep/landuse/guidance.html under the '<em>Streams/Rivers & Flood Hazard Area</em>' tab, in the document entitled, '<em>Draft Technical Manual.</em>' Any work activities that would damage the fishery resource within these watercourses or associated watercourses by introducing sediments is prohibited during the timing restrictions enumerated therein, unless approved by the Division prior to commencement of construction. Please consult the timing restrictions in the following three documents: \n \n \t a. Locations of Anadromous American Shad and River Herring during their spawning period in NJ Freshwaters Including Known Migratory Impediments & Fish Ladders; \n \n \t b. List of Waters Stocked with Trout by the NJDF&W; and \n \n \t c. Classification of New Jersey Waters as related to their suitability for Trout \n \n 12. All disturbed stream channels or stream banks shall be stabilized, restored to pre-construction elevations and low-flow aquatic passage shall be maintained at all times. \n \n 13. For maintenance activities involving soil disturbance, the permittee is responsible for installing a maintaining a silt fence sediment / turbidity barrier around the proposed construction area, which are sufficient to prevent the sedimentation of the wetlands and streams. All sediment barriers and other soil erosion control measures shall be installed prior to commencing any clearing, grading, or construction onsite, and shall be maintained on a daily basis in proper working condition throughout the entire duration of the project and until all disturbed areas are stabilized. \n \n 14. The maintenance activities shall not cause any change in pre-construction elevation of freshwater wetlands, transition areas, State open waters, riparian zones or flood hazard areas. In addition, the uppermost 18 inches of any excavation within the wetland or wetland transition area shall be backfilled with the original topsoil material. \n \n 15. In areas where maintenance is required and the temporary storage of soils and material storage is necessary, all material and soils shall be kept outside of the 100-year flood hazard area, riparian zones, wetlands and transition areas. Furthermore, soils shall be stabilized in accordance with '<em>Standards for Soil Erosion and Sediment Control in New Jersey</em>.' For the purposes of this permit, the Division will allow for the temporary stockpiling of soil adjacent to excavations provided the excavated soils are stockpiled within the Right of Way, the soils are properly stabilized and the soils are not stored for a period longer than two weeks unless otherwise approved by the Division of Land Use Regulation. \n \n 16. Upon completion of the maintenance project, all temporarily disturbed freshwater wetlands, transition areas, stream channels, flood hazard areas and riparian zones must be restored to their original condition using native soils and indigenous vegetation. Specifically, all wetlands, transition areas and riparian zones shall be planted using the seed in the attachment in accordance with the manufacturers recommended application rates. For your convenience, the species composition of the approved seed mixes are attached to this permit. \n \n 17. This approval does not in any way affect the right of the State to seek and collect monetary penalties or to take other enforcement or legal action for any past, present or future violations along this right of way. \n \n 18. In accordance with N.J.A.C. 7:7A-4.3, the applicant shall comply with the conditions for all Statewide General Permits, and Best Management Practices as defined under N.J.A.C. 7:7A-1.4 shall be implemented whenever practicable. \n \n 19. Please be advised that portions of this Right of Way are located within the Highlands Preservation Area, as defined in N.J.S.A. 13:20-1. Therefore, any Highlands project proposed in this Right of Way may be subject to the requirements of the Highlands Water Protection and Planning Act (HWPPA). In addition to wetlands and transition areas the Highlands Water Protection and Planning Act establishes additional environmental limitations that may affect development of this property. \n \n 20. Provisions of the Freshwater Wetlands Statewide General Permit No. 1. \n \n \t a. Limit of Authorized Disturbance - This permit authorizes the disturbance to freshwater wetlands and/or State open waters for the maintenance of an existing natural gas pipeline network under a General Permit 1, specifically mowing and maintenance of vegetation and excavation within the existing maintained right of way. Any additional disturbance of freshwater wetlands or State open waters shall be considered a violation of the Freshwater Wetlands Protection Act unless a permit is obtained prior to the start of the disturbances from the Land Use Regulation Program. \n \n \t b. Water Quality Certificate - This permit to conduct a regulated activity in wetlands or open water includes the Program's approval of a Water Quality Certificate for these activities. \n \n \t c. Transition Area Waiver for Access- This permit authorizes the disturbance of freshwater wetlands for the maintenance of an existing natural gas pipeline network. This permit includes a transition area waiver that allows encroachment only in the portions of the transition area necessary to accomplish the regulated activities as shown on the approved drawings. \n \n 21. THREATENED AND ENDANGERED SPECIES CONDITIONS \n \n STANDARD CONDITIONS: \n \n Attachments: \n \n \t 1. Seed mixes \n \n \t 2. Utility Right of Way No Harm Best Management Practices";
         var textVar1 = 'The total amount of disturbance associated with this authorization shall not exceed ____ acres (_______ SF) of _________wetlands. ';
         var textVar2 = 'This permit authorizes the disturbance of approximately (acreage) of an acre of freshwater wetlands and /or State open water for the (proposed activity) under General Permit No. __. The wetlands affected by this permit authorization are of Intermediate/Exceptional resource value and the standard transition area or buffer required adjacent to these wetlands is ___ feet.  This general permit includes a transition area waiver, which allows encroachment only in that portion of the transition area, which has been determined by the Department to be necessary to accomplish the regulated activities.  Any additional regulated activities conducted within the standard transition area on-site shall require a separate transition area waiver from the Division.  Regulated activities within a transition area are defined at  N.J.A.C. 7:7A-2.6. Please refer to the Freshwater Wetlands Protection Act (N.J.S.A. 13:9B-1 et seq.) and implementing rules (N.J.A.C. 7:7A-1.1 et seq.) for additional information. ';
         var textVar3 = 'Any additional un-permitted disturbance of freshwater wetlands, State open waters and/or transition areas besides that shown on the approved plans shall be considered a violation of the Freshwater Wetlands Protection Act Rules unless the activity is exempt or a permit is obtained from the Department prior to the start of the proposed disturbance. ';
@@ -982,10 +986,10 @@
         var fHATextVar34 = "Activities regulated under the Flood Hazard Area Control Act rules may also be subject to other Federal, State and/or local rules, plans and ordinances. Therefore, this authorization to undertake a regulated activity does not indicate that the activity also meets the requirements of any other rule, plan or ordinance. It is the applicant's responsibility to obtain all necessary approvals for a proposed project. \n \n  Duty to comply: The permittee, its contractors and subcontractors shall comply with all conditions of the permit, supporting documents and approved drawings. Any noncompliance with a permit constitutes a violation of this chapter, and is grounds for enforcement action pursuant to N.J.A.C. 7:13-19, as well as suspension and/or termination of the permit. \n \n Duty to reapply: If the permittee wishes to continue an activity covered by the permit after the expiration date of the permit, the permittee must apply for and obtain a new permit. \n \n Duty to halt or reduce activity: It shall not be a defense for a permittee in an enforcement action that it would have been necessary to halt or reduce the permitted activity in order to maintain compliance with the conditions of the permit. \n \n Duty to minimize environmental impacts: The permittee shall take all reasonable steps to prevent, minimize or correct any adverse impact on the environment resulting from activities conducted pursuant to the permit, or from noncompliance with the permit. \n \n Proper operation and maintenance: The permittee shall at all times properly operate and maintain all facilities and systems of treatment and control (and related appurtenances) which are installed or used to achieve compliance with the permit. Proper operation and maintenance includes effective performance, adequate funding, adequate operator staffing and training, and adequate laboratory and process controls, including appropriate quality assurance procedures. The operation of back-up or auxiliary facilities or similar systems is only required when necessary to achieve compliance with the permit. The permittee must also properly execute any approved mitigation compensation and/or restoration proposal designed to mitigate losses caused by the permitted activity. The permittee shall maintain the authorized work areas in good condition and in accordance with the permit. \n \n Proper oversight: The permittee shall ensure that all approved activities are undertaken using the best management practices available under the supervision and direction of an engineer at all points necessary to ensure compliance with all permit conditions. \n \n Proper site maintenance: While the regulated activities are being undertaken, neither the permittee nor its agents shall cause or permit any unreasonable interference with the free flow of a regulated water by placing or dumping any materials, equipment, debris or structures within or adjacent to the channel. Upon completion or abandonment of the work, the permittee and/or its agents shall remove and dispose of in a lawful manner all excess materials, debris, equipment, silt fences and other temporary soil erosion and sediment control devices from all regulated areas. \n \n Permit actions: A permit can be revised, suspended or terminated for cause. The filing of a request by the permittee for a revision, or a notification of planned changes or anticipated noncompliance does not stay any condition of a permit. \n \n Property rights: A permit does not convey any property rights of any sort, or any exclusive privilege. \n \n Duty to provide information: A copy of the general permit and other authorizing documents including all approved plans and drawings shall be maintained at the authorized site at all times and made available to Department representatives or their designated agents immediately upon request. The permittee shall also furnish to the Department within a reasonable time any information that the Department requests to determine compliance with a permit or to determine whether cause exists for suspension or termination of a permit. The permittee shall also furnish to the Department, upon request, copies of records required to be kept by the permit. \n \n Inspection and entry: The permittee shall allow an authorized representative of the Department, at reasonable times and upon the presentation of credentials, to: \n \n \t (1) Enter upon the permittee's premises where a regulated activity is located or conducted, or where records must be kept under the conditions of the permit; \n \n \t (2) Have access to and copy any records that must be kept under the conditions of the permit; and \n \n \t (3) Inspect any facilities, equipment, practices or operations regulated or required under the permit. Failure to allow reasonable access under this section shall be considered a violation of this chapter and subject the permittee to enforcement action pursuant to N.J.A.C. 7:13-19. \n \n Reporting requirements: The permittee shall provide reports to the Department as follows: \n \n \t (1) Planned changes: The permittee shall give notice to the Department prior to any planned physical alterations or additions to the permitted project or activity; \n \n \t (2) Transfers: The permit is not transferable to any person unless the transfer is approved by the Department, pursuant to N.J.A.C. 7:13-14.1; \n \n \t (3) Noncompliance: The permittee shall immediately report to the Department by telephone at (877) 927-6337 any noncompliance that may endanger health or the environment. The permittee shall report all other noncompliance to the Division of Land Use Regulation by telephone at (609) 292-0060 within two business days of the time the permittee becomes aware of the noncompliance, and in writing within five business days of the time the permittee becomes aware of the noncompliance. The written notice shall include: a description of the noncompliance and its cause; the period of noncompliance, including exact dates and times, and, if the noncompliance has not been corrected, the anticipated length of time it is expected to continue; and steps taken or planned to reduce, eliminate and prevent recurrence of the noncompliance. Such notice shall not, however, serve as a defense to enforcement action if the project is found to be in violation of this chapter; and \n \n \t (4)  Other information: Where the permittee becomes aware that it failed to submit any relevant facts in an application, or submitted incorrect information in an application or in any report to the Department, it shall promptly submit such facts or information. \n \n Construction equipment shall not be stored, staged or driven within any channel, freshwater wetland or transition area, unless expressly approved by this permit and/or described on the approved plans. \n \n All sediment barriers and other soil erosion control measures shall be installed prior to commencing any clearing, grading or construction onsite, and shall be maintained in proper working condition throughout the entire duration of the project. \n \n All excavated material and dredged spoils shall be disposed of in a lawful manner outside of any flood hazard area riparian zone, open water, freshwater wetland and adjacent transition area, and in such a way as to not interfere with the positive drainage of the receiving area. \n \n The dock shall be designed and constructed to: \n \n \t (1) Resist impact from water and debris during the flood hazard area design flood; \n \n \t (2) Resist uplift, flotation, collapse and displacement due to hydrostatic and hydrodynamic forces resulting from the flood hazard area design flood; and \n \n \t (3) Resist overturning and sliding pressure, as well as pressure from the freeze/thaw cycle of the soil.";
         var fHATextVar35 = "The proposed retaining wall shall be designed with stable footings that extend at least three (3) feet below grade. \n \n A stability analysis signed and sealed by an engineer, which demonstrates that the retaining wall is designed to withstand displacement, overturning and failure due to undermining and/or pressure from soil, water and frost shall be submitted. \n \n The proposed retaining wall or bulkhead must be designed and certified by an engineer to be resistent to erosion as well as the possibility of a shifting bed and/or bank over time. \n \n The proposed retaining wall or bulkhead shall be designed with stable footings.";
         var fHATextVar36 = "All excavated material and dredged spoils shall be disposed of in a lawful manner outside of any flood hazard area riparian zone, open water, freshwater wetland and adjacent transition area, and in such a way as to not interfere with the positive drainage of the receiving area. \n \n Construction equipment shall not be stored, staged or driven within any channel, freshwater wetland or transition area, unless expressly approved by this permit and/or described on the approved plans. \n \n All sediment barriers and other soil erosion control measures shall be installed prior to commencing any clearing, grading or construction onsite, and shall be maintained in proper working condition throughout the entire duration of the project. ";
-        var fHATextVar37 = "In order to protect the within , no grading, construction or clearing is permitted within any watercourse onsite between and . Furthermore, any activity outside a watercourse, which would likely introduce sediment into the watercourse and/or increase its turbidity, is also prohibited during this period. The Department reserves the right to suspend all regulated activities onsite should it be determined that the applicant has not taken proper precautions to ensure continuous compliance with this condition. \n \n Raw or unset concrete shall not come in contact with any surface waters onsite, since such contact can be toxic to aquatic biota. \n \n The existing migration patterns of aquatic life in the watercourse shall not be inhibited as a result of this project. This includes the maintenance and/or creation of a low‑aquatic fish passage within the disturbed channel and throughout any proposed in-channel structure wherever possible. In addition, any disturbed areas of the channel shall be restored using native, non-acid producing soils and indigenous, non-invasive vegetation.";
+        var fHATextVar37 = "In order to protect the within , no grading, construction or clearing is permitted within any watercourse onsite between and . Furthermore, any activity outside a watercourse, which would likely introduce sediment into the watercourse and/or increase its turbidity, is also prohibited during this period. The Department reserves the right to suspend all regulated activities onsite should it be determined that the applicant has not taken proper precautions to ensure continuous compliance with this condition. \n \n Raw or unset concrete shall not come in contact with any surface waters onsite, since such contact can be toxic to aquatic biota. \n \n The existing migration patterns of aquatic life in the watercourse shall not be inhibited as a result of this project. This includes the maintenance and/or creation of a low-aquatic fish passage within the disturbed channel and throughout any proposed in-channel structure wherever possible. In addition, any disturbed areas of the channel shall be restored using native, non-acid producing soils and indigenous, non-invasive vegetation.";
         var fHATextVar38 = "The riprap (hard armoring) proposed within the channel shall be carefully imbedded into the channel substrate and contoured to mimic the original physical characteristics of the channel (such as its shape, slope, thalweg and meander) in order to provide low-flow aquatic passage throughout the entire disturbed area.  Furthermore, any void spaces within the riprap shall be filled with native substrate from the channel. ";
         var fHATextVar39 = "Vegetation within [50 feet/ 150 feet/ 300 feet] of the top of the bank shall only be disturbed in the areas specifically shown on the approved drawing/s. No other vegetation within [50 feet/ 150 feet/ 300 feet]  of the top of any stream bank onsite shall be disturbed for any reason. This condition applies to all channels onsite regardless of the contributory drainage area.";
-        var fHATextVar40 = "All excavation shall be monitored for the presence of acid‑producing soil deposits. If such deposits are encountered, the permittee shall adhere to the mitigation and disposal standards outlined in the Flood Hazard Area Technical Manual. Furthermore, an annual post‑planting monitoring program shall be established to ensure that the re‑establishment of vegetation in all disturbed areas, and in each individual basin, achieves a minimum 85% plant survival and coverage rate after two complete growing seasons. Failure to achieve this survival rate shall require the implementation of additional corrective measures and/or the reevaluation of this acid producing soil mitigation proposal to ensure the 85% survival rate requirement.";
+        var fHATextVar40 = "All excavation shall be monitored for the presence of acid-producing soil deposits. If such deposits are encountered, the permittee shall adhere to the mitigation and disposal standards outlined in the Flood Hazard Area Technical Manual. Furthermore, an annual post-planting monitoring program shall be established to ensure that the re-establishment of vegetation in all disturbed areas, and in each individual basin, achieves a minimum 85% plant survival and coverage rate after two complete growing seasons. Failure to achieve this survival rate shall require the implementation of additional corrective measures and/or the reevaluation of this acid producing soil mitigation proposal to ensure the 85% survival rate requirement.";
         var consvTextVar1 = "Prior to site preparation, the permittee shall complete a Dune Area & Adjacent Beach Area conservation restriction and file the completed restriction with the Office of the County Clerk (the Registrar of Deeds and Mortgages) in the county wherein the lands included in this permit are located.  The applicant shall use the conservation restriction provided through the Division's web site http://www.nj.gov/dep/landuse/forms.html and clicking Model Deed Restrictions. Said restriction shall run with the land and be binding upon all successive owners. A copy of the recorded restriction shall be submitted to the Division of Land Use Regulation. ";
         var consvTextVar2 = "Prior to site preparation, the permittee shall complete a Dune Area conservation restriction and file the completed restriction with the Office of the County Clerk (the Registrar of Deeds and Mortgages) in the county wherein the lands included in this permit are located.  The applicant shall use the conservation restriction provided through the Division's web site http://www.nj.gov/dep/landuse/forms.html and clicking Model Deed Restrictions.  Said restriction shall run with the land and be binding upon all successive owners.  A copy of the recorded restriction shall be submitted to the Division of Land Use Regulation. ";
         var consvTextVar3 = "Prior to site preparation, the permittee shall complete a Forest Preservation Area conservation restriction and file the completed restriction with the Office of the County Clerk (the Registrar of Deeds and Mortgages) in the county wherein the lands included in this permit are located.   The applicant shall use the conservation restriction provided through the Division's web site http://www.nj.gov/dep/landuse/forms.html and clicking Model Deed Restrictions.  Said restriction shall run with the land and be binding upon all successive owners.  A copy of the recorded restriction shall be submitted to the Division of Land Use Regulation. ";
@@ -1078,7 +1082,6 @@
         var cZMTextVar23 = "During the period from March 1 thru June 30 and from October 1 thru November 30 (inclusive), within and adjacent waters on the Delaware River System from the mouth of bay to Delaware Memorial Bridge and tidal Maurice River, identified as American shad migratory pathways.";
         var cZMTextVar24 = "During the period from April 1 thru June 30 and from September 1 thru November 30 (inclusive), within and adjacent to waters on the Delaware River System from Delaware Memorial Bridge to the New York State line and tidal portions of Rancocas and Raccoon Creeks, identified as American shad migratory pathways.";
 
-
         var mytextbox = document.getElementById('mytext');
         var mydropdown = document.getElementById('dropdown');
 
@@ -1167,42 +1170,60 @@
       </script>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="step0 option0">
         <legend>
-          <h3>GIS Data Layers Snapshot</h3></legend>
+          <h3>GIS Data Layers Snapshot Tool</h3></legend>
         <p>
-          <iframe class="frames2" src="http://dep-v-agis6.dep.state.nj.us/NJGeoWeb/WebPages/PCER_Tool.html?PAMSPin=1321_138_45&UID=399170423">
+          <iframe id="pamsPinFrame" class="frames2" src="http://dep-v-agis6.dep.state.nj.us/NJGeoWeb/WebPages/PCER_Tool.html?PAMSPin=1321_138_45&UID=399170423">
           </iframe>
         </p>
         <div class="frames3">
+          <p>
+            <div><b>Note:</b> A "<em>PAMS Pin ID</em>" includes MUN, BLOCK, LOT, and [where necessary] a QCODE. Before clicking "<em>Run PCER Tool</em>," any leading or trailing spaces in the fields should be trimmed. </div>
+            <div>The first four (4) digits of the PAMS Pin ID are the first four (4) digits of your file number. </div>
+            <div>The digits <em>in between</em> the first two (2) underscores are the project site <b>BLOCK</b> number. </div>
+            <div>The digits <em>after</em> the first two (2) underscores are the project site <b>LOT</b> numbers. </div>
+            <div><b>Example:</b> Block 10.03, Lot 2.01 in Cape May Point, Cape May County would be 0503_10.03_2.01 </div>
+            <div>If a qualification code exists for a parcel record, then the PIN would integrate the Qualification Code (QCODE) after the lot number. If there is no QCODE, there should not be an underscore placed after the lot number. </div>
+            <div><b>Example:</b> Block 10.03, Lot 2.01 with Qualification Code C0001 in Cape May Point, Cape May County would be 0503_10.03_2.01_C0001 </div>
+          </p>
+
+          <script type="text/javascript">
+            function copyTextValue() {
+
+              var text0 = document.getElementById("Name0").value + "_";
+              var text1 = document.getElementById("Name1").value + "_";
+              var text2 = document.getElementById("Name2").value;
+              var text3 = document.getElementById("Name3").value;
+              if (document.getElementById("Name3").value === '')
+                text3 = '';
+              else
+                text3 = "_" + document.getElementById("Name3").value;
+              document.getElementById("Name0").value = text0;
+              document.getElementById("Name1").value = text1;
+              document.getElementById("Name2").value = text2;
+              document.getElementById("Name3").value = "_" + text3;
+              document.getElementById("Name4").value = text0 + text1 + text2 + text3;
+
+            }
+
+          </script>
           <div>
-            <b>Note:</b> a "<em>PAMS Pin ID</em>" includes MUN, BLOCK, LOT, and [where necessary] a QCODE. Before clicking "<em>Run PCER Tool</em>," any leading or trailing spaces in the fields should be trimmed.
+            <input type="button" value="Create PAMS PIN ID" name="check1" onclick="copyTextValue(this);" />
+            <input id="Name0" placeholder="First 4 File# digits" />
+            <input id="Name1" placeholder="Block" />
+            <input id="Name2" placeholder="Lot" />
+            <input id="Name3" placeholder="QCODE" /><strong> = </strong>
+            <input id="Name4" placeholder="PAMS PIN ID" />
           </div>
-          <div>
-            The first four (4) digits of the PAMS Pin ID are the first four (4) digits of your file number.
-          </div>
-          <div>
-            The digits <em>in between</em> the first two (2) underscores are the project site <b>BLOCK</b> number.
-          </div>
-          <div>
-            The digits <em>after</em> the first two (2) underscores are the project site <b>LOT</b> numbers.
-          </div>
-          <div>
-            <b>Example:</b> Block 10.03, Lot 2.01 in Cape May Point, Cape May County would be 0503_10.03_2.01
-          </div>
-          <div>
-            If a qualification code exists for a parcel record, then the PIN would integrate the Qualification Code (QCODE) after the lot number. If there is no QCODE, there should not be an underscore placed after the lot number.
-          </div>
-          <div>
-            <b>Example:</b> Block 10.03, Lot 2.01 with Qualification Code C0001 in Cape May Point, Cape May County would be 0503_10.03_2.01_C0001
-          </div>
-        </div>
       </fieldset>
+
 
       <fieldset class="step1 option0">
         <legend>
-          <b>STEP 1.</b>
+          <h3>Application Pre-Review Tool</h3>
         </legend>
+        <b>STEP 1.</b>
         <p>
           You have received a file! Does <b>NJEMS,</b> and the <b>"Permit Database & Transmittal" Form</b> show that you are the <b>Environmental Specialist</b> or <b>Engineer</b> for this application?
         </p>
@@ -10257,6 +10278,7 @@
           <input id="eLOIDone" name="group_18" type="checkbox" onClick="scrollSmoothToBottom()" />
           <label for="eLOIDone">I have finished my review.</label>
         </p>
+      </fieldset>
       </fieldset>
 
       <script type="text/javascript">
