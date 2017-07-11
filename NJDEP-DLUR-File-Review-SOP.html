@@ -361,7 +361,7 @@ var x = setInterval(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("fileDate").innerHTML = "The 20<sup>th</sup> day pre-review deadline has <b>EXPIRED</b>.";
+        document.getElementById("fileDate").innerHTML = "The <b>20<sup>th</sup></b> day pre-review deadline has <b style='color:red;'>EXPIRED</b>.";
     }
 }, 1000);
 }
@@ -524,7 +524,7 @@ var x = setInterval(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("fileDate").innerHTML = "The 20<sup>th</sup> day pre-review deadline has EXPIRED";
+        document.getElementById("fileDate").innerHTML = "The 20<sup>th</sup> day pre-review deadline has <b style="color:red;">EXPIREDD</b>";
     }
 }, 1000);
 }
@@ -10459,6 +10459,24 @@ var x = setInterval(function() {
 
     </script>
 
+    <script>
+      function convertAcreage() {
+        var num2 = document.getElementById("sqFtToAcres").value;
+        var total2 = Number((num2 / 43560).toFixed(5));
+        document.getElementById("convertToAcres").innerHTML = "The acreage of coverage is " + total2 + " Acres";
+      }
+
+    </script>
+
+    <script>
+      function convertSqFeet() {
+        var num2 = document.getElementById("acresToSqFt").value;
+        var total2 = Number((num2 * 43560).toFixed(5));
+        document.getElementById("convertToAcres").innerHTML = "The square feet of coverage is " + total2 + " Square Feet";
+      }
+
+    </script>
+
     <div>
 
       <b>N.J.A.C. Quick References</b>
@@ -10481,10 +10499,24 @@ var x = setInterval(function() {
 
     <div><b>Shellfish Contribution Calculator</b>
       <input type="text" id="sqFtBeyondMHWL" placeholder="Enter a number" size="11" /> Sq. Ft. (beyond MHWL)
-      <input type="button" id="sqFtBeyondMHWL" onClick="calcShellfish1();calcShellfish2();" value="Calculate Shellfish Contribution" />
+      <input type="button" id="sqFtBeyondMHWL" onClick="calcShellfish1();calcShellfish2();scrollSmoothToBottom();" value="Calculate Shellfish Contribution" />
     </div>
     <div id="shellfish1"></div>
     <div id="shellfish2"></div>
+
+    <div><b>Square Feet to Acres Calculator</b>
+      <input type="text" id="sqFtToAcres" placeholder="Enter a number" size="11" /> Sq. Ft. 
+      <input type="button" id="sqFtToAcres" onClick="convertAcreage();scrollSmoothToBottom();" value="Convert Square Feet to Acres" />
+    </div>
+
+    <div><b>Acres to Square Feet Calculator</b>
+      <input type="text" id="acresToSqFt" placeholder="Enter a number" size="11" /> Acres 
+      <input type="button" id="acresToSqFt" onClick="convertSqFeet();scrollSmoothToBottom();" value="Convert Acres to Square Feet" />
+    </div>
+
+    <div id="convertToSqFeet"></div>
+    <div id="convertToAcres"></div>
+
 
   </footer>
 
