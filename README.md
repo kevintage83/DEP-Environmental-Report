@@ -4,6 +4,12 @@ This application is designed to sit on the Environmental Specialist's desktop, a
 The application will obviate much of the training and oversight provided by Training Managers and Senior Permit Writers. 
 The application will serve as a training aid for the uninitiated, and as a reference manual for those who are familiar with the permit writing process. 
 
+<p align="center">
+  <img src="FC7004A6-44B5-4A54-B2DE-50E317714A9A.jpeg" width=50%/>
+  </p>
+
+
+
 ## Issues and Challenges!
 There are multiple issues with this application, especially if you are reviewing the code base for semantics and syntax. The primary causes of these issues stem from the following challenges.
 
